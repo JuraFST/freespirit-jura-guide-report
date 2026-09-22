@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jura Guide Report</title>
+<link href="report.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+  <img src="freespirit_logo_crop.jpg" alt="Free Spirit">
+  <div class="nav-tabs">
+    <button class="nav-tab top-tab" data-page="p25" onclick="showPage('p25', this)">Tours 2025</button>
+    <button class="nav-tab top-tab" data-page="p26" onclick="showPage('p26', this)">Tours 2026</button>
+    <button class="nav-tab top-tab active" data-page="cmp" onclick="showPage('cmp', this)">Comparison</button>
+    <button class="nav-tab top-tab" data-page="guides" onclick="showPage('guides', this)">Guides</button>
+  </div>
+  <div class="nav-actions">
+    <input type="date" id="as-of-date">
+    <button class="theme-toggle-icon" id="theme-toggle">&#9789;</button>
+  </div>
+</nav>
+
+<nav class="bottom-nav">
+  <button class="nav-tab bottom-tab" data-page="p25" onclick="showPage('p25', this)">Tours 2025</button>
+  <button class="nav-tab bottom-tab" data-page="p26" onclick="showPage('p26', this)">Tours 2026</button>
+  <button class="nav-tab bottom-tab active" data-page="cmp" onclick="showPage('cmp', this)">Comparison</button>
+  <button class="nav-tab bottom-tab" data-page="guides" onclick="showPage('guides', this)">Guides</button>
+</nav>
+
+<section id="page-p25" class="page"></section>
+<section id="page-p26" class="page"></section>
+<section id="page-cmp" class="page active"></section>
+<section id="page-guides" class="page"></section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="data-2025.js"></script>
+<script src="data-2026.js"></script>
+<script src="last-update.js"></script>
+<script src="dist/app.js"></script>
+</body>
+</html>

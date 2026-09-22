@@ -1,0 +1,252 @@
+:root {
+  --bg: #ffffff;
+  --bg2: #f5f5f5;
+  --text: #1a1a1a;
+  --text3: #767676;
+  --border: #dddddd;
+  --radius: 4px;
+
+  --zagreb: #2a78d6;
+  --dubrovnik: #eb6834;
+  --split: #1baf7a;
+  --zadar: #eda100;
+
+  /* darker text-safe variants of the city hues above — the chart-bar
+     hex values don't clear 4.5:1 text contrast on their own (checked
+     with the dataviz skill's validator; orange/aqua/yellow land at
+     2.2–3.2:1 against white) */
+  --zagreb-text: #2771ca;
+  --dubrovnik-text: #ce4914;
+  --split-text: #15875e;
+  --zadar-text: #916300;
+
+  --y25: #4a3aa7;
+  --y26: #1a1a1a;
+  --delta-pos: #1d9e75;
+  --delta-neg: #d4545a;
+  --delta-neu: #999999;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --bg2: #1e1e1e;
+  --text: #f0f0f0;
+  --text3: #a0a0a0;
+  --border: #333333;
+  --y26: #f0f0f0;
+
+  /* the chart-bar hues already clear 4.5:1 on the dark surface, so
+     text-safe == the original hue here; Zagreb blue needed a small lift */
+  --zagreb-text: #3780d8;
+  --dubrovnik-text: #eb6834;
+  --split-text: #1baf7a;
+  --zadar-text: #eda100;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+h1, h2, h3, .card-title { font-family: Georgia, 'Times New Roman', serif; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav img { height: 28px; }
+body.dark-mode .nav img { filter: invert(1) brightness(2); }
+
+.nav-tab {
+  background: transparent;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.nav-tabs { display: flex; align-items: center; gap: 22px; margin-left: 12px; }
+.top-tab {
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text3);
+  padding: 6px 0 10px;
+}
+.top-tab.active { color: var(--text); font-weight: 600; border-bottom-color: var(--text); }
+
+.nav-actions { margin-left: auto; display: flex; gap: 8px; }
+#as-of-date {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  color-scheme: light;
+}
+body.dark-mode #as-of-date { color-scheme: dark; }
+.theme-toggle-icon {
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: var(--radius);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.bottom-nav { display: none; }
+
+@media (max-width: 640px) {
+  .top-tab { display: none; }
+
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+  }
+  .bottom-tab {
+    flex: 1;
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: var(--radius);
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  .bottom-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+  .page { padding-bottom: 76px; }
+}
+
+.page { display: none; padding: 24px; max-width: 1200px; margin: 0 auto; }
+.page.active { display: block; }
+
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.kpi-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+.kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
+.kpi-value { font-size: 26px; font-weight: 600; margin-top: 4px; }
+
+.card { border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
+.card-title { font-size: 15px; margin: 0 0 12px; }
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+
+.filter-bar { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-bar.sticky {
+  position: sticky;
+  top: 57px;
+  z-index: 5;
+  background: var(--bg);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.filter-bar select {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.view-toggle-group { margin-left: auto; display: flex; gap: 4px; }
+.view-toggle-btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: var(--radius);
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.view-toggle-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+.guide-total-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  background: var(--bg2);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+.gts-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); margin-bottom: 4px; }
+.gts-values { font-size: 17px; font-weight: 600; }
+.gts-arrow { color: var(--text3); font-weight: 400; }
+.gts-delta { font-size: 12px; margin-top: 2px; }
+
+.guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.guide-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+.guide-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.guide-avatar {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--avatar-hue, var(--text3)) 16%, var(--bg));
+  color: var(--avatar-text, var(--text3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+.guide-name { font-weight: 600; font-size: 14px; flex: 1; }
+.guide-card-row {
+  display: grid;
+  grid-template-columns: 82px 1fr 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.guide-card-row:last-child { border-bottom: none; }
+.gcr-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
+.gcr-v25, .gcr-v26 { text-align: right; }
+.gcr-delta { text-align: right; font-size: 12px; white-space: nowrap; }
+
+.guide-group-title {
+  grid-column: 1 / -1;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  margin: 12px 0 -2px;
+}
+.guide-group-title:first-child { margin-top: 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--border); }
+th:first-child, td:first-child { text-align: left; }
+tfoot td { font-weight: 700; border-top: 2px solid var(--text); }
+
+.city-group-row td {
+  text-align: left;
+  background: var(--bg2);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text3);
+}
+
+.delta-pos { color: var(--delta-pos); }
+.delta-neg { color: var(--delta-neg); }
+.delta-neu { color: var(--delta-neu); }
