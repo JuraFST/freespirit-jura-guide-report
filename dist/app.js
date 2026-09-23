@@ -28,6 +28,9 @@
   function fmtN(v) {
     return Math.round(v).toLocaleString("en-GB");
   }
+  function fmtEUR(v) {
+    return "\u20AC" + Math.round(v).toLocaleString("en-GB");
+  }
   function showPage(id, tabEl) {
     document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
     document.querySelectorAll(".nav-tab").forEach((t) => t.classList.remove("active"));
@@ -79,6 +82,41 @@
   function cityColors(cities) {
     return cities.map((c) => cssVar(CITY_VARS[c], "#1a1a1a"));
   }
+  var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
+  var LANG_CODES = [["all", "ALL"], ["eng", "EN"], ["esp", "ES"], ["fra", "FR"]];
+  var LANG_VARS = { eng: "--eng", esp: "--esp", fra: "--fra" };
+  function chipBtn(value, label, active, extraClass, styleAttr) {
+    const cls = ["chip-btn", extraClass, active === value ? "active" : ""].filter(Boolean).join(" ");
+    return `<button type="button" class="${cls}" data-value="${value}"${styleAttr || ""}>${label}</button>`;
+  }
+  function cityChipsHtml(idPrefix, active) {
+    const btns = ["all", ...Object.keys(CITY_VARS)].map((c) => {
+      if (c === "all") return chipBtn("all", "ALL", active);
+      const style = ` style="--chip-hue: var(${CITY_VARS[c]}); --chip-text: var(${CITY_VARS[c]}-text);"`;
+      return chipBtn(c, CITY_CODES[c], active, "city", style);
+    }).join("");
+    return `<div class="chip-group" id="${idPrefix}-city-chips">${btns}</div>`;
+  }
+  function langChipsHtml(idPrefix, active) {
+    const btns = LANG_CODES.map(([v, l]) => {
+      if (v === "all") return chipBtn("all", "ALL", active);
+      const style = ` style="--chip-hue: var(${LANG_VARS[v]}); --chip-text: var(${LANG_VARS[v]}-text);"`;
+      return chipBtn(v, l, active, "lang", style);
+    }).join("");
+    return `<div class="chip-group" id="${idPrefix}-lang-chips">${btns}</div>`;
+  }
+  function bindChipGroup(groupId, onSelect) {
+    document.getElementById(groupId).addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip-btn");
+      if (!btn) return;
+      onSelect(btn.dataset.value);
+    });
+  }
+  function syncChipGroup(groupId, active) {
+    document.querySelectorAll(`#${groupId} .chip-btn`).forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.value === active);
+    });
+  }
   function axisDefaults() {
     return {
       ticks: { color: cssVar("--text3", "#767676"), font: { size: 11 } },
@@ -115,6 +153,18 @@
         scales: { x: axisDefaults(), y: axisDefaults() }
       }
     });
+  }
+  function dualBar(elId, labels, data25, data26) {
+    return barChart(document.getElementById(elId), labels, [
+      { label: "2025", data: data25, backgroundColor: cssVar("--y25", "#4a3aa7") },
+      { label: "2026", data: data26, backgroundColor: cssVar("--y26", "#1a1a1a") }
+    ]);
+  }
+  function dualLine(elId, labels, data25, data26) {
+    return lineChart(document.getElementById(elId), labels, [
+      { label: "2025", data: data25, borderColor: cssVar("--y25", "#4a3aa7"), fill: false },
+      { label: "2026", data: data26, borderColor: cssVar("--y26", "#1a1a1a"), fill: false }
+    ]);
   }
   function kpiCardHtml(label, value, sub) {
     return `<div class="kpi-card"><div class="kpi-label">${label}</div><div class="kpi-value">${value}</div>${sub ? `<div class="kpi-label">${sub}</div>` : ""}</div>`;
@@ -193,8 +243,13 @@
   }
   function deltaRow(v25, v26) {
     const delta = v26 - v25;
-    const pct = v25 === 0 ? v26 === 0 ? 0 : 100 : Math.round(delta / v25 * 1e3) / 10;
+    const pct = v25 <= 0 ? null : Math.round(delta / v25 * 1e3) / 10;
     return { v25, v26, delta, pct };
+  }
+  function pctLabel(d) {
+    if (d.pct === null) return d.v26 > 0 ? "new" : "\u2014";
+    const sign = d.delta > 0 ? "+" : "";
+    return `${sign}${d.pct}%`;
   }
   var ZERO_STATS = { freeTours: 0, freePax: 0, paidTours: 0, paidPax: 0 };
   function buildGuideRow(guide25, guide26, months, cutoffMonth, cutoffDay, lang = "all") {
@@ -204,15 +259,26 @@
     const st26 = guide26 ? guide26.stats[lang] || guide26.stats.all : null;
     const f25 = st25 ? filteredStats(st25, months, cutoffMonth, cutoffDay) : ZERO_STATS;
     const f26 = st26 ? filteredStats(st26, months, cutoffMonth, cutoffDay) : ZERO_STATS;
+    const fAll25 = guide25 ? filteredStats(guide25.stats.all, months, cutoffMonth, cutoffDay) : ZERO_STATS;
+    const fAll26 = guide26 ? filteredStats(guide26.stats.all, months, cutoffMonth, cutoffDay) : ZERO_STATS;
+    const activity25 = fAll25.freeTours + fAll25.paidTours;
+    const activity26 = fAll26.freeTours + fAll26.paidTours;
+    const rev25 = guide25 && guide25.mgmt ? guide25.mgmt.revenue : 0;
+    const rev26 = guide26 && guide26.mgmt ? guide26.mgmt.revenue : 0;
+    const margin25 = guide25 && guide25.mgmt ? guide25.mgmt.grossMargin : 0;
+    const margin26 = guide26 && guide26.mgmt ? guide26.mgmt.grossMargin : 0;
     return {
       name,
       city,
+      stopped: activity25 > 0 && activity26 === 0,
       freeTours: deltaRow(f25.freeTours, f26.freeTours),
       freePax: deltaRow(f25.freePax, f26.freePax),
       paidTours: deltaRow(f25.paidTours, f26.paidTours),
       paidPax: deltaRow(f25.paidPax, f26.paidPax),
       totalTours: deltaRow(f25.freeTours + f25.paidTours, f26.freeTours + f26.paidTours),
-      totalPax: deltaRow(f25.freePax + f25.paidPax, f26.freePax + f26.paidPax)
+      totalPax: deltaRow(f25.freePax + f25.paidPax, f26.freePax + f26.paidPax),
+      revenue: deltaRow(rev25, rev26),
+      margin: deltaRow(margin25, margin26)
     };
   }
   function sumRows(rows, key) {
@@ -238,9 +304,60 @@
       paidTours: sumRows(rows, "paidTours"),
       paidPax: sumRows(rows, "paidPax"),
       totalTours: sumRows(rows, "totalTours"),
-      totalPax: sumRows(rows, "totalPax")
+      totalPax: sumRows(rows, "totalPax"),
+      revenue: sumRows(rows, "revenue"),
+      margin: sumRows(rows, "margin")
     };
     return { rows, totalRow };
+  }
+  function filterByName(rows, query) {
+    const q = query.trim().toLowerCase();
+    if (!q) return rows;
+    return rows.filter((r) => r.name.toLowerCase().includes(q));
+  }
+  function rankGuides(rows, sort) {
+    if (sort === "name") return [...rows].sort((a, b) => a.name.localeCompare(b.name));
+    const key = sort.startsWith("revenue") ? "revenue" : "totalPax";
+    const sorted = [...rows].sort((a, b) => b[key].delta - a[key].delta);
+    return sort === "drop" || sort === "revenue-drop" ? sorted.reverse() : sorted;
+  }
+  function flagDeclines(rows, threshold = -30) {
+    return rows.filter((r) => !r.stopped && r.totalPax.pct !== null && r.totalPax.pct <= threshold).sort((a, b) => a.totalPax.pct - b.totalPax.pct);
+  }
+  function flagStopped(rows) {
+    return rows.filter((r) => r.stopped);
+  }
+  function guideMonthlyTrend(guide25, guide26, lang, cutoffMonth, cutoffDay) {
+    const st25 = guide25 ? guide25.stats[lang] || guide25.stats.all : null;
+    const st26 = guide26 ? guide26.stats[lang] || guide26.stats.all : null;
+    return Array.from({ length: 12 }, (_, i) => i + 1).map((month) => {
+      const f25 = st25 ? filteredStats(st25, [month], 12, 31) : ZERO_STATS;
+      const pax25 = f25.freePax + f25.paidPax;
+      let pax26 = null;
+      if (st26 && month <= cutoffMonth) {
+        const f26 = filteredStats(st26, [month], cutoffMonth, cutoffDay);
+        pax26 = f26.freePax + f26.paidPax;
+      }
+      return { month, pax25, pax26 };
+    });
+  }
+  function guideMgmtTotal(guide, typeFilter3) {
+    const byType = guide && guide.mgmt && guide.mgmt.byTourType || {};
+    return Object.entries(byType).reduce((acc, [type, v]) => {
+      if (typeFilter3(type)) {
+        acc.revenue += v.revenue || 0;
+        acc.margin += v.grossMargin || 0;
+      }
+      return acc;
+    }, { revenue: 0, margin: 0 });
+  }
+  function cityMgmtTotals(guideStats, cities, typeFilter3) {
+    return guideStats.filter((g) => cities.includes(g.city)).reduce((acc, g) => {
+      const t = guideMgmtTotal(g, typeFilter3);
+      acc.revenue += t.revenue;
+      acc.margin += t.margin;
+      return acc;
+    }, { revenue: 0, margin: 0 });
   }
 
   // src/pages/tourStats.js
@@ -304,12 +421,6 @@
   }
 
   // src/pages/section-free.js
-  var LANGS = [
-    { value: "all", label: "All languages" },
-    { value: "eng", label: "English" },
-    { value: "esp", label: "Espa\xF1ol" },
-    { value: "fra", label: "Fran\xE7ais" }
-  ];
   var activeCity = "all";
   var activeLang = "all";
   var chartInstances = [];
@@ -322,16 +433,11 @@
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
       <h2>Free Tours</h2>
-      <div class="kpi-grid" id="${chartIdPrefix}-free-kpis"></div>
       <div class="filter-bar sticky">
-        <select id="${chartIdPrefix}-free-city">
-          <option value="all">All cities</option>
-          ${CITIES.map((c) => `<option value="${c}">${c}</option>`).join("")}
-        </select>
-        <select id="${chartIdPrefix}-free-lang">
-          ${LANGS.map((l) => `<option value="${l.value}">${l.label}</option>`).join("")}
-        </select>
+        ${cityChipsHtml(`${chartIdPrefix}-free`, activeCity)}
+        ${langChipsHtml(`${chartIdPrefix}-free`, activeLang)}
       </div>
+      <div class="kpi-grid" id="${chartIdPrefix}-free-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml(`${chartIdPrefix}-free-city-chart`, "Free PAX by City")}
         ${chartCardHtml(`${chartIdPrefix}-free-avg`, "Avg PAX per Free Tour")}
@@ -342,16 +448,18 @@
         <table id="${chartIdPrefix}-free-table"></table>
       </div>
     `;
-      document.getElementById(`${chartIdPrefix}-free-city`).addEventListener("change", (e) => {
-        activeCity = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-free-city-chips`, (v) => {
+        activeCity = v;
         renderFreeSection(containerEl, cityStats, chartIdPrefix);
       });
-      document.getElementById(`${chartIdPrefix}-free-lang`).addEventListener("change", (e) => {
-        activeLang = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-free-lang-chips`, (v) => {
+        activeLang = v;
         renderFreeSection(containerEl, cityStats, chartIdPrefix);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup(`${chartIdPrefix}-free-city-chips`, activeCity);
+    syncChipGroup(`${chartIdPrefix}-free-lang-chips`, activeLang);
     chartInstances.forEach((c) => c.destroy());
     chartInstances = [];
     const cities = citiesInScope();
@@ -390,12 +498,6 @@
   }
 
   // src/pages/section-paid-group.js
-  var LANGS2 = [
-    { value: "all", label: "All languages" },
-    { value: "eng", label: "English" },
-    { value: "esp", label: "Espa\xF1ol" },
-    { value: "fra", label: "Fran\xE7ais" }
-  ];
   var activeType = "all";
   var activeCity2 = "all";
   var activeLang2 = "all";
@@ -416,20 +518,15 @@
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
       <h2>Paid Group Tours</h2>
-      <div class="kpi-grid" id="${chartIdPrefix}-pg-kpis"></div>
       <div class="filter-bar sticky">
         <select id="${chartIdPrefix}-pg-type">
-          <option value="all">All types</option>
+          <option value="all">All tours</option>
           ${GROUP_TYPES.map((t) => `<option value="${t}">${t}</option>`).join("")}
         </select>
-        <select id="${chartIdPrefix}-pg-city">
-          <option value="all">All cities</option>
-          ${CITIES.map((c) => `<option value="${c}">${c}</option>`).join("")}
-        </select>
-        <select id="${chartIdPrefix}-pg-lang">
-          ${LANGS2.map((l) => `<option value="${l.value}">${l.label}</option>`).join("")}
-        </select>
+        ${cityChipsHtml(`${chartIdPrefix}-pg`, activeCity2)}
+        ${langChipsHtml(`${chartIdPrefix}-pg`, activeLang2)}
       </div>
+      <div class="kpi-grid" id="${chartIdPrefix}-pg-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml(`${chartIdPrefix}-pg-c1`, "Paid Group PAX by City")}
         ${chartCardHtml(`${chartIdPrefix}-pg-c2`, "Cumulative Paid Group PAX Trend")}
@@ -443,16 +540,18 @@
         activeType = e.target.value;
         renderPaidGroupSection(containerEl, cityStats, chartIdPrefix);
       });
-      document.getElementById(`${chartIdPrefix}-pg-city`).addEventListener("change", (e) => {
-        activeCity2 = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-pg-city-chips`, (v) => {
+        activeCity2 = v;
         renderPaidGroupSection(containerEl, cityStats, chartIdPrefix);
       });
-      document.getElementById(`${chartIdPrefix}-pg-lang`).addEventListener("change", (e) => {
-        activeLang2 = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-pg-lang-chips`, (v) => {
+        activeLang2 = v;
         renderPaidGroupSection(containerEl, cityStats, chartIdPrefix);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup(`${chartIdPrefix}-pg-city-chips`, activeCity2);
+    syncChipGroup(`${chartIdPrefix}-pg-lang-chips`, activeLang2);
     chartInstances2.forEach((c) => c.destroy());
     chartInstances2 = [];
     const cities = citiesInScope2();
@@ -462,6 +561,9 @@
     const totalPax = perCity.reduce((s, c) => s + c.pax, 0);
     const avgPax = totalTours > 0 ? (totalPax / totalTours).toFixed(1) : "0.0";
     document.getElementById(`${chartIdPrefix}-pg-kpis`).innerHTML = kpiCardHtml("Paid Group PAX", fmtN(totalPax)) + kpiCardHtml("Paid Group Tours", fmtN(totalTours)) + kpiCardHtml("Avg PAX / Tour", avgPax);
+    const guideStatsForYear = chartIdPrefix === "p25" ? guideStats25 : guideStats26;
+    const mgmt = cityMgmtTotals(guideStatsForYear, cities, filter);
+    document.getElementById(`${chartIdPrefix}-pg-kpis`).innerHTML += kpiCardHtml("Paid Group Revenue (all languages)", fmtEUR(mgmt.revenue)) + kpiCardHtml("Paid Group Margin (all languages)", fmtEUR(mgmt.margin));
     chartInstances2.push(barChart(document.getElementById(`${chartIdPrefix}-pg-c1`), perCity.map((c) => c.city), [{ label: "Paid Group PAX", data: perCity.map((c) => c.pax), backgroundColor: cityColors(perCity.map((c) => c.city)) }]));
     chartInstances2.push(barChart(document.getElementById(`${chartIdPrefix}-pg-c3`), perCity.map((c) => c.city), [{ label: "Paid Group Tours", data: perCity.map((c) => c.tours), backgroundColor: cityColors(perCity.map((c) => c.city)) }]));
     const trend = cumulativeType(cityStats, cities, cutoffMonth, cutoffDay, activeLang2, filter);
@@ -479,12 +581,6 @@
   }
 
   // src/pages/section-paid-private.js
-  var LANGS3 = [
-    { value: "all", label: "All languages" },
-    { value: "eng", label: "English" },
-    { value: "esp", label: "Espa\xF1ol" },
-    { value: "fra", label: "Fran\xE7ais" }
-  ];
   var activeType2 = "all";
   var activeCity3 = "all";
   var activeLang3 = "all";
@@ -508,21 +604,16 @@
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
       <h2>Paid Private Tours</h2>
-      <div class="kpi-grid" id="${chartIdPrefix}-pp-kpis"></div>
       <div class="filter-bar sticky">
         <select id="${chartIdPrefix}-pp-type">
-          <option value="all">All types</option>
+          <option value="all">All tours</option>
           ${PRIVATE_TYPES.map((t) => `<option value="${t}">${t}</option>`).join("")}
           <option value="food kuoni">custom</option>
         </select>
-        <select id="${chartIdPrefix}-pp-city">
-          <option value="all">All cities</option>
-          ${CITIES.map((c) => `<option value="${c}">${c}</option>`).join("")}
-        </select>
-        <select id="${chartIdPrefix}-pp-lang">
-          ${LANGS3.map((l) => `<option value="${l.value}">${l.label}</option>`).join("")}
-        </select>
+        ${cityChipsHtml(`${chartIdPrefix}-pp`, activeCity3)}
+        ${langChipsHtml(`${chartIdPrefix}-pp`, activeLang3)}
       </div>
+      <div class="kpi-grid" id="${chartIdPrefix}-pp-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml(`${chartIdPrefix}-pp-c1`, "Paid Private Tours by City")}
         ${chartCardHtml(`${chartIdPrefix}-pp-c2`, "Cumulative Paid Private Tours Trend")}
@@ -532,16 +623,18 @@
         activeType2 = e.target.value;
         renderPaidPrivateSection(containerEl, cityStats, chartIdPrefix);
       });
-      document.getElementById(`${chartIdPrefix}-pp-city`).addEventListener("change", (e) => {
-        activeCity3 = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-pp-city-chips`, (v) => {
+        activeCity3 = v;
         renderPaidPrivateSection(containerEl, cityStats, chartIdPrefix);
       });
-      document.getElementById(`${chartIdPrefix}-pp-lang`).addEventListener("change", (e) => {
-        activeLang3 = e.target.value;
+      bindChipGroup(`${chartIdPrefix}-pp-lang-chips`, (v) => {
+        activeLang3 = v;
         renderPaidPrivateSection(containerEl, cityStats, chartIdPrefix);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup(`${chartIdPrefix}-pp-city-chips`, activeCity3);
+    syncChipGroup(`${chartIdPrefix}-pp-lang-chips`, activeLang3);
     chartInstances3.forEach((c) => c.destroy());
     chartInstances3 = [];
     const cities = citiesInScope3();
@@ -549,6 +642,9 @@
     const perCity = perCityType(cityStats, cities, cutoffMonth, cutoffDay, activeLang3, filter);
     const totalTours = perCity.reduce((s, c) => s + c.tours, 0);
     document.getElementById(`${chartIdPrefix}-pp-kpis`).innerHTML = kpiCardHtml("Paid Private Tours", fmtN(totalTours));
+    const guideStatsForYear = chartIdPrefix === "p25" ? guideStats25 : guideStats26;
+    const mgmt = cityMgmtTotals(guideStatsForYear, cities, filter);
+    document.getElementById(`${chartIdPrefix}-pp-kpis`).innerHTML += kpiCardHtml("Paid Private Revenue (all languages)", fmtEUR(mgmt.revenue)) + kpiCardHtml("Paid Private Margin (all languages)", fmtEUR(mgmt.margin));
     chartInstances3.push(barChart(document.getElementById(`${chartIdPrefix}-pp-c1`), perCity.map((c) => c.city), [{ label: "Paid Private Tours", data: perCity.map((c) => c.tours), backgroundColor: cityColors(perCity.map((c) => c.city)) }]));
     const trend = cumulativeType(cityStats, cities, cutoffMonth, cutoffDay, activeLang3, filter);
     chartInstances3.push(lineChart(document.getElementById(`${chartIdPrefix}-pp-c2`), trend.map((t) => MONTH_NAMES[t.month]), [{ label: "Cumulative Paid Private Tours", data: trend.map((t) => t.tours), borderColor: cssVar("--text", "#1a1a1a"), fill: false }]));
@@ -579,23 +675,17 @@
   var Page26 = makeYearPage("page-p26", () => cityStats26, "p26");
 
   // src/pages/page-cmp.js
-  var LANGS4 = [
-    { value: "all", label: "All languages" },
-    { value: "eng", label: "English" },
-    { value: "esp", label: "Espa\xF1ol" },
-    { value: "fra", label: "Fran\xE7ais" }
-  ];
-  function dualBar(elId, labels, data25, data26) {
-    return barChart(document.getElementById(elId), labels, [
-      { label: "2025", data: data25, backgroundColor: cssVar("--y25", "#4a3aa7") },
-      { label: "2026", data: data26, backgroundColor: cssVar("--y26", "#1a1a1a") }
-    ]);
-  }
-  function dualLine(elId, labels, data25, data26) {
-    return lineChart(document.getElementById(elId), labels, [
-      { label: "2025", data: data25, borderColor: cssVar("--y25", "#4a3aa7"), fill: false },
-      { label: "2026", data: data26, borderColor: cssVar("--y26", "#1a1a1a"), fill: false }
-    ]);
+  function kpiCardCmpHtml(label, v25, v26, fmt = fmtN) {
+    const delta = v26 - v25;
+    const cls = delta > 0 ? "delta-pos" : delta < 0 ? "delta-neg" : "delta-neu";
+    const sign = delta > 0 ? "+" : "";
+    const pctText = v25 > 0 ? `${sign}${(delta / v25 * 100).toFixed(1)}%` : v26 > 0 ? "new" : "\u2014";
+    return `
+    <div class="kpi-card">
+      <div class="kpi-label">${label}</div>
+      <div class="gts-values">${fmt(v25)} <span class="gts-arrow">&rarr;</span> ${fmt(v26)}</div>
+      <div class="gts-delta ${cls}">${sign}${fmt(delta)} (${pctText})</div>
+    </div>`;
   }
   function avgPaxPerCity(perCity) {
     return perCity.map((c) => c.tours > 0 ? +(c.pax / c.tours).toFixed(1) : 0);
@@ -609,12 +699,6 @@
       return monthTours > 0 ? +(monthPax / monthTours).toFixed(1) : 0;
     });
   }
-  function langOptionsHtml() {
-    return LANGS4.map((l) => `<option value="${l.value}">${l.label}</option>`).join("");
-  }
-  function cityOptionsHtml() {
-    return `<option value="all">All cities</option>` + CITIES.map((c) => `<option value="${c}">${c}</option>`).join("");
-  }
   var freeState = { city: "all", lang: "all" };
   var freeCharts = [];
   function renderFreeBlock(containerEl) {
@@ -624,32 +708,40 @@
       containerEl.innerHTML = `
       <div class="card-title">Free Tours</div>
       <div class="filter-bar sticky">
-        <select id="cmp-free-city">${cityOptionsHtml()}</select>
-        <select id="cmp-free-lang">${langOptionsHtml()}</select>
+        ${cityChipsHtml("cmp-free", freeState.city)}
+        ${langChipsHtml("cmp-free", freeState.lang)}
       </div>
-      <div class="kpi-grid" id="cmp-free-kpis"></div>
+      <div class="kpi-grid kpi-grid-cmp" id="cmp-free-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-free-city-chart", "Free PAX by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-free-avg", "Avg PAX per Free Tour by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-free-cum", "Cumulative Free PAX Trend \u2014 2025 vs 2026")}
       </div>
     `;
-      document.getElementById("cmp-free-city").addEventListener("change", (e) => {
-        freeState.city = e.target.value;
+      bindChipGroup("cmp-free-city-chips", (v) => {
+        freeState.city = v;
         renderFreeBlock(containerEl);
       });
-      document.getElementById("cmp-free-lang").addEventListener("change", (e) => {
-        freeState.lang = e.target.value;
+      bindChipGroup("cmp-free-lang-chips", (v) => {
+        freeState.lang = v;
         renderFreeBlock(containerEl);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup("cmp-free-city-chips", freeState.city);
+    syncChipGroup("cmp-free-lang-chips", freeState.lang);
     const cities = freeState.city === "all" ? CITIES : [freeState.city];
     const pc25 = perCityFree(cityStats25, cities, cutoffMonth, cutoffDay, freeState.lang);
     const pc26 = perCityFree(cityStats26, cities, cutoffMonth, cutoffDay, freeState.lang);
     const t25 = cumulativeFree(cityStats25, cities, cutoffMonth, cutoffDay, freeState.lang);
     const t26 = cumulativeFree(cityStats26, cities, cutoffMonth, cutoffDay, freeState.lang);
-    document.getElementById("cmp-free-kpis").innerHTML = kpiCardHtml("2025 Tours", fmtN(pc25.reduce((s, c) => s + c.tours, 0))) + kpiCardHtml("2026 Tours", fmtN(pc26.reduce((s, c) => s + c.tours, 0))) + kpiCardHtml("2025 PAX", fmtN(pc25.reduce((s, c) => s + c.pax, 0))) + kpiCardHtml("2026 PAX", fmtN(pc26.reduce((s, c) => s + c.pax, 0)));
+    const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
+    const toursSum26 = pc26.reduce((s, c) => s + c.tours, 0);
+    const paxSum25 = pc25.reduce((s, c) => s + c.pax, 0);
+    const paxSum26 = pc26.reduce((s, c) => s + c.pax, 0);
+    const avg25 = toursSum25 > 0 ? paxSum25 / toursSum25 : 0;
+    const avg26 = toursSum26 > 0 ? paxSum26 / toursSum26 : 0;
+    document.getElementById("cmp-free-kpis").innerHTML = kpiCardCmpHtml("Free Tours \u2013 PAX Count", paxSum25, paxSum26) + kpiCardCmpHtml("Total Free Tours", toursSum25, toursSum26) + kpiCardCmpHtml("Avg PAX / Free Tour", avg25, avg26, (v) => v.toFixed(1));
     freeCharts.forEach((c) => c.destroy());
     freeCharts = [
       dualBar("cmp-free-city-chart", cities, pc25.map((c) => c.pax), pc26.map((c) => c.pax)),
@@ -674,13 +766,13 @@
       <div class="card-title">Paid Group Tours</div>
       <div class="filter-bar sticky">
         <select id="cmp-group-type">
-          <option value="all">All types</option>
+          <option value="all">All tours</option>
           ${GROUP_TYPES.map((t) => `<option value="${t}">${t}</option>`).join("")}
         </select>
-        <select id="cmp-group-city">${cityOptionsHtml()}</select>
-        <select id="cmp-group-lang">${langOptionsHtml()}</select>
+        ${cityChipsHtml("cmp-group", groupState.city)}
+        ${langChipsHtml("cmp-group", groupState.lang)}
       </div>
-      <div class="kpi-grid" id="cmp-group-kpis"></div>
+      <div class="kpi-grid kpi-grid-cmp" id="cmp-group-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-group-pax-city", "Paid Group PAX by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-group-tours-city", "Paid Group Tours by City \u2014 2025 vs 2026")}
@@ -693,23 +785,34 @@
         groupState.type = e.target.value;
         renderGroupBlock(containerEl);
       });
-      document.getElementById("cmp-group-city").addEventListener("change", (e) => {
-        groupState.city = e.target.value;
+      bindChipGroup("cmp-group-city-chips", (v) => {
+        groupState.city = v;
         renderGroupBlock(containerEl);
       });
-      document.getElementById("cmp-group-lang").addEventListener("change", (e) => {
-        groupState.lang = e.target.value;
+      bindChipGroup("cmp-group-lang-chips", (v) => {
+        groupState.lang = v;
         renderGroupBlock(containerEl);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup("cmp-group-city-chips", groupState.city);
+    syncChipGroup("cmp-group-lang-chips", groupState.lang);
     const cities = groupState.city === "all" ? CITIES : [groupState.city];
     const filter = groupTypeFilter();
     const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, groupState.lang, filter);
     const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, groupState.lang, filter);
     const t25 = cumulativeType(cityStats25, cities, cutoffMonth, cutoffDay, groupState.lang, filter);
     const t26 = cumulativeType(cityStats26, cities, cutoffMonth, cutoffDay, groupState.lang, filter);
-    document.getElementById("cmp-group-kpis").innerHTML = kpiCardHtml("2025 Tours", fmtN(pc25.reduce((s, c) => s + c.tours, 0))) + kpiCardHtml("2026 Tours", fmtN(pc26.reduce((s, c) => s + c.tours, 0))) + kpiCardHtml("2025 PAX", fmtN(pc25.reduce((s, c) => s + c.pax, 0))) + kpiCardHtml("2026 PAX", fmtN(pc26.reduce((s, c) => s + c.pax, 0)));
+    const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
+    const toursSum26 = pc26.reduce((s, c) => s + c.tours, 0);
+    const paxSum25 = pc25.reduce((s, c) => s + c.pax, 0);
+    const paxSum26 = pc26.reduce((s, c) => s + c.pax, 0);
+    const avg25 = toursSum25 > 0 ? paxSum25 / toursSum25 : 0;
+    const avg26 = toursSum26 > 0 ? paxSum26 / toursSum26 : 0;
+    document.getElementById("cmp-group-kpis").innerHTML = kpiCardCmpHtml("Paid Group PAX", paxSum25, paxSum26) + kpiCardCmpHtml("Paid Group Tours", toursSum25, toursSum26) + kpiCardCmpHtml("Avg PAX / Tour", avg25, avg26, (v) => v.toFixed(1));
+    const mgmt25 = cityMgmtTotals(guideStats25, cities, filter);
+    const mgmt26 = cityMgmtTotals(guideStats26, cities, filter);
+    document.getElementById("cmp-group-kpis").innerHTML += kpiCardCmpHtml("Revenue (all languages)", mgmt25.revenue, mgmt26.revenue, fmtEUR) + kpiCardCmpHtml("Margin (all languages)", mgmt25.margin, mgmt26.margin, fmtEUR);
     groupCharts.forEach((c) => c.destroy());
     groupCharts = [
       dualBar("cmp-group-pax-city", cities, pc25.map((c) => c.pax), pc26.map((c) => c.pax)),
@@ -736,14 +839,14 @@
       <div class="card-title">Paid Private Tours</div>
       <div class="filter-bar sticky">
         <select id="cmp-private-type">
-          <option value="all">All types</option>
+          <option value="all">All tours</option>
           ${PRIVATE_TYPES.map((t) => `<option value="${t}">${t}</option>`).join("")}
           <option value="food kuoni">custom</option>
         </select>
-        <select id="cmp-private-city">${cityOptionsHtml()}</select>
-        <select id="cmp-private-lang">${langOptionsHtml()}</select>
+        ${cityChipsHtml("cmp-private", privateState.city)}
+        ${langChipsHtml("cmp-private", privateState.lang)}
       </div>
-      <div class="kpi-grid" id="cmp-private-kpis"></div>
+      <div class="kpi-grid kpi-grid-cmp" id="cmp-private-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-private-city-chart", "Paid Private Tours by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-private-trend", "Cumulative Paid Private Tours Trend \u2014 2025 vs 2026")}
@@ -753,23 +856,30 @@
         privateState.type = e.target.value;
         renderPrivateBlock(containerEl);
       });
-      document.getElementById("cmp-private-city").addEventListener("change", (e) => {
-        privateState.city = e.target.value;
+      bindChipGroup("cmp-private-city-chips", (v) => {
+        privateState.city = v;
         renderPrivateBlock(containerEl);
       });
-      document.getElementById("cmp-private-lang").addEventListener("change", (e) => {
-        privateState.lang = e.target.value;
+      bindChipGroup("cmp-private-lang-chips", (v) => {
+        privateState.lang = v;
         renderPrivateBlock(containerEl);
       });
       containerEl.dataset.built = "true";
     }
+    syncChipGroup("cmp-private-city-chips", privateState.city);
+    syncChipGroup("cmp-private-lang-chips", privateState.lang);
     const cities = privateState.city === "all" ? CITIES : [privateState.city];
     const filter = privateTypeFilter();
     const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, privateState.lang, filter);
     const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, privateState.lang, filter);
     const t25 = cumulativeType(cityStats25, cities, cutoffMonth, cutoffDay, privateState.lang, filter);
     const t26 = cumulativeType(cityStats26, cities, cutoffMonth, cutoffDay, privateState.lang, filter);
-    document.getElementById("cmp-private-kpis").innerHTML = kpiCardHtml("2025 Tours", fmtN(pc25.reduce((s, c) => s + c.tours, 0))) + kpiCardHtml("2026 Tours", fmtN(pc26.reduce((s, c) => s + c.tours, 0)));
+    const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
+    const toursSum26 = pc26.reduce((s, c) => s + c.tours, 0);
+    document.getElementById("cmp-private-kpis").innerHTML = kpiCardCmpHtml("Paid Private Tours", toursSum25, toursSum26);
+    const mgmt25 = cityMgmtTotals(guideStats25, cities, filter);
+    const mgmt26 = cityMgmtTotals(guideStats26, cities, filter);
+    document.getElementById("cmp-private-kpis").innerHTML += kpiCardCmpHtml("Revenue (all languages)", mgmt25.revenue, mgmt26.revenue, fmtEUR) + kpiCardCmpHtml("Margin (all languages)", mgmt25.margin, mgmt26.margin, fmtEUR);
     privateCharts.forEach((c) => c.destroy());
     privateCharts = [
       dualBar("cmp-private-city-chart", cities, pc25.map((c) => c.tours), pc26.map((c) => c.tours)),
@@ -796,15 +906,12 @@
   };
 
   // src/pages/page-guides.js
-  var LANGS5 = [
-    { value: "all", label: "All languages" },
-    { value: "eng", label: "English" },
-    { value: "esp", label: "Espa\xF1ol" },
-    { value: "fra", label: "Fran\xE7ais" }
-  ];
   var activeCity4 = "all";
   var activeLang4 = "all";
   var activeView = "cards";
+  var activeSearch = "";
+  var activeSort = "name";
+  var detailChart = null;
   var CITY_GROUP_ORDER = ["Zagreb", "Dubrovnik", "Zadar", "Split"];
   function groupRowsByCity(rows) {
     const groups = CITY_GROUP_ORDER.map((city) => ({ city, rows: rows.filter((r) => r.city === city) }));
@@ -815,45 +922,55 @@
   function deltaCellsHtml(d) {
     const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
     const sign = d.delta > 0 ? "+" : "";
-    return `<td>${fmtN(d.v25)}</td><td>${fmtN(d.v26)}</td><td class="${cls}">${sign}${fmtN(d.delta)}</td><td class="${cls}">${sign}${d.pct}%</td>`;
+    return `<td>${fmtN(d.v25)}</td><td>${fmtN(d.v26)}</td><td class="${cls}">${sign}${fmtN(d.delta)}</td><td class="${cls}">${pctLabel(d)}</td>`;
   }
   function rowHtml(row, isTotal) {
     const nameCell = isTotal ? `<td><strong>${row.name}</strong></td>` : `<td>${row.name}</td>`;
-    return `<tr>${nameCell}` + deltaCellsHtml(row.freeTours) + deltaCellsHtml(row.freePax) + deltaCellsHtml(row.paidTours) + deltaCellsHtml(row.paidPax) + deltaCellsHtml(row.totalTours) + `</tr>`;
+    return `<tr>${nameCell}` + deltaCellsHtml(row.freeTours) + deltaCellsHtml(row.freePax) + deltaCellsHtml(row.paidTours) + deltaCellsHtml(row.paidPax) + deltaCellsHtml(row.totalTours) + deltaCellsHtml(row.revenue) + deltaCellsHtml(row.margin) + `</tr>`;
   }
-  var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
+  var CITY_CODES2 = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
   var CITY_KEYS = { Zagreb: "zagreb", Dubrovnik: "dubrovnik", Split: "split", Zadar: "zadar" };
   function cityCode(city) {
-    return CITY_CODES[city] || (city ? city.slice(0, 2).toUpperCase() : "?");
+    return CITY_CODES2[city] || (city ? city.slice(0, 2).toUpperCase() : "?");
   }
   function cityAvatarStyle(city) {
     const key = CITY_KEYS[city];
     return key ? ` style="--avatar-hue: var(--${key}); --avatar-text: var(--${key}-text);"` : "";
   }
-  function cardRowHtml(label, d) {
+  function cardRowHtml(label, d, opts = {}) {
+    const { fmt = fmtN, showPct = true, title = "" } = opts;
     const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
     const sign = d.delta > 0 ? "+" : "";
+    const deltaText = showPct ? `${sign}${fmt(d.delta)} (${pctLabel(d)})` : `${sign}${fmt(d.delta)}`;
+    const titleAttr = title ? ` title="${title}"` : "";
     return `
-    <div class="guide-card-row">
+    <div class="guide-card-row"${titleAttr}>
       <span class="gcr-label">${label}</span>
-      <span class="gcr-v25">${fmtN(d.v25)}</span>
-      <span class="gcr-v26">${fmtN(d.v26)}</span>
-      <span class="gcr-delta ${cls}">${sign}${fmtN(d.delta)} (${sign}${d.pct}%)</span>
+      <span class="gcr-v25">${fmt(d.v25)}</span>
+      <span class="gcr-v26">${fmt(d.v26)}</span>
+      <span class="gcr-delta ${cls}">${deltaText}</span>
     </div>`;
   }
-  function cardHtml(row) {
+  function cardHtml(row, rank) {
+    const rankBadge = rank ? `<div class="guide-rank">#${rank}</div>` : "";
+    const stoppedBadge = row.stopped ? `<span class="guide-stopped-badge">Inactive in 2026</span>` : "";
+    const note = guideNotes[row.name] ? `<div class="guide-note">${guideNotes[row.name]}</div>` : "";
     return `
-    <div class="guide-card">
+    <div class="guide-card" data-name="${row.name}">
+      ${rankBadge}
       <div class="guide-card-head">
         <div class="guide-avatar"${cityAvatarStyle(row.city)}>${cityCode(row.city)}</div>
-        <div class="guide-name">${row.name}</div>
+        <div class="guide-name">${row.name} ${stoppedBadge}</div>
       </div>
+      ${note}
       <div class="guide-card-rows">
         ${cardRowHtml("Free Tours", row.freeTours)}
         ${cardRowHtml("Free Pax", row.freePax)}
         ${cardRowHtml("Paid Tours", row.paidTours)}
         ${cardRowHtml("Paid Pax", row.paidPax)}
         ${cardRowHtml("Total Pax", row.totalPax)}
+        ${cardRowHtml("Revenue (all langs)", row.revenue, { fmt: fmtEUR, title: "Full-year total, not filtered by language or as-of date" })}
+        ${cardRowHtml("Margin (all langs)", row.margin, { fmt: fmtEUR, showPct: false, title: "Full-year total, not filtered by language or as-of date" })}
       </div>
     </div>`;
   }
@@ -865,7 +982,7 @@
       <div class="gts-stat">
         <div class="gts-label">${label}</div>
         <div class="gts-values">${fmtN(d.v25)} <span class="gts-arrow">&rarr;</span> ${fmtN(d.v26)}</div>
-        <div class="gts-delta ${cls}">${sign}${fmtN(d.delta)} (${sign}${d.pct}%)</div>
+        <div class="gts-delta ${cls}">${sign}${fmtN(d.delta)} (${pctLabel(d)})</div>
       </div>`;
     };
     return `
@@ -877,14 +994,60 @@
       ${stat("Total Pax", row.totalPax)}
     </div>`;
   }
-  function groupHeaderRowHtml(city) {
-    return `<tr class="city-group-row"><td colspan="21">${city}</td></tr>`;
+  function flagsBannerHtml(rows) {
+    const declines = flagDeclines(rows);
+    const stopped = flagStopped(rows);
+    if (declines.length === 0 && stopped.length === 0) return "";
+    const declineItems = declines.slice(0, 5).map((r) => `${r.name} (${pctLabel(r.totalPax)})`).join(", ");
+    const declineMore = declines.length > 5 ? ` +${declines.length - 5} more` : "";
+    const stoppedItems = stopped.map((r) => r.name).join(", ");
+    const declineLine = declines.length > 0 ? `<div class="guide-flag-line delta-neg">&#9888; ${declines.length} guide${declines.length > 1 ? "s" : ""} dropped over 30%: ${declineItems}${declineMore}</div>` : "";
+    const stoppedLine = stopped.length > 0 ? `<div class="guide-flag-line delta-neu">&#9888; ${stopped.length} guide${stopped.length > 1 ? "s" : ""} inactive in 2026: ${stoppedItems}</div>` : "";
+    return `<div class="guide-flags">${declineLine}${stoppedLine}</div>`;
   }
-  function groupHeaderCardHtml(city) {
-    return `<div class="guide-group-title">${city}</div>`;
+  function groupHeaderRowHtml(city) {
+    return `<tr class="city-group-row"><td colspan="29">${city}</td></tr>`;
+  }
+  function guideCardsHtml(rows, grouped) {
+    if (!grouped) {
+      const ranked = activeSort !== "name";
+      return `<div class="guide-cards">${rows.map((r, i) => cardHtml(r, ranked ? i + 1 : null)).join("")}</div>`;
+    }
+    const groups = groupRowsByCity(rows);
+    return groups.map((g) => `
+    <details class="guide-group" open>
+      <summary class="guide-group-title">${g.city}</summary>
+      <div class="guide-cards">${g.rows.map((r) => cardHtml(r, null)).join("")}</div>
+    </details>`).join("");
   }
   function filterByCity(guides, city) {
     return city === "all" ? guides : guides.filter((g) => g.city === city);
+  }
+  function openGuideDetail(name) {
+    const g25 = guideStats25.find((g) => g.name === name) || null;
+    const g26 = guideStats26.find((g) => g.name === name) || null;
+    const city = g26 ? g26.city : g25.city;
+    const trend = guideMonthlyTrend(g25, g26, activeLang4, getCutoffMonth(), getCutoffDay());
+    document.getElementById("guide-detail-name").textContent = name;
+    document.getElementById("guide-detail-city").textContent = city;
+    document.getElementById("guide-detail-backdrop").classList.add("open");
+    document.getElementById("guide-detail-modal").classList.add("open");
+    if (detailChart) detailChart.destroy();
+    const MONTH_NAMES2 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    detailChart = dualLine(
+      "guide-detail-chart",
+      trend.map((t) => MONTH_NAMES2[t.month - 1]),
+      trend.map((t) => t.pax25),
+      trend.map((t) => t.pax26)
+    );
+  }
+  function closeGuideDetail() {
+    document.getElementById("guide-detail-backdrop").classList.remove("open");
+    document.getElementById("guide-detail-modal").classList.remove("open");
+    if (detailChart) {
+      detailChart.destroy();
+      detailChart = null;
+    }
   }
   var PageGuides = {
     _initialized: false,
@@ -892,14 +1055,18 @@
       const root = document.getElementById("page-guides");
       root.innerHTML = `
       <h2>Guides</h2>
+      <div id="guides-flags"></div>
       <div class="filter-bar sticky">
-        <select id="guides-city">
-          <option value="all">All cities</option>
-          ${CITIES.map((c) => `<option value="${c}">${c}</option>`).join("")}
-        </select>
-        <select id="guides-lang">
-          ${LANGS5.map((l) => `<option value="${l.value}">${l.label}</option>`).join("")}
-        </select>
+        ${cityChipsHtml("guides", activeCity4)}
+        ${langChipsHtml("guides", activeLang4)}
+        <div class="chip-group" id="guides-sort-chips">
+          <button type="button" class="chip-btn" data-value="name">Name</button>
+          <button type="button" class="chip-btn" data-value="gain">Biggest gain</button>
+          <button type="button" class="chip-btn" data-value="drop">Biggest drop</button>
+          <button type="button" class="chip-btn" data-value="revenue-gain">Biggest revenue gain</button>
+          <button type="button" class="chip-btn" data-value="revenue-drop">Biggest revenue drop</button>
+        </div>
+        <input type="text" id="guides-search" class="guides-search" placeholder="Search guides\u2026">
         <div class="view-toggle-group">
           <button id="view-table-btn" class="view-toggle-btn" title="Table view">&#9776;</button>
           <button id="view-cards-btn" class="view-toggle-btn active" title="Card view">&#9638;</button>
@@ -915,9 +1082,11 @@
               <th colspan="4">Paid Tours</th>
               <th colspan="4">Paid PAX</th>
               <th colspan="4">Total Tours</th>
+              <th colspan="4" title="Full-year total, not filtered by language or as-of date">Revenue (all langs)</th>
+              <th colspan="4" title="Full-year total, not filtered by language or as-of date">Margin (all langs)</th>
             </tr>
             <tr>
-              ${"<th>25</th><th>26</th><th>+/-</th><th>%</th>".repeat(5)}
+              ${"<th>25</th><th>26</th><th>+/-</th><th>%</th>".repeat(7)}
             </tr>
           </thead>
           <tbody id="guides-tbody"></tbody>
@@ -925,14 +1094,31 @@
         </table>
       </div>
       <div id="guides-total-strip"></div>
-      <div class="guide-cards" id="guides-cards"></div>
+      <div id="guides-cards"></div>
+      <div class="guide-detail-backdrop" id="guide-detail-backdrop"></div>
+      <div class="guide-detail-modal" id="guide-detail-modal">
+        <button class="guide-detail-close" id="guide-detail-close">&times;</button>
+        <div class="guide-detail-head">
+          <h3 id="guide-detail-name"></h3>
+          <span id="guide-detail-city" class="guide-detail-city"></span>
+        </div>
+        <canvas id="guide-detail-chart"></canvas>
+      </div>
     `;
-      document.getElementById("guides-city").addEventListener("change", (e) => {
-        activeCity4 = e.target.value;
+      bindChipGroup("guides-city-chips", (v) => {
+        activeCity4 = v;
         this.renderAll();
       });
-      document.getElementById("guides-lang").addEventListener("change", (e) => {
-        activeLang4 = e.target.value;
+      bindChipGroup("guides-lang-chips", (v) => {
+        activeLang4 = v;
+        this.renderAll();
+      });
+      document.getElementById("guides-search").addEventListener("input", (e) => {
+        activeSearch = e.target.value;
+        this.renderAll();
+      });
+      bindChipGroup("guides-sort-chips", (v) => {
+        activeSort = v;
         this.renderAll();
       });
       document.getElementById("view-table-btn").addEventListener("click", () => {
@@ -943,6 +1129,15 @@
         activeView = "cards";
         this.renderAll();
       });
+      document.getElementById("guides-cards").addEventListener("click", (e) => {
+        const card = e.target.closest(".guide-card");
+        if (card) openGuideDetail(card.dataset.name);
+      });
+      document.getElementById("guide-detail-close").addEventListener("click", closeGuideDetail);
+      document.getElementById("guide-detail-backdrop").addEventListener("click", closeGuideDetail);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeGuideDetail();
+      });
       this.renderAll();
     },
     renderAll() {
@@ -950,21 +1145,25 @@
       const cutoffDay = getCutoffDay();
       const g25 = filterByCity(guideStats25, activeCity4);
       const g26 = filterByCity(guideStats26, activeCity4);
-      const { rows, totalRow } = buildGuideTable(g25, g26, [], cutoffMonth, cutoffDay, activeLang4);
-      const showGroups = activeCity4 === "all";
-      let tbodyHtml, cardsHtml;
-      if (showGroups) {
+      const { rows: allRows, totalRow } = buildGuideTable(g25, g26, [], cutoffMonth, cutoffDay, activeLang4);
+      const searched = filterByName(allRows, activeSearch);
+      const rows = rankGuides(searched, activeSort);
+      const grouped = activeCity4 === "all" && activeSort === "name";
+      let tbodyHtml;
+      if (grouped) {
         const groups = groupRowsByCity(rows);
         tbodyHtml = groups.map((g) => groupHeaderRowHtml(g.city) + g.rows.map((r) => rowHtml(r, false)).join("")).join("");
-        cardsHtml = groups.map((g) => groupHeaderCardHtml(g.city) + g.rows.map((r) => cardHtml(r)).join("")).join("");
       } else {
         tbodyHtml = rows.map((r) => rowHtml(r, false)).join("");
-        cardsHtml = rows.map((r) => cardHtml(r)).join("");
       }
+      document.getElementById("guides-flags").innerHTML = flagsBannerHtml(searched);
       document.getElementById("guides-tbody").innerHTML = tbodyHtml;
       document.getElementById("guides-tfoot").innerHTML = rowHtml(totalRow, true);
       document.getElementById("guides-total-strip").innerHTML = totalStripHtml(totalRow);
-      document.getElementById("guides-cards").innerHTML = cardsHtml;
+      document.getElementById("guides-cards").innerHTML = guideCardsHtml(rows, grouped);
+      syncChipGroup("guides-city-chips", activeCity4);
+      syncChipGroup("guides-lang-chips", activeLang4);
+      syncChipGroup("guides-sort-chips", activeSort);
       document.getElementById("view-table-btn").classList.toggle("active", activeView === "table");
       document.getElementById("view-cards-btn").classList.toggle("active", activeView === "cards");
       document.getElementById("guides-table-wrap").style.display = activeView === "table" ? "" : "none";

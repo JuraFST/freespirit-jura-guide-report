@@ -20,6 +20,19 @@
   --split-text: #15875e;
   --zadar-text: #916300;
 
+  /* language chip colors — each language's own flag color, kept distinct
+     from the four city hues above and from each other (ES was originally
+     a magenta-red too close to EN's red — swapped for Spain's flag gold) */
+  --eng: #c8102e;
+  --esp: #8a6d04;
+  --fra: #0055a4;
+  /* text-safe variants (checked with the dataviz skill's validator: all
+     three clear 4.5:1 on white directly, but not on the dark surface —
+     brighter versions below) */
+  --eng-text: #c8102e;
+  --esp-text: #8a6d04;
+  --fra-text: #0055a4;
+
   --y25: #4a3aa7;
   --y26: #1a1a1a;
   --delta-pos: #1d9e75;
@@ -41,6 +54,12 @@ body.dark-mode {
   --dubrovnik-text: #eb6834;
   --split-text: #1baf7a;
   --zadar-text: #eda100;
+
+  /* the language reds/blue are too dark to read on the dark surface as-is
+     (checked with the dataviz skill's validator), so brighten them here */
+  --eng-text: #f0505f;
+  --esp-text: #d4a017;
+  --fra-text: #5f7fe0;
 }
 
 * { box-sizing: border-box; }
@@ -143,6 +162,13 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .kpi-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
 .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
 .kpi-value { font-size: 26px; font-weight: 600; margin-top: 4px; }
+.kpi-card .gts-values { margin-top: 4px; }
+.kpi-card .gts-delta { font-size: 11px; }
+/* nested one level deeper inside each Comparison block's .card, which
+   costs 32px of width the Tours 2025/2026 kpi-grid doesn't lose — a
+   lower minimum keeps it from dropping to fewer columns at the same
+   window width */
+.kpi-grid-cmp { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 
 .card { border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
 .card-title { font-size: 15px; margin: 0 0 12px; }
@@ -164,6 +190,36 @@ body.dark-mode #as-of-date { color-scheme: dark; }
   color: var(--text);
   padding: 6px 10px;
   font-size: 13px;
+}
+.guides-search {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+
+.chip-group { display: flex; gap: 4px; flex-wrap: wrap; }
+.chip-btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.chip-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+.chip-btn.city.active,
+.chip-btn.lang.active {
+  background: color-mix(in srgb, var(--chip-hue, var(--text)) 16%, var(--bg));
+  color: var(--chip-text, var(--bg));
+  border-color: var(--chip-hue, var(--text));
 }
 
 .view-toggle-group { margin-left: auto; display: flex; gap: 4px; }
@@ -194,7 +250,7 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .gts-delta { font-size: 12px; margin-top: 2px; }
 
 .guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.guide-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+.guide-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; }
 .guide-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .guide-avatar {
   flex-shrink: 0;
@@ -225,12 +281,28 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .gcr-delta { text-align: right; font-size: 12px; white-space: nowrap; }
 
 .guide-group-title {
-  grid-column: 1 / -1;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 16px;
-  margin: 12px 0 -2px;
+  margin: 12px 0 8px;
+  cursor: pointer;
+  list-style: none;
 }
-.guide-group-title:first-child { margin-top: 0; }
+.guide-group-title::-webkit-details-marker { display: none; }
+.guide-group-title::before {
+  content: '▸';
+  display: inline-block;
+  width: 14px;
+  transition: transform 0.15s;
+}
+.guide-group[open] > .guide-group-title::before { transform: rotate(90deg); }
+.guide-group:first-child .guide-group-title { margin-top: 0; }
+
+.guide-rank {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text3);
+  margin-bottom: 4px;
+}
 
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--border); }
@@ -250,3 +322,72 @@ tfoot td { font-weight: 700; border-top: 2px solid var(--text); }
 .delta-pos { color: var(--delta-pos); }
 .delta-neg { color: var(--delta-neg); }
 .delta-neu { color: var(--delta-neu); }
+
+.guide-flags { margin-bottom: 16px; }
+.guide-flag-line {
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  background: var(--bg2);
+  margin-bottom: 6px;
+}
+.guide-flag-line:last-child { margin-bottom: 0; }
+
+.guide-stopped-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--delta-neu);
+  border: 1px solid var(--delta-neu);
+  border-radius: var(--radius);
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.guide-note {
+  font-size: 12px;
+  color: var(--text3);
+  font-style: italic;
+  margin: -4px 0 10px;
+}
+
+.guide-detail-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 30;
+}
+.guide-detail-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 31;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+.guide-detail-backdrop.open,
+.guide-detail-modal.open { display: block; }
+.guide-detail-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text3);
+}
+.guide-detail-head { margin-bottom: 12px; padding-right: 24px; }
+.guide-detail-head h3 { margin: 0 0 2px; font-size: 18px; }
+.guide-detail-city { font-size: 12px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; }
