@@ -164,19 +164,16 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
 .kpi-value { font-size: 26px; font-weight: 600; margin-top: 4px; }
 .kpi-card .gts-values { margin-top: 4px; }
-/* nested one level deeper inside each Comparison block's .card, which
-   costs 32px of width the Tours 2025/2026 kpi-grid doesn't lose — a
-   lower minimum keeps it from dropping to fewer columns at the same
-   window width */
-.kpi-grid-cmp { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 
 .card { border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
 .card-title { font-size: 15px; margin: 0 0 12px; }
 .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
 
-.filter-bar { display: flex; gap: 20px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
-.chip-group-labeled { display: flex; align-items: center; gap: 8px; }
-.chip-group-icon { display: flex; align-items: center; color: var(--text3); }
+.filter-bar { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+/* city/language chip groups sit in a shaded pill container so the two groups
+   read as distinct clusters without needing a text label or icon */
+.chip-group-pill { gap: 4px; background: var(--bg2); border-radius: 6px; padding: 4px; }
+.chip-group-pill .chip-btn { border-color: transparent; background: var(--bg); }
 .filter-bar.sticky {
   position: sticky;
   top: 57px;

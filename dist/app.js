@@ -101,15 +101,13 @@
     const cls = ["chip-btn", extraClass, active === value ? "active" : ""].filter(Boolean).join(" ");
     return `<button type="button" class="${cls}" data-value="${value}"${styleAttr || ""}>${label}</button>`;
   }
-  var CITY_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
-  var LANG_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
   function cityChipsHtml(idPrefix, active) {
     const btns = ["all", ...Object.keys(CITY_VARS)].map((c) => {
       if (c === "all") return chipBtn("all", "ALL", active);
       const style = ` style="--chip-hue: var(${CITY_VARS[c]}); --chip-text: var(${CITY_VARS[c]}-text);"`;
       return chipBtn(c, CITY_CODES[c], active, "city", style);
     }).join("");
-    return `<div class="chip-group-labeled"><span class="chip-group-icon" title="City">${CITY_ICON}</span><div class="chip-group" id="${idPrefix}-city-chips">${btns}</div></div>`;
+    return `<div class="chip-group chip-group-pill" id="${idPrefix}-city-chips">${btns}</div>`;
   }
   function langChipsHtml(idPrefix, active) {
     const btns = LANG_CODES.map(([v, l]) => {
@@ -117,7 +115,7 @@
       const style = ` style="--chip-hue: var(${LANG_VARS[v]}); --chip-text: var(${LANG_VARS[v]}-text);"`;
       return chipBtn(v, l, active, "lang", style);
     }).join("");
-    return `<div class="chip-group-labeled"><span class="chip-group-icon" title="Language">${LANG_ICON}</span><div class="chip-group" id="${idPrefix}-lang-chips">${btns}</div></div>`;
+    return `<div class="chip-group chip-group-pill" id="${idPrefix}-lang-chips">${btns}</div>`;
   }
   function bindChipGroup(groupId, onSelect) {
     document.getElementById(groupId).addEventListener("click", (e) => {
@@ -730,12 +728,12 @@
     const cutoffDay = getCutoffDay();
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
-      <div class="card-title">Free Tours</div>
+      <h2>Free Tours</h2>
       <div class="filter-bar sticky">
         ${cityChipsHtml("cmp-free", freeState.city)}
         ${langChipsHtml("cmp-free", freeState.lang)}
       </div>
-      <div class="kpi-grid kpi-grid-cmp" id="cmp-free-kpis"></div>
+      <div class="kpi-grid" id="cmp-free-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-free-city-chart", "Free PAX by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-free-avg", "Avg PAX per Free Tour by City \u2014 2025 vs 2026")}
@@ -787,7 +785,7 @@
     const cutoffDay = getCutoffDay();
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
-      <div class="card-title">Paid Group Tours</div>
+      <h2>Paid Group Tours</h2>
       <div class="filter-bar sticky">
         <select id="cmp-group-type">
           <option value="all">All tours</option>
@@ -796,7 +794,7 @@
         ${cityChipsHtml("cmp-group", groupState.city)}
         ${langChipsHtml("cmp-group", groupState.lang)}
       </div>
-      <div class="kpi-grid kpi-grid-cmp" id="cmp-group-kpis"></div>
+      <div class="kpi-grid" id="cmp-group-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-group-pax-city", "Paid Group PAX by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-group-tours-city", "Paid Group Tours by City \u2014 2025 vs 2026")}
@@ -860,7 +858,7 @@
     const cutoffDay = getCutoffDay();
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
-      <div class="card-title">Paid Private Tours</div>
+      <h2>Paid Private Tours</h2>
       <div class="filter-bar sticky">
         <select id="cmp-private-type">
           <option value="all">All tours</option>
@@ -870,7 +868,7 @@
         ${cityChipsHtml("cmp-private", privateState.city)}
         ${langChipsHtml("cmp-private", privateState.lang)}
       </div>
-      <div class="kpi-grid kpi-grid-cmp" id="cmp-private-kpis"></div>
+      <div class="kpi-grid" id="cmp-private-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-private-city-chart", "Paid Private Tours by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-private-trend", "Cumulative Paid Private Tours Trend \u2014 2025 vs 2026")}
@@ -915,10 +913,9 @@
     init() {
       const root = document.getElementById("page-cmp");
       root.innerHTML = `
-      <h2>Comparison</h2>
-      <div class="card" id="cmp-free-block"></div>
-      <div class="card" id="cmp-group-block"></div>
-      <div class="card" id="cmp-private-block"></div>
+      <div id="cmp-free-block"></div>
+      <div id="cmp-group-block"></div>
+      <div id="cmp-private-block"></div>
     `;
       this.renderAll();
     },
