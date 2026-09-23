@@ -91099,3036 +91099,3036 @@ const guideStats25 = [
     }
   },
   {
-  "name": "Nikolina Vidojević",
-  "city": "Dubrovnik",
-  "stats": {
-    "eng": {
-      "free": {
-        "tours": 0,
-        "pax": 0
+    "name": "Nikolina Vidojević",
+    "city": "Dubrovnik",
+    "stats": {
+      "eng": {
+        "free": {
+          "tours": 0,
+          "pax": 0
+        },
+        "paid": {
+          "tours": 0,
+          "pax": 0
+        },
+        "byType": {},
+        "byMonth": {},
+        "byDay": {},
+        "byMonthType": {},
+        "byDayType": {}
       },
-      "paid": {
-        "tours": 0,
-        "pax": 0
+      "esp": {
+        "free": {
+          "tours": 175,
+          "pax": 3975
+        },
+        "paid": {
+          "tours": 0,
+          "pax": 0
+        },
+        "byType": {},
+        "byMonth": {
+          "5": {
+            "name": "Svi",
+            "free": {
+              "tours": 21,
+              "pax": 456
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6": {
+            "free": {
+              "tours": 26,
+              "pax": 643
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7": {
+            "free": {
+              "tours": 37,
+              "pax": 854
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8": {
+            "free": {
+              "tours": 36,
+              "pax": 849
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9": {
+            "free": {
+              "tours": 34,
+              "pax": 776
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10": {
+            "free": {
+              "tours": 21,
+              "pax": 397
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          }
+        },
+        "byDay": {
+          "5-6": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-7": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-8": {
+            "free": {
+              "tours": 2,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-10": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-12": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-13": {
+            "free": {
+              "tours": 2,
+              "pax": 49
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-16": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-18": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-20": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-22": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-26": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-28": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-30": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-31": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-12": {
+            "free": {
+              "tours": 2,
+              "pax": 39
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-13": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-14": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-15": {
+            "free": {
+              "tours": 2,
+              "pax": 59
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-17": {
+            "free": {
+              "tours": 2,
+              "pax": 59
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-18": {
+            "free": {
+              "tours": 2,
+              "pax": 38
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-20": {
+            "free": {
+              "tours": 2,
+              "pax": 53
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-21": {
+            "free": {
+              "tours": 2,
+              "pax": 42
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-22": {
+            "free": {
+              "tours": 1,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-23": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-25": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-27": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-28": {
+            "free": {
+              "tours": 1,
+              "pax": 32
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-29": {
+            "free": {
+              "tours": 1,
+              "pax": 23
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-30": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-1": {
+            "free": {
+              "tours": 1,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-3": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-4": {
+            "free": {
+              "tours": 2,
+              "pax": 56
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-8": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-9": {
+            "free": {
+              "tours": 2,
+              "pax": 53
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-10": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-11": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-13": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-14": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-15": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-16": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-17": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-20": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-22": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-23": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-24": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-25": {
+            "free": {
+              "tours": 2,
+              "pax": 42
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-27": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-28": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-29": {
+            "free": {
+              "tours": 2,
+              "pax": 52
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-30": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-31": {
+            "free": {
+              "tours": 1,
+              "pax": 25
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-2": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-3": {
+            "free": {
+              "tours": 2,
+              "pax": 49
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-4": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-5": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-6": {
+            "free": {
+              "tours": 2,
+              "pax": 54
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-9": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-10": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-11": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-12": {
+            "free": {
+              "tours": 2,
+              "pax": 54
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-13": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-14": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-18": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-19": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-20": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-22": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-24": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-25": {
+            "free": {
+              "tours": 1,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-26": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-27": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-29": {
+            "free": {
+              "tours": 2,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-30": {
+            "free": {
+              "tours": 1,
+              "pax": 32
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-1": {
+            "free": {
+              "tours": 1,
+              "pax": 28
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-2": {
+            "free": {
+              "tours": 2,
+              "pax": 65
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-3": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-4": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-9": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-10": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-11": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-12": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-13": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-15": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-16": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-17": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-19": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-20": {
+            "free": {
+              "tours": 2,
+              "pax": 35
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-21": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-22": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-24": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-27": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-28": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-29": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-30": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-4": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-8": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-9": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-10": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-11": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 2,
+              "pax": 56
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-21": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-24": {
+            "free": {
+              "tours": 2,
+              "pax": 36
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-26": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-28": {
+            "free": {
+              "tours": 2,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-29": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          }
+        },
+        "byMonthType": {},
+        "byDayType": {}
       },
-      "byType": {},
-      "byMonth": {},
-      "byDay": {},
-      "byMonthType": {},
-      "byDayType": {}
+      "fra": {
+        "free": {
+          "tours": 0,
+          "pax": 0
+        },
+        "paid": {
+          "tours": 0,
+          "pax": 0
+        },
+        "byType": {},
+        "byMonth": {},
+        "byDay": {},
+        "byMonthType": {},
+        "byDayType": {}
+      },
+      "all": {
+        "free": {
+          "tours": 175,
+          "pax": 3975
+        },
+        "paid": {
+          "tours": 0,
+          "pax": 0
+        },
+        "byType": {},
+        "byMonth": {
+          "5": {
+            "name": "Svi",
+            "free": {
+              "tours": 21,
+              "pax": 456
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6": {
+            "free": {
+              "tours": 26,
+              "pax": 643
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7": {
+            "free": {
+              "tours": 37,
+              "pax": 854
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8": {
+            "free": {
+              "tours": 36,
+              "pax": 849
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9": {
+            "free": {
+              "tours": 34,
+              "pax": 776
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10": {
+            "free": {
+              "tours": 21,
+              "pax": 397
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          }
+        },
+        "byDay": {
+          "5-6": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-7": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-8": {
+            "free": {
+              "tours": 2,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-10": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-12": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-13": {
+            "free": {
+              "tours": 2,
+              "pax": 49
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-16": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-18": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-20": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-22": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-26": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-28": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-30": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "5-31": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-12": {
+            "free": {
+              "tours": 2,
+              "pax": 39
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-13": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-14": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-15": {
+            "free": {
+              "tours": 2,
+              "pax": 59
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-17": {
+            "free": {
+              "tours": 2,
+              "pax": 59
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-18": {
+            "free": {
+              "tours": 2,
+              "pax": 38
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-20": {
+            "free": {
+              "tours": 2,
+              "pax": 53
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-21": {
+            "free": {
+              "tours": 2,
+              "pax": 42
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-22": {
+            "free": {
+              "tours": 1,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-23": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-25": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-27": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-28": {
+            "free": {
+              "tours": 1,
+              "pax": 32
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-29": {
+            "free": {
+              "tours": 1,
+              "pax": 23
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "6-30": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-1": {
+            "free": {
+              "tours": 1,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-3": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-4": {
+            "free": {
+              "tours": 2,
+              "pax": 56
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-8": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-9": {
+            "free": {
+              "tours": 2,
+              "pax": 53
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-10": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-11": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-13": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-14": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-15": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-16": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-17": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-20": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-22": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-23": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-24": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-25": {
+            "free": {
+              "tours": 2,
+              "pax": 42
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-27": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-28": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-29": {
+            "free": {
+              "tours": 2,
+              "pax": 52
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-30": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "7-31": {
+            "free": {
+              "tours": 1,
+              "pax": 25
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-2": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-3": {
+            "free": {
+              "tours": 2,
+              "pax": 49
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-4": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-5": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-6": {
+            "free": {
+              "tours": 2,
+              "pax": 54
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-9": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-10": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-11": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-12": {
+            "free": {
+              "tours": 2,
+              "pax": 54
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-13": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-14": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-18": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-19": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-20": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-22": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-24": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-25": {
+            "free": {
+              "tours": 1,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-26": {
+            "free": {
+              "tours": 2,
+              "pax": 45
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-27": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-29": {
+            "free": {
+              "tours": 2,
+              "pax": 29
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "8-30": {
+            "free": {
+              "tours": 1,
+              "pax": 32
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-1": {
+            "free": {
+              "tours": 1,
+              "pax": 28
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-2": {
+            "free": {
+              "tours": 2,
+              "pax": 65
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-3": {
+            "free": {
+              "tours": 2,
+              "pax": 51
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-4": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-9": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-10": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-11": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-12": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-13": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-15": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-16": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-17": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-19": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-20": {
+            "free": {
+              "tours": 2,
+              "pax": 35
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-21": {
+            "free": {
+              "tours": 2,
+              "pax": 43
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-22": {
+            "free": {
+              "tours": 2,
+              "pax": 55
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-24": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-27": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-28": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-29": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "9-30": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-4": {
+            "free": {
+              "tours": 2,
+              "pax": 40
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-8": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-9": {
+            "free": {
+              "tours": 1,
+              "pax": 26
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-10": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-11": {
+            "free": {
+              "tours": 2,
+              "pax": 50
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 2,
+              "pax": 56
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-21": {
+            "free": {
+              "tours": 2,
+              "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-24": {
+            "free": {
+              "tours": 2,
+              "pax": 36
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-26": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-28": {
+            "free": {
+              "tours": 2,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-29": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          }
+        },
+        "byMonthType": {},
+        "byDayType": {}
+      }
     },
-    "esp": {
-      "free": {
-        "tours": 175,
-        "pax": 3975
-      },
-      "paid": {
-        "tours": 0,
-        "pax": 0
-      },
-      "byType": {},
-      "byMonth": {
-        "5": {
-          "name": "Svi",
-          "free": {
-            "tours": 21,
-            "pax": 456
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6": {
-          "free": {
-            "tours": 26,
-            "pax": 643
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7": {
-          "free": {
-            "tours": 37,
-            "pax": 854
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8": {
-          "free": {
-            "tours": 36,
-            "pax": 849
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9": {
-          "free": {
-            "tours": 34,
-            "pax": 776
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10": {
-          "free": {
-            "tours": 21,
-            "pax": 397
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+    "mgmt": {
+      "revenue": 0,
+      "vendorCost": 0,
+      "grossMargin": 0,
+      "tourCost": 0,
+      "commissionCost": 0,
+      "processingFee": 0,
+      "vatAmount": 0,
+      "amountBeforeTax": 0,
+      "byChannel": {
+        "web": {
+          "tours": 175,
+          "pax": 3975,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         }
       },
-      "byDay": {
-        "5-6": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+      "bySource": {
+        "FST": {
+          "tours": 175,
+          "pax": 3975,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byDow": {
+        "Tue": {
+          "tours": 37,
+          "pax": 887,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
-        "5-7": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+        "Wed": {
+          "tours": 33,
+          "pax": 740,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
-        "5-8": {
-          "free": {
-            "tours": 2,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+        "Thu": {
+          "tours": 16,
+          "pax": 325,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "Sat": {
+          "tours": 22,
+          "pax": 512,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "Mon": {
+          "tours": 24,
+          "pax": 563,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "Fri": {
+          "tours": 23,
+          "pax": 483,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "Sun": {
+          "tours": 20,
+          "pax": 465,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byTime": {
+        "10": {
+          "tours": 71,
+          "pax": 1568,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "11": {
+          "tours": 26,
+          "pax": 583,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "17": {
+          "tours": 25,
+          "pax": 530,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "18": {
+          "tours": 27,
+          "pax": 653,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "19": {
+          "tours": 24,
+          "pax": 585,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "20": {
+          "tours": 2,
+          "pax": 56,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "bySeason": {
+        "shoulder": {
+          "tours": 42,
+          "pax": 853,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "high": {
+          "tours": 133,
+          "pax": 3122,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byPaxBand": {
+        "11-20": {
+          "tours": 41,
+          "pax": 700,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "21-30": {
+          "tours": 117,
+          "pax": 2910,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "5-10": {
-          "free": {
-            "tours": 1,
-            "pax": 24
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-12": {
-          "free": {
-            "tours": 1,
-            "pax": 9
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-13": {
-          "free": {
-            "tours": 2,
-            "pax": 49
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-16": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-18": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-20": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-22": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-26": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-28": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-30": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-31": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-12": {
-          "free": {
-            "tours": 2,
-            "pax": 39
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-13": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-14": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-15": {
-          "free": {
-            "tours": 2,
-            "pax": 59
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-17": {
-          "free": {
-            "tours": 2,
-            "pax": 59
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-18": {
-          "free": {
-            "tours": 2,
-            "pax": 38
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-20": {
-          "free": {
-            "tours": 2,
-            "pax": 53
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-21": {
-          "free": {
-            "tours": 2,
-            "pax": 42
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-22": {
-          "free": {
-            "tours": 1,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-23": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-25": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-27": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-28": {
-          "free": {
-            "tours": 1,
-            "pax": 32
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-29": {
-          "free": {
-            "tours": 1,
-            "pax": 23
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-30": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-1": {
-          "free": {
-            "tours": 1,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-3": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-4": {
-          "free": {
-            "tours": 2,
-            "pax": 56
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-8": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-9": {
-          "free": {
-            "tours": 2,
-            "pax": 53
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-10": {
-          "free": {
-            "tours": 1,
-            "pax": 14
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-11": {
-          "free": {
-            "tours": 1,
-            "pax": 12
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-13": {
-          "free": {
-            "tours": 1,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-14": {
-          "free": {
-            "tours": 2,
-            "pax": 47
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-15": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-16": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-17": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-20": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-22": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-23": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-24": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-25": {
-          "free": {
-            "tours": 2,
-            "pax": 42
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-27": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-28": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-29": {
-          "free": {
-            "tours": 2,
-            "pax": 52
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-30": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-31": {
-          "free": {
-            "tours": 1,
-            "pax": 25
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-2": {
-          "free": {
-            "tours": 1,
-            "pax": 24
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-3": {
-          "free": {
-            "tours": 2,
-            "pax": 49
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-4": {
-          "free": {
-            "tours": 1,
-            "pax": 14
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-5": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-6": {
-          "free": {
-            "tours": 2,
-            "pax": 54
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-9": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-10": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-11": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-12": {
-          "free": {
-            "tours": 2,
-            "pax": 54
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-13": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-14": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-18": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-19": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-20": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-22": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-24": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-25": {
-          "free": {
-            "tours": 1,
-            "pax": 30
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-26": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-27": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-29": {
-          "free": {
-            "tours": 2,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-30": {
-          "free": {
-            "tours": 1,
-            "pax": 32
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-1": {
-          "free": {
-            "tours": 1,
-            "pax": 28
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-2": {
-          "free": {
-            "tours": 2,
-            "pax": 65
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-3": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-4": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-9": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-10": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-11": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-12": {
-          "free": {
-            "tours": 1,
-            "pax": 17
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-13": {
-          "free": {
-            "tours": 2,
-            "pax": 47
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-15": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-16": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-17": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-19": {
-          "free": {
-            "tours": 1,
-            "pax": 8
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-20": {
-          "free": {
-            "tours": 2,
-            "pax": 35
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-21": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-22": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-24": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-27": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-28": {
-          "free": {
-            "tours": 1,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-29": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-30": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-4": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-8": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-9": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-10": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-11": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-13": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-14": {
-          "free": {
-            "tours": 2,
-            "pax": 56
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-15": {
-          "free": {
-            "tours": 2,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-21": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-24": {
-          "free": {
-            "tours": 2,
-            "pax": 36
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-26": {
-          "free": {
-            "tours": 1,
-            "pax": 10
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-28": {
-          "free": {
-            "tours": 2,
-            "pax": 15
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-29": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 8,
+          "pax": 67,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "30+": {
+          "tours": 9,
+          "pax": 298,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         }
       },
-      "byMonthType": {},
-      "byDayType": {}
-    },
-    "fra": {
-      "free": {
-        "tours": 0,
-        "pax": 0
+      "byWeek": {
+        "19": {
+          "tours": 6,
+          "pax": 114,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "20": {
+          "tours": 7,
+          "pax": 158,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "21": {
+          "tours": 2,
+          "pax": 49,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "22": {
+          "tours": 6,
+          "pax": 135,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "24": {
+          "tours": 7,
+          "pax": 169,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "25": {
+          "tours": 9,
+          "pax": 221,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "26": {
+          "tours": 8,
+          "pax": 198,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "27": {
+          "tours": 7,
+          "pax": 185,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "28": {
+          "tours": 7,
+          "pax": 143,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "29": {
+          "tours": 10,
+          "pax": 225,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "30": {
+          "tours": 9,
+          "pax": 197,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "31": {
+          "tours": 9,
+          "pax": 232,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "32": {
+          "tours": 9,
+          "pax": 210,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "33": {
+          "tours": 7,
+          "pax": 171,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "34": {
+          "tours": 9,
+          "pax": 208,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "35": {
+          "tours": 8,
+          "pax": 187,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "36": {
+          "tours": 6,
+          "pax": 160,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "37": {
+          "tours": 8,
+          "pax": 171,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "38": {
+          "tours": 10,
+          "pax": 206,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "39": {
+          "tours": 6,
+          "pax": 145,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "40": {
+          "tours": 6,
+          "pax": 134,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "41": {
+          "tours": 6,
+          "pax": 141,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "42": {
+          "tours": 5,
+          "pax": 98,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "43": {
+          "tours": 5,
+          "pax": 87,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "44": {
+          "tours": 3,
+          "pax": 31,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
       },
-      "paid": {
-        "tours": 0,
-        "pax": 0
-      },
-      "byType": {},
-      "byMonth": {},
-      "byDay": {},
-      "byMonthType": {},
-      "byDayType": {}
-    },
-    "all": {
-      "free": {
-        "tours": 175,
-        "pax": 3975
-      },
-      "paid": {
-        "tours": 0,
-        "pax": 0
-      },
-      "byType": {},
       "byMonth": {
         "5": {
-          "name": "Svi",
-          "free": {
-            "tours": 21,
-            "pax": 456
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 21,
+          "pax": 456,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "6": {
-          "free": {
-            "tours": 26,
-            "pax": 643
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 26,
+          "pax": 643,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "7": {
-          "free": {
-            "tours": 37,
-            "pax": 854
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 37,
+          "pax": 854,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "8": {
-          "free": {
-            "tours": 36,
-            "pax": 849
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 36,
+          "pax": 849,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "9": {
-          "free": {
-            "tours": 34,
-            "pax": 776
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 34,
+          "pax": 776,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         },
         "10": {
-          "free": {
-            "tours": 21,
-            "pax": 397
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+          "tours": 21,
+          "pax": 397,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         }
       },
-      "byDay": {
-        "5-6": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-7": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-8": {
-          "free": {
-            "tours": 2,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-10": {
-          "free": {
-            "tours": 1,
-            "pax": 24
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-12": {
-          "free": {
-            "tours": 1,
-            "pax": 9
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-13": {
-          "free": {
-            "tours": 2,
-            "pax": 49
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-16": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-18": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-20": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-22": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-26": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-28": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-30": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "5-31": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-12": {
-          "free": {
-            "tours": 2,
-            "pax": 39
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-13": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-14": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-15": {
-          "free": {
-            "tours": 2,
-            "pax": 59
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-17": {
-          "free": {
-            "tours": 2,
-            "pax": 59
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-18": {
-          "free": {
-            "tours": 2,
-            "pax": 38
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-20": {
-          "free": {
-            "tours": 2,
-            "pax": 53
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-21": {
-          "free": {
-            "tours": 2,
-            "pax": 42
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-22": {
-          "free": {
-            "tours": 1,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-23": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-25": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-27": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-28": {
-          "free": {
-            "tours": 1,
-            "pax": 32
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-29": {
-          "free": {
-            "tours": 1,
-            "pax": 23
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "6-30": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-1": {
-          "free": {
-            "tours": 1,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-3": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-4": {
-          "free": {
-            "tours": 2,
-            "pax": 56
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-8": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-9": {
-          "free": {
-            "tours": 2,
-            "pax": 53
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-10": {
-          "free": {
-            "tours": 1,
-            "pax": 14
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-11": {
-          "free": {
-            "tours": 1,
-            "pax": 12
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-13": {
-          "free": {
-            "tours": 1,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-14": {
-          "free": {
-            "tours": 2,
-            "pax": 47
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-15": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-16": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-17": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-20": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-22": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-23": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-24": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-25": {
-          "free": {
-            "tours": 2,
-            "pax": 42
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-27": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-28": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-29": {
-          "free": {
-            "tours": 2,
-            "pax": 52
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-30": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "7-31": {
-          "free": {
-            "tours": 1,
-            "pax": 25
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-2": {
-          "free": {
-            "tours": 1,
-            "pax": 24
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-3": {
-          "free": {
-            "tours": 2,
-            "pax": 49
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-4": {
-          "free": {
-            "tours": 1,
-            "pax": 14
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-5": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-6": {
-          "free": {
-            "tours": 2,
-            "pax": 54
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-9": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-10": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-11": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-12": {
-          "free": {
-            "tours": 2,
-            "pax": 54
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-13": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-14": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-18": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-19": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-20": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-22": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-24": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-25": {
-          "free": {
-            "tours": 1,
-            "pax": 30
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-26": {
-          "free": {
-            "tours": 2,
-            "pax": 45
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-27": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-29": {
-          "free": {
-            "tours": 2,
-            "pax": 29
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "8-30": {
-          "free": {
-            "tours": 1,
-            "pax": 32
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-1": {
-          "free": {
-            "tours": 1,
-            "pax": 28
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-2": {
-          "free": {
-            "tours": 2,
-            "pax": 65
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-3": {
-          "free": {
-            "tours": 2,
-            "pax": 51
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-4": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-9": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-10": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-11": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-12": {
-          "free": {
-            "tours": 1,
-            "pax": 17
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-13": {
-          "free": {
-            "tours": 2,
-            "pax": 47
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-15": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-16": {
-          "free": {
-            "tours": 1,
-            "pax": 27
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-17": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-19": {
-          "free": {
-            "tours": 1,
-            "pax": 8
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-20": {
-          "free": {
-            "tours": 2,
-            "pax": 35
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-21": {
-          "free": {
-            "tours": 2,
-            "pax": 43
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-22": {
-          "free": {
-            "tours": 2,
-            "pax": 55
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-24": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-27": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-28": {
-          "free": {
-            "tours": 1,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-29": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "9-30": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-4": {
-          "free": {
-            "tours": 2,
-            "pax": 40
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-8": {
-          "free": {
-            "tours": 1,
-            "pax": 21
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-9": {
-          "free": {
-            "tours": 1,
-            "pax": 26
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-10": {
-          "free": {
-            "tours": 2,
-            "pax": 44
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-11": {
-          "free": {
-            "tours": 2,
-            "pax": 50
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-13": {
-          "free": {
-            "tours": 1,
-            "pax": 22
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-14": {
-          "free": {
-            "tours": 2,
-            "pax": 56
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-15": {
-          "free": {
-            "tours": 2,
-            "pax": 20
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-21": {
-          "free": {
-            "tours": 2,
-            "pax": 41
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-24": {
-          "free": {
-            "tours": 2,
-            "pax": 36
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-26": {
-          "free": {
-            "tours": 1,
-            "pax": 10
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-28": {
-          "free": {
-            "tours": 2,
-            "pax": 15
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
-        },
-        "10-29": {
-          "free": {
-            "tours": 1,
-            "pax": 16
-          },
-          "paid": {
-            "tours": 0,
-            "pax": 0
-          }
+      "byBillingMethod": {
+        "POS": {
+          "tours": 175,
+          "pax": 3975,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
         }
       },
-      "byMonthType": {},
-      "byDayType": {}
+      "byPaymentMethod": {
+        "cash": {
+          "tours": 175,
+          "pax": 3975,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byGuidePaxBand": {
+        "11+": {
+          "tours": 172,
+          "pax": 3948,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        },
+        "6-10": {
+          "tours": 3,
+          "pax": 27,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byPriceType": {
+        "per pax": {
+          "tours": 175,
+          "pax": 3975,
+          "revenue": 0,
+          "vendorCost": 0,
+          "grossMargin": 0,
+          "tourCost": 0,
+          "commissionCost": 0,
+          "processingFee": 0,
+          "vatAmount": 0,
+          "amountBeforeTax": 0
+        }
+      },
+      "byTourType": {}
     }
   },
-  "mgmt": {
-    "revenue": 0,
-    "vendorCost": 0,
-    "grossMargin": 0,
-    "tourCost": 0,
-    "commissionCost": 0,
-    "processingFee": 0,
-    "vatAmount": 0,
-    "amountBeforeTax": 0,
-    "byChannel": {
-      "web": {
-        "tours": 175,
-        "pax": 3975,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "bySource": {
-      "FST": {
-        "tours": 175,
-        "pax": 3975,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byDow": {
-      "Tue": {
-        "tours": 37,
-        "pax": 887,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Wed": {
-        "tours": 33,
-        "pax": 740,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Thu": {
-        "tours": 16,
-        "pax": 325,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Sat": {
-        "tours": 22,
-        "pax": 512,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Mon": {
-        "tours": 24,
-        "pax": 563,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Fri": {
-        "tours": 23,
-        "pax": 483,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "Sun": {
-        "tours": 20,
-        "pax": 465,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byTime": {
-      "10": {
-        "tours": 71,
-        "pax": 1568,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "11": {
-        "tours": 26,
-        "pax": 583,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "17": {
-        "tours": 25,
-        "pax": 530,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "18": {
-        "tours": 27,
-        "pax": 653,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "19": {
-        "tours": 24,
-        "pax": 585,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "20": {
-        "tours": 2,
-        "pax": 56,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "bySeason": {
-      "shoulder": {
-        "tours": 42,
-        "pax": 853,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "high": {
-        "tours": 133,
-        "pax": 3122,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byPaxBand": {
-      "11-20": {
-        "tours": 41,
-        "pax": 700,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "21-30": {
-        "tours": 117,
-        "pax": 2910,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "5-10": {
-        "tours": 8,
-        "pax": 67,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "30+": {
-        "tours": 9,
-        "pax": 298,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byWeek": {
-      "19": {
-        "tours": 6,
-        "pax": 114,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "20": {
-        "tours": 7,
-        "pax": 158,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "21": {
-        "tours": 2,
-        "pax": 49,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "22": {
-        "tours": 6,
-        "pax": 135,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "24": {
-        "tours": 7,
-        "pax": 169,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "25": {
-        "tours": 9,
-        "pax": 221,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "26": {
-        "tours": 8,
-        "pax": 198,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "27": {
-        "tours": 7,
-        "pax": 185,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "28": {
-        "tours": 7,
-        "pax": 143,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "29": {
-        "tours": 10,
-        "pax": 225,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "30": {
-        "tours": 9,
-        "pax": 197,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "31": {
-        "tours": 9,
-        "pax": 232,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "32": {
-        "tours": 9,
-        "pax": 210,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "33": {
-        "tours": 7,
-        "pax": 171,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "34": {
-        "tours": 9,
-        "pax": 208,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "35": {
-        "tours": 8,
-        "pax": 187,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "36": {
-        "tours": 6,
-        "pax": 160,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "37": {
-        "tours": 8,
-        "pax": 171,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "38": {
-        "tours": 10,
-        "pax": 206,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "39": {
-        "tours": 6,
-        "pax": 145,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "40": {
-        "tours": 6,
-        "pax": 134,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "41": {
-        "tours": 6,
-        "pax": 141,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "42": {
-        "tours": 5,
-        "pax": 98,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "43": {
-        "tours": 5,
-        "pax": 87,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "44": {
-        "tours": 3,
-        "pax": 31,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byMonth": {
-      "5": {
-        "tours": 21,
-        "pax": 456,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "6": {
-        "tours": 26,
-        "pax": 643,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "7": {
-        "tours": 37,
-        "pax": 854,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "8": {
-        "tours": 36,
-        "pax": 849,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "9": {
-        "tours": 34,
-        "pax": 776,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "10": {
-        "tours": 21,
-        "pax": 397,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byBillingMethod": {
-      "POS": {
-        "tours": 175,
-        "pax": 3975,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byPaymentMethod": {
-      "cash": {
-        "tours": 175,
-        "pax": 3975,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byGuidePaxBand": {
-      "11+": {
-        "tours": 172,
-        "pax": 3948,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      },
-      "6-10": {
-        "tours": 3,
-        "pax": 27,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byPriceType": {
-      "per pax": {
-        "tours": 175,
-        "pax": 3975,
-        "revenue": 0,
-        "vendorCost": 0,
-        "grossMargin": 0,
-        "tourCost": 0,
-        "commissionCost": 0,
-        "processingFee": 0,
-        "vatAmount": 0,
-        "amountBeforeTax": 0
-      }
-    },
-    "byTourType": {}
-  }
-},
   {
     "name": "Ivo Miličić",
     "city": "Dubrovnik",
