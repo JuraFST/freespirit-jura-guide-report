@@ -5,7 +5,8 @@
     Page25: null,
     Page26: null,
     PageCmp: null,
-    PageGuides: null
+    PageGuides: null,
+    PageFinancial: null
   };
   function registerPage(name, page) {
     if (Object.prototype.hasOwnProperty.call(PAGES, name)) {
@@ -45,13 +46,16 @@
     }
   }
   function pageKeyFor(id) {
-    return { p25: "Page25", p26: "Page26", cmp: "PageCmp", guides: "PageGuides" }[id];
+    return { p25: "Page25", p26: "Page26", cmp: "PageCmp", guides: "PageGuides", financial: "PageFinancial" }[id];
   }
-  function updateDateAsOf(val) {
-    setGlobalDate(val);
+  function rerenderInitializedPages() {
     Object.values(PAGES).forEach((page) => {
       if (page && page._initialized) page.renderAll();
     });
+  }
+  function updateDateAsOf(val) {
+    setGlobalDate(val);
+    rerenderInitializedPages();
   }
 
   // src/theme.js
@@ -82,6 +86,14 @@
   function cityColors(cities) {
     return cities.map((c) => cssVar(CITY_VARS[c], "#1a1a1a"));
   }
+  function hexToRgba(hex, alpha) {
+    const h = hex.replace("#", "");
+    const r = parseInt(h.substr(0, 2), 16), g = parseInt(h.substr(2, 2), 16), b = parseInt(h.substr(4, 2), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+  function cityColorsAlpha(cities, alpha) {
+    return cityColors(cities).map((hex) => hexToRgba(hex, alpha));
+  }
   var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
   var LANG_CODES = [["all", "ALL"], ["eng", "EN"], ["esp", "ES"], ["fra", "FR"]];
   var LANG_VARS = { eng: "--eng", esp: "--esp", fra: "--fra" };
@@ -89,13 +101,15 @@
     const cls = ["chip-btn", extraClass, active === value ? "active" : ""].filter(Boolean).join(" ");
     return `<button type="button" class="${cls}" data-value="${value}"${styleAttr || ""}>${label}</button>`;
   }
+  var CITY_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+  var LANG_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
   function cityChipsHtml(idPrefix, active) {
     const btns = ["all", ...Object.keys(CITY_VARS)].map((c) => {
       if (c === "all") return chipBtn("all", "ALL", active);
       const style = ` style="--chip-hue: var(${CITY_VARS[c]}); --chip-text: var(${CITY_VARS[c]}-text);"`;
       return chipBtn(c, CITY_CODES[c], active, "city", style);
     }).join("");
-    return `<div class="chip-group" id="${idPrefix}-city-chips">${btns}</div>`;
+    return `<div class="chip-group-labeled"><span class="chip-group-icon" title="City">${CITY_ICON}</span><div class="chip-group" id="${idPrefix}-city-chips">${btns}</div></div>`;
   }
   function langChipsHtml(idPrefix, active) {
     const btns = LANG_CODES.map(([v, l]) => {
@@ -103,7 +117,7 @@
       const style = ` style="--chip-hue: var(${LANG_VARS[v]}); --chip-text: var(${LANG_VARS[v]}-text);"`;
       return chipBtn(v, l, active, "lang", style);
     }).join("");
-    return `<div class="chip-group" id="${idPrefix}-lang-chips">${btns}</div>`;
+    return `<div class="chip-group-labeled"><span class="chip-group-icon" title="Language">${LANG_ICON}</span><div class="chip-group" id="${idPrefix}-lang-chips">${btns}</div></div>`;
   }
   function bindChipGroup(groupId, onSelect) {
     document.getElementById(groupId).addEventListener("click", (e) => {
@@ -138,7 +152,11 @@
       data: { labels, datasets },
       options: {
         responsive: true,
-        plugins: { title: { display: !!title, text: title }, tooltip: tooltipDefaults() },
+        plugins: {
+          title: { display: !!title, text: title },
+          legend: { display: datasets.length > 1 },
+          tooltip: tooltipDefaults()
+        },
         scales: { x: axisDefaults(), y: axisDefaults() }
       }
     });
@@ -149,15 +167,19 @@
       data: { labels, datasets },
       options: {
         responsive: true,
-        plugins: { title: { display: !!title, text: title }, tooltip: tooltipDefaults() },
+        plugins: {
+          title: { display: !!title, text: title },
+          legend: { display: datasets.length > 1 },
+          tooltip: tooltipDefaults()
+        },
         scales: { x: axisDefaults(), y: axisDefaults() }
       }
     });
   }
   function dualBar(elId, labels, data25, data26) {
     return barChart(document.getElementById(elId), labels, [
-      { label: "2025", data: data25, backgroundColor: cssVar("--y25", "#4a3aa7") },
-      { label: "2026", data: data26, backgroundColor: cssVar("--y26", "#1a1a1a") }
+      { label: "2025", data: data25, backgroundColor: cityColorsAlpha(labels, 0.4) },
+      { label: "2026", data: data26, backgroundColor: cityColors(labels) }
     ]);
   }
   function dualLine(elId, labels, data25, data26) {
@@ -271,6 +293,7 @@
       name,
       city,
       stopped: activity25 > 0 && activity26 === 0,
+      isNew: activity25 === 0 && activity26 > 0,
       freeTours: deltaRow(f25.freeTours, f26.freeTours),
       freePax: deltaRow(f25.freePax, f26.freePax),
       paidTours: deltaRow(f25.paidTours, f26.paidTours),
@@ -286,11 +309,12 @@
     const v26 = rows.reduce((s, r) => s + r[key].v26, 0);
     return deltaRow(v25, v26);
   }
+  var NON_GUIDE_NAMES = /* @__PURE__ */ new Set(["FST"]);
   function buildGuideTable(guideStats252, guideStats262, months, cutoffMonth, cutoffDay, lang = "all") {
     const names = Array.from(/* @__PURE__ */ new Set([
       ...guideStats252.map((g) => g.name),
       ...guideStats262.map((g) => g.name)
-    ])).sort();
+    ])).filter((name) => !NON_GUIDE_NAMES.has(name)).sort();
     const rows = names.map((name) => {
       const g25 = guideStats252.find((g) => g.name === name) || null;
       const g26 = guideStats262.find((g) => g.name === name) || null;
@@ -905,13 +929,7 @@
     }
   };
 
-  // src/pages/page-guides.js
-  var activeCity4 = "all";
-  var activeLang4 = "all";
-  var activeView = "cards";
-  var activeSearch = "";
-  var activeSort = "name";
-  var detailChart = null;
+  // src/pages/guideCardHelpers.js
   var CITY_GROUP_ORDER = ["Zagreb", "Dubrovnik", "Zadar", "Split"];
   function groupRowsByCity(rows) {
     const groups = CITY_GROUP_ORDER.map((city) => ({ city, rows: rows.filter((r) => r.city === city) }));
@@ -919,14 +937,8 @@
     if (other.length) groups.push({ city: "Other", rows: other });
     return groups.filter((g) => g.rows.length > 0);
   }
-  function deltaCellsHtml(d) {
-    const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
-    const sign = d.delta > 0 ? "+" : "";
-    return `<td>${fmtN(d.v25)}</td><td>${fmtN(d.v26)}</td><td class="${cls}">${sign}${fmtN(d.delta)}</td><td class="${cls}">${pctLabel(d)}</td>`;
-  }
-  function rowHtml(row, isTotal) {
-    const nameCell = isTotal ? `<td><strong>${row.name}</strong></td>` : `<td>${row.name}</td>`;
-    return `<tr>${nameCell}` + deltaCellsHtml(row.freeTours) + deltaCellsHtml(row.freePax) + deltaCellsHtml(row.paidTours) + deltaCellsHtml(row.paidPax) + deltaCellsHtml(row.totalTours) + deltaCellsHtml(row.revenue) + deltaCellsHtml(row.margin) + `</tr>`;
+  function filterByCity(guides, city) {
+    return city === "all" ? guides : guides.filter((g) => g.city === city);
   }
   var CITY_CODES2 = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
   var CITY_KEYS = { Zagreb: "zagreb", Dubrovnik: "dubrovnik", Split: "split", Zadar: "zadar" };
@@ -937,11 +949,20 @@
     const key = CITY_KEYS[city];
     return key ? ` style="--avatar-hue: var(--${key}); --avatar-text: var(--${key}-text);"` : "";
   }
+  function cardRowsHeaderHtml() {
+    return `
+    <div class="guide-card-row guide-card-row-header">
+      <span class="gcr-label"></span>
+      <span class="gcr-v25">25</span>
+      <span class="gcr-v26">26</span>
+      <span class="gcr-delta">+/-</span>
+    </div>`;
+  }
   function cardRowHtml(label, d, opts = {}) {
     const { fmt = fmtN, showPct = true, title = "" } = opts;
     const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
     const sign = d.delta > 0 ? "+" : "";
-    const deltaText = showPct ? `${sign}${fmt(d.delta)} (${pctLabel(d)})` : `${sign}${fmt(d.delta)}`;
+    const deltaText = showPct && d.pct !== null ? `${sign}${fmt(d.delta)} (${pctLabel(d)})` : `${sign}${fmt(d.delta)}`;
     const titleAttr = title ? ` title="${title}"` : "";
     return `
     <div class="guide-card-row"${titleAttr}>
@@ -951,26 +972,43 @@
       <span class="gcr-delta ${cls}">${deltaText}</span>
     </div>`;
   }
+
+  // src/pages/page-guides.js
+  var activeCity4 = "all";
+  var activeLang4 = "all";
+  var activeView = "cards";
+  var activeSearch = "";
+  var activeSort = "name";
+  var detailChart = null;
+  function deltaCellsHtml(d) {
+    const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
+    const sign = d.delta > 0 ? "+" : "";
+    return `<td>${fmtN(d.v25)}</td><td>${fmtN(d.v26)}</td><td class="${cls}">${sign}${fmtN(d.delta)}</td><td class="${cls}">${pctLabel(d)}</td>`;
+  }
+  function rowHtml(row, isTotal) {
+    const nameCell = isTotal ? `<td><strong>${row.name}</strong></td>` : `<td>${row.name}</td>`;
+    return `<tr>${nameCell}` + deltaCellsHtml(row.freeTours) + deltaCellsHtml(row.freePax) + deltaCellsHtml(row.paidTours) + deltaCellsHtml(row.paidPax) + deltaCellsHtml(row.totalTours) + `</tr>`;
+  }
   function cardHtml(row, rank) {
     const rankBadge = rank ? `<div class="guide-rank">#${rank}</div>` : "";
     const stoppedBadge = row.stopped ? `<span class="guide-stopped-badge">Inactive in 2026</span>` : "";
+    const newBadge = row.isNew ? `<span class="guide-new-badge">New</span>` : "";
     const note = guideNotes[row.name] ? `<div class="guide-note">${guideNotes[row.name]}</div>` : "";
     return `
     <div class="guide-card" data-name="${row.name}">
       ${rankBadge}
       <div class="guide-card-head">
         <div class="guide-avatar"${cityAvatarStyle(row.city)}>${cityCode(row.city)}</div>
-        <div class="guide-name">${row.name} ${stoppedBadge}</div>
+        <div class="guide-name">${row.name} ${stoppedBadge}${newBadge}</div>
       </div>
       ${note}
       <div class="guide-card-rows">
-        ${cardRowHtml("Free Tours", row.freeTours)}
-        ${cardRowHtml("Free Pax", row.freePax)}
-        ${cardRowHtml("Paid Tours", row.paidTours)}
-        ${cardRowHtml("Paid Pax", row.paidPax)}
+        ${cardRowsHeaderHtml()}
+        ${cardRowHtml("Free T", row.freeTours)}
+        ${cardRowHtml("Free P", row.freePax)}
+        ${cardRowHtml("Paid T", row.paidTours)}
+        ${cardRowHtml("Paid P", row.paidPax)}
         ${cardRowHtml("Total Pax", row.totalPax)}
-        ${cardRowHtml("Revenue (all langs)", row.revenue, { fmt: fmtEUR, title: "Full-year total, not filtered by language or as-of date" })}
-        ${cardRowHtml("Margin (all langs)", row.margin, { fmt: fmtEUR, showPct: false, title: "Full-year total, not filtered by language or as-of date" })}
       </div>
     </div>`;
   }
@@ -1006,7 +1044,7 @@
     return `<div class="guide-flags">${declineLine}${stoppedLine}</div>`;
   }
   function groupHeaderRowHtml(city) {
-    return `<tr class="city-group-row"><td colspan="29">${city}</td></tr>`;
+    return `<tr class="city-group-row"><td colspan="21">${city}</td></tr>`;
   }
   function guideCardsHtml(rows, grouped) {
     if (!grouped) {
@@ -1019,9 +1057,6 @@
       <summary class="guide-group-title">${g.city}</summary>
       <div class="guide-cards">${g.rows.map((r) => cardHtml(r, null)).join("")}</div>
     </details>`).join("");
-  }
-  function filterByCity(guides, city) {
-    return city === "all" ? guides : guides.filter((g) => g.city === city);
   }
   function openGuideDetail(name) {
     const g25 = guideStats25.find((g) => g.name === name) || null;
@@ -1061,10 +1096,8 @@
         ${langChipsHtml("guides", activeLang4)}
         <div class="chip-group" id="guides-sort-chips">
           <button type="button" class="chip-btn" data-value="name">Name</button>
-          <button type="button" class="chip-btn" data-value="gain">Biggest gain</button>
-          <button type="button" class="chip-btn" data-value="drop">Biggest drop</button>
-          <button type="button" class="chip-btn" data-value="revenue-gain">Biggest revenue gain</button>
-          <button type="button" class="chip-btn" data-value="revenue-drop">Biggest revenue drop</button>
+          <button type="button" class="chip-btn" data-value="gain">Total Pax &uarr;</button>
+          <button type="button" class="chip-btn" data-value="drop">Total Pax &darr;</button>
         </div>
         <input type="text" id="guides-search" class="guides-search" placeholder="Search guides\u2026">
         <div class="view-toggle-group">
@@ -1082,11 +1115,9 @@
               <th colspan="4">Paid Tours</th>
               <th colspan="4">Paid PAX</th>
               <th colspan="4">Total Tours</th>
-              <th colspan="4" title="Full-year total, not filtered by language or as-of date">Revenue (all langs)</th>
-              <th colspan="4" title="Full-year total, not filtered by language or as-of date">Margin (all langs)</th>
             </tr>
             <tr>
-              ${"<th>25</th><th>26</th><th>+/-</th><th>%</th>".repeat(7)}
+              ${"<th>25</th><th>26</th><th>+/-</th><th>%</th>".repeat(5)}
             </tr>
           </thead>
           <tbody id="guides-tbody"></tbody>
@@ -1172,11 +1203,166 @@
     }
   };
 
+  // src/pages/page-financial.js
+  var activeCity5 = "all";
+  var activeSearch2 = "";
+  var activeSort2 = "name";
+  var activeView2 = "cards";
+  function deltaCellsHtml2(d) {
+    const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
+    const sign = d.delta > 0 ? "+" : "";
+    return `<td>${fmtEUR(d.v25)}</td><td>${fmtEUR(d.v26)}</td><td class="${cls}">${sign}${fmtEUR(d.delta)}</td><td class="${cls}">${pctLabel(d)}</td>`;
+  }
+  function rowHtml2(row, isTotal) {
+    const nameCell = isTotal ? `<td><strong>${row.name}</strong></td>` : `<td>${row.name}</td>`;
+    return `<tr>${nameCell}` + deltaCellsHtml2(row.revenue) + deltaCellsHtml2(row.margin) + `</tr>`;
+  }
+  function cardHtml2(row, rank) {
+    const rankBadge = rank ? `<div class="guide-rank">#${rank}</div>` : "";
+    const newBadge = row.isNew ? `<span class="guide-new-badge">New</span>` : "";
+    return `
+    <div class="guide-card">
+      ${rankBadge}
+      <div class="guide-card-head">
+        <div class="guide-avatar"${cityAvatarStyle(row.city)}>${cityCode(row.city)}</div>
+        <div class="guide-name">${row.name} ${newBadge}</div>
+      </div>
+      <div class="guide-card-rows">
+        ${cardRowsHeaderHtml()}
+        ${cardRowHtml("Revenue", row.revenue, { fmt: fmtEUR })}
+        ${cardRowHtml("Margin", row.margin, { fmt: fmtEUR, showPct: false })}
+      </div>
+    </div>`;
+  }
+  function totalStripHtml2(row) {
+    const stat = (label, d) => {
+      const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
+      const sign = d.delta > 0 ? "+" : "";
+      return `
+      <div class="gts-stat">
+        <div class="gts-label">${label}</div>
+        <div class="gts-values">${fmtEUR(d.v25)} <span class="gts-arrow">&rarr;</span> ${fmtEUR(d.v26)}</div>
+        <div class="gts-delta ${cls}">${sign}${fmtEUR(d.delta)} (${pctLabel(d)})</div>
+      </div>`;
+    };
+    return `
+    <div class="guide-total-strip">
+      ${stat("Revenue", row.revenue)}
+      ${stat("Margin", row.margin)}
+    </div>`;
+  }
+  function groupHeaderRowHtml2(city) {
+    return `<tr class="city-group-row"><td colspan="9">${city}</td></tr>`;
+  }
+  function guideCardsHtml2(rows, grouped) {
+    if (!grouped) {
+      const ranked = activeSort2 !== "name";
+      return `<div class="guide-cards">${rows.map((r, i) => cardHtml2(r, ranked ? i + 1 : null)).join("")}</div>`;
+    }
+    const groups = groupRowsByCity(rows);
+    return groups.map((g) => `
+    <details class="guide-group" open>
+      <summary class="guide-group-title">${g.city}</summary>
+      <div class="guide-cards">${g.rows.map((r) => cardHtml2(r, null)).join("")}</div>
+    </details>`).join("");
+  }
+  var PageFinancial = {
+    _initialized: false,
+    init() {
+      const root = document.getElementById("page-financial");
+      root.innerHTML = `
+      <h2>Guide Financials</h2>
+      <p class="page-note">Revenue and margin are full-year totals per guide, not split by language and not gated to the as-of date.</p>
+      <div class="filter-bar sticky">
+        ${cityChipsHtml("fin", activeCity5)}
+        <div class="chip-group" id="fin-sort-chips">
+          <button type="button" class="chip-btn" data-value="name">Name</button>
+          <button type="button" class="chip-btn" data-value="revenue-gain">Revenue &uarr;</button>
+          <button type="button" class="chip-btn" data-value="revenue-drop">Revenue &darr;</button>
+        </div>
+        <input type="text" id="fin-search" class="guides-search" placeholder="Search guides\u2026">
+        <div class="view-toggle-group">
+          <button id="fin-view-table-btn" class="view-toggle-btn" title="Table view">&#9776;</button>
+          <button id="fin-view-cards-btn" class="view-toggle-btn active" title="Card view">&#9638;</button>
+        </div>
+      </div>
+      <div class="card" id="fin-table-wrap">
+        <table id="fin-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Guide</th>
+              <th colspan="4">Revenue</th>
+              <th colspan="4">Margin</th>
+            </tr>
+            <tr>
+              ${"<th>25</th><th>26</th><th>+/-</th><th>%</th>".repeat(2)}
+            </tr>
+          </thead>
+          <tbody id="fin-tbody"></tbody>
+          <tfoot id="fin-tfoot"></tfoot>
+        </table>
+      </div>
+      <div id="fin-total-strip"></div>
+      <div id="fin-cards"></div>
+    `;
+      bindChipGroup("fin-city-chips", (v) => {
+        activeCity5 = v;
+        this.renderAll();
+      });
+      bindChipGroup("fin-sort-chips", (v) => {
+        activeSort2 = v;
+        this.renderAll();
+      });
+      document.getElementById("fin-search").addEventListener("input", (e) => {
+        activeSearch2 = e.target.value;
+        this.renderAll();
+      });
+      document.getElementById("fin-view-table-btn").addEventListener("click", () => {
+        activeView2 = "table";
+        this.renderAll();
+      });
+      document.getElementById("fin-view-cards-btn").addEventListener("click", () => {
+        activeView2 = "cards";
+        this.renderAll();
+      });
+      this.renderAll();
+    },
+    renderAll() {
+      const cutoffMonth = getCutoffMonth();
+      const cutoffDay = getCutoffDay();
+      const g25 = filterByCity(guideStats25, activeCity5);
+      const g26 = filterByCity(guideStats26, activeCity5);
+      const { rows: allRows, totalRow } = buildGuideTable(g25, g26, [], cutoffMonth, cutoffDay, "all");
+      const searched = filterByName(allRows, activeSearch2);
+      const rows = rankGuides(searched, activeSort2);
+      const grouped = activeCity5 === "all" && activeSort2 === "name";
+      let tbodyHtml;
+      if (grouped) {
+        const groups = groupRowsByCity(rows);
+        tbodyHtml = groups.map((g) => groupHeaderRowHtml2(g.city) + g.rows.map((r) => rowHtml2(r, false)).join("")).join("");
+      } else {
+        tbodyHtml = rows.map((r) => rowHtml2(r, false)).join("");
+      }
+      document.getElementById("fin-tbody").innerHTML = tbodyHtml;
+      document.getElementById("fin-tfoot").innerHTML = rowHtml2(totalRow, true);
+      document.getElementById("fin-total-strip").innerHTML = totalStripHtml2(totalRow);
+      document.getElementById("fin-cards").innerHTML = guideCardsHtml2(rows, grouped);
+      syncChipGroup("fin-city-chips", activeCity5);
+      syncChipGroup("fin-sort-chips", activeSort2);
+      document.getElementById("fin-view-table-btn").classList.toggle("active", activeView2 === "table");
+      document.getElementById("fin-view-cards-btn").classList.toggle("active", activeView2 === "cards");
+      document.getElementById("fin-table-wrap").style.display = activeView2 === "table" ? "" : "none";
+      document.getElementById("fin-total-strip").style.display = activeView2 === "cards" ? "" : "none";
+      document.getElementById("fin-cards").style.display = activeView2 === "cards" ? "" : "none";
+    }
+  };
+
   // src/main.js
   registerPage("Page25", Page25);
   registerPage("Page26", Page26);
   registerPage("PageCmp", PageCmp);
   registerPage("PageGuides", PageGuides);
+  registerPage("PageFinancial", PageFinancial);
   window.showPage = showPage;
   window.toggleTheme = toggleTheme;
   window.updateDateAsOf = updateDateAsOf;
@@ -1188,6 +1374,15 @@
       dateInput.addEventListener("change", (e) => updateDateAsOf(e.target.value));
     }
     document.getElementById("theme-toggle")?.addEventListener("click", toggleTheme);
+    document.addEventListener("themechange", rerenderInitializedPages);
     showPage("cmp", document.querySelector('.nav-tab[data-page="cmp"]'));
+    const PAGE_KEYS = { "1": "p25", "2": "p26", "3": "cmp", "4": "guides", "5": "financial" };
+    document.addEventListener("keydown", (e) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const tag = document.activeElement?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || document.activeElement?.isContentEditable) return;
+      const pageId = PAGE_KEYS[e.key];
+      if (pageId) showPage(pageId);
+    });
   });
 })();

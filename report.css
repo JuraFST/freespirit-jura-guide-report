@@ -73,6 +73,7 @@ body {
 }
 
 h1, h2, h3, .card-title { font-family: Georgia, 'Times New Roman', serif; }
+.page-note { font-size: 13px; color: var(--text3); margin: -6px 0 16px; }
 
 .nav {
   position: sticky;
@@ -155,7 +156,7 @@ body.dark-mode #as-of-date { color-scheme: dark; }
   .page { padding-bottom: 76px; }
 }
 
-.page { display: none; padding: 24px; max-width: 1200px; margin: 0 auto; }
+.page { display: none; padding: 24px; max-width: 1440px; margin: 0 auto; }
 .page.active { display: block; }
 
 .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
@@ -163,7 +164,6 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
 .kpi-value { font-size: 26px; font-weight: 600; margin-top: 4px; }
 .kpi-card .gts-values { margin-top: 4px; }
-.kpi-card .gts-delta { font-size: 11px; }
 /* nested one level deeper inside each Comparison block's .card, which
    costs 32px of width the Tours 2025/2026 kpi-grid doesn't lose — a
    lower minimum keeps it from dropping to fewer columns at the same
@@ -174,7 +174,9 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .card-title { font-size: 15px; margin: 0 0 12px; }
 .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
 
-.filter-bar { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+.filter-bar { display: flex; gap: 20px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+.chip-group-labeled { display: flex; align-items: center; gap: 8px; }
+.chip-group-icon { display: flex; align-items: center; color: var(--text3); }
 .filter-bar.sticky {
   position: sticky;
   top: 57px;
@@ -245,11 +247,11 @@ body.dark-mode #as-of-date { color-scheme: dark; }
   margin-bottom: 16px;
 }
 .gts-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); margin-bottom: 4px; }
-.gts-values { font-size: 17px; font-weight: 600; }
+.gts-values { font-size: 23px; font-weight: 600; }
 .gts-arrow { color: var(--text3); font-weight: 400; }
-.gts-delta { font-size: 12px; margin-top: 2px; }
+.gts-delta { font-size: 14px; margin-top: 2px; }
 
-.guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
 .guide-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; }
 .guide-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .guide-avatar {
@@ -266,19 +268,33 @@ body.dark-mode #as-of-date { color-scheme: dark; }
   font-weight: 700;
 }
 .guide-name { font-weight: 600; font-size: 14px; flex: 1; }
-.guide-card-row {
+/* .guide-card-row uses display: contents so its three spans become direct grid
+   items of .guide-card-rows below — this shares one set of column tracks across
+   every row in the card, so content-sized (auto) columns still line up row to
+   row instead of each row sizing its columns independently. */
+.guide-card-rows {
   display: grid;
-  grid-template-columns: 82px 1fr 1fr auto;
+  grid-template-columns: 60px auto auto auto;
+  column-gap: 10px;
   align-items: center;
-  gap: 8px;
+}
+.guide-card-row { display: contents; }
+.gcr-label, .gcr-v25, .gcr-v26, .gcr-delta {
   padding: 6px 0;
   border-bottom: 1px solid var(--border);
   font-size: 13px;
+  line-height: 20px;
 }
-.guide-card-row:last-child { border-bottom: none; }
+.guide-card-row:last-child > * { border-bottom: none; }
 .gcr-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
-.gcr-v25, .gcr-v26 { text-align: right; }
+.gcr-v25, .gcr-v26 { text-align: right; white-space: nowrap; }
 .gcr-delta { text-align: right; font-size: 12px; white-space: nowrap; }
+.guide-card-row-header > * {
+  font-size: 10px;
+  color: var(--text3);
+  padding: 0 0 4px;
+  border-bottom: none;
+}
 
 .guide-group-title {
   font-family: Georgia, 'Times New Roman', serif;
@@ -341,6 +357,19 @@ tfoot td { font-weight: 700; border-top: 2px solid var(--text); }
   letter-spacing: 0.03em;
   color: var(--delta-neu);
   border: 1px solid var(--delta-neu);
+  border-radius: var(--radius);
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.guide-new-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--delta-pos);
+  border: 1px solid var(--delta-pos);
   border-radius: var(--radius);
   padding: 1px 6px;
   margin-left: 6px;
