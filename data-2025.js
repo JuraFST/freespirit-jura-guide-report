@@ -1,5 +1,5 @@
 const kpiTotals25 = {
-  "guides": 39,
+  "guides": 38,
   "freeTours": 4543,
   "paidTours": 1287,
   "freePax": 93499,
