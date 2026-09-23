@@ -344,10 +344,10 @@
     return sort === "drop" || sort === "revenue-drop" ? sorted.reverse() : sorted;
   }
   function flagDeclines(rows, threshold = -30) {
-    return rows.filter((r) => !r.stopped && r.totalPax.pct !== null && r.totalPax.pct <= threshold).sort((a, b) => a.totalPax.pct - b.totalPax.pct);
+    return rows.filter((r) => r.totalPax.v25 > 0 && r.totalPax.v26 > 0 && r.totalPax.pct <= threshold).sort((a, b) => a.totalPax.pct - b.totalPax.pct);
   }
-  function flagStopped(rows) {
-    return rows.filter((r) => r.stopped);
+  function flagGainers(rows, threshold = 30) {
+    return rows.filter((r) => r.totalPax.v25 > 0 && r.totalPax.v26 > 0 && r.totalPax.pct >= threshold).sort((a, b) => b.totalPax.pct - a.totalPax.pct);
   }
   function guideMonthlyTrend(guide25, guide26, lang, cutoffMonth, cutoffDay) {
     const st25 = guide25 ? guide25.stats[lang] || guide25.stats.all : null;
@@ -721,8 +721,10 @@
     return `
     <div class="kpi-card">
       <div class="kpi-label">${label}</div>
-      <div class="gts-values">${fmt(v25)} <span class="gts-arrow">&rarr;</span> ${fmt(v26)}</div>
-      <div class="gts-delta ${cls}">${sign}${fmt(delta)} (${pctText})</div>
+      <div class="gts-row">
+        <div class="gts-values">${fmt(v25)} <span class="gts-arrow">&rarr;</span> ${fmt(v26)}</div>
+        <div class="gts-delta ${cls}">${sign}${fmt(delta)} (${pctText})</div>
+      </div>
     </div>`;
   }
   function avgPaxPerCity(perCity) {
@@ -1081,14 +1083,15 @@
   }
   function flagsBannerHtml(rows) {
     const declines = flagDeclines(rows);
-    const stopped = flagStopped(rows);
-    if (declines.length === 0 && stopped.length === 0) return "";
+    const gainers = flagGainers(rows);
+    if (declines.length === 0 && gainers.length === 0) return "";
     const declineItems = declines.slice(0, 5).map((r) => `${r.name} (${pctLabel(r.totalPax)})`).join(", ");
     const declineMore = declines.length > 5 ? ` +${declines.length - 5} more` : "";
-    const stoppedItems = stopped.map((r) => r.name).join(", ");
+    const gainerItems = gainers.slice(0, 5).map((r) => `${r.name} (${pctLabel(r.totalPax)})`).join(", ");
+    const gainerMore = gainers.length > 5 ? ` +${gainers.length - 5} more` : "";
     const declineLine = declines.length > 0 ? `<div class="guide-flag-line delta-neg">&#9888; ${declines.length} guide${declines.length > 1 ? "s" : ""} dropped over 30%: ${declineItems}${declineMore}</div>` : "";
-    const stoppedLine = stopped.length > 0 ? `<div class="guide-flag-line delta-neu">&#9888; ${stopped.length} guide${stopped.length > 1 ? "s" : ""} inactive in 2026: ${stoppedItems}</div>` : "";
-    return `<div class="guide-flags">${declineLine}${stoppedLine}</div>`;
+    const gainerLine = gainers.length > 0 ? `<div class="guide-flag-line delta-pos">&#9650; ${gainers.length} guide${gainers.length > 1 ? "s" : ""} up over 30%: ${gainerItems}${gainerMore}</div>` : "";
+    return `<div class="guide-flags">${declineLine}${gainerLine}</div>`;
   }
   function groupHeaderRowHtml(city) {
     return `<tr class="city-group-row"><td colspan="21">${city}</td></tr>`;
@@ -1288,8 +1291,10 @@
       return `
       <div class="gts-stat">
         <div class="gts-label">${label}</div>
-        <div class="gts-values">${fmtEUR(d.v25)} <span class="gts-arrow">&rarr;</span> ${fmtEUR(d.v26)}</div>
-        <div class="gts-delta ${cls}">${sign}${fmtEUR(d.delta)} (${pctLabel(d)})</div>
+        <div class="gts-row">
+          <div class="gts-values">${fmtEUR(d.v25)} <span class="gts-arrow">&rarr;</span> ${fmtEUR(d.v26)}</div>
+          <div class="gts-delta ${cls}">${sign}${fmtEUR(d.delta)} (${pctLabel(d)})</div>
+        </div>
       </div>`;
     };
     return `
