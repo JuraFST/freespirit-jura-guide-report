@@ -160,6 +160,7 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .page.active { display: block; }
 
 .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.paid-private-kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .kpi-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
 .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text3); }
 .kpi-value { font-size: 26px; font-weight: 600; margin-top: 4px; }
@@ -168,6 +169,15 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .card { border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
 .card-title { font-size: 15px; margin: 0 0 12px; }
 .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.paid-group-chart-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 1100px) {
+  .paid-group-chart-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .paid-private-kpi-grid { grid-template-columns: 1fr; }
+}
 
 .filter-bar { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
 /* city/language chip groups sit in a shaded pill container so the two groups
@@ -321,6 +331,23 @@ table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--border); }
 th:first-child, td:first-child { text-align: left; }
 tfoot td { font-weight: 700; border-top: 2px solid var(--text); }
+.single-year-monthly-table th:not(:first-child),
+.single-year-monthly-table td:not(:first-child) { text-align: center; }
+
+.comparison-table-scroll { overflow-x: auto; }
+.comparison-table-scroll table { min-width: 960px; }
+.comparison-table-scroll th,
+.comparison-table-scroll td,
+.comparison-table-scroll th:first-child,
+.comparison-table-scroll td:first-child { text-align: center; white-space: nowrap; }
+.city-column-zagreb { background: color-mix(in srgb, var(--zagreb) 12%, transparent); }
+.city-column-dubrovnik { background: color-mix(in srgb, var(--dubrovnik) 12%, transparent); }
+.city-column-split { background: color-mix(in srgb, var(--split) 12%, transparent); }
+.city-column-zadar { background: color-mix(in srgb, var(--zadar) 12%, transparent); }
+thead tr:first-child .city-column-zagreb { background: color-mix(in srgb, var(--zagreb) 22%, transparent); }
+thead tr:first-child .city-column-dubrovnik { background: color-mix(in srgb, var(--dubrovnik) 22%, transparent); }
+thead tr:first-child .city-column-split { background: color-mix(in srgb, var(--split) 22%, transparent); }
+thead tr:first-child .city-column-zadar { background: color-mix(in srgb, var(--zadar) 22%, transparent); }
 
 .city-group-row td {
   text-align: left;
