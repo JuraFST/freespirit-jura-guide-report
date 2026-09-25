@@ -164,6 +164,31 @@ def to_plain(stats):
         },
     }
 
+# ── Paid channel stats helpers ────────────────────────────────────────────────
+
+PAID_CHANNELS = ['web', 'Viator', 'GYG', 'Airbnb', 'Musement', 'Civitatis']
+
+def paid_channel_bucket(channel, source):
+    if channel == 'web':
+        return 'web'
+    if source in ('Viator', 'GYG', 'Airbnb', 'Musement', 'Civitatis'):
+        return source
+    return 'other'
+
+def empty_channel_stats():
+    return {'byMonth': defaultdict(int), 'byDay': defaultdict(int)}
+
+def add_channel_row(stats, month, pax, day=None):
+    stats['byMonth'][month] += pax
+    if day is not None:
+        stats['byDay'][f"{month}-{day}"] += pax
+
+def to_plain_channel(stats):
+    return {
+        'byMonth': {str(m): p for m, p in stats['byMonth'].items()},
+        'byDay': dict(stats['byDay']),
+    }
+
 # ── Management stats helpers ──────────────────────────────────────────────────
 
 def _fin_entry():
@@ -385,6 +410,8 @@ def main():
     # raw_city[city][lang] = stats — keyed by each row's own City column (not the guide's home city),
     # so city totals stay correct regardless of which guide covered the tour.
     raw_city = defaultdict(lambda: {lang: empty_stats() for lang in ('eng', 'esp', 'fra')})
+    # raw_channel[bucket][city][lang] = channel stats — paid rows only
+    raw_channel = defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'fra')}))
 
     for row in data_rows:
         vendor = _val(row[C_VENDOR])
@@ -465,6 +492,62 @@ def main():
                 tour_type=tour if not is_free else None,
             )
 
+    # Second pass over ALL rows (not just Tour no.==1) for the paid channel
+    # breakdown. Total guide pax is only populated on the primary (Tour
+    # no.==1) row per tour — a split booking (e.g. one tour, GYG + Musement +
+    # Viator each taking part of the group) has Tour no.==0 on every row
+    # after the first, and those rows are skipped entirely by the loop
+    # above. Total guide pax already has the full tour total baked into the
+    # primary row, so skipping the split rows loses nothing for tour/pax
+    # counts — but Pax (this row's own share) is populated on every row, so
+    # a per-channel breakdown needs every row, not just the primary one.
+    # This re-parses city/lang/month/day rather than reusing the main loop's
+    # values, since the main loop skips non-primary rows before computing
+    # those values for them.
+    if HAS_MGMT:
+        from datetime import datetime as _datetime
+        for row in data_rows:
+            vendor = _val(row[C_VENDOR])
+            if not vendor or vendor == 'vanjski vodič':
+                continue
+            if C_YEAR is not None and YEAR is not None:
+                row_year = _int(row[C_YEAR])
+                if row_year and row_year != YEAR:
+                    continue
+
+            tour = _val(row[C_TOUR])
+            if tour == 'free':
+                continue
+            lang = _val(row[C_LANG])
+            month = _int(row[C_MONTH])
+            if month is None:
+                continue
+            if lang not in ('eng', 'esp', 'fra'):
+                lang = 'eng'
+
+            day = None
+            if C_DATE is not None:
+                date_val = row[C_DATE]
+                if date_val is not None:
+                    if hasattr(date_val, 'day'):
+                        day = date_val.day
+                    else:
+                        s = str(date_val).strip()
+                        if s:
+                            for fmt in ('%Y-%m-%d', '%d.%m.%Y', '%m/%d/%Y', '%d/%b/%y', '%d/%b/%Y'):
+                                try: day = _datetime.strptime(s, fmt).day; break
+                                except ValueError: pass
+
+            city_raw = _val(row[C_CITY])
+            city = CITY_MAP.get(city_raw, city_raw or 'Unknown')
+
+            channel = _val(row[C_CHANNEL])
+            source = _val(row[C_SOURCE])
+            row_pax = (_int(row[C_PAX_RAW]) if C_PAX_RAW is not None else 0) or 0
+
+            bucket = paid_channel_bucket(channel, source)
+            add_channel_row(raw_channel[bucket][city][lang], month, row_pax, day)
+
     # Build output list following canonical order
     result = []
     seen = set()
@@ -513,6 +596,27 @@ def main():
         lang_stats['all'] = to_plain(all_s)
         city_stats[city] = lang_stats
 
+    # Paid channel totals — city/lang/month/day breakdown for the Bookings tab.
+    # Built only when Sales channel/source columns are present (same guard as HAS_MGMT).
+    channel_stats = {}
+    if HAS_MGMT:
+        all_channels = PAID_CHANNELS + ['other']
+        for bucket in all_channels:
+            city_map = {}
+            for city in CITY_MAP.values():
+                all_s = empty_channel_stats()
+                lang_out = {}
+                for lang in ('eng', 'esp', 'fra'):
+                    ls = raw_channel[bucket][city][lang]
+                    for m, p in ls['byMonth'].items():
+                        all_s['byMonth'][m] += p
+                    for d, p in ls['byDay'].items():
+                        all_s['byDay'][d] += p
+                    lang_out[lang] = to_plain_channel(ls)
+                lang_out['all'] = to_plain_channel(all_s)
+                city_map[city] = lang_out
+            channel_stats[bucket] = city_map
+
     # KPI totals
     total_free_tours = sum(g['stats']['all']['free']['tours'] for g in result)
     total_paid_tours = sum(g['stats']['all']['paid']['tours'] for g in result)
@@ -551,6 +655,10 @@ def main():
     print(f'const guideStats{suffix} = {js(result)};')
     print()
     print(f'const cityStats{suffix} = {js(city_stats)};')
+
+    if HAS_MGMT:
+        print()
+        print(f'const paidChannelStats{suffix} = {js(channel_stats)};')
 
 if __name__ == '__main__':
     main()
