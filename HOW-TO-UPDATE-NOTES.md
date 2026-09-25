@@ -3,20 +3,22 @@
 This is for updating **guide notes only** — the short explanation that shows up
 next to a guide's "Inactive in 2026" badge on your report
 (https://jurafst.github.io/freespirit-jura-guide-report/). You do this once
-using Claude Code, then again any time you want to add or change a note.
+per computer, then repeat a short loop any time you want to add or change a
+note.
 
 Everything else on the report (tour numbers, the "last updated" date, layout)
 comes from Dodai's side automatically — don't edit those files, see the note
 at the bottom.
 
-## One-time setup
+Do the one-time setup below on whichever computer(s) you'll use — Mac and
+Windows steps are separate, the rest of the guide is the same for both once
+set up.
 
-You only do this section once, on whichever computer you'll use to make
-these edits.
+## One-time setup — macOS
 
 ### 1. Install git
 
-Open **Terminal** (Mac: press `Cmd+Space`, type `Terminal`, hit enter).
+Open **Terminal** (press `Cmd+Space`, type `Terminal`, hit enter).
 
 Check if git is already installed:
 
@@ -24,9 +26,9 @@ Check if git is already installed:
 git --version
 ```
 
-If you see a version number, skip to step 2. If not, on a Mac it will offer
-to install it for you — click Install and wait for it to finish, then run
-the command above again to confirm.
+If you see a version number, skip to step 2. If not, macOS will offer to
+install it for you — click Install, wait for it to finish, then run the
+command again to confirm.
 
 ### 2. Install the GitHub CLI
 
@@ -80,13 +82,73 @@ Confirm it installed:
 claude --version
 ```
 
-If Terminal says `command not found`, close and reopen Terminal (this
-refreshes it so it can find the new program), then try again.
+If Terminal says `command not found`, close and reopen Terminal, then try
+again.
 
-### 4. Get your report's files onto your computer
+Now skip down to **Get your report's files onto your computer**, below.
 
-Pick a folder where you want the project to live (e.g. your Desktop), then
-in Terminal:
+## One-time setup — Windows
+
+### 1. Install Git for Windows
+
+Download and run the installer from https://git-scm.com/download/win.
+Keep the default options during install. This also installs **Git Bash** —
+use that (not PowerShell or Command Prompt) for every command in this guide,
+so the commands match exactly what's written here.
+
+Open Git Bash (search for it in the Start menu) and confirm:
+
+```
+git --version
+```
+
+### 2. Install the GitHub CLI
+
+Download and run the installer from https://cli.github.com (or, in Git Bash:
+`winget install --id GitHub.cli -e`).
+
+Then, in Git Bash, log in:
+
+```
+gh auth login
+```
+
+Answer the prompts:
+- `GitHub.com`
+- `HTTPS`
+- `Login with a web browser` — press enter, it gives you a code and opens
+  your browser. Paste the code, log into your `JuraFST` GitHub account, and
+  approve it.
+
+If it asks "Authenticate Git with your GitHub credentials?", answer **Yes** —
+this is what lets `git push` work later without asking for a password.
+
+### 3. Install Claude Code
+
+If the Claude desktop app you're using already shows a "Code" or terminal
+option for opening a project, you can use that directly and skip this step.
+
+Otherwise, install Node.js first from https://nodejs.org (choose the LTS
+version) or in Git Bash: `winget install OpenJS.NodeJS.LTS -e`.
+
+Then, in Git Bash, install Claude Code:
+
+```
+npm install -g @anthropic-ai/claude-code
+```
+
+Confirm it installed:
+
+```
+claude --version
+```
+
+If Git Bash says `command not found`, close and reopen it, then try again.
+
+## Get your report's files onto your computer
+
+Pick a folder for the project (e.g. your Desktop), then in Terminal (Mac) or
+Git Bash (Windows):
 
 ```
 cd ~/Desktop
@@ -125,8 +187,9 @@ or
 Update the note for Ana Anić to say she left the company in June 2026.
 ```
 
-Claude will find and use the `update-guide-notes` skill that's already set
-up in this project. It will:
+Claude Code automatically reads a set of instructions already sitting in
+this project's `.claude/skills/update-guide-notes/` folder (I set this up for
+you, nothing to install or configure) and will:
 
 1. Open `data-guide-notes.js`.
 2. Add or edit the entry for that guide.
