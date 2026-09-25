@@ -6,9 +6,10 @@ description: Refresh this report's tour data (data-2025.js/data-2026.js) and Boo
 # Update guide tour data
 
 This regenerates the report's data files from the real FreeSpirit Google
-Sheets, using the same extraction scripts Dodai's own internal report uses —
-just run locally against a file you download yourself, since you already
-have access to both sheets.
+Sheets, using the same extraction scripts Dodai's own internal report uses.
+The tour-data sheet you download by hand (below); the Bookings Free-channel
+sheet Claude pulls directly via its Google Drive connection — you don't
+download that one yourself.
 
 No rebuild needed: every `data-*.js` file is loaded as its own `<script>`
 tag, not bundled into `dist/app.js`, so a data-only update never touches the
@@ -88,25 +89,63 @@ minute to confirm it's live.
 ## Steps, every time you want to refresh the Bookings tab's Free channel data
 
 This is separate from the tour-data refresh above — it comes from a
-different sheet and only affects the Bookings tab's **Free** section.
+different sheet and only affects the Bookings tab's **Free** section. You
+don't download anything by hand for this one — Claude pulls the sheet
+directly, the same way it already does for the tour-data sheet if you're
+using the Claude desktop/web app's Google Drive connection rather than a
+manual download.
 
-### 1. Download the latest export
+**One-time check:** this needs Google Drive connected in Claude (Settings →
+Connectors → Google Drive, or your admin may have already turned this on
+for the workspace). If it's not connected, Claude will say so — connect it
+once and re-run.
 
-Open the **"1.2 Booking channels OTA"** Google Sheet, go to the
-`stg_checked_in` tab, then **File → Download → Comma Separated Values
-(.csv)**.
-
-Move the downloaded file into this project folder (any filename is fine,
-you'll reference it directly in the next command).
-
-### 2. Regenerate the data
+### 1. Back up the current file
 
 ```
-python3 scripts/extract_free_channels.py <downloaded-file>.csv > data-channels-2026.js
+cp data-channels-2026.js .backup-data-channels-2026-$(date +%Y%m%d-%H%M%S).js
 ```
+
+### 2. Pull the sheet and regenerate
+
+Ask Claude to do this (or just re-invoke this skill — it already knows the
+steps):
+
+- Download the **"1.2 Booking channels OTA"** Google Sheet (Drive file id
+  `1u6yHl1wKOScMfSLYMgyAD0jWnWRgITXawtuJDJCcDFE`) via the Drive connector's
+  `download_file_content`, with
+  `exportMimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`.
+  The result is large and saves to a tool-result file rather than inlining —
+  decode its base64 `content` field and write it to
+  `1.2 Booking channels OTA.xlsx` in this project folder (a small Python
+  snippet: `json.load` the tool-result file, `base64.b64decode`, write
+  bytes — don't paste the base64 through the shell).
+- Regenerate:
+
+  ```
+  python3 scripts/extract_free_channels.py "1.2 Booking channels OTA.xlsx" > data-channels-2026.js.new
+  ```
+
+- Sanity-check the grand total pax against the current file before
+  replacing — it should be close to (not far below) the old total:
+
+  ```
+  python3 -c "
+  import json
+  def total(p):
+      d = json.loads(open(p).read().split('=',1)[1].rstrip(';\n '))
+      return sum(sum(l['all']['byMonth'].values()) for c in d.values() for l in c.values())
+  print('old:', total('data-channels-2026.js'))
+  print('new:', total('data-channels-2026.js.new'))
+  "
+  ```
+
+  Only after that looks sane: `mv data-channels-2026.js.new data-channels-2026.js`,
+  then delete the downloaded xlsx (`rm "1.2 Booking channels OTA.xlsx"`) —
+  it's a large binary, don't commit it.
 
 **Do not touch `data-channels-2025.js`** — 2025 is fixed historical data,
-transcribed once and never regenerated. This command only ever overwrites
+transcribed once and never regenerated. This only ever overwrites
 `data-channels-2026.js`, so it's safe to run as often as you like.
 
 ### 3. Verify before pushing
