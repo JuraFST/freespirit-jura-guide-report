@@ -928,6 +928,11 @@
         ${chartCardHtml("cmp-private-city-chart", "Paid Private Tours by City \u2014 2025 vs 2026")}
         ${chartCardHtml("cmp-private-trend", "Cumulative Paid Private Tours Trend \u2014 2025 vs 2026")}
       </div>
+      <div class="card comparison-monthly-card">
+        <div class="card-title">Paid Private PAX by Month and City</div>
+        <p class="page-note">2025 covers Jan-Dec. 2026 is current through ${getGlobalDate()}.</p>
+        <div class="comparison-table-scroll"><table id="cmp-private-monthly-table"></table></div>
+      </div>
     `;
       document.getElementById("cmp-private-type").addEventListener("change", (e) => {
         privateState.type = e.target.value;
@@ -954,6 +959,9 @@
     const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
     const toursSum26 = pc26.reduce((s, c) => s + c.tours, 0);
     document.getElementById("cmp-private-kpis").innerHTML = kpiCardCmpHtml("Paid Private Tours", toursSum25, toursSum26);
+    document.getElementById("cmp-private-monthly-table").innerHTML = freeMonthlyComparisonHtml(
+      monthlyTypeComparison(cityStats25, cityStats26, CITIES, cutoffMonth, cutoffDay, privateState.lang, filter)
+    );
     privateCharts.forEach((c) => c.destroy());
     privateCharts = [
       dualBar("cmp-private-city-chart", cities, pc25.map((c) => c.tours), pc26.map((c) => c.tours)),
@@ -1057,7 +1065,7 @@
         ${cardRowHtml("Free P", row.freePax)}
         ${cardRowHtml("Paid T", row.paidTours)}
         ${cardRowHtml("Paid P", row.paidPax)}
-        ${cardRowHtml("Total Pax", row.totalPax)}
+        ${cardRowHtml("Total T", row.totalTours)}
       </div>
     </div>`;
   }
@@ -1078,7 +1086,7 @@
       ${stat("Free Pax", row.freePax)}
       ${stat("Paid Tours", row.paidTours)}
       ${stat("Paid Pax", row.paidPax)}
-      ${stat("Total Pax", row.totalPax)}
+      ${stat("Total Tours", row.totalTours)}
     </div>`;
   }
   function flagsBannerHtml(rows) {
