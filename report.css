@@ -35,6 +35,22 @@
 
   --y25: #4a3aa7;
   --y26: #1a1a1a;
+
+  /* Bookings channel chart — dataviz skill's 8-slot categorical palette,
+     fixed order, one hue per real channel. Slots 1-4 and 7 happen to equal
+     --zagreb/--dubrovnik/--split/--zadar/--y25 above (same validated
+     palette instance), kept separate here since these color channels, not
+     cities/years. A 9th channel ("other") isn't a real category, so it
+     stays --text3 gray in chartHelpers.js rather than getting a hue. */
+  --chan-1: #2a78d6;
+  --chan-2: #eb6834;
+  --chan-3: #1baf7a;
+  --chan-4: #eda100;
+  --chan-5: #e87ba4;
+  --chan-6: #008300;
+  --chan-7: #4a3aa7;
+  --chan-8: #e34948;
+
   --delta-pos: #1d9e75;
   --delta-neg: #d4545a;
   --delta-neu: #999999;
@@ -124,7 +140,25 @@ body.dark-mode #as-of-date { color-scheme: dark; }
   width: 32px;
   height: 32px;
   cursor: pointer;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.theme-toggle-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* Icon shown is the mode a click switches TO: moon in light mode, sun once
+   dark mode is active. */
+.theme-toggle-icon .icon-sun { display: none; }
+body.dark-mode .theme-toggle-icon .icon-moon { display: none; }
+body.dark-mode .theme-toggle-icon .icon-sun { display: block; }
 
 .bottom-nav { display: none; }
 
@@ -259,7 +293,13 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 .gts-delta { font-size: 14px; }
 
 .guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
-.guide-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; }
+.guide-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--avatar-hue, transparent) 10%, var(--bg));
+}
 .guide-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .guide-avatar {
   flex-shrink: 0;
@@ -348,6 +388,46 @@ thead tr:first-child .city-column-zagreb { background: color-mix(in srgb, var(--
 thead tr:first-child .city-column-dubrovnik { background: color-mix(in srgb, var(--dubrovnik) 22%, transparent); }
 thead tr:first-child .city-column-split { background: color-mix(in srgb, var(--split) 22%, transparent); }
 thead tr:first-child .city-column-zadar { background: color-mix(in srgb, var(--zadar) 22%, transparent); }
+
+/* Channel column-groups (Bookings tab) tint per channel, same --chan-1..8
+   palette and 12%/22% pattern as the city-column-* rules above, keyed by
+   the channel's fixed slot (see channelColClass in page-bookings.js and
+   channelColors in chartHelpers.js — same index scheme in both places). */
+.channel-col-1 { background: color-mix(in srgb, var(--chan-1) 12%, transparent); }
+.channel-col-2 { background: color-mix(in srgb, var(--chan-2) 12%, transparent); }
+.channel-col-3 { background: color-mix(in srgb, var(--chan-3) 12%, transparent); }
+.channel-col-4 { background: color-mix(in srgb, var(--chan-4) 12%, transparent); }
+.channel-col-5 { background: color-mix(in srgb, var(--chan-5) 12%, transparent); }
+.channel-col-6 { background: color-mix(in srgb, var(--chan-6) 12%, transparent); }
+.channel-col-7 { background: color-mix(in srgb, var(--chan-7) 12%, transparent); }
+.channel-col-8 { background: color-mix(in srgb, var(--chan-8) 12%, transparent); }
+.channel-col-other { background: color-mix(in srgb, var(--text3) 12%, transparent); }
+thead tr:first-child .channel-col-1 { background: color-mix(in srgb, var(--chan-1) 22%, transparent); }
+thead tr:first-child .channel-col-2 { background: color-mix(in srgb, var(--chan-2) 22%, transparent); }
+thead tr:first-child .channel-col-3 { background: color-mix(in srgb, var(--chan-3) 22%, transparent); }
+thead tr:first-child .channel-col-4 { background: color-mix(in srgb, var(--chan-4) 22%, transparent); }
+thead tr:first-child .channel-col-5 { background: color-mix(in srgb, var(--chan-5) 22%, transparent); }
+thead tr:first-child .channel-col-6 { background: color-mix(in srgb, var(--chan-6) 22%, transparent); }
+thead tr:first-child .channel-col-7 { background: color-mix(in srgb, var(--chan-7) 22%, transparent); }
+thead tr:first-child .channel-col-8 { background: color-mix(in srgb, var(--chan-8) 22%, transparent); }
+thead tr:first-child .channel-col-other { background: color-mix(in srgb, var(--text3) 22%, transparent); }
+
+/* Bookings' channel-totals charts sit alone in their .chart-grid row (unlike
+   every other chart-grid on this report, which packs 2-3 charts per row and
+   so is naturally width-capped) — at full container width, Chart.js's
+   default 2:1 aspect ratio makes them far taller than the viewport. Fixed
+   height + maintainAspectRatio:false (see channelBar in chartHelpers.js)
+   keeps them large but on-screen regardless of window width, on desktop
+   only: at mobile widths the container is already narrow, so the 520px
+   fixed height (meant for desktop's wide columns) makes the chart look
+   stretched and overly tall instead. Below 640px, fall back to the same
+   2:1 aspect-ratio Chart.js's default maintainAspectRatio:true used to
+   compute automatically, via CSS instead. */
+.bk-chart-wrap { position: relative; height: 520px; }
+
+@media (max-width: 640px) {
+  .bk-chart-wrap { height: auto; aspect-ratio: 2 / 1; }
+}
 
 .city-group-row td {
   text-align: left;

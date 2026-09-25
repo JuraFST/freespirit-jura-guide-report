@@ -5,6 +5,7 @@
     Page25: null,
     Page26: null,
     PageCmp: null,
+    PageBookings: null,
     PageGuides: null,
     PageFinancial: null
   };
@@ -46,7 +47,7 @@
     }
   }
   function pageKeyFor(id) {
-    return { p25: "Page25", p26: "Page26", cmp: "PageCmp", guides: "PageGuides", financial: "PageFinancial" }[id];
+    return { p25: "Page25", p26: "Page26", cmp: "PageCmp", bookings: "PageBookings", guides: "PageGuides", financial: "PageFinancial" }[id];
   }
   function rerenderInitializedPages() {
     Object.values(PAGES).forEach((page) => {
@@ -144,12 +145,14 @@
       cornerRadius: 4
     };
   }
+  var CATEGORY_HOVER = { mode: "index", intersect: false };
   function lineChart(ctx, labels, datasets, title) {
     return new Chart(ctx, {
       type: "line",
       data: { labels, datasets },
       options: {
         responsive: true,
+        interaction: CATEGORY_HOVER,
         plugins: {
           title: { display: !!title, text: title },
           legend: { display: datasets.length > 1 },
@@ -159,18 +162,20 @@
       }
     });
   }
-  function barChart(ctx, labels, datasets, title) {
+  function barChart(ctx, labels, datasets, title, extraOptions = {}) {
     return new Chart(ctx, {
       type: "bar",
       data: { labels, datasets },
       options: {
         responsive: true,
+        interaction: CATEGORY_HOVER,
         plugins: {
           title: { display: !!title, text: title },
           legend: { display: datasets.length > 1 },
           tooltip: tooltipDefaults()
         },
-        scales: { x: axisDefaults(), y: axisDefaults() }
+        scales: { x: axisDefaults(), y: axisDefaults() },
+        ...extraOptions
       }
     });
   }
@@ -185,6 +190,18 @@
       { label: "2025", data: data25, borderColor: cssVar("--y25", "#4a3aa7"), fill: false },
       { label: "2026", data: data26, borderColor: cssVar("--y26", "#1a1a1a"), fill: false }
     ]);
+  }
+  function channelColors(labels) {
+    return labels.map((c, i) => c === "other" ? cssVar("--text3", "#767676") : cssVar(`--chan-${i + 1}`, "#1a1a1a"));
+  }
+  function channelBar(elId, labels, data26, data25 = null) {
+    const colors = channelColors(labels);
+    const datasets = [];
+    if (data25) {
+      datasets.push({ label: "2025", data: data25, backgroundColor: colors.map((c) => hexToRgba(c, 0.4)) });
+    }
+    datasets.push({ label: "2026", data: data26, backgroundColor: colors });
+    return barChart(document.getElementById(elId), labels, datasets, void 0, { maintainAspectRatio: false });
   }
   function kpiCardHtml(label, value, sub) {
     return `<div class="kpi-card"><div class="kpi-label">${label}</div><div class="kpi-value">${value}</div>${sub ? `<div class="kpi-label">${sub}</div>` : ""}</div>`;
@@ -986,6 +1003,184 @@
     }
   };
 
+  // src/pages/bookingStats.js
+  function sumEntries(channelStats, channel, cities, lang) {
+    const out = { byMonth: {}, byDay: {} };
+    const byCity = channelStats[channel] || {};
+    cities.forEach((city) => {
+      const cs = byCity[city];
+      if (!cs) return;
+      const entry = cs[lang] || cs.all;
+      for (const [m, p] of Object.entries(entry.byMonth)) out.byMonth[m] = (out.byMonth[m] || 0) + p;
+      for (const [d, p] of Object.entries(entry.byDay)) out.byDay[d] = (out.byDay[d] || 0) + p;
+    });
+    return out;
+  }
+  function hasDayDataForMonth(byDay, m) {
+    const prefix = `${m}-`;
+    return Object.keys(byDay).some((k) => k.startsWith(prefix));
+  }
+  function channelTotal(channelStats, channel, cities, lang, cutoffMonth, cutoffDay) {
+    const entry = sumEntries(channelStats, channel, cities, lang);
+    let pax = 0;
+    for (let m = 1; m <= cutoffMonth; m++) {
+      if (m < cutoffMonth) {
+        pax += entry.byMonth[String(m)] || 0;
+      } else if (hasDayDataForMonth(entry.byDay, m)) {
+        for (let d = 1; d <= cutoffDay; d++) pax += entry.byDay[`${m}-${d}`] || 0;
+      } else {
+        pax += entry.byMonth[String(m)] || 0;
+      }
+    }
+    return pax;
+  }
+  function channelMonthly(channelStats, channel, cities, lang, cutoffMonth, cutoffDay) {
+    const entry = sumEntries(channelStats, channel, cities, lang);
+    return Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
+      if (m > cutoffMonth) return { month: m, pax: null };
+      if (m === cutoffMonth && hasDayDataForMonth(entry.byDay, m)) {
+        let pax = 0;
+        for (let d = 1; d <= cutoffDay; d++) pax += entry.byDay[`${m}-${d}`] || 0;
+        return { month: m, pax };
+      }
+      return { month: m, pax: entry.byMonth[String(m)] || 0 };
+    });
+  }
+
+  // src/pages/page-bookings.js
+  var FREE_CHANNELS = ["web", "GuruWalk", "freetour.com", "Civitatis", "Buendia", "Sandemans", "Walkative", "Viabam", "other"];
+  var PAID_CHANNELS = ["web", "Viator", "GYG", "Airbnb", "Musement", "Civitatis", "other"];
+  function citiesFor(cityFilter) {
+    return cityFilter === "all" ? CITIES : [cityFilter];
+  }
+  function channelColClass(channel, index) {
+    return channel === "other" ? "channel-col-other" : `channel-col-${index + 1}`;
+  }
+  function channelColumnHtml(channels, has25) {
+    const headers = channels.map((c, i) => `<th colspan="${has25 ? 3 : 1}" class="channel-col-group ${channelColClass(c, i)}">${c}</th>`).join("");
+    const subHeaders = channels.map((c, i) => {
+      const cls = `channel-col-group ${channelColClass(c, i)}`;
+      return has25 ? `<th class="${cls}">2025</th><th class="${cls}">2026</th><th class="${cls}">+/-</th>` : `<th class="${cls}">2026</th>`;
+    }).join("");
+    return `<thead><tr><th rowspan="2">Month</th>${headers}</tr><tr>${subHeaders}</tr></thead>`;
+  }
+  function deltaCell(pax25, pax26, colClass) {
+    if (pax25 === null || pax26 === null) return `<td class="channel-col-group ${colClass}">-</td>`;
+    const d = deltaRow(pax25, pax26);
+    const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
+    const pctText = d.pct === null ? d.v26 > 0 ? "" : "" : ` (${pctLabel(d)})`;
+    return `<td class="channel-col-group ${colClass} ${cls}">${d.delta > 0 ? "+" : ""}${fmtN(d.delta)}${pctText}</td>`;
+  }
+  function monthlyTableHtml(channelStats25, channelStats26, channels, cities, lang, cutoffMonth, cutoffDay) {
+    const has25 = !!channelStats25;
+    const byChannel = channels.map((c, i) => ({
+      channel: c,
+      colClass: channelColClass(c, i),
+      rows26: channelMonthly(channelStats26, c, cities, lang, cutoffMonth, cutoffDay),
+      rows25: has25 ? channelMonthly(channelStats25, c, cities, lang, 12, 31) : null
+    }));
+    const body = Array.from({ length: 12 }, (_, i) => i + 1).map((month) => {
+      const cells = byChannel.map(({ rows25, rows26, colClass }) => {
+        const pax26 = rows26[month - 1].pax;
+        if (!has25) {
+          return `<td class="channel-col-group ${colClass}">${pax26 === null ? "-" : fmtN(pax26)}</td>`;
+        }
+        const pax25 = rows25[month - 1].pax;
+        return `<td class="channel-col-group ${colClass}">${pax25 === null ? "-" : fmtN(pax25)}</td><td class="channel-col-group ${colClass}">${pax26 === null ? "-" : fmtN(pax26)}</td>${deltaCell(pax25, pax26, colClass)}`;
+      }).join("");
+      return `<tr><td>${MONTH_NAMES[month]}</td>${cells}</tr>`;
+    }).join("");
+    return channelColumnHtml(channels, has25) + `<tbody>${body}</tbody>`;
+  }
+  function renderBlock({ title, chartId, tableId, channels, channelStats25, channelStats26, state, idPrefix }) {
+    const cutoffMonth = getCutoffMonth();
+    const cutoffDay = getCutoffDay();
+    const containerEl = document.getElementById(idPrefix + "-block");
+    if (!containerEl.dataset.built) {
+      containerEl.innerHTML = `
+      <h2>${title}</h2>
+      <div class="filter-bar sticky">
+        ${cityChipsHtml(idPrefix, state.city)}
+        ${langChipsHtml(idPrefix, state.lang)}
+      </div>
+      <div class="chart-grid">
+        <div class="card">
+          <div class="card-title">${title} PAX by Channel${channelStats25 ? " \u2014 2025 vs 2026" : " \u2014 2026"}</div>
+          <div class="bk-chart-wrap"><canvas id="${chartId}"></canvas></div>
+        </div>
+      </div>
+      <div class="card comparison-monthly-card">
+        <div class="card-title">${title} PAX by Month and Channel</div>
+        <div class="comparison-table-scroll"><table id="${tableId}"></table></div>
+      </div>
+    `;
+      bindChipGroup(`${idPrefix}-city-chips`, (v) => {
+        state.city = v;
+        renderBlock({ title, chartId, tableId, channels, channelStats25, channelStats26, state, idPrefix });
+      });
+      bindChipGroup(`${idPrefix}-lang-chips`, (v) => {
+        state.lang = v;
+        renderBlock({ title, chartId, tableId, channels, channelStats25, channelStats26, state, idPrefix });
+      });
+      containerEl.dataset.built = "true";
+    }
+    syncChipGroup(`${idPrefix}-city-chips`, state.city);
+    syncChipGroup(`${idPrefix}-lang-chips`, state.lang);
+    const cities = citiesFor(state.city);
+    const totals26 = channels.map((c) => channelTotal(channelStats26, c, cities, state.lang, cutoffMonth, cutoffDay));
+    const totals25 = channelStats25 ? channels.map((c) => channelTotal(channelStats25, c, cities, state.lang, cutoffMonth, cutoffDay)) : null;
+    if (state.chart) state.chart.destroy();
+    state.chart = channelBar(chartId, channels, totals26, totals25);
+    document.getElementById(tableId).innerHTML = monthlyTableHtml(channelStats25, channelStats26, channels, cities, state.lang, cutoffMonth, cutoffDay);
+  }
+  var freeState2 = { city: "all", lang: "all", chart: null };
+  var paidState = { city: "all", lang: "all", chart: null };
+  function missingBlockHtml(title, missingWhat) {
+    return `<h2>${title}</h2><div class="card">Bookings data for ${title} is not available (${missingWhat} is missing from the loaded data files).</div>`;
+  }
+  var PageBookings = {
+    _initialized: false,
+    init() {
+      const root = document.getElementById("page-bookings");
+      root.innerHTML = `<div id="bk-free-block"></div><div id="bk-paid-block"></div>`;
+      this.renderAll();
+    },
+    renderAll() {
+      const free26 = typeof freeChannelStats26 !== "undefined" ? freeChannelStats26 : void 0;
+      const free25 = typeof freeChannelStats25 !== "undefined" ? freeChannelStats25 : null;
+      if (free26) {
+        renderBlock({
+          title: "Free",
+          chartId: "bk-free-chart",
+          tableId: "bk-free-table",
+          channels: FREE_CHANNELS,
+          channelStats25: free25,
+          channelStats26: free26,
+          state: freeState2,
+          idPrefix: "bk-free"
+        });
+      } else {
+        document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free", "freeChannelStats26");
+      }
+      const paid26 = typeof paidChannelStats26 !== "undefined" ? paidChannelStats26 : void 0;
+      const paid25 = typeof paidChannelStats25 !== "undefined" ? paidChannelStats25 : null;
+      if (paid26) {
+        renderBlock({
+          title: "Paid",
+          chartId: "bk-paid-chart",
+          tableId: "bk-paid-table",
+          channels: PAID_CHANNELS,
+          channelStats25: paid25,
+          channelStats26: paid26,
+          state: paidState,
+          idPrefix: "bk-paid"
+        });
+      } else {
+        document.getElementById("bk-paid-block").innerHTML = missingBlockHtml("Paid", "paidChannelStats26");
+      }
+    }
+  };
+
   // src/pages/guideCardHelpers.js
   var CITY_GROUP_ORDER = ["Zagreb", "Dubrovnik", "Zadar", "Split"];
   function groupRowsByCity(rows) {
@@ -1052,10 +1247,10 @@
     const newBadge = row.isNew ? `<span class="guide-new-badge">New</span>` : "";
     const note = guideNotes[row.name] ? `<div class="guide-note">${guideNotes[row.name]}</div>` : "";
     return `
-    <div class="guide-card" data-name="${row.name}">
+    <div class="guide-card" data-name="${row.name}"${cityAvatarStyle(row.city)}>
       ${rankBadge}
       <div class="guide-card-head">
-        <div class="guide-avatar"${cityAvatarStyle(row.city)}>${cityCode(row.city)}</div>
+        <div class="guide-avatar">${cityCode(row.city)}</div>
         <div class="guide-name">${row.name} ${stoppedBadge}${newBadge}</div>
       </div>
       ${note}
@@ -1279,10 +1474,10 @@
     const rankBadge = rank ? `<div class="guide-rank">#${rank}</div>` : "";
     const newBadge = row.isNew ? `<span class="guide-new-badge">New</span>` : "";
     return `
-    <div class="guide-card">
+    <div class="guide-card"${cityAvatarStyle(row.city)}>
       ${rankBadge}
       <div class="guide-card-head">
-        <div class="guide-avatar"${cityAvatarStyle(row.city)}>${cityCode(row.city)}</div>
+        <div class="guide-avatar">${cityCode(row.city)}</div>
         <div class="guide-name">${row.name} ${newBadge}</div>
       </div>
       <div class="guide-card-rows">
@@ -1421,6 +1616,7 @@
   registerPage("Page25", Page25);
   registerPage("Page26", Page26);
   registerPage("PageCmp", PageCmp);
+  registerPage("PageBookings", PageBookings);
   registerPage("PageGuides", PageGuides);
   registerPage("PageFinancial", PageFinancial);
   window.showPage = showPage;
@@ -1436,7 +1632,7 @@
     document.getElementById("theme-toggle")?.addEventListener("click", toggleTheme);
     document.addEventListener("themechange", rerenderInitializedPages);
     showPage("cmp", document.querySelector('.nav-tab[data-page="cmp"]'));
-    const PAGE_KEYS = { "1": "p25", "2": "p26", "3": "cmp", "4": "guides", "5": "financial" };
+    const PAGE_KEYS = { "1": "p25", "2": "p26", "3": "cmp", "4": "bookings", "5": "guides", "6": "financial" };
     document.addEventListener("keydown", (e) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const tag = document.activeElement?.tagName;

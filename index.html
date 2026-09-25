@@ -18,12 +18,16 @@
     <button class="nav-tab top-tab" data-page="p25" onclick="showPage('p25', this)">Tours 2025</button>
     <button class="nav-tab top-tab" data-page="p26" onclick="showPage('p26', this)">Tours 2026</button>
     <button class="nav-tab top-tab active" data-page="cmp" onclick="showPage('cmp', this)">Comparison</button>
+    <button class="nav-tab top-tab" data-page="bookings" onclick="showPage('bookings', this)">Bookings</button>
     <button class="nav-tab top-tab" data-page="guides" onclick="showPage('guides', this)">Guides</button>
     <button class="nav-tab top-tab" data-page="financial" onclick="showPage('financial', this)">Financial</button>
   </div>
   <div class="nav-actions">
     <input type="date" id="as-of-date">
-    <button class="theme-toggle-icon" id="theme-toggle">&#9789;</button>
+    <button class="theme-toggle-icon" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
   </div>
 </nav>
 
@@ -31,6 +35,7 @@
   <button class="nav-tab bottom-tab" data-page="p25" onclick="showPage('p25', this)">Tours 2025</button>
   <button class="nav-tab bottom-tab" data-page="p26" onclick="showPage('p26', this)">Tours 2026</button>
   <button class="nav-tab bottom-tab active" data-page="cmp" onclick="showPage('cmp', this)">Comparison</button>
+  <button class="nav-tab bottom-tab" data-page="bookings" onclick="showPage('bookings', this)">Bookings</button>
   <button class="nav-tab bottom-tab" data-page="guides" onclick="showPage('guides', this)">Guides</button>
   <button class="nav-tab bottom-tab" data-page="financial" onclick="showPage('financial', this)">Financial</button>
 </nav>
@@ -38,12 +43,14 @@
 <section id="page-p25" class="page"></section>
 <section id="page-p26" class="page"></section>
 <section id="page-cmp" class="page active"></section>
+<section id="page-bookings" class="page"></section>
 <section id="page-guides" class="page"></section>
 <section id="page-financial" class="page"></section>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="data-2025.js"></script>
 <script src="data-2026.js"></script>
+<script src="data-channels-2026.js"></script>
 <script src="data-guide-notes.js"></script>
 <script src="last-update.js"></script>
 <script src="dist/app.js"></script>
