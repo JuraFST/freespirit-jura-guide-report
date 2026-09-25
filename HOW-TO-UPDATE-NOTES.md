@@ -1,14 +1,14 @@
-# How to add or edit a guide note
+# How to update your guide report
 
-This is for updating **guide notes only** — the short explanation that shows up
-next to a guide's "Inactive in 2026" badge on your report
-(https://jurafst.github.io/freespirit-jura-guide-report/). You do this once
-per computer, then repeat a short loop any time you want to add or change a
-note.
+Two things you can do yourself in this project, using Claude Code:
 
-Everything else on the report (tour numbers, the "last updated" date, layout)
-comes from Dodai's side automatically — don't edit those files, see the note
-at the bottom.
+- **Update the tour data** — refresh the report with the latest numbers from
+  the Google Sheet.
+- **Add or edit a guide note** — the short explanation that shows up next to
+  a guide's "Inactive in 2026" badge.
+
+Everything else on the report (layout, styling, the app itself) comes from
+Dodai's side — don't edit those files, see the note at the bottom.
 
 Do the one-time setup below on whichever computer(s) you'll use — Mac and
 Windows steps are separate, the rest of the guide is the same for both once
@@ -85,6 +85,15 @@ claude --version
 If Terminal says `command not found`, close and reopen Terminal, then try
 again.
 
+### 4. Install Python
+
+Only needed for the data-refresh step (not for guide notes).
+
+```
+brew install python3
+pip3 install openpyxl
+```
+
 Now skip down to **Get your report's files onto your computer**, below.
 
 ## One-time setup — Windows
@@ -145,6 +154,15 @@ claude --version
 
 If Git Bash says `command not found`, close and reopen it, then try again.
 
+### 4. Install Python
+
+Only needed for the data-refresh step (not for guide notes).
+
+```
+winget install Python.Python.3.12
+pip3 install openpyxl
+```
+
 ## Get your report's files onto your computer
 
 Pick a folder for the project (e.g. your Desktop), then in Terminal (Mac) or
@@ -160,7 +178,7 @@ You now have a folder called `freespirit-jura-guide-report` with the report's
 files in it. You only clone it once — after this you'll just reopen this same
 folder.
 
-## Every time you want to add or edit a note
+## Every time you want to update the tour data
 
 ### 1. Open the folder and start Claude Code
 
@@ -170,12 +188,38 @@ git pull
 claude
 ```
 
-`git pull` makes sure you're starting from the latest version (in case
-Dodai's side pushed a data update since you last opened this).
-
 ### 2. Ask Claude, in plain language
 
-Just type what you want, for example:
+```
+Update the guide report data from the Google Sheet.
+```
+
+Claude Code will walk you through downloading the sheet as `.xlsx` and
+saving it into this folder if you haven't already — the exact steps live in
+this project's `.claude/skills/update-guide-data/` folder (already set up,
+nothing to install or configure beyond Python above). It will then:
+
+1. Run the extraction script against your downloaded file.
+2. Regenerate `data-2026.js` and update `last-update.js`.
+3. Ask you to sanity-check the numbers, then commit and push.
+
+### 3. Confirm it went live
+
+Wait about a minute for GitHub to rebuild the page, then reload
+https://jurafst.github.io/freespirit-jura-guide-report/ and check the
+numbers.
+
+## Every time you want to add or edit a guide note
+
+### 1. Open the folder and start Claude Code
+
+```
+cd ~/Desktop/freespirit-jura-guide-report
+git pull
+claude
+```
+
+### 2. Ask Claude, in plain language
 
 ```
 Add a note for Marko Marić: on leave since August 2026.
@@ -187,9 +231,8 @@ or
 Update the note for Ana Anić to say she left the company in June 2026.
 ```
 
-Claude Code automatically reads a set of instructions already sitting in
-this project's `.claude/skills/update-guide-notes/` folder (I set this up for
-you, nothing to install or configure) and will:
+Claude Code automatically reads the instructions in this project's
+`.claude/skills/update-guide-notes/` folder and will:
 
 1. Open `data-guide-notes.js`.
 2. Add or edit the entry for that guide.
@@ -202,9 +245,8 @@ and copy the name from there.
 
 ### 3. Confirm it went live
 
-Wait about a minute for GitHub to rebuild the page, then reload
-https://jurafst.github.io/freespirit-jura-guide-report/ and check the note
-shows up under the right guide.
+Same as above — wait about a minute, then reload the live report and check
+the note shows up under the right guide.
 
 ## What not to touch
 
@@ -212,8 +254,6 @@ Don't ask Claude to edit these — they're kept in sync automatically from
 Dodai's side, and any change made here would just get overwritten the next
 time that sync runs:
 
-- `data-2025.js`, `data-2026.js` — the tour data itself
-- `last-update.js` — the "data as of" date
 - `dist/`, `index.html`, `report.css` — the report's code and styling
 
-If you need something changed in any of those, message Antun directly.
+If you need something changed there, message Antun directly.
