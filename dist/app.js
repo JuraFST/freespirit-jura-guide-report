@@ -488,7 +488,7 @@
         ${chartCardHtml(`${chartIdPrefix}-free-cum`, "Cumulative Free PAX Trend")}
       </div>
       <div class="card">
-        <div class="card-title">Free PAX by Month and City</div>
+        <div class="card-title">Free PAX by Month and City (all cities)</div>
         <table id="${chartIdPrefix}-free-table" class="single-year-monthly-table"></table>
       </div>
     `;
@@ -780,6 +780,19 @@
     </tr>`).join("");
     return `<thead><tr><th rowspan="2">Month</th>${cityHeaders}</tr><tr>${metricHeaders}</tr></thead><tbody>${body}</tbody>`;
   }
+  function updateComparisonNotes(containerEl) {
+    const cutoff = `${MONTH_NAMES[getCutoffMonth()]} ${getCutoffDay()}`;
+    containerEl.querySelectorAll(".comparison-cutoff").forEach((el) => {
+      el.textContent = cutoff;
+    });
+  }
+  function updateOpeningTakeaway() {
+    const month = getCutoffMonth();
+    const day = getCutoffDay();
+    const totals = [cityStats25, cityStats26].map((stats) => perCityFree(stats, CITIES, month, day, "all").reduce((sum, city) => ({ pax: sum.pax + city.pax, tours: sum.tours + city.tours }), { pax: 0, tours: 0 }));
+    const [prior, current] = totals;
+    document.getElementById("cmp-opening-takeaway").textContent = `Across all four cities through ${MONTH_NAMES[month]} ${day}, Free Tour PAX went from ${fmtN(prior.pax)} in 2025 to ${fmtN(current.pax)} in 2026 (${pctLabel(deltaRow(prior.pax, current.pax))}); tours went from ${fmtN(prior.tours)} to ${fmtN(current.tours)} (${pctLabel(deltaRow(prior.tours, current.tours))}). Review demand by city before setting tour frequency.`;
+  }
   var freeState = { city: "all", lang: "all" };
   var freeCharts = [];
   function renderFreeBlock(containerEl) {
@@ -792,6 +805,7 @@
         ${cityChipsHtml("cmp-free", freeState.city)}
         ${langChipsHtml("cmp-free", freeState.lang)}
       </div>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
       <div class="kpi-grid" id="cmp-free-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-free-city-chart", "Free PAX by City \u2014 2025 vs 2026")}
@@ -800,7 +814,7 @@
       </div>
       <div class="card comparison-monthly-card">
         <div class="card-title">Free PAX by Month and City</div>
-        <p class="page-note">2025 covers Jan-Dec. 2026 is current through ${getGlobalDate()}.</p>
+        <p class="page-note">Monthly table: full-year 2025, 2026 through <span class="comparison-cutoff"></span>. All cities, regardless of city filter.</p>
         <div class="comparison-table-scroll"><table id="cmp-free-monthly-table"></table></div>
       </div>
     `;
@@ -814,6 +828,7 @@
       });
       containerEl.dataset.built = "true";
     }
+    updateComparisonNotes(containerEl);
     syncChipGroup("cmp-free-city-chips", freeState.city);
     syncChipGroup("cmp-free-lang-chips", freeState.lang);
     const cities = freeState.city === "all" ? CITIES : [freeState.city];
@@ -861,6 +876,7 @@
         ${cityChipsHtml("cmp-group", groupState.city)}
         ${langChipsHtml("cmp-group", groupState.lang)}
       </div>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
       <div class="kpi-grid" id="cmp-group-kpis"></div>
       <div class="chart-grid paid-group-chart-grid">
         ${chartCardHtml("cmp-group-pax-city", "Paid Group PAX by City \u2014 2025 vs 2026")}
@@ -871,7 +887,7 @@
       </div>
       <div class="card comparison-monthly-card">
         <div class="card-title">Paid Group PAX by Month and City</div>
-        <p class="page-note">2025 covers Jan-Dec. 2026 is current through ${getGlobalDate()}.</p>
+        <p class="page-note">Monthly table: full-year 2025, 2026 through <span class="comparison-cutoff"></span>. All cities, regardless of city filter.</p>
         <div class="comparison-table-scroll"><table id="cmp-group-monthly-table"></table></div>
       </div>
     `;
@@ -889,6 +905,7 @@
       });
       containerEl.dataset.built = "true";
     }
+    updateComparisonNotes(containerEl);
     syncChipGroup("cmp-group-city-chips", groupState.city);
     syncChipGroup("cmp-group-lang-chips", groupState.lang);
     const cities = groupState.city === "all" ? CITIES : [groupState.city];
@@ -940,6 +957,7 @@
         ${cityChipsHtml("cmp-private", privateState.city)}
         ${langChipsHtml("cmp-private", privateState.lang)}
       </div>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
       <div class="kpi-grid paid-private-kpi-grid" id="cmp-private-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-private-city-chart", "Paid Private Tours by City \u2014 2025 vs 2026")}
@@ -947,7 +965,7 @@
       </div>
       <div class="card comparison-monthly-card">
         <div class="card-title">Paid Private PAX by Month and City</div>
-        <p class="page-note">2025 covers Jan-Dec. 2026 is current through ${getGlobalDate()}.</p>
+        <p class="page-note">Monthly table: full-year 2025, 2026 through <span class="comparison-cutoff"></span>. All cities, regardless of city filter.</p>
         <div class="comparison-table-scroll"><table id="cmp-private-monthly-table"></table></div>
       </div>
     `;
@@ -965,6 +983,7 @@
       });
       containerEl.dataset.built = "true";
     }
+    updateComparisonNotes(containerEl);
     syncChipGroup("cmp-private-city-chips", privateState.city);
     syncChipGroup("cmp-private-lang-chips", privateState.lang);
     const cities = privateState.city === "all" ? CITIES : [privateState.city];
@@ -990,6 +1009,7 @@
     init() {
       const root = document.getElementById("page-cmp");
       root.innerHTML = `
+      <p class="page-note" id="cmp-opening-takeaway"></p>
       <div id="cmp-free-block"></div>
       <div id="cmp-group-block"></div>
       <div id="cmp-private-block"></div>
@@ -997,6 +1017,7 @@
       this.renderAll();
     },
     renderAll() {
+      updateOpeningTakeaway();
       renderFreeBlock(document.getElementById("cmp-free-block"));
       renderGroupBlock(document.getElementById("cmp-group-block"));
       renderPrivateBlock(document.getElementById("cmp-private-block"));
@@ -1232,6 +1253,7 @@
   var activeSearch = "";
   var activeSort = "name";
   var detailChart = null;
+  var detailTrigger = null;
   function deltaCellsHtml(d) {
     const cls = d.delta > 0 ? "delta-pos" : d.delta < 0 ? "delta-neg" : "delta-neu";
     const sign = d.delta > 0 ? "+" : "";
@@ -1247,7 +1269,7 @@
     const newBadge = row.isNew ? `<span class="guide-new-badge">New</span>` : "";
     const note = guideNotes[row.name] ? `<div class="guide-note">${guideNotes[row.name]}</div>` : "";
     return `
-    <div class="guide-card" data-name="${row.name}"${cityAvatarStyle(row.city)}>
+    <div class="guide-card" role="button" tabindex="0" aria-label="View details for ${row.name}" data-name="${row.name}"${cityAvatarStyle(row.city)}>
       ${rankBadge}
       <div class="guide-card-head">
         <div class="guide-avatar">${cityCode(row.city)}</div>
@@ -1311,7 +1333,8 @@
       <div class="guide-cards">${g.rows.map((r) => cardHtml(r, null)).join("")}</div>
     </details>`).join("");
   }
-  function openGuideDetail(name) {
+  function openGuideDetail(name, trigger) {
+    detailTrigger = trigger;
     const g25 = guideStats25.find((g) => g.name === name) || null;
     const g26 = guideStats26.find((g) => g.name === name) || null;
     const city = g26 ? g26.city : g25.city;
@@ -1320,6 +1343,7 @@
     document.getElementById("guide-detail-city").textContent = city;
     document.getElementById("guide-detail-backdrop").classList.add("open");
     document.getElementById("guide-detail-modal").classList.add("open");
+    document.getElementById("guide-detail-close").focus();
     if (detailChart) detailChart.destroy();
     const MONTH_NAMES2 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     detailChart = dualLine(
@@ -1330,12 +1354,15 @@
     );
   }
   function closeGuideDetail() {
+    if (!document.getElementById("guide-detail-modal").classList.contains("open")) return;
     document.getElementById("guide-detail-backdrop").classList.remove("open");
     document.getElementById("guide-detail-modal").classList.remove("open");
     if (detailChart) {
       detailChart.destroy();
       detailChart = null;
     }
+    detailTrigger?.focus();
+    detailTrigger = null;
   }
   var PageGuides = {
     _initialized: false,
@@ -1380,8 +1407,8 @@
       <div id="guides-total-strip"></div>
       <div id="guides-cards"></div>
       <div class="guide-detail-backdrop" id="guide-detail-backdrop"></div>
-      <div class="guide-detail-modal" id="guide-detail-modal">
-        <button class="guide-detail-close" id="guide-detail-close">&times;</button>
+      <div class="guide-detail-modal" id="guide-detail-modal" role="dialog" aria-modal="true" aria-labelledby="guide-detail-name">
+        <button class="guide-detail-close" id="guide-detail-close" aria-label="Close guide details">&times;</button>
         <div class="guide-detail-head">
           <h3 id="guide-detail-name"></h3>
           <span id="guide-detail-city" class="guide-detail-city"></span>
@@ -1415,12 +1442,23 @@
       });
       document.getElementById("guides-cards").addEventListener("click", (e) => {
         const card = e.target.closest(".guide-card");
-        if (card) openGuideDetail(card.dataset.name);
+        if (card) openGuideDetail(card.dataset.name, card);
+      });
+      document.getElementById("guides-cards").addEventListener("keydown", (e) => {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        const card = e.target.closest(".guide-card");
+        if (!card) return;
+        e.preventDefault();
+        openGuideDetail(card.dataset.name, card);
       });
       document.getElementById("guide-detail-close").addEventListener("click", closeGuideDetail);
       document.getElementById("guide-detail-backdrop").addEventListener("click", closeGuideDetail);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeGuideDetail();
+        if (e.key === "Tab" && document.getElementById("guide-detail-modal").classList.contains("open")) {
+          e.preventDefault();
+          document.getElementById("guide-detail-close").focus();
+        }
       });
       this.renderAll();
     },
