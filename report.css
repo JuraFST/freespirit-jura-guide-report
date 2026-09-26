@@ -90,24 +90,6 @@ body {
 }
 .page-note { font-size: 13px; color: var(--text3); margin: -6px 0 16px; }
 
-.brand-bar {
-  position: sticky;
-  top: 4px;
-  z-index: 11;
-  max-width: min(1440px, calc(100% - 8px));
-  height: 52px;
-  margin: 4px auto 8px;
-  padding: 10px clamp(16px, 4vw, 28px);
-  border-radius: 10px;
-  background: #243F5C;
-  transition: transform 0.25s ease;
-}
-.brand-bar--hidden { transform: translateY(calc(-100% - 12px)); }
-.brand-bar__inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 100%; }
-.brand-bar__inner img { display: block; width: auto; flex: 0 0 auto; filter: brightness(0) invert(1); }
-.brand-bar__dodai { height: 24px; order: -1; }
-.brand-bar__client { height: 28px; }
-
 .comparison-takeaway {
   max-width: 72ch;
   margin: 0 0 24px;
@@ -121,7 +103,7 @@ body {
 
 .nav {
   position: sticky;
-  top: 60px;
+  top: 0;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -129,12 +111,10 @@ body {
   padding: 12px 20px;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  transition: top 0.25s ease;
 }
-.brand-bar--hidden + .nav { top: 0; }
-@media (prefers-reduced-motion: reduce) {
-  .brand-bar, .nav { transition: none; }
-}
+
+.nav img { height: 28px; }
+body.dark-mode .nav img { filter: invert(1) brightness(2); }
 
 .nav-tab {
   background: transparent;
@@ -143,7 +123,7 @@ body {
   cursor: pointer;
 }
 
-.nav-tabs { display: flex; align-items: center; gap: 22px; }
+.nav-tabs { display: flex; align-items: center; gap: 22px; margin-left: 12px; }
 .top-tab {
   border: none;
   border-bottom: 2px solid transparent;
