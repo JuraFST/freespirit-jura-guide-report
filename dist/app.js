@@ -1009,7 +1009,7 @@
     init() {
       const root = document.getElementById("page-cmp");
       root.innerHTML = `
-      <p class="page-note" id="cmp-opening-takeaway"></p>
+      <p class="comparison-takeaway" id="cmp-opening-takeaway"></p>
       <div id="cmp-free-block"></div>
       <div id="cmp-group-block"></div>
       <div id="cmp-private-block"></div>
@@ -1662,6 +1662,22 @@
   window.updateDateAsOf = updateDateAsOf;
   document.addEventListener("DOMContentLoaded", () => {
     initTheme();
+    const brandBar = document.querySelector(".brand-bar");
+    if (brandBar) {
+      let lastY = window.scrollY;
+      let ticking = false;
+      window.addEventListener("scroll", () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          if (y <= 80 || lastY - y > 8) brandBar.classList.remove("brand-bar--hidden");
+          else if (y - lastY > 8) brandBar.classList.add("brand-bar--hidden");
+          lastY = y;
+          ticking = false;
+        });
+      }, { passive: true });
+    }
     const dateInput = document.getElementById("as-of-date");
     if (dateInput) {
       dateInput.value = getGlobalDate();
