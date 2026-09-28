@@ -136,13 +136,30 @@
       grid: { color: cssVar("--border", "#dddddd") }
     };
   }
+  function yearDeltaFooter(items) {
+    if (!items || items.length < 2) return "";
+    const v25 = items.find((i) => /2025/.test(i.label))?.value;
+    const v26 = items.find((i) => /2026/.test(i.label))?.value;
+    if (v25 == null || v26 == null) return "";
+    const delta = v26 - v25;
+    const sign = delta >= 0 ? "+" : "";
+    const pct = v25 !== 0 ? ` (${sign}${Math.round(delta / v25 * 100)}%)` : "";
+    return `2026 vs 2025: ${sign}${delta.toLocaleString("en-GB")}${pct}`;
+  }
+  function footerCallback(tooltipItems) {
+    return yearDeltaFooter(tooltipItems.map((ti) => ({ label: ti.dataset.label, value: ti.raw })));
+  }
   function tooltipDefaults() {
     return {
-      backgroundColor: "#1a1a1a",
-      titleColor: "#fff",
-      bodyColor: "#fff",
+      backgroundColor: cssVar("--bg2", "#f5f5f5"),
+      titleColor: cssVar("--text", "#1a1a1a"),
+      bodyColor: cssVar("--text3", "#767676"),
+      footerColor: cssVar("--text3", "#767676"),
+      borderColor: cssVar("--border", "#dddddd"),
+      borderWidth: 1,
       padding: 8,
-      cornerRadius: 4
+      cornerRadius: 4,
+      callbacks: { footer: footerCallback }
     };
   }
   var CATEGORY_HOVER = { mode: "index", intersect: false };
