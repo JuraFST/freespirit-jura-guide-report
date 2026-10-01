@@ -1051,8 +1051,8 @@
   }
 
   // src/pages/page-bookings.js
-  var FREE_CHANNELS = ["web", "GuruWalk", "freetour.com", "Civitatis", "Buendia", "Sandemans", "Walkative", "Viabam", "other"];
-  var PAID_CHANNELS = ["web", "Viator", "GYG", "Airbnb", "Musement", "Civitatis", "other"];
+  var FREE_CHANNELS = ["web", "GuruWalk", "freetour.com", "Civitatis", "Sandemans", "Walkative", "other"];
+  var PAID_CHANNELS = ["web", "Viator", "GYG", "Airbnb", "Musement", "Civitatis", "free", "other"];
   function citiesFor(cityFilter) {
     return cityFilter === "all" ? CITIES : [cityFilter];
   }
