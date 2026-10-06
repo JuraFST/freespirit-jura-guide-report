@@ -96,8 +96,8 @@
     return cityColors(cities).map((hex) => hexToRgba(hex, alpha));
   }
   var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
-  var LANG_CODES = [["all", "ALL"], ["eng", "EN"], ["esp", "ES"], ["fra", "FR"]];
-  var LANG_VARS = { eng: "--eng", esp: "--esp", fra: "--fra" };
+  var LANG_CODES = [["all", "ALL"], ["eng", "EN"], ["esp", "ES"], ["oth", "OTH"]];
+  var LANG_VARS = { eng: "--eng", esp: "--esp", oth: "--oth" };
   function chipBtn(value, label, active, extraClass, styleAttr) {
     const cls = ["chip-btn", extraClass, active === value ? "active" : ""].filter(Boolean).join(" ");
     return `<button type="button" class="${cls}" data-value="${value}"${styleAttr || ""}>${label}</button>`;

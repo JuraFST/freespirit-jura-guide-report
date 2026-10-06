@@ -25,13 +25,13 @@
      a magenta-red too close to EN's red — swapped for Spain's flag gold) */
   --eng: #c8102e;
   --esp: #8a6d04;
-  --fra: #0055a4;
+  --oth: #5b6770;
   /* text-safe variants (checked with the dataviz skill's validator: all
      three clear 4.5:1 on white directly, but not on the dark surface —
      brighter versions below) */
   --eng-text: #c8102e;
   --esp-text: #8a6d04;
-  --fra-text: #0055a4;
+  --oth-text: #5b6770;
 
   --y25: #4a3aa7;
   --y26: #1a1a1a;
@@ -75,7 +75,7 @@ body.dark-mode {
      (checked with the dataviz skill's validator), so brighten them here */
   --eng-text: #f0505f;
   --esp-text: #d4a017;
-  --fra-text: #5f7fe0;
+  --oth-text: #9aa5ae;
 }
 
 * { box-sizing: border-box; }
@@ -541,3 +541,23 @@ thead tr:first-child .channel-col-other { background: color-mix(in srgb, var(--t
 .guide-detail-head { margin-bottom: 12px; padding-right: 24px; }
 .guide-detail-head h3 { margin: 0 0 2px; font-size: 18px; }
 .guide-detail-city { font-size: 12px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Phone: page gutter (24px) plus card padding (16px) left a chart ~308px of a
+   390px screen. Tighten both, and pin the first column of the wide scrolling
+   tables so row labels stay visible while the rest scrolls. */
+@media (max-width: 640px) {
+  .page { padding: 16px 12px; }
+  .card { padding: 12px 8px; }
+  .card-title { padding: 0 6px; }
+  .comparison-table-scroll th,
+  .comparison-table-scroll td { padding: 6px 6px; }
+  .comparison-table-scroll tbody td:first-child,
+  .comparison-table-scroll tfoot td:first-child,
+  .comparison-table-scroll thead tr:first-child th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--bg);
+  }
+  .comparison-table-scroll thead tr:first-child th:first-child { background: var(--bg2); }
+}

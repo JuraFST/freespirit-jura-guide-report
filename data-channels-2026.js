@@ -363,7 +363,7 @@ const freeChannelStats26 = {
           "9-27": 5
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -921,7 +921,7 @@ const freeChannelStats26 = {
           "9-27": 2
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -1371,7 +1371,7 @@ const freeChannelStats26 = {
           "9-27": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -1757,7 +1757,7 @@ const freeChannelStats26 = {
           "9-14": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -2392,7 +2392,7 @@ const freeChannelStats26 = {
           "9-27": 8
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -2997,7 +2997,7 @@ const freeChannelStats26 = {
           "9-27": 6
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -3376,7 +3376,7 @@ const freeChannelStats26 = {
           "9-27": 7
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -3829,7 +3829,7 @@ const freeChannelStats26 = {
           "9-27": 1
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -4458,7 +4458,7 @@ const freeChannelStats26 = {
           "9-27": 6
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -5025,7 +5025,7 @@ const freeChannelStats26 = {
           "9-27": 3
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -5354,7 +5354,7 @@ const freeChannelStats26 = {
           "9-27": 2
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -5717,7 +5717,7 @@ const freeChannelStats26 = {
           "9-27": 2
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -6288,7 +6288,7 @@ const freeChannelStats26 = {
           "9-27": 36
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -6814,7 +6814,7 @@ const freeChannelStats26 = {
           "9-27": 42
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -7333,7 +7333,7 @@ const freeChannelStats26 = {
           "9-27": 29
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -7801,7 +7801,7 @@ const freeChannelStats26 = {
           "9-27": 11
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8055,7 +8055,7 @@ const freeChannelStats26 = {
           "9-18": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8254,7 +8254,7 @@ const freeChannelStats26 = {
           "9-26": 6
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8462,7 +8462,7 @@ const freeChannelStats26 = {
           "9-26": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8580,7 +8580,7 @@ const freeChannelStats26 = {
           "9-27": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8728,7 +8728,7 @@ const freeChannelStats26 = {
           "9-19": 1
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -8949,7 +8949,7 @@ const freeChannelStats26 = {
           "9-16": 1
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9148,7 +9148,7 @@ const freeChannelStats26 = {
           "9-22": 2
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9287,7 +9287,7 @@ const freeChannelStats26 = {
           "8-24": 5
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9364,7 +9364,7 @@ const freeChannelStats26 = {
           "9-7": 3
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9415,7 +9415,7 @@ const freeChannelStats26 = {
           "9-23": 4
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9455,7 +9455,7 @@ const freeChannelStats26 = {
           "6-27": 2
         }
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
@@ -9479,7 +9479,7 @@ const freeChannelStats26 = {
         "byMonth": {},
         "byDay": {}
       },
-      "fra": {
+      "oth": {
         "byMonth": {},
         "byDay": {}
       },
