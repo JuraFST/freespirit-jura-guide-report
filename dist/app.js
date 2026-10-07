@@ -95,8 +95,7 @@
   function cityColorsAlpha(cities, alpha) {
     return cityColors(cities).map((hex) => hexToRgba(hex, alpha));
   }
-  var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
-  var LANG_CODES = [["all", "ALL"], ["eng", "EN"], ["esp", "ES"], ["oth", "OTH"]];
+  var LANG_CODES = [["all", "All"], ["eng", "Eng"], ["esp", "Esp"], ["oth", "Oth"]];
   var LANG_VARS = { eng: "--eng", esp: "--esp", oth: "--oth" };
   function chipBtn(value, label, active, extraClass, styleAttr) {
     const cls = ["chip-btn", extraClass, active === value ? "active" : ""].filter(Boolean).join(" ");
@@ -104,19 +103,27 @@
   }
   function cityChipsHtml(idPrefix, active) {
     const btns = ["all", ...Object.keys(CITY_VARS)].map((c) => {
-      if (c === "all") return chipBtn("all", "ALL", active);
+      if (c === "all") return chipBtn("all", "All", active);
       const style = ` style="--chip-hue: var(${CITY_VARS[c]}); --chip-text: var(${CITY_VARS[c]}-text);"`;
-      return chipBtn(c, CITY_CODES[c], active, "city", style);
+      return chipBtn(c, c, active, "city", style);
     }).join("");
     return `<div class="chip-group chip-group-pill" id="${idPrefix}-city-chips">${btns}</div>`;
   }
   function langChipsHtml(idPrefix, active) {
     const btns = LANG_CODES.map(([v, l]) => {
-      if (v === "all") return chipBtn("all", "ALL", active);
+      if (v === "all") return chipBtn("all", "All", active);
       const style = ` style="--chip-hue: var(${LANG_VARS[v]}); --chip-text: var(${LANG_VARS[v]}-text);"`;
       return chipBtn(v, l, active, "lang", style);
     }).join("");
     return `<div class="chip-group chip-group-pill" id="${idPrefix}-lang-chips">${btns}</div>`;
+  }
+  var MONTH_OPTIONS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  function monthSelectHtml(idPrefix, active) {
+    const opts = [["all", "All"], ...MONTH_OPTIONS.map((m, i) => [String(i + 1), m])].map(([v, l]) => `<option value="${v}"${String(active) === v ? " selected" : ""}>${l}</option>`).join("");
+    return `<label class="month-filter" for="${idPrefix}-month">Month <select id="${idPrefix}-month">${opts}</select></label>`;
+  }
+  function bindMonthSelect(idPrefix, onSelect) {
+    document.getElementById(`${idPrefix}-month`).addEventListener("change", (e) => onSelect(e.target.value));
   }
   function chipGroupHtml(id, options, active) {
     const btns = options.map(([value, label]) => chipBtn(value, label, active)).join("");
@@ -410,17 +417,20 @@
     if (!cs) return null;
     return cs[lang] || cs.all;
   }
-  function perCityFree(cityStats, cities, cutoffMonth, cutoffDay, lang) {
+  function monthsFor(month) {
+    return month === "all" || month == null ? [] : [Number(month)];
+  }
+  function perCityFree(cityStats, cities, cutoffMonth, cutoffDay, lang, month = "all") {
     return cities.map((city) => {
       const st = statFor(cityStats, city, lang);
-      const r = st ? filteredStats(st, [], cutoffMonth, cutoffDay) : { freeTours: 0, freePax: 0 };
+      const r = st ? filteredStats(st, monthsFor(month), cutoffMonth, cutoffDay) : { freeTours: 0, freePax: 0 };
       return { city, tours: r.freeTours, pax: r.freePax };
     });
   }
-  function perCityType(cityStats, cities, cutoffMonth, cutoffDay, lang, typeFilter3) {
+  function perCityType(cityStats, cities, cutoffMonth, cutoffDay, lang, typeFilter3, month = "all") {
     return cities.map((city) => {
       const st = statFor(cityStats, city, lang);
-      const r = st ? filteredTypeStats(st, [], cutoffMonth, cutoffDay, typeFilter3) : { tours: 0, pax: 0 };
+      const r = st ? filteredTypeStats(st, monthsFor(month), cutoffMonth, cutoffDay, typeFilter3) : { tours: 0, pax: 0 };
       return { city, ...r };
     });
   }
@@ -512,7 +522,7 @@
     chartInstances.forEach((c) => c.destroy());
     chartInstances = [];
     const cities = citiesInScope(filters);
-    const perCity = perCityFree(cityStats, cities, cutoffMonth, cutoffDay, filters.lang);
+    const perCity = perCityFree(cityStats, cities, cutoffMonth, cutoffDay, filters.lang, filters.month);
     const totalTours = perCity.reduce((s, c) => s + c.tours, 0);
     const totalPax = perCity.reduce((s, c) => s + c.pax, 0);
     const avgPax = totalTours > 0 ? (totalPax / totalTours).toFixed(1) : "0.0";
@@ -593,7 +603,7 @@
     chartInstances2 = [];
     const cities = citiesInScope2(filters);
     const filter = typeFilter(filters);
-    const perCity = perCityType(cityStats, cities, cutoffMonth, cutoffDay, filters.lang, filter);
+    const perCity = perCityType(cityStats, cities, cutoffMonth, cutoffDay, filters.lang, filter, filters.month);
     const totalTours = perCity.reduce((s, c) => s + c.tours, 0);
     const totalPax = perCity.reduce((s, c) => s + c.pax, 0);
     const avgPax = totalTours > 0 ? (totalPax / totalTours).toFixed(1) : "0.0";
@@ -667,7 +677,7 @@
     chartInstances3 = [];
     const cities = citiesInScope3(filters);
     const filter = typeFilter2(filters);
-    const perCity = perCityType(cityStats, cities, cutoffMonth, cutoffDay, filters.lang, filter);
+    const perCity = perCityType(cityStats, cities, cutoffMonth, cutoffDay, filters.lang, filter, filters.month);
     const totalTours = perCity.reduce((s, c) => s + c.tours, 0);
     document.getElementById(`${chartIdPrefix}-pp-kpis`).innerHTML = kpiCardHtml("Paid Private Tours", fmtN(totalTours));
     chartInstances3.push(barChart(document.getElementById(`${chartIdPrefix}-pp-c1`), perCity.map((c) => c.city), [{ label: "Paid Private Tours", data: perCity.map((c) => c.tours), backgroundColor: cityColors(perCity.map((c) => c.city)) }]));
@@ -677,7 +687,7 @@
 
   // src/pages/page-year.js
   function makeYearPage(pageId, getCityStats, chartIdPrefix, fullYearTables = false) {
-    const filters = { city: "all", lang: "all", groupType: "all", privateType: "all" };
+    const filters = { city: "all", lang: "all", month: "all", groupType: "all", privateType: "all" };
     return {
       _initialized: false,
       init() {
@@ -686,6 +696,7 @@
         <div class="filter-bar sticky" id="${chartIdPrefix}-main-filter">
           ${cityChipsHtml(chartIdPrefix, filters.city)}
           ${langChipsHtml(chartIdPrefix, filters.lang)}
+          ${monthSelectHtml(chartIdPrefix, filters.month)}
         </div>
         <div id="${chartIdPrefix}-free"></div>
         <div id="${chartIdPrefix}-group"></div>
@@ -697,6 +708,10 @@
         });
         bindChipGroup(`${chartIdPrefix}-lang-chips`, (v) => {
           filters.lang = v;
+          this.renderAll();
+        });
+        bindMonthSelect(chartIdPrefix, (v) => {
+          filters.month = v;
           this.renderAll();
         });
         this.renderAll();
@@ -791,7 +806,7 @@
     const [prior, current] = totals;
     document.getElementById("cmp-opening-takeaway").textContent = `Across all four cities through ${MONTH_NAMES[month]} ${day}, Free Tour PAX went from ${fmtN(prior.pax)} in 2025 to ${fmtN(current.pax)} in 2026 (${pctLabel(deltaRow(prior.pax, current.pax))}); tours went from ${fmtN(prior.tours)} to ${fmtN(current.tours)} (${pctLabel(deltaRow(prior.tours, current.tours))}). Review demand by city before setting tour frequency.`;
   }
-  var cmpState = { city: "all", lang: "all" };
+  var cmpState = { city: "all", lang: "all", month: "all" };
   var freeCharts = [];
   function renderFreeBlock(containerEl) {
     const cutoffMonth = getCutoffMonth();
@@ -816,8 +831,8 @@
     }
     updateComparisonNotes(containerEl);
     const cities = cmpState.city === "all" ? CITIES : [cmpState.city];
-    const pc25 = perCityFree(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang);
-    const pc26 = perCityFree(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang);
+    const pc25 = perCityFree(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, cmpState.month);
+    const pc26 = perCityFree(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, cmpState.month);
     const t25 = cumulativeFree(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang);
     const t26 = cumulativeFree(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang);
     const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
@@ -880,8 +895,8 @@
     syncChipGroup("cmp-group-type-chips", groupState.type);
     const cities = cmpState.city === "all" ? CITIES : [cmpState.city];
     const filter = groupTypeFilter();
-    const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
-    const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
+    const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter, cmpState.month);
+    const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter, cmpState.month);
     const t25 = cumulativeType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
     const t26 = cumulativeType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
     const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
@@ -943,8 +958,8 @@
     syncChipGroup("cmp-private-type-chips", privateState.type);
     const cities = cmpState.city === "all" ? CITIES : [cmpState.city];
     const filter = privateTypeFilter();
-    const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
-    const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
+    const pc25 = perCityType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter, cmpState.month);
+    const pc26 = perCityType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter, cmpState.month);
     const t25 = cumulativeType(cityStats25, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
     const t26 = cumulativeType(cityStats26, cities, cutoffMonth, cutoffDay, cmpState.lang, filter);
     const toursSum25 = pc25.reduce((s, c) => s + c.tours, 0);
@@ -968,6 +983,7 @@
       <div class="filter-bar sticky" id="cmp-main-filter">
         ${cityChipsHtml("cmp", cmpState.city)}
         ${langChipsHtml("cmp", cmpState.lang)}
+        ${monthSelectHtml("cmp", cmpState.month)}
       </div>
       <div id="cmp-free-block"></div>
       <div id="cmp-group-block"></div>
@@ -979,6 +995,10 @@
       });
       bindChipGroup("cmp-lang-chips", (v) => {
         cmpState.lang = v;
+        this.renderAll();
+      });
+      bindMonthSelect("cmp", (v) => {
+        cmpState.month = v;
         this.renderAll();
       });
       this.renderAll();
@@ -1023,10 +1043,11 @@
     const prefix = `${m}-`;
     return Object.keys(byDay).some((k) => k.startsWith(prefix));
   }
-  function channelTotal(channelStats, channel, cities, lang, cutoffMonth, cutoffDay) {
+  function channelTotal(channelStats, channel, cities, lang, cutoffMonth, cutoffDay, month = "all") {
     const entry = sumEntries(channelStats, channel, cities, lang);
     let pax = 0;
     for (let m = 1; m <= cutoffMonth; m++) {
+      if (month !== "all" && m !== Number(month)) continue;
       if (m < cutoffMonth) {
         pax += entry.byMonth[String(m)] || 0;
       } else if (hasDayDataForMonth(entry.byDay, m)) {
@@ -1116,13 +1137,13 @@
       containerEl.dataset.built = "true";
     }
     const cities = citiesFor(filters.city);
-    const totals26 = channels.map((c) => channelTotal(channelStats26, c, cities, filters.lang, cutoffMonth, cutoffDay));
-    const totals25 = channelStats25 ? channels.map((c) => channelTotal(channelStats25, c, cities, filters.lang, cutoffMonth, cutoffDay)) : null;
+    const totals26 = channels.map((c) => channelTotal(channelStats26, c, cities, filters.lang, cutoffMonth, cutoffDay, filters.month));
+    const totals25 = channelStats25 ? channels.map((c) => channelTotal(channelStats25, c, cities, filters.lang, cutoffMonth, cutoffDay, filters.month)) : null;
     if (state.chart) state.chart.destroy();
     state.chart = channelBar(chartId, channels, totals26, totals25);
     document.getElementById(tableId).innerHTML = monthlyTableHtml(channelStats25, channelStats26, channels, cities, filters.lang, cutoffMonth, cutoffDay);
   }
-  var bkFilters = { city: "all", lang: "all" };
+  var bkFilters = { city: "all", lang: "all", month: "all" };
   var freeState = { chart: null };
   var paidState = { chart: null };
   function missingBlockHtml(title, missingWhat) {
@@ -1136,6 +1157,7 @@
       <div class="filter-bar sticky">
         ${cityChipsHtml("bk", bkFilters.city)}
         ${langChipsHtml("bk", bkFilters.lang)}
+        ${monthSelectHtml("bk", bkFilters.month)}
       </div>
       <div id="bk-free-block"></div><div id="bk-paid-block"></div>`;
       bindChipGroup("bk-city-chips", (v) => {
@@ -1144,6 +1166,10 @@
       });
       bindChipGroup("bk-lang-chips", (v) => {
         bkFilters.lang = v;
+        this.renderAll();
+      });
+      bindMonthSelect("bk", (v) => {
+        bkFilters.month = v;
         this.renderAll();
       });
       this.renderAll();
@@ -1199,10 +1225,10 @@
   function filterByCity(guides, city) {
     return city === "all" ? guides : guides.filter((g) => g.city === city);
   }
-  var CITY_CODES2 = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
+  var CITY_CODES = { Zagreb: "ZG", Dubrovnik: "DU", Split: "ST", Zadar: "ZD" };
   var CITY_KEYS = { Zagreb: "zagreb", Dubrovnik: "dubrovnik", Split: "split", Zadar: "zadar" };
   function cityCode(city) {
-    return CITY_CODES2[city] || (city ? city.slice(0, 2).toUpperCase() : "?");
+    return CITY_CODES[city] || (city ? city.slice(0, 2).toUpperCase() : "?");
   }
   function cityAvatarStyle(city) {
     const key = CITY_KEYS[city];
@@ -1235,6 +1261,7 @@
   // src/pages/page-guides.js
   var activeCity = "all";
   var activeLang = "all";
+  var activeMonth = "all";
   var activeView = "cards";
   var activeSearch = "";
   var activeSort = "name";
@@ -1360,6 +1387,7 @@
       <div class="filter-bar sticky">
         ${cityChipsHtml("guides", activeCity)}
         ${langChipsHtml("guides", activeLang)}
+        ${monthSelectHtml("guides", activeMonth)}
         <div class="chip-group" id="guides-sort-chips">
           <button type="button" class="chip-btn" data-value="name">Name</button>
           <button type="button" class="chip-btn" data-value="gain">Total Pax &uarr;</button>
@@ -1410,6 +1438,10 @@
         activeLang = v;
         this.renderAll();
       });
+      bindMonthSelect("guides", (v) => {
+        activeMonth = v;
+        this.renderAll();
+      });
       document.getElementById("guides-search").addEventListener("input", (e) => {
         activeSearch = e.target.value;
         this.renderAll();
@@ -1453,7 +1485,7 @@
       const cutoffDay = getCutoffDay();
       const g25 = filterByCity(guideStats25, activeCity);
       const g26 = filterByCity(guideStats26, activeCity);
-      const { rows: allRows, totalRow } = buildGuideTable(g25, g26, [], cutoffMonth, cutoffDay, activeLang);
+      const { rows: allRows, totalRow } = buildGuideTable(g25, g26, monthsFor(activeMonth), cutoffMonth, cutoffDay, activeLang);
       const searched = filterByName(allRows, activeSearch);
       const rows = rankGuides(searched, activeSort);
       const grouped = activeCity === "all" && activeSort === "name";

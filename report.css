@@ -241,6 +241,7 @@ body.dark-mode .theme-toggle-icon .icon-sun { display: block; }
   padding: 8px 0;
   border-bottom: 1px solid var(--border);
 }
+.month-filter { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text2, var(--text)); }
 .filter-bar select {
   border: 1px solid var(--border);
   border-radius: var(--radius);
