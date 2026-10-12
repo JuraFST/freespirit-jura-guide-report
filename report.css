@@ -5,6 +5,7 @@
   --text3: #767676;
   --border: #dddddd;
   --radius: 4px;
+  --sticky-base: 57px;
 
   --zagreb: #2a78d6;
   --dubrovnik: #eb6834;
@@ -235,7 +236,7 @@ body.dark-mode .theme-toggle-icon .icon-sun { display: block; }
 .chip-group-pill .chip-btn { border-color: transparent; background: var(--bg); }
 .filter-bar.sticky {
   position: sticky;
-  top: 57px;
+  top: var(--sticky-base);
   z-index: 5;
   background: var(--bg);
   padding: 8px 0;

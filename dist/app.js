@@ -36,7 +36,8 @@
   function showPage(id, tabEl) {
     document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
     document.querySelectorAll(".nav-tab").forEach((t) => t.classList.remove("active"));
-    document.getElementById("page-" + id).classList.add("active");
+    const pageEl = document.getElementById("page-" + id);
+    pageEl.classList.add("active");
     document.querySelectorAll(`.nav-tab[data-page="${id}"]`).forEach((t) => t.classList.add("active"));
     const page = PAGES[pageKeyFor(id)];
     if (page) {
@@ -45,6 +46,23 @@
         page._initialized = true;
       } else page.renderAll();
     }
+    stickFilterBars(pageEl);
+  }
+  function stickFilterBars(root) {
+    const place = () => {
+      let top = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--sticky-base")) || 0;
+      root.querySelectorAll(".filter-bar.sticky").forEach((bar, index) => {
+        bar.style.top = top + "px";
+        bar.style.zIndex = String(Math.max(1, 9 - index));
+        top += bar.offsetHeight;
+      });
+    };
+    if (!root._stickObserver) {
+      root._stickObserver = new ResizeObserver(place);
+      root.querySelectorAll(".filter-bar.sticky").forEach((bar) => root._stickObserver.observe(bar));
+      window.addEventListener("resize", place);
+    }
+    place();
   }
   function pageKeyFor(id) {
     return { p25: "Page25", p26: "Page26", cmp: "PageCmp", bookings: "PageBookings", guides: "PageGuides", financial: "PageFinancial" }[id];
@@ -715,19 +733,6 @@
           this.renderAll();
         });
         this.renderAll();
-        this._stickTypeBars();
-      },
-      // The tour-type rows stick directly under the main filter bar, whatever height it wraps to.
-      _stickTypeBars() {
-        const main = document.getElementById(`${chartIdPrefix}-main-filter`);
-        const place = () => {
-          const top = parseFloat(getComputedStyle(main).top) + main.offsetHeight;
-          document.querySelectorAll(`#${pageId} .type-filter-bar`).forEach((bar) => {
-            bar.style.top = top + "px";
-          });
-        };
-        place();
-        new ResizeObserver(place).observe(main);
       },
       renderAll() {
         const cityStats = getCityStats();
@@ -1002,19 +1007,6 @@
         this.renderAll();
       });
       this.renderAll();
-      this._stickTypeBars();
-    },
-    // The tour-type rows stick directly under the main filter bar, whatever height it wraps to.
-    _stickTypeBars() {
-      const main = document.getElementById("cmp-main-filter");
-      const place = () => {
-        const top = parseFloat(getComputedStyle(main).top) + main.offsetHeight;
-        document.querySelectorAll("#page-cmp .type-filter-bar").forEach((bar) => {
-          bar.style.top = top + "px";
-        });
-      };
-      place();
-      new ResizeObserver(place).observe(main);
     },
     renderAll() {
       syncChipGroup("cmp-city-chips", cmpState.city);
