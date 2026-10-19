@@ -1301,7 +1301,7 @@
       const free25 = typeof freeChannelStats25 !== "undefined" ? freeChannelStats25 : null;
       if (free26) {
         renderBlock({
-          title: "Free",
+          title: "Free Tours",
           chartId: "bk-free-chart",
           tableId: "bk-free-table",
           channels: FREE_CHANNELS,
@@ -1312,7 +1312,7 @@
           idPrefix: "bk-free"
         });
       } else {
-        document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free", "freeChannelStats26", "");
+        document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free Tours", "freeChannelStats26", "");
       }
     },
     renderPaid() {
