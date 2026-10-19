@@ -1,100 +1,100 @@
 const kpiTotals26 = {
   "guides": 41,
-  "freeTours": 3823,
-  "paidTours": 1272,
-  "freePax": 64567,
-  "paidPax": 8426,
-  "revenue": 201898.5,
-  "vendorCost": 86065.0,
-  "grossMargin": 13208.05,
-  "tourCost": 18658.34,
-  "commissionCost": 36774.87,
+  "freeTours": 3919,
+  "paidTours": 1296,
+  "freePax": 65816,
+  "paidPax": 8560,
+  "revenue": 205910.5,
+  "vendorCost": 85465.0,
+  "grossMargin": 15701.15,
+  "tourCost": 19167.89,
+  "commissionCost": 37450.97,
   "processingFee": 0.0,
-  "vatAmount": 47072.22,
-  "amountBeforeTax": 60280.29,
+  "vatAmount": 48005.47,
+  "amountBeforeTax": 63706.64,
   "mgmt": {
-    "revenue": 201898.5,
-    "vendorCost": 86065.0,
-    "grossMargin": 13208.05,
-    "tourCost": 18658.34,
-    "commissionCost": 36774.87,
+    "revenue": 205910.5,
+    "vendorCost": 85465.0,
+    "grossMargin": 15701.15,
+    "tourCost": 19167.89,
+    "commissionCost": 37450.97,
     "processingFee": 0.0,
-    "vatAmount": 47072.22,
-    "amountBeforeTax": 60280.29,
+    "vatAmount": 48005.47,
+    "amountBeforeTax": 63706.64,
     "byChannel": {
       "web": {
-        "tours": 3945,
-        "pax": 65771,
-        "revenue": 26225.0,
-        "vendorCost": 8130.0,
-        "grossMargin": 9685.55,
+        "tours": 4045,
+        "pax": 67064,
+        "revenue": 26880.0,
+        "vendorCost": 8240.0,
+        "grossMargin": 10066.8,
         "tourCost": 1778.2,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 6511.25,
-        "amountBeforeTax": 16196.8
+        "vatAmount": 6675.0,
+        "amountBeforeTax": 16741.8
       },
       "OTA": {
-        "tours": 946,
-        "pax": 4082,
-        "revenue": 142148.0,
-        "vendorCost": 61535.0,
-        "grossMargin": -2633.45,
-        "tourCost": 14291.98,
-        "commissionCost": 36774.87,
+        "tours": 962,
+        "pax": 4135,
+        "revenue": 144732.0,
+        "vendorCost": 60745.0,
+        "grossMargin": -996.35,
+        "tourCost": 14776.53,
+        "commissionCost": 37450.97,
         "processingFee": 0.0,
-        "vatAmount": 32179.6,
-        "amountBeforeTax": 29546.15
+        "vatAmount": 32755.85,
+        "amountBeforeTax": 31759.5
       },
       "free": {
         "tours": 46,
         "pax": 182,
         "revenue": 4675.0,
-        "vendorCost": 2710.0,
-        "grossMargin": 796.25,
+        "vendorCost": 2410.0,
+        "grossMargin": 1096.25,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
         "vatAmount": 1168.75,
-        "amountBeforeTax": 1965.0
+        "amountBeforeTax": 2265.0
       },
       "b2b": {
-        "tours": 158,
-        "pax": 705,
-        "revenue": 28850.5,
-        "vendorCost": 13690.0,
-        "grossMargin": 5359.71,
-        "tourCost": 2588.16,
+        "tours": 162,
+        "pax": 715,
+        "revenue": 29623.5,
+        "vendorCost": 14070.0,
+        "grossMargin": 5534.46,
+        "tourCost": 2613.16,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 7212.63,
-        "amountBeforeTax": 12572.34
+        "vatAmount": 7405.88,
+        "amountBeforeTax": 12940.34
       }
     },
     "bySource": {
       "FST": {
-        "tours": 3946,
-        "pax": 65774,
-        "revenue": 26835.0,
-        "vendorCost": 8310.0,
-        "grossMargin": 9959.05,
+        "tours": 4046,
+        "pax": 67067,
+        "revenue": 27490.0,
+        "vendorCost": 8420.0,
+        "grossMargin": 10340.3,
         "tourCost": 1782.2,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 6663.75,
-        "amountBeforeTax": 16622.8
+        "vatAmount": 6827.5,
+        "amountBeforeTax": 17167.8
       },
       "GYG": {
-        "tours": 285,
-        "pax": 1184,
-        "revenue": 39726.0,
-        "vendorCost": 18950.0,
-        "grossMargin": -5476.86,
-        "tourCost": 4403.56,
-        "commissionCost": 11917.8,
+        "tours": 290,
+        "pax": 1204,
+        "revenue": 40537.0,
+        "vendorCost": 18890.0,
+        "grossMargin": -5113.96,
+        "tourCost": 4465.61,
+        "commissionCost": 12161.1,
         "processingFee": 0.0,
-        "vatAmount": 9931.5,
-        "amountBeforeTax": 4454.64
+        "vatAmount": 10134.25,
+        "amountBeforeTax": 5020.29
       },
       "Darko Crnolatac": {
         "tours": 1,
@@ -133,16 +133,16 @@ const kpiTotals26 = {
         "amountBeforeTax": 232.8
       },
       "Viator": {
-        "tours": 334,
-        "pax": 1488,
-        "revenue": 56975.0,
-        "vendorCost": 20785.0,
-        "grossMargin": 1860.14,
-        "tourCost": 7120.14,
-        "commissionCost": 15814.72,
+        "tours": 341,
+        "pax": 1511,
+        "revenue": 58370.0,
+        "vendorCost": 21245.0,
+        "grossMargin": 1736.84,
+        "tourCost": 7541.64,
+        "commissionCost": 16172.52,
         "processingFee": 0.0,
-        "vatAmount": 11395.0,
-        "amountBeforeTax": 13255.14
+        "vatAmount": 11674.0,
+        "amountBeforeTax": 13410.84
       },
       "Royal Tours Croatia": {
         "tours": 23,
@@ -157,16 +157,16 @@ const kpiTotals26 = {
         "amountBeforeTax": 1991.16
       },
       "Roundabout": {
-        "tours": 85,
-        "pax": 340,
-        "revenue": 15161.0,
-        "vendorCost": 7700.0,
-        "grossMargin": 2689.1,
-        "tourCost": 981.65,
+        "tours": 88,
+        "pax": 348,
+        "revenue": 15779.0,
+        "vendorCost": 8020.0,
+        "grossMargin": 2807.6,
+        "tourCost": 1006.65,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 3790.25,
-        "amountBeforeTax": 6479.35
+        "vatAmount": 3944.75,
+        "amountBeforeTax": 6752.35
       },
       "Perfecta Travel": {
         "tours": 6,
@@ -241,16 +241,16 @@ const kpiTotals26 = {
         "amountBeforeTax": 140.0
       },
       "Touch Croatia": {
-        "tours": 3,
-        "pax": 10,
-        "revenue": 375.0,
-        "vendorCost": 180.0,
-        "grossMargin": 101.25,
+        "tours": 4,
+        "pax": 12,
+        "revenue": 500.0,
+        "vendorCost": 240.0,
+        "grossMargin": 135.0,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 93.75,
-        "amountBeforeTax": 195.0
+        "vatAmount": 125.0,
+        "amountBeforeTax": 260.0
       },
       "Travel Croatia DMC": {
         "tours": 1,
@@ -289,16 +289,16 @@ const kpiTotals26 = {
         "amountBeforeTax": -30.75
       },
       "Civitatis": {
-        "tours": 243,
-        "pax": 1135,
-        "revenue": 33064.0,
-        "vendorCost": 16170.0,
-        "grossMargin": 1665.7,
-        "tourCost": 256.3,
-        "commissionCost": 6706.0,
+        "tours": 247,
+        "pax": 1145,
+        "revenue": 33442.0,
+        "vendorCost": 14980.0,
+        "grossMargin": 3063.2,
+        "tourCost": 257.3,
+        "commissionCost": 6781.0,
         "processingFee": 0.0,
-        "vatAmount": 8266.0,
-        "amountBeforeTax": 9931.7
+        "vatAmount": 8360.5,
+        "amountBeforeTax": 11423.7
       },
       "Katarina Novoselac": {
         "tours": 15,
@@ -316,13 +316,13 @@ const kpiTotals26 = {
         "tours": 6,
         "pax": 21,
         "revenue": 630.0,
-        "vendorCost": 360.0,
-        "grossMargin": 112.5,
+        "vendorCost": 300.0,
+        "grossMargin": 172.5,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
         "vatAmount": 157.5,
-        "amountBeforeTax": 270.0
+        "amountBeforeTax": 330.0
       },
       "Iva Pavlović": {
         "tours": 6,
@@ -340,13 +340,13 @@ const kpiTotals26 = {
         "tours": 4,
         "pax": 12,
         "revenue": 360.0,
-        "vendorCost": 240.0,
-        "grossMargin": 30.0,
+        "vendorCost": 180.0,
+        "grossMargin": 90.0,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
         "vatAmount": 90.0,
-        "amountBeforeTax": 120.0
+        "amountBeforeTax": 180.0
       },
       "Nikolina Folnović": {
         "tours": 2,
@@ -364,25 +364,25 @@ const kpiTotals26 = {
         "tours": 6,
         "pax": 20,
         "revenue": 600.0,
-        "vendorCost": 360.0,
-        "grossMargin": 90.0,
+        "vendorCost": 180.0,
+        "grossMargin": 270.0,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
         "vatAmount": 150.0,
-        "amountBeforeTax": 240.0
+        "amountBeforeTax": 420.0
       },
       "Taste Dalmatia": {
         "tours": 30,
         "pax": 141,
-        "revenue": 5562.5,
+        "revenue": 5592.5,
         "vendorCost": 3220.0,
-        "grossMargin": 951.88,
+        "grossMargin": 974.38,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
-        "vatAmount": 1390.62,
-        "amountBeforeTax": 2342.5
+        "vatAmount": 1398.12,
+        "amountBeforeTax": 2372.5
       },
       "Project Expedition": {
         "tours": 1,
@@ -399,138 +399,138 @@ const kpiTotals26 = {
     },
     "byDow": {
       "Sat": {
-        "tours": 777,
-        "pax": 11384,
-        "revenue": 36506.0,
+        "tours": 789,
+        "pax": 11549,
+        "revenue": 36794.0,
         "vendorCost": 14120.0,
-        "grossMargin": 2910.21,
+        "grossMargin": 3066.81,
         "tourCost": 3590.45,
-        "commissionCost": 7391.18,
+        "commissionCost": 7450.58,
         "processingFee": 0.0,
-        "vatAmount": 8494.16,
-        "amountBeforeTax": 11404.37
+        "vatAmount": 8566.16,
+        "amountBeforeTax": 11632.97
       },
       "Tue": {
-        "tours": 726,
-        "pax": 9707,
-        "revenue": 26625.5,
-        "vendorCost": 12475.0,
-        "grossMargin": 1353.3,
-        "tourCost": 1961.13,
-        "commissionCost": 4560.13,
+        "tours": 748,
+        "pax": 9937,
+        "revenue": 27311.5,
+        "vendorCost": 12365.0,
+        "grossMargin": 1807.92,
+        "tourCost": 2037.13,
+        "commissionCost": 4670.81,
         "processingFee": 0.0,
-        "vatAmount": 6275.94,
-        "amountBeforeTax": 7629.24
+        "vatAmount": 6430.64,
+        "amountBeforeTax": 8238.56
       },
       "Sun": {
-        "tours": 704,
-        "pax": 10180,
-        "revenue": 27392.5,
-        "vendorCost": 10950.0,
-        "grossMargin": 2545.11,
+        "tours": 714,
+        "pax": 10289,
+        "revenue": 27622.5,
+        "vendorCost": 11030.0,
+        "grossMargin": 2587.61,
         "tourCost": 2513.37,
-        "commissionCost": 5013.58,
+        "commissionCost": 5063.58,
         "processingFee": 0.0,
-        "vatAmount": 6370.43,
-        "amountBeforeTax": 8915.55
+        "vatAmount": 6427.93,
+        "amountBeforeTax": 9015.55
       },
       "Mon": {
-        "tours": 709,
-        "pax": 9657,
-        "revenue": 26555.0,
-        "vendorCost": 11260.0,
-        "grossMargin": 2042.08,
+        "tours": 736,
+        "pax": 9973,
+        "revenue": 26703.0,
+        "vendorCost": 11130.0,
+        "grossMargin": 2283.08,
         "tourCost": 2285.82,
         "commissionCost": 4807.69,
         "processingFee": 0.0,
-        "vatAmount": 6159.4,
-        "amountBeforeTax": 8201.49
+        "vatAmount": 6196.4,
+        "amountBeforeTax": 8479.49
       },
       "Fri": {
-        "tours": 747,
-        "pax": 10396,
-        "revenue": 31381.5,
-        "vendorCost": 13650.0,
-        "grossMargin": 2184.79,
-        "tourCost": 2642.93,
-        "commissionCost": 5562.04,
+        "tours": 762,
+        "pax": 10548,
+        "revenue": 32422.5,
+        "vendorCost": 13480.0,
+        "grossMargin": 2650.1,
+        "tourCost": 2927.68,
+        "commissionCost": 5795.88,
         "processingFee": 0.0,
-        "vatAmount": 7341.73,
-        "amountBeforeTax": 9526.53
+        "vatAmount": 7568.83,
+        "amountBeforeTax": 10218.94
       },
       "Wed": {
-        "tours": 706,
-        "pax": 9464,
-        "revenue": 26795.5,
-        "vendorCost": 11670.0,
-        "grossMargin": 1199.14,
-        "tourCost": 2838.87,
-        "commissionCost": 4849.21,
+        "tours": 723,
+        "pax": 9658,
+        "revenue": 27393.5,
+        "vendorCost": 11570.0,
+        "grossMargin": 1642.14,
+        "tourCost": 2865.87,
+        "commissionCost": 4929.71,
         "processingFee": 0.0,
-        "vatAmount": 6238.27,
-        "amountBeforeTax": 7437.42
+        "vatAmount": 6385.77,
+        "amountBeforeTax": 8027.92
       },
       "Thu": {
-        "tours": 726,
-        "pax": 9952,
-        "revenue": 26642.5,
-        "vendorCost": 11940.0,
-        "grossMargin": 973.36,
-        "tourCost": 2825.77,
-        "commissionCost": 4591.04,
+        "tours": 743,
+        "pax": 10142,
+        "revenue": 27663.5,
+        "vendorCost": 11770.0,
+        "grossMargin": 1663.43,
+        "tourCost": 2947.57,
+        "commissionCost": 4732.72,
         "processingFee": 0.0,
-        "vatAmount": 6192.31,
-        "amountBeforeTax": 7165.69
+        "vatAmount": 6429.76,
+        "amountBeforeTax": 8093.21
       }
     },
     "byTime": {
       "11": {
-        "tours": 925,
-        "pax": 15656,
-        "revenue": 30240.0,
-        "vendorCost": 9320.0,
-        "grossMargin": -101.49,
-        "tourCost": 7488.95,
-        "commissionCost": 6610.49,
+        "tours": 951,
+        "pax": 16005,
+        "revenue": 31991.0,
+        "vendorCost": 9560.0,
+        "grossMargin": 81.3,
+        "tourCost": 7994.5,
+        "commissionCost": 7053.25,
         "processingFee": 0.0,
-        "vatAmount": 6922.05,
-        "amountBeforeTax": 6820.56
+        "vatAmount": 7301.95,
+        "amountBeforeTax": 7383.25
       },
       "15": {
-        "tours": 236,
-        "pax": 977,
-        "revenue": 37914.0,
-        "vendorCost": 13500.0,
-        "grossMargin": 6337.86,
+        "tours": 239,
+        "pax": 986,
+        "revenue": 38257.0,
+        "vendorCost": 13680.0,
+        "grossMargin": 6338.67,
         "tourCost": 608.6,
-        "commissionCost": 9114.59,
+        "commissionCost": 9194.93,
         "processingFee": 0.0,
-        "vatAmount": 8352.95,
-        "amountBeforeTax": 14690.81
+        "vatAmount": 8434.8,
+        "amountBeforeTax": 14773.47
       },
       "10": {
-        "tours": 2179,
-        "pax": 27102,
-        "revenue": 84629.5,
-        "vendorCost": 41965.0,
-        "grossMargin": -3909.65,
-        "tourCost": 8955.04,
-        "commissionCost": 17950.31,
+        "tours": 2232,
+        "pax": 27654,
+        "revenue": 85704.5,
+        "vendorCost": 41755.0,
+        "grossMargin": -3042.4,
+        "tourCost": 8959.04,
+        "commissionCost": 18103.31,
         "processingFee": 0.0,
-        "vatAmount": 19668.8,
-        "amountBeforeTax": 15759.15
+        "vatAmount": 19929.55,
+        "amountBeforeTax": 16887.15
       },
       "17": {
-        "tours": 800,
-        "pax": 12722,
-        "revenue": 8477.5,
-        "vendorCost": 3220.0,
-        "grossMargin": 1694.07,
+        "tours": 833,
+        "pax": 13122,
+        "revenue": 8507.5,
+        "vendorCost": 3160.0,
+        "grossMargin": 1776.57,
         "tourCost": 721.55,
         "commissionCost": 728.75,
         "processingFee": 0.0,
-        "vatAmount": 2113.13,
-        "amountBeforeTax": 3807.2
+        "vatAmount": 2120.63,
+        "amountBeforeTax": 3897.2
       },
       "12": {
         "tours": 23,
@@ -557,28 +557,28 @@ const kpiTotals26 = {
         "amountBeforeTax": 1208.5
       },
       "9": {
-        "tours": 51,
-        "pax": 359,
-        "revenue": 9215.0,
-        "vendorCost": 4120.0,
-        "grossMargin": 2322.99,
+        "tours": 52,
+        "pax": 361,
+        "revenue": 9395.0,
+        "vendorCost": 4230.0,
+        "grossMargin": 2347.99,
         "tourCost": 0.0,
         "commissionCost": 488.25,
         "processingFee": 0.0,
-        "vatAmount": 2283.76,
-        "amountBeforeTax": 4606.75
+        "vatAmount": 2328.76,
+        "amountBeforeTax": 4676.75
       },
       "14": {
         "tours": 20,
         "pax": 165,
         "revenue": 4163.0,
-        "vendorCost": 1340.0,
-        "grossMargin": 1255.25,
+        "vendorCost": 1200.0,
+        "grossMargin": 1395.25,
         "tourCost": 243.0,
         "commissionCost": 324.0,
         "processingFee": 0.0,
         "vatAmount": 1000.75,
-        "amountBeforeTax": 2256.0
+        "amountBeforeTax": 2396.0
       },
       "13": {
         "tours": 17,
@@ -593,52 +593,52 @@ const kpiTotals26 = {
         "amountBeforeTax": 1730.0
       },
       "16": {
-        "tours": 126,
-        "pax": 420,
-        "revenue": 14885.0,
-        "vendorCost": 8100.0,
-        "grossMargin": 2431.66,
+        "tours": 128,
+        "pax": 424,
+        "revenue": 15118.0,
+        "vendorCost": 7350.0,
+        "grossMargin": 3356.41,
         "tourCost": 101.1,
         "commissionCost": 561.78,
         "processingFee": 0.0,
-        "vatAmount": 3690.46,
-        "amountBeforeTax": 6122.12
+        "vatAmount": 3748.71,
+        "amountBeforeTax": 7105.12
       },
       "8": {
         "tours": 3,
         "pax": 33,
         "revenue": 780.0,
-        "vendorCost": 200.0,
-        "grossMargin": 160.0,
+        "vendorCost": 130.0,
+        "grossMargin": 230.0,
         "tourCost": 0.0,
         "commissionCost": 150.0,
         "processingFee": 0.0,
         "vatAmount": 150.0,
-        "amountBeforeTax": 310.0
+        "amountBeforeTax": 380.0
       },
       "19": {
-        "tours": 153,
-        "pax": 3405,
-        "revenue": 1505.0,
-        "vendorCost": 650.0,
-        "grossMargin": 300.0,
+        "tours": 155,
+        "pax": 3445,
+        "revenue": 1905.0,
+        "vendorCost": 810.0,
+        "grossMargin": 440.0,
         "tourCost": 0.0,
         "commissionCost": 185.0,
         "processingFee": 0.0,
-        "vatAmount": 370.0,
-        "amountBeforeTax": 670.0
+        "vatAmount": 470.0,
+        "amountBeforeTax": 910.0
       },
       "4": {
         "tours": 2,
         "pax": 4,
         "revenue": 156.0,
-        "vendorCost": 120.0,
-        "grossMargin": -14.7,
+        "vendorCost": 60.0,
+        "grossMargin": 45.3,
         "tourCost": 0.0,
         "commissionCost": 11.7,
         "processingFee": 0.0,
         "vatAmount": 39.0,
-        "amountBeforeTax": 24.3
+        "amountBeforeTax": 84.3
       },
       "20": {
         "tours": 1,
@@ -667,78 +667,78 @@ const kpiTotals26 = {
         "amountBeforeTax": 2574.95
       },
       "shoulder": {
-        "tours": 1310,
-        "pax": 16132,
-        "revenue": 57513.0,
-        "vendorCost": 22225.0,
-        "grossMargin": 6642.65,
-        "tourCost": 5698.15,
-        "commissionCost": 9478.2,
+        "tours": 1430,
+        "pax": 17488,
+        "revenue": 61375.0,
+        "vendorCost": 23745.0,
+        "grossMargin": 6903.25,
+        "tourCost": 6207.7,
+        "commissionCost": 10154.3,
         "processingFee": 0.0,
-        "vatAmount": 13349.0,
-        "amountBeforeTax": 19991.65
+        "vatAmount": 14244.75,
+        "amountBeforeTax": 21148.0
       },
       "high": {
         "tours": 3522,
         "pax": 52385,
-        "revenue": 133764.0,
-        "vendorCost": 58730.0,
-        "grossMargin": 6568.19,
+        "revenue": 133914.0,
+        "vendorCost": 56610.0,
+        "grossMargin": 8800.69,
         "tourCost": 12151.22,
         "commissionCost": 25169.09,
         "processingFee": 0.0,
-        "vatAmount": 31145.51,
-        "amountBeforeTax": 37713.69
+        "vatAmount": 31183.01,
+        "amountBeforeTax": 39983.69
       }
     },
     "byPaxBand": {
       "11-20": {
-        "tours": 1642,
-        "pax": 25709,
-        "revenue": 21427.5,
-        "vendorCost": 4770.0,
-        "grossMargin": 7246.86,
+        "tours": 1690,
+        "pax": 26458,
+        "revenue": 21827.5,
+        "vendorCost": 4790.0,
+        "grossMargin": 7526.86,
         "tourCost": 1280.23,
         "commissionCost": 2966.08,
         "processingFee": 0.0,
-        "vatAmount": 5164.33,
-        "amountBeforeTax": 12411.19
+        "vatAmount": 5264.33,
+        "amountBeforeTax": 12791.19
       },
       "1-4": {
-        "tours": 1029,
-        "pax": 2780,
-        "revenue": 99813.0,
-        "vendorCost": 57405.0,
-        "grossMargin": -9419.61,
-        "tourCost": 10991.85,
-        "commissionCost": 17489.11,
+        "tours": 1054,
+        "pax": 2845,
+        "revenue": 102467.0,
+        "vendorCost": 56995.0,
+        "grossMargin": -7666.52,
+        "tourCost": 11276.7,
+        "commissionCost": 17890.27,
         "processingFee": 0.0,
-        "vatAmount": 23346.66,
-        "amountBeforeTax": 13927.04
+        "vatAmount": 23971.56,
+        "amountBeforeTax": 16305.03
       },
       "5-10": {
-        "tours": 1114,
-        "pax": 8356,
-        "revenue": 72028.0,
-        "vendorCost": 21950.0,
-        "grossMargin": 11294.76,
-        "tourCost": 6246.29,
-        "commissionCost": 16073.18,
+        "tours": 1139,
+        "pax": 8546,
+        "revenue": 72986.0,
+        "vendorCost": 21810.0,
+        "grossMargin": 11684.77,
+        "tourCost": 6470.99,
+        "commissionCost": 16348.12,
         "processingFee": 0.0,
-        "vatAmount": 16463.76,
-        "amountBeforeTax": 27758.53
+        "vatAmount": 16672.11,
+        "amountBeforeTax": 28356.89
       },
       "21-30": {
-        "tours": 1132,
-        "pax": 27983,
+        "tours": 1147,
+        "pax": 28335,
         "revenue": 7600.0,
-        "vendorCost": 1680.0,
-        "grossMargin": 3648.53,
+        "vendorCost": 1610.0,
+        "grossMargin": 3718.53,
         "tourCost": 139.97,
         "commissionCost": 246.5,
         "processingFee": 0.0,
         "vatAmount": 1885.0,
-        "amountBeforeTax": 5533.53
+        "amountBeforeTax": 5603.53
       },
       "30+": {
         "tours": 175,
@@ -1021,14 +1021,14 @@ const kpiTotals26 = {
       "24": {
         "tours": 197,
         "pax": 2474,
-        "revenue": 7510.5,
+        "revenue": 7540.5,
         "vendorCost": 3270.0,
-        "grossMargin": 356.32,
+        "grossMargin": 378.82,
         "tourCost": 929.57,
         "commissionCost": 1233.08,
         "processingFee": 0.0,
-        "vatAmount": 1721.53,
-        "amountBeforeTax": 2077.85
+        "vatAmount": 1729.03,
+        "amountBeforeTax": 2107.85
       },
       "25": {
         "tours": 196,
@@ -1058,181 +1058,193 @@ const kpiTotals26 = {
         "tours": 188,
         "pax": 2418,
         "revenue": 6466.0,
-        "vendorCost": 2680.0,
-        "grossMargin": 75.65,
+        "vendorCost": 2560.0,
+        "grossMargin": 195.65,
         "tourCost": 886.61,
         "commissionCost": 1335.34,
         "processingFee": 0.0,
         "vatAmount": 1488.4,
-        "amountBeforeTax": 1564.05
+        "amountBeforeTax": 1684.05
       },
       "28": {
         "tours": 187,
         "pax": 2517,
         "revenue": 5194.5,
-        "vendorCost": 2570.0,
-        "grossMargin": -22.31,
+        "vendorCost": 2380.0,
+        "grossMargin": 167.69,
         "tourCost": 226.9,
         "commissionCost": 1241.58,
         "processingFee": 0.0,
         "vatAmount": 1178.33,
-        "amountBeforeTax": 1156.02
+        "amountBeforeTax": 1346.02
       },
       "29": {
         "tours": 198,
         "pax": 2726,
         "revenue": 5539.5,
-        "vendorCost": 3130.0,
-        "grossMargin": -391.66,
+        "vendorCost": 2990.0,
+        "grossMargin": -251.66,
         "tourCost": 257.9,
         "commissionCost": 1233.78,
         "processingFee": 0.0,
         "vatAmount": 1309.48,
-        "amountBeforeTax": 917.82
+        "amountBeforeTax": 1057.82
       },
       "30": {
         "tours": 215,
         "pax": 3323,
         "revenue": 6920.0,
-        "vendorCost": 3300.0,
-        "grossMargin": 397.2,
+        "vendorCost": 3180.0,
+        "grossMargin": 517.2,
         "tourCost": 316.2,
         "commissionCost": 1248.4,
         "processingFee": 0.0,
         "vatAmount": 1658.2,
-        "amountBeforeTax": 2055.4
+        "amountBeforeTax": 2175.4
       },
       "31": {
         "tours": 212,
         "pax": 3484,
         "revenue": 8083.0,
-        "vendorCost": 3030.0,
-        "grossMargin": 1204.46,
+        "vendorCost": 2850.0,
+        "grossMargin": 1384.46,
         "tourCost": 638.63,
         "commissionCost": 1237.66,
         "processingFee": 0.0,
         "vatAmount": 1972.25,
-        "amountBeforeTax": 3176.71
+        "amountBeforeTax": 3356.71
       },
       "32": {
         "tours": 205,
         "pax": 3573,
         "revenue": 7055.5,
-        "vendorCost": 2980.0,
-        "grossMargin": 419.37,
+        "vendorCost": 2850.0,
+        "grossMargin": 549.37,
         "tourCost": 598.39,
         "commissionCost": 1390.16,
         "processingFee": 0.0,
         "vatAmount": 1667.58,
-        "amountBeforeTax": 2086.95
+        "amountBeforeTax": 2216.95
       },
       "33": {
         "tours": 212,
         "pax": 3717,
         "revenue": 6430.0,
-        "vendorCost": 2960.0,
-        "grossMargin": 52.92,
+        "vendorCost": 2780.0,
+        "grossMargin": 232.92,
         "tourCost": 482.7,
         "commissionCost": 1382.28,
         "processingFee": 0.0,
         "vatAmount": 1552.1,
-        "amountBeforeTax": 1605.02
+        "amountBeforeTax": 1785.02
       },
       "34": {
         "tours": 218,
         "pax": 3640,
         "revenue": 6611.0,
-        "vendorCost": 3270.0,
-        "grossMargin": -142.41,
+        "vendorCost": 3010.0,
+        "grossMargin": 117.59,
         "tourCost": 676.84,
         "commissionCost": 1310.02,
         "processingFee": 0.0,
         "vatAmount": 1496.55,
-        "amountBeforeTax": 1354.14
+        "amountBeforeTax": 1614.14
       },
       "35": {
         "tours": 206,
         "pax": 3462,
         "revenue": 6138.5,
-        "vendorCost": 2790.0,
-        "grossMargin": 484.37,
+        "vendorCost": 2670.0,
+        "grossMargin": 604.37,
         "tourCost": 372.7,
         "commissionCost": 1064.7,
         "processingFee": 0.0,
         "vatAmount": 1426.73,
-        "amountBeforeTax": 1911.1
+        "amountBeforeTax": 2031.1
       },
       "36": {
         "tours": 210,
         "pax": 3316,
         "revenue": 8065.0,
-        "vendorCost": 3350.0,
-        "grossMargin": 996.87,
+        "vendorCost": 3230.0,
+        "grossMargin": 1116.87,
         "tourCost": 460.5,
         "commissionCost": 1375.58,
         "processingFee": 0.0,
         "vatAmount": 1882.05,
-        "amountBeforeTax": 2878.92
+        "amountBeforeTax": 2998.92
       },
       "37": {
         "tours": 214,
         "pax": 3360,
         "revenue": 10437.0,
-        "vendorCost": 4400.0,
-        "grossMargin": 579.5,
+        "vendorCost": 4340.0,
+        "grossMargin": 639.5,
         "tourCost": 1239.28,
         "commissionCost": 1847.72,
         "processingFee": 0.0,
         "vatAmount": 2370.5,
-        "amountBeforeTax": 2950.0
+        "amountBeforeTax": 3010.0
       },
       "38": {
         "tours": 200,
         "pax": 3095,
-        "revenue": 10767.0,
-        "vendorCost": 3850.0,
-        "grossMargin": 482.07,
+        "revenue": 10797.0,
+        "vendorCost": 3660.0,
+        "grossMargin": 694.57,
         "tourCost": 1457.17,
         "commissionCost": 2465.46,
         "processingFee": 0.0,
-        "vatAmount": 2512.3,
-        "amountBeforeTax": 2994.37
+        "vatAmount": 2519.8,
+        "amountBeforeTax": 3214.37
       },
       "39": {
         "tours": 195,
         "pax": 2866,
-        "revenue": 11072.5,
-        "vendorCost": 4690.0,
-        "grossMargin": 1029.28,
+        "revenue": 11132.5,
+        "vendorCost": 4560.0,
+        "grossMargin": 1204.28,
         "tourCost": 1118.29,
         "commissionCost": 1656.2,
         "processingFee": 0.0,
-        "vatAmount": 2578.73,
-        "amountBeforeTax": 3608.01
+        "vatAmount": 2593.73,
+        "amountBeforeTax": 3798.01
       },
       "40": {
         "tours": 175,
         "pax": 2190,
-        "revenue": 9873.0,
-        "vendorCost": 3730.0,
-        "grossMargin": 688.71,
+        "revenue": 9903.0,
+        "vendorCost": 3550.0,
+        "grossMargin": 891.21,
         "tourCost": 1139.05,
         "commissionCost": 2016.64,
         "processingFee": 0.0,
-        "vatAmount": 2298.6,
-        "amountBeforeTax": 2987.31
+        "vatAmount": 2306.1,
+        "amountBeforeTax": 3197.31
       },
       "41": {
         "tours": 162,
-        "pax": 2037,
+        "pax": 2043,
         "revenue": 8560.5,
-        "vendorCost": 3500.0,
-        "grossMargin": 792.28,
+        "vendorCost": 3380.0,
+        "grossMargin": 912.28,
         "tourCost": 784.1,
         "commissionCost": 1396.29,
         "processingFee": 0.0,
         "vatAmount": 1967.83,
-        "amountBeforeTax": 2760.11
+        "amountBeforeTax": 2880.11
+      },
+      "42": {
+        "tours": 111,
+        "pax": 1292,
+        "revenue": 3862.0,
+        "vendorCost": 1640.0,
+        "grossMargin": 140.6,
+        "tourCost": 509.55,
+        "commissionCost": 676.1,
+        "processingFee": 0.0,
+        "vatAmount": 895.75,
+        "amountBeforeTax": 1036.35
       },
       "12": {
         "tours": 28,
@@ -1245,6 +1257,18 @@ const kpiTotals26 = {
         "processingFee": 0.0,
         "vatAmount": 624.38,
         "amountBeforeTax": 1129.41
+      },
+      "43": {
+        "tours": 9,
+        "pax": 58,
+        "revenue": 0.0,
+        "vendorCost": 0.0,
+        "grossMargin": 0.0,
+        "tourCost": 0.0,
+        "commissionCost": 0.0,
+        "processingFee": 0.0,
+        "vatAmount": 0.0,
+        "amountBeforeTax": 0.0
       }
     },
     "byMonth": {
@@ -1311,164 +1335,164 @@ const kpiTotals26 = {
       "6": {
         "tours": 819,
         "pax": 10376,
-        "revenue": 30620.5,
+        "revenue": 30650.5,
         "vendorCost": 14160.0,
-        "grossMargin": 1036.36,
+        "grossMargin": 1058.86,
         "tourCost": 2811.86,
         "commissionCost": 5603.35,
         "processingFee": 0.0,
-        "vatAmount": 7008.92,
-        "amountBeforeTax": 8045.29
+        "vatAmount": 7016.42,
+        "amountBeforeTax": 8075.29
       },
       "7": {
         "tours": 894,
         "pax": 12884,
         "revenue": 29156.0,
-        "vendorCost": 13360.0,
-        "grossMargin": 1009.0,
+        "vendorCost": 12610.0,
+        "grossMargin": 1759.0,
         "tourCost": 2218.84,
         "commissionCost": 5666.96,
         "processingFee": 0.0,
         "vatAmount": 6901.2,
-        "amountBeforeTax": 7910.2
+        "amountBeforeTax": 8660.2
       },
       "8": {
         "tours": 927,
         "pax": 15805,
         "revenue": 28075.0,
-        "vendorCost": 12940.0,
-        "grossMargin": 875.86,
+        "vendorCost": 12250.0,
+        "grossMargin": 1565.86,
         "tourCost": 2143.63,
         "commissionCost": 5543.2,
         "processingFee": 0.0,
         "vatAmount": 6572.3,
-        "amountBeforeTax": 7448.17
+        "amountBeforeTax": 8138.17
       },
       "9": {
         "tours": 882,
         "pax": 13320,
-        "revenue": 45912.5,
-        "vendorCost": 18270.0,
-        "grossMargin": 3646.96,
+        "revenue": 46032.5,
+        "vendorCost": 17590.0,
+        "grossMargin": 4416.96,
         "tourCost": 4976.89,
         "commissionCost": 8355.58,
         "processingFee": 0.0,
-        "vatAmount": 10663.07,
-        "amountBeforeTax": 14310.03
+        "vatAmount": 10693.07,
+        "amountBeforeTax": 15110.03
       },
       "10": {
-        "tours": 246,
-        "pax": 3130,
-        "revenue": 12547.5,
-        "vendorCost": 5040.0,
-        "grossMargin": 960.36,
-        "tourCost": 1219.5,
-        "commissionCost": 2323.71,
+        "tours": 366,
+        "pax": 4486,
+        "revenue": 16409.5,
+        "vendorCost": 6560.0,
+        "grossMargin": 1220.96,
+        "tourCost": 1729.05,
+        "commissionCost": 2999.81,
         "processingFee": 0.0,
-        "vatAmount": 2883.93,
-        "amountBeforeTax": 3844.29
+        "vatAmount": 3779.68,
+        "amountBeforeTax": 5000.64
       }
     },
     "byBillingMethod": {
       "POS": {
-        "tours": 3876,
-        "pax": 64785,
+        "tours": 3972,
+        "pax": 66034,
         "revenue": 5668.0,
-        "vendorCost": 3290.0,
-        "grossMargin": 739.9,
+        "vendorCost": 2990.0,
+        "grossMargin": 1039.9,
         "tourCost": 120.0,
         "commissionCost": 101.1,
         "processingFee": 0.0,
         "vatAmount": 1417.0,
-        "amountBeforeTax": 2156.9
+        "amountBeforeTax": 2456.9
       },
       "CPP": {
-        "tours": 1219,
-        "pax": 5955,
-        "revenue": 196230.5,
-        "vendorCost": 82775.0,
-        "grossMargin": 12468.15,
-        "tourCost": 18538.34,
-        "commissionCost": 36673.77,
+        "tours": 1243,
+        "pax": 6062,
+        "revenue": 200242.5,
+        "vendorCost": 82475.0,
+        "grossMargin": 14661.25,
+        "tourCost": 19047.89,
+        "commissionCost": 37349.87,
         "processingFee": 0.0,
-        "vatAmount": 45655.22,
-        "amountBeforeTax": 58123.39
+        "vatAmount": 46588.47,
+        "amountBeforeTax": 61249.74
       }
     },
     "byPaymentMethod": {
       "cash": {
-        "tours": 3843,
-        "pax": 64673,
+        "tours": 3939,
+        "pax": 65922,
         "revenue": 2085.0,
-        "vendorCost": 1300.0,
-        "grossMargin": 263.75,
+        "vendorCost": 1240.0,
+        "grossMargin": 323.75,
         "tourCost": 0.0,
         "commissionCost": 0.0,
         "processingFee": 0.0,
         "vatAmount": 521.25,
-        "amountBeforeTax": 785.0
+        "amountBeforeTax": 845.0
       },
       "bank trf": {
-        "tours": 988,
-        "pax": 4305,
-        "revenue": 149983.5,
-        "vendorCost": 65615.0,
-        "grossMargin": -1091.83,
-        "tourCost": 14471.98,
-        "commissionCost": 36774.87,
+        "tours": 1004,
+        "pax": 4357,
+        "revenue": 152779.5,
+        "vendorCost": 64975.0,
+        "grossMargin": 605.71,
+        "tourCost": 14981.53,
+        "commissionCost": 37370.63,
         "processingFee": 0.0,
-        "vatAmount": 34093.49,
-        "amountBeforeTax": 33001.65
+        "vatAmount": 34726.64,
+        "amountBeforeTax": 35332.34
       },
       "card": {
-        "tours": 263,
-        "pax": 1759,
-        "revenue": 49740.0,
-        "vendorCost": 19090.0,
-        "grossMargin": 14028.64,
+        "tours": 271,
+        "pax": 1814,
+        "revenue": 50956.0,
+        "vendorCost": 19190.0,
+        "grossMargin": 14764.2,
         "tourCost": 4186.36,
-        "commissionCost": 0.0,
+        "commissionCost": 80.34,
         "processingFee": 0.0,
-        "vatAmount": 12435.0,
-        "amountBeforeTax": 26463.64
+        "vatAmount": 12735.1,
+        "amountBeforeTax": 27499.3
       }
     },
     "byGuidePaxBand": {
       "11+": {
-        "tours": 3362,
-        "pax": 62440,
-        "revenue": 59171.5,
-        "vendorCost": 16560.0,
-        "grossMargin": 16570.13,
+        "tours": 3431,
+        "pax": 63578,
+        "revenue": 59711.5,
+        "vendorCost": 16330.0,
+        "grossMargin": 17163.13,
         "tourCost": 1596.62,
-        "commissionCost": 10705.42,
+        "commissionCost": 10747.42,
         "processingFee": 0.0,
-        "vatAmount": 13739.33,
-        "amountBeforeTax": 30309.46
+        "vatAmount": 13874.33,
+        "amountBeforeTax": 31037.46
       },
       "1-5": {
-        "tours": 940,
-        "pax": 2731,
-        "revenue": 89522.5,
-        "vendorCost": 50045.0,
-        "grossMargin": -7459.16,
-        "tourCost": 11069.34,
-        "commissionCost": 14697.16,
+        "tours": 969,
+        "pax": 2793,
+        "revenue": 91948.5,
+        "vendorCost": 49835.0,
+        "grossMargin": -6033.13,
+        "tourCost": 11352.19,
+        "commissionCost": 15052.48,
         "processingFee": 0.0,
-        "vatAmount": 21170.19,
-        "amountBeforeTax": 13711.0
+        "vatAmount": 21741.99,
+        "amountBeforeTax": 15708.83
       },
       "6-10": {
-        "tours": 791,
-        "pax": 5560,
-        "revenue": 52874.5,
-        "vendorCost": 19340.0,
-        "grossMargin": 4044.6,
-        "tourCost": 5992.38,
-        "commissionCost": 11372.29,
+        "tours": 813,
+        "pax": 5716,
+        "revenue": 53920.5,
+        "vendorCost": 19180.0,
+        "grossMargin": 4518.67,
+        "tourCost": 6219.08,
+        "commissionCost": 11651.07,
         "processingFee": 0.0,
-        "vatAmount": 12125.23,
-        "amountBeforeTax": 16169.83
+        "vatAmount": 12351.68,
+        "amountBeforeTax": 16870.35
       },
       "0.0": {
         "tours": 1,
@@ -1485,66 +1509,66 @@ const kpiTotals26 = {
     },
     "byPriceType": {
       "per pax": {
-        "tours": 4768,
-        "pax": 68375,
-        "revenue": 139597.0,
-        "vendorCost": 60125.0,
-        "grossMargin": -1057.49,
-        "tourCost": 17509.02,
-        "commissionCost": 31347.37,
+        "tours": 4881,
+        "pax": 69678,
+        "revenue": 142249.0,
+        "vendorCost": 59525.0,
+        "grossMargin": 465.61,
+        "tourCost": 18018.57,
+        "commissionCost": 31973.47,
         "processingFee": 0.0,
-        "vatAmount": 31673.1,
-        "amountBeforeTax": 30615.61
+        "vatAmount": 32266.35,
+        "amountBeforeTax": 32731.96
       },
       "per group": {
-        "tours": 320,
-        "pax": 2332,
-        "revenue": 59327.5,
+        "tours": 327,
+        "pax": 2385,
+        "revenue": 60687.5,
         "vendorCost": 25340.0,
-        "grossMargin": 13769.41,
+        "grossMargin": 14739.41,
         "tourCost": 139.97,
-        "commissionCost": 5377.5,
+        "commissionCost": 5427.5,
         "processingFee": 0.0,
-        "vatAmount": 14700.62,
-        "amountBeforeTax": 28470.03
+        "vatAmount": 15040.62,
+        "amountBeforeTax": 29780.03
       }
     },
     "byTourType": {
       "war": {
-        "tours": 344,
-        "pax": 1248,
-        "revenue": 47224.0,
-        "vendorCost": 20010.0,
-        "grossMargin": 6706.71,
+        "tours": 348,
+        "pax": 1259,
+        "revenue": 47645.0,
+        "vendorCost": 19390.0,
+        "grossMargin": 7566.02,
         "tourCost": 0.0,
-        "commissionCost": 9918.09,
+        "commissionCost": 9998.43,
         "processingFee": 0.0,
-        "vatAmount": 10589.2,
-        "amountBeforeTax": 17295.91
+        "vatAmount": 10690.55,
+        "amountBeforeTax": 18256.57
       },
       "best": {
-        "tours": 411,
-        "pax": 1921,
-        "revenue": 38430.0,
-        "vendorCost": 26820.0,
-        "grossMargin": -8060.58,
-        "tourCost": 635.88,
-        "commissionCost": 10132.2,
+        "tours": 418,
+        "pax": 1945,
+        "revenue": 38910.0,
+        "vendorCost": 26520.0,
+        "grossMargin": -7499.58,
+        "tourCost": 639.88,
+        "commissionCost": 10235.2,
         "processingFee": 0.0,
-        "vatAmount": 8902.5,
-        "amountBeforeTax": 841.92
+        "vatAmount": 9014.5,
+        "amountBeforeTax": 1514.92
       },
       "food": {
-        "tours": 161,
-        "pax": 505,
-        "revenue": 42337.0,
-        "vendorCost": 11475.0,
-        "grossMargin": -3506.61,
-        "tourCost": 14138.73,
-        "commissionCost": 10949.98,
+        "tours": 167,
+        "pax": 524,
+        "revenue": 44088.0,
+        "vendorCost": 11795.0,
+        "grossMargin": -3403.82,
+        "tourCost": 14644.28,
+        "commissionCost": 11392.74,
         "processingFee": 0.0,
-        "vatAmount": 9279.9,
-        "amountBeforeTax": 5773.29
+        "vatAmount": 9659.8,
+        "amountBeforeTax": 6255.98
       },
       "food PR": {
         "tours": 33,
@@ -1559,16 +1583,16 @@ const kpiTotals26 = {
         "amountBeforeTax": 7739.14
       },
       "old": {
-        "tours": 209,
-        "pax": 1540,
-        "revenue": 35580.0,
-        "vendorCost": 14820.0,
-        "grossMargin": 8306.75,
+        "tours": 214,
+        "pax": 1587,
+        "revenue": 36430.0,
+        "vendorCost": 15020.0,
+        "grossMargin": 8694.25,
         "tourCost": 0.0,
-        "commissionCost": 3584.5,
+        "commissionCost": 3634.5,
         "processingFee": 0.0,
-        "vatAmount": 8748.75,
-        "amountBeforeTax": 17055.5
+        "vatAmount": 8961.25,
+        "amountBeforeTax": 17655.5
       },
       "war PR": {
         "tours": 11,
@@ -1583,16 +1607,16 @@ const kpiTotals26 = {
         "amountBeforeTax": 2850.0
       },
       "big": {
-        "tours": 103,
-        "pax": 589,
-        "revenue": 20677.5,
-        "vendorCost": 9970.0,
-        "grossMargin": 3585.15,
+        "tours": 105,
+        "pax": 595,
+        "revenue": 21187.5,
+        "vendorCost": 9770.0,
+        "grossMargin": 4167.65,
         "tourCost": 139.97,
         "commissionCost": 1843.0,
         "processingFee": 0.0,
-        "vatAmount": 5139.38,
-        "amountBeforeTax": 8724.53
+        "vatAmount": 5266.88,
+        "amountBeforeTax": 9434.53
       }
     }
   }
@@ -1609,13 +1633,13 @@ const guideStats26 = [
           "pax": 1704
         },
         "paid": {
-          "tours": 121,
-          "pax": 944
+          "tours": 123,
+          "pax": 964
         },
         "byType": {
           "war": {
-            "tours": 62,
-            "pax": 544
+            "tours": 64,
+            "pax": 564
           },
           "best": {
             "tours": 20,
@@ -1749,8 +1773,8 @@ const guideStats26 = [
               "pax": 102
             },
             "paid": {
-              "tours": 9,
-              "pax": 71
+              "tours": 11,
+              "pax": 91
             }
           }
         },
@@ -3254,6 +3278,26 @@ const guideStats26 = [
               "tours": 1,
               "pax": 17
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 10
+            }
           }
         },
         "byMonthType": {
@@ -3417,8 +3461,8 @@ const guideStats26 = [
               "pax": 4
             },
             "war": {
-              "tours": 4,
-              "pax": 30
+              "tours": 6,
+              "pax": 50
             },
             "old": {
               "tours": 3,
@@ -4118,6 +4162,18 @@ const guideStats26 = [
               "tours": 1,
               "pax": 17
             }
+          },
+          "10-12": {
+            "war": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
+          "10-14": {
+            "war": {
+              "tours": 1,
+              "pax": 10
+            }
           }
         }
       },
@@ -4322,13 +4378,13 @@ const guideStats26 = [
           "pax": 1704
         },
         "paid": {
-          "tours": 126,
-          "pax": 966
+          "tours": 128,
+          "pax": 986
         },
         "byType": {
           "war": {
-            "tours": 62,
-            "pax": 544
+            "tours": 64,
+            "pax": 564
           },
           "best": {
             "tours": 20,
@@ -4462,8 +4518,8 @@ const guideStats26 = [
               "pax": 102
             },
             "paid": {
-              "tours": 10,
-              "pax": 76
+              "tours": 12,
+              "pax": 96
             }
           }
         },
@@ -5968,6 +6024,26 @@ const guideStats26 = [
               "pax": 17
             }
           },
+          "10-12": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
           "7-31": {
             "free": {
               "tours": 0,
@@ -6148,8 +6224,8 @@ const guideStats26 = [
               "pax": 4
             },
             "war": {
-              "tours": 4,
-              "pax": 30
+              "tours": 6,
+              "pax": 50
             },
             "old": {
               "tours": 4,
@@ -6862,6 +6938,18 @@ const guideStats26 = [
               "pax": 17
             }
           },
+          "10-12": {
+            "war": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
+          "10-14": {
+            "war": {
+              "tours": 1,
+              "pax": 10
+            }
+          },
           "7-31": {
             "old": {
               "tours": 1,
@@ -6878,38 +6966,38 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 22710.0,
-      "vendorCost": 7960.0,
-      "grossMargin": 2422.55,
+      "revenue": 22975.0,
+      "vendorCost": 8080.0,
+      "grossMargin": 2442.8,
       "tourCost": 2754.7,
-      "commissionCost": 4350.2,
+      "commissionCost": 4408.7,
       "processingFee": 0.0,
-      "vatAmount": 5222.55,
-      "amountBeforeTax": 7645.1,
+      "vatAmount": 5288.8,
+      "amountBeforeTax": 7731.6,
       "byChannel": {
         "web": {
-          "tours": 127,
-          "pax": 1877,
-          "revenue": 5057.0,
-          "vendorCost": 1330.0,
-          "grossMargin": 1882.78,
+          "tours": 128,
+          "pax": 1879,
+          "revenue": 5127.0,
+          "vendorCost": 1390.0,
+          "grossMargin": 1875.28,
           "tourCost": 579.97,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 1264.25,
-          "amountBeforeTax": 3147.03
+          "vatAmount": 1281.75,
+          "amountBeforeTax": 3157.03
         },
         "OTA": {
-          "tours": 94,
-          "pax": 379,
-          "revenue": 15409.0,
-          "vendorCost": 5960.0,
-          "grossMargin": 22.46,
+          "tours": 95,
+          "pax": 384,
+          "revenue": 15604.0,
+          "vendorCost": 6020.0,
+          "grossMargin": 50.21,
           "tourCost": 1679.04,
-          "commissionCost": 4350.2,
+          "commissionCost": 4408.7,
           "processingFee": 0.0,
-          "vatAmount": 3397.3,
-          "amountBeforeTax": 3419.76
+          "vatAmount": 3446.05,
+          "amountBeforeTax": 3496.26
         },
         "free": {
           "tours": 2,
@@ -6938,28 +7026,28 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 126,
-          "pax": 1875,
-          "revenue": 4932.0,
-          "vendorCost": 1270.0,
-          "grossMargin": 1849.03,
+          "tours": 127,
+          "pax": 1877,
+          "revenue": 5002.0,
+          "vendorCost": 1330.0,
+          "grossMargin": 1841.53,
           "tourCost": 579.97,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 1233.0,
-          "amountBeforeTax": 3082.03
+          "vatAmount": 1250.5,
+          "amountBeforeTax": 3092.03
         },
         "GYG": {
-          "tours": 37,
-          "pax": 155,
-          "revenue": 5776.0,
-          "vendorCost": 2340.0,
-          "grossMargin": -314.28,
+          "tours": 38,
+          "pax": 160,
+          "revenue": 5971.0,
+          "vendorCost": 2400.0,
+          "grossMargin": -286.53,
           "tourCost": 573.48,
-          "commissionCost": 1732.8,
+          "commissionCost": 1791.3,
           "processingFee": 0.0,
-          "vatAmount": 1444.0,
-          "amountBeforeTax": 1129.72
+          "vatAmount": 1492.75,
+          "amountBeforeTax": 1206.22
         },
         "Darko Crnolatac": {
           "tours": 1,
@@ -7108,16 +7196,16 @@ const guideStats26 = [
           "amountBeforeTax": 1267.66
         },
         "Mon": {
-          "tours": 35,
-          "pax": 314,
-          "revenue": 3668.0,
-          "vendorCost": 1390.0,
-          "grossMargin": 270.16,
+          "tours": 36,
+          "pax": 316,
+          "revenue": 3738.0,
+          "vendorCost": 1450.0,
+          "grossMargin": 262.66,
           "tourCost": 306.5,
           "commissionCost": 889.94,
           "processingFee": 0.0,
-          "vatAmount": 811.4,
-          "amountBeforeTax": 1081.56
+          "vatAmount": 828.9,
+          "amountBeforeTax": 1091.56
         },
         "Fri": {
           "tours": 35,
@@ -7132,16 +7220,16 @@ const guideStats26 = [
           "amountBeforeTax": 1077.08
         },
         "Wed": {
-          "tours": 26,
-          "pax": 245,
-          "revenue": 2625.0,
-          "vendorCost": 810.0,
-          "grossMargin": 104.34,
+          "tours": 27,
+          "pax": 250,
+          "revenue": 2820.0,
+          "vendorCost": 870.0,
+          "grossMargin": 132.09,
           "tourCost": 804.97,
-          "commissionCost": 285.04,
+          "commissionCost": 343.54,
           "processingFee": 0.0,
-          "vatAmount": 620.65,
-          "amountBeforeTax": 724.99
+          "vatAmount": 669.4,
+          "amountBeforeTax": 801.49
         },
         "Thu": {
           "tours": 40,
@@ -7170,16 +7258,16 @@ const guideStats26 = [
           "amountBeforeTax": 514.71
         },
         "15": {
-          "tours": 59,
-          "pax": 218,
-          "revenue": 8978.0,
-          "vendorCost": 3780.0,
-          "grossMargin": 1174.32,
+          "tours": 61,
+          "pax": 225,
+          "revenue": 9243.0,
+          "vendorCost": 3900.0,
+          "grossMargin": 1194.57,
           "tourCost": 0.0,
-          "commissionCost": 2036.58,
+          "commissionCost": 2095.08,
           "processingFee": 0.0,
-          "vatAmount": 1987.1,
-          "amountBeforeTax": 3161.42
+          "vatAmount": 2053.35,
+          "amountBeforeTax": 3247.92
         },
         "10": {
           "tours": 92,
@@ -7280,16 +7368,16 @@ const guideStats26 = [
           "amountBeforeTax": 50.62
         },
         "shoulder": {
-          "tours": 84,
-          "pax": 980,
-          "revenue": 8765.0,
-          "vendorCost": 2760.0,
-          "grossMargin": 1788.49,
+          "tours": 86,
+          "pax": 987,
+          "revenue": 9030.0,
+          "vendorCost": 2880.0,
+          "grossMargin": 1808.74,
           "tourCost": 1073.23,
-          "commissionCost": 1096.98,
+          "commissionCost": 1155.48,
           "processingFee": 0.0,
-          "vatAmount": 2046.3,
-          "amountBeforeTax": 3834.79
+          "vatAmount": 2112.55,
+          "amountBeforeTax": 3921.29
         },
         "high": {
           "tours": 118,
@@ -7318,28 +7406,28 @@ const guideStats26 = [
           "amountBeforeTax": 2480.5
         },
         "1-4": {
-          "tours": 89,
-          "pax": 236,
-          "revenue": 10827.0,
-          "vendorCost": 5150.0,
-          "grossMargin": -603.02,
+          "tours": 90,
+          "pax": 238,
+          "revenue": 10897.0,
+          "vendorCost": 5210.0,
+          "grossMargin": -610.52,
           "tourCost": 1664.33,
           "commissionCost": 2141.54,
           "processingFee": 0.0,
-          "vatAmount": 2474.15,
-          "amountBeforeTax": 1871.13
+          "vatAmount": 2491.65,
+          "amountBeforeTax": 1881.13
         },
         "5-10": {
-          "tours": 64,
-          "pax": 456,
-          "revenue": 7129.0,
-          "vendorCost": 2210.0,
-          "grossMargin": 1313.54,
+          "tours": 65,
+          "pax": 461,
+          "revenue": 7324.0,
+          "vendorCost": 2270.0,
+          "grossMargin": 1341.29,
           "tourCost": 184.0,
-          "commissionCost": 1861.56,
+          "commissionCost": 1920.06,
           "processingFee": 0.0,
-          "vatAmount": 1559.9,
-          "amountBeforeTax": 2873.44
+          "vatAmount": 1608.65,
+          "amountBeforeTax": 2949.94
         },
         "21-30": {
           "tours": 24,
@@ -7846,6 +7934,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 194.5,
           "amountBeforeTax": 400.5
+        },
+        "42": {
+          "tours": 2,
+          "pax": 7,
+          "revenue": 265.0,
+          "vendorCost": 120.0,
+          "grossMargin": 20.25,
+          "tourCost": 0.0,
+          "commissionCost": 58.5,
+          "processingFee": 0.0,
+          "vatAmount": 66.25,
+          "amountBeforeTax": 86.5
         }
       },
       "byMonth": {
@@ -7958,16 +8058,16 @@ const guideStats26 = [
           "amountBeforeTax": 1762.38
         },
         "10": {
-          "tours": 16,
-          "pax": 157,
-          "revenue": 1419.0,
-          "vendorCost": 610.0,
-          "grossMargin": 240.45,
+          "tours": 18,
+          "pax": 164,
+          "revenue": 1684.0,
+          "vendorCost": 730.0,
+          "grossMargin": 260.7,
           "tourCost": 96.4,
-          "commissionCost": 120.4,
+          "commissionCost": 178.9,
           "processingFee": 0.0,
-          "vatAmount": 351.75,
-          "amountBeforeTax": 592.2
+          "vatAmount": 418.0,
+          "amountBeforeTax": 678.7
         }
       },
       "byBillingMethod": {
@@ -7984,16 +8084,16 @@ const guideStats26 = [
           "amountBeforeTax": 15.0
         },
         "CPP": {
-          "tours": 124,
-          "pax": 588,
-          "revenue": 22575.0,
-          "vendorCost": 7840.0,
-          "grossMargin": 2441.3,
+          "tours": 126,
+          "pax": 595,
+          "revenue": 22840.0,
+          "vendorCost": 7960.0,
+          "grossMargin": 2461.55,
           "tourCost": 2754.7,
-          "commissionCost": 4350.2,
+          "commissionCost": 4408.7,
           "processingFee": 0.0,
-          "vatAmount": 5188.8,
-          "amountBeforeTax": 7630.1
+          "vatAmount": 5255.05,
+          "amountBeforeTax": 7716.6
         }
       },
       "byPaymentMethod": {
@@ -8022,16 +8122,16 @@ const guideStats26 = [
           "amountBeforeTax": 3824.76
         },
         "card": {
-          "tours": 27,
-          "pax": 175,
-          "revenue": 6581.0,
-          "vendorCost": 1700.0,
-          "grossMargin": 2160.09,
+          "tours": 29,
+          "pax": 182,
+          "revenue": 6846.0,
+          "vendorCost": 1820.0,
+          "grossMargin": 2180.34,
           "tourCost": 1075.66,
-          "commissionCost": 0.0,
+          "commissionCost": 58.5,
           "processingFee": 0.0,
-          "vatAmount": 1645.25,
-          "amountBeforeTax": 3805.34
+          "vatAmount": 1711.5,
+          "amountBeforeTax": 3891.84
         }
       },
       "byGuidePaxBand": {
@@ -8060,30 +8160,30 @@ const guideStats26 = [
           "amountBeforeTax": 1790.07
         },
         "6-10": {
-          "tours": 46,
-          "pax": 271,
-          "revenue": 3919.0,
-          "vendorCost": 1700.0,
-          "grossMargin": -297.2,
+          "tours": 48,
+          "pax": 278,
+          "revenue": 4184.0,
+          "vendorCost": 1820.0,
+          "grossMargin": -276.95,
           "tourCost": 598.6,
-          "commissionCost": 1052.0,
+          "commissionCost": 1110.5,
           "processingFee": 0.0,
-          "vatAmount": 865.6,
-          "amountBeforeTax": 568.4
+          "vatAmount": 931.85,
+          "amountBeforeTax": 654.9
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 212,
-          "pax": 2127,
-          "revenue": 18965.0,
-          "vendorCost": 6670.0,
-          "grossMargin": 1317.02,
+          "tours": 214,
+          "pax": 2134,
+          "revenue": 19230.0,
+          "vendorCost": 6790.0,
+          "grossMargin": 1337.27,
           "tourCost": 2614.73,
-          "commissionCost": 4063.2,
+          "commissionCost": 4121.7,
           "processingFee": 0.0,
-          "vatAmount": 4300.05,
-          "amountBeforeTax": 5617.07
+          "vatAmount": 4366.3,
+          "amountBeforeTax": 5703.57
         },
         "per group": {
           "tours": 20,
@@ -8100,16 +8200,16 @@ const guideStats26 = [
       },
       "byTourType": {
         "war": {
-          "tours": 62,
-          "pax": 222,
-          "revenue": 8534.0,
-          "vendorCost": 3960.0,
-          "grossMargin": 512.34,
+          "tours": 64,
+          "pax": 229,
+          "revenue": 8799.0,
+          "vendorCost": 4080.0,
+          "grossMargin": 532.59,
           "tourCost": 0.0,
-          "commissionCost": 2212.86,
+          "commissionCost": 2271.36,
           "processingFee": 0.0,
-          "vatAmount": 1848.8,
-          "amountBeforeTax": 2361.14
+          "vatAmount": 1915.05,
+          "amountBeforeTax": 2447.64
         },
         "best": {
           "tours": 20,
@@ -8192,17 +8292,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 80,
-          "pax": 1479
+          "tours": 81,
+          "pax": 1498
         },
         "paid": {
-          "tours": 26,
-          "pax": 345
+          "tours": 27,
+          "pax": 352
         },
         "byType": {
           "war": {
-            "tours": 25,
-            "pax": 341
+            "tours": 26,
+            "pax": 348
           },
           "best": {
             "tours": 1,
@@ -8301,12 +8401,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 93
+              "tours": 5,
+              "pax": 112
             },
             "paid": {
-              "tours": 3,
-              "pax": 48
+              "tours": 4,
+              "pax": 55
             }
           }
         },
@@ -9070,6 +9170,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 18
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 19
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 7
+            }
           }
         },
         "byMonthType": {
@@ -9121,8 +9231,8 @@ const guideStats26 = [
           },
           "10": {
             "war": {
-              "tours": 3,
-              "pax": 48
+              "tours": 4,
+              "pax": 55
             }
           }
         },
@@ -9275,6 +9385,12 @@ const guideStats26 = [
             "war": {
               "tours": 1,
               "pax": 18
+            }
+          },
+          "10-13": {
+            "war": {
+              "tours": 1,
+              "pax": 7
             }
           }
         }
@@ -9311,17 +9427,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 80,
-          "pax": 1479
+          "tours": 81,
+          "pax": 1498
         },
         "paid": {
-          "tours": 26,
-          "pax": 345
+          "tours": 27,
+          "pax": 352
         },
         "byType": {
           "war": {
-            "tours": 25,
-            "pax": 341
+            "tours": 26,
+            "pax": 348
           },
           "best": {
             "tours": 1,
@@ -9420,12 +9536,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 93
+              "tours": 5,
+              "pax": 112
             },
             "paid": {
-              "tours": 3,
-              "pax": 48
+              "tours": 4,
+              "pax": 55
             }
           }
         },
@@ -10189,6 +10305,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 18
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 19
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 7
+            }
           }
         },
         "byMonthType": {
@@ -10240,8 +10366,8 @@ const guideStats26 = [
           },
           "10": {
             "war": {
-              "tours": 3,
-              "pax": 48
+              "tours": 4,
+              "pax": 55
             }
           }
         },
@@ -10395,23 +10521,29 @@ const guideStats26 = [
               "tours": 1,
               "pax": 18
             }
+          },
+          "10-13": {
+            "war": {
+              "tours": 1,
+              "pax": 7
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 5048.0,
-      "vendorCost": 0.0,
-      "grossMargin": 2618.26,
+      "revenue": 5126.0,
+      "vendorCost": 60.0,
+      "grossMargin": 2598.82,
       "tourCost": 1.0,
-      "commissionCost": 1344.24,
+      "commissionCost": 1366.08,
       "processingFee": 0.0,
-      "vatAmount": 1084.5,
-      "amountBeforeTax": 3702.76,
+      "vatAmount": 1100.1,
+      "amountBeforeTax": 3698.92,
       "byChannel": {
         "web": {
-          "tours": 81,
-          "pax": 1481,
+          "tours": 82,
+          "pax": 1500,
           "revenue": 70.0,
           "vendorCost": 0.0,
           "grossMargin": 52.5,
@@ -10422,16 +10554,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "OTA": {
-          "tours": 24,
-          "pax": 124,
-          "revenue": 4798.0,
-          "vendorCost": 0.0,
-          "grossMargin": 2430.76,
+          "tours": 25,
+          "pax": 126,
+          "revenue": 4876.0,
+          "vendorCost": 60.0,
+          "grossMargin": 2411.32,
           "tourCost": 1.0,
-          "commissionCost": 1344.24,
+          "commissionCost": 1366.08,
           "processingFee": 0.0,
-          "vatAmount": 1022.0,
-          "amountBeforeTax": 3452.76
+          "vatAmount": 1037.6,
+          "amountBeforeTax": 3448.92
         },
         "free": {
           "tours": 1,
@@ -10448,8 +10580,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 81,
-          "pax": 1481,
+          "tours": 82,
+          "pax": 1500,
           "revenue": 70.0,
           "vendorCost": 0.0,
           "grossMargin": 52.5,
@@ -10460,16 +10592,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Viator": {
-          "tours": 15,
-          "pax": 84,
-          "revenue": 3238.0,
-          "vendorCost": 0.0,
-          "grossMargin": 1681.96,
+          "tours": 16,
+          "pax": 86,
+          "revenue": 3316.0,
+          "vendorCost": 60.0,
+          "grossMargin": 1662.52,
           "tourCost": 1.0,
-          "commissionCost": 907.44,
+          "commissionCost": 929.28,
           "processingFee": 0.0,
-          "vatAmount": 647.6,
-          "amountBeforeTax": 2329.56
+          "vatAmount": 663.2,
+          "amountBeforeTax": 2325.72
         },
         "GYG": {
           "tours": 7,
@@ -10582,16 +10714,16 @@ const guideStats26 = [
           "amountBeforeTax": 81.6
         },
         "Tue": {
-          "tours": 13,
-          "pax": 260,
-          "revenue": 0.0,
-          "vendorCost": 0.0,
-          "grossMargin": 0.0,
+          "tours": 15,
+          "pax": 281,
+          "revenue": 78.0,
+          "vendorCost": 60.0,
+          "grossMargin": -19.44,
           "tourCost": 0.0,
-          "commissionCost": 0.0,
+          "commissionCost": 21.84,
           "processingFee": 0.0,
-          "vatAmount": 0.0,
-          "amountBeforeTax": 0.0
+          "vatAmount": 15.6,
+          "amountBeforeTax": -3.84
         }
       },
       "byTime": {
@@ -10608,20 +10740,20 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "15": {
-          "tours": 25,
-          "pax": 130,
-          "revenue": 5008.0,
-          "vendorCost": 0.0,
-          "grossMargin": 2599.26,
+          "tours": 26,
+          "pax": 132,
+          "revenue": 5086.0,
+          "vendorCost": 60.0,
+          "grossMargin": 2579.82,
           "tourCost": 0.0,
-          "commissionCost": 1332.24,
+          "commissionCost": 1354.08,
           "processingFee": 0.0,
-          "vatAmount": 1076.5,
-          "amountBeforeTax": 3675.76
+          "vatAmount": 1092.1,
+          "amountBeforeTax": 3671.92
         },
         "10": {
-          "tours": 38,
-          "pax": 624,
+          "tours": 39,
+          "pax": 643,
           "revenue": 40.0,
           "vendorCost": 0.0,
           "grossMargin": 19.0,
@@ -10658,16 +10790,16 @@ const guideStats26 = [
           "amountBeforeTax": 56.16
         },
         "shoulder": {
-          "tours": 16,
-          "pax": 250,
-          "revenue": 1318.0,
-          "vendorCost": 0.0,
-          "grossMargin": 693.27,
+          "tours": 18,
+          "pax": 271,
+          "revenue": 1396.0,
+          "vendorCost": 60.0,
+          "grossMargin": 673.83,
           "tourCost": 0.0,
-          "commissionCost": 351.78,
+          "commissionCost": 373.62,
           "processingFee": 0.0,
-          "vatAmount": 272.95,
-          "amountBeforeTax": 966.22
+          "vatAmount": 288.55,
+          "amountBeforeTax": 962.38
         },
         "high": {
           "tours": 85,
@@ -10696,20 +10828,20 @@ const guideStats26 = [
           "amountBeforeTax": 2762.58
         },
         "1-4": {
-          "tours": 12,
-          "pax": 28,
-          "revenue": 851.0,
-          "vendorCost": 0.0,
-          "grossMargin": 443.95,
+          "tours": 13,
+          "pax": 30,
+          "revenue": 929.0,
+          "vendorCost": 60.0,
+          "grossMargin": 424.51,
           "tourCost": 1.0,
-          "commissionCost": 218.7,
+          "commissionCost": 240.54,
           "processingFee": 0.0,
-          "vatAmount": 187.35,
-          "amountBeforeTax": 631.3
+          "vatAmount": 202.95,
+          "amountBeforeTax": 627.46
         },
         "11-20": {
-          "tours": 40,
-          "pax": 620,
+          "tours": 41,
+          "pax": 639,
           "revenue": 429.0,
           "vendorCost": 0.0,
           "grossMargin": 223.08,
@@ -11044,6 +11176,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 95.5,
           "amountBeforeTax": 350.8
+        },
+        "42": {
+          "tours": 2,
+          "pax": 21,
+          "revenue": 78.0,
+          "vendorCost": 60.0,
+          "grossMargin": -19.44,
+          "tourCost": 0.0,
+          "commissionCost": 21.84,
+          "processingFee": 0.0,
+          "vatAmount": 15.6,
+          "amountBeforeTax": -3.84
         }
       },
       "byMonth": {
@@ -11144,22 +11288,22 @@ const guideStats26 = [
           "amountBeforeTax": 1235.34
         },
         "10": {
-          "tours": 7,
-          "pax": 113,
-          "revenue": 772.0,
-          "vendorCost": 0.0,
-          "grossMargin": 417.54,
+          "tours": 9,
+          "pax": 134,
+          "revenue": 850.0,
+          "vendorCost": 60.0,
+          "grossMargin": 398.1,
           "tourCost": 0.0,
-          "commissionCost": 196.56,
+          "commissionCost": 218.4,
           "processingFee": 0.0,
-          "vatAmount": 157.9,
-          "amountBeforeTax": 575.44
+          "vatAmount": 173.5,
+          "amountBeforeTax": 571.6
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 81,
-          "pax": 1485,
+          "tours": 82,
+          "pax": 1504,
           "revenue": 180.0,
           "vendorCost": 0.0,
           "grossMargin": 135.0,
@@ -11170,22 +11314,22 @@ const guideStats26 = [
           "amountBeforeTax": 180.0
         },
         "CPP": {
-          "tours": 25,
-          "pax": 126,
-          "revenue": 4868.0,
-          "vendorCost": 0.0,
-          "grossMargin": 2483.26,
+          "tours": 26,
+          "pax": 128,
+          "revenue": 4946.0,
+          "vendorCost": 60.0,
+          "grossMargin": 2463.82,
           "tourCost": 1.0,
-          "commissionCost": 1344.24,
+          "commissionCost": 1366.08,
           "processingFee": 0.0,
-          "vatAmount": 1039.5,
-          "amountBeforeTax": 3522.76
+          "vatAmount": 1055.1,
+          "amountBeforeTax": 3518.92
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 80,
-          "pax": 1479,
+          "tours": 81,
+          "pax": 1498,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -11208,30 +11352,30 @@ const guideStats26 = [
           "amountBeforeTax": 3452.76
         },
         "card": {
-          "tours": 2,
-          "pax": 8,
-          "revenue": 250.0,
-          "vendorCost": 0.0,
-          "grossMargin": 187.5,
+          "tours": 3,
+          "pax": 10,
+          "revenue": 328.0,
+          "vendorCost": 60.0,
+          "grossMargin": 168.06,
           "tourCost": 0.0,
-          "commissionCost": 0.0,
+          "commissionCost": 21.84,
           "processingFee": 0.0,
-          "vatAmount": 62.5,
-          "amountBeforeTax": 250.0
+          "vatAmount": 78.1,
+          "amountBeforeTax": 246.16
         }
       },
       "byGuidePaxBand": {
         "6-10": {
-          "tours": 19,
-          "pax": 112,
-          "revenue": 1186.0,
-          "vendorCost": 0.0,
-          "grossMargin": 646.92,
+          "tours": 20,
+          "pax": 114,
+          "revenue": 1264.0,
+          "vendorCost": 60.0,
+          "grossMargin": 627.48,
           "tourCost": 0.0,
-          "commissionCost": 269.88,
+          "commissionCost": 291.72,
           "processingFee": 0.0,
-          "vatAmount": 269.2,
-          "amountBeforeTax": 916.12
+          "vatAmount": 284.8,
+          "amountBeforeTax": 912.28
         },
         "1-5": {
           "tours": 6,
@@ -11246,8 +11390,8 @@ const guideStats26 = [
           "amountBeforeTax": 137.76
         },
         "11+": {
-          "tours": 81,
-          "pax": 1483,
+          "tours": 82,
+          "pax": 1502,
           "revenue": 3666.0,
           "vendorCost": 0.0,
           "grossMargin": 1876.68,
@@ -11260,30 +11404,30 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 106,
-          "pax": 1611,
-          "revenue": 5048.0,
-          "vendorCost": 0.0,
-          "grossMargin": 2618.26,
+          "tours": 108,
+          "pax": 1632,
+          "revenue": 5126.0,
+          "vendorCost": 60.0,
+          "grossMargin": 2598.82,
           "tourCost": 1.0,
-          "commissionCost": 1344.24,
+          "commissionCost": 1366.08,
           "processingFee": 0.0,
-          "vatAmount": 1084.5,
-          "amountBeforeTax": 3702.76
+          "vatAmount": 1100.1,
+          "amountBeforeTax": 3698.92
         }
       },
       "byTourType": {
         "war": {
-          "tours": 25,
-          "pax": 130,
-          "revenue": 5008.0,
-          "vendorCost": 0.0,
-          "grossMargin": 2599.26,
+          "tours": 26,
+          "pax": 132,
+          "revenue": 5086.0,
+          "vendorCost": 60.0,
+          "grossMargin": 2579.82,
           "tourCost": 0.0,
-          "commissionCost": 1332.24,
+          "commissionCost": 1354.08,
           "processingFee": 0.0,
-          "vatAmount": 1076.5,
-          "amountBeforeTax": 3675.76
+          "vatAmount": 1092.1,
+          "amountBeforeTax": 3671.92
         },
         "best": {
           "tours": 1,
@@ -14566,12 +14710,12 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 98,
+          "tours": 99,
           "pax": 1429
         },
         "paid": {
-          "tours": 90,
-          "pax": 638
+          "tours": 91,
+          "pax": 647
         },
         "byType": {
           "war": {
@@ -14583,8 +14727,8 @@ const guideStats26 = [
             "pax": 58
           },
           "best": {
-            "tours": 19,
-            "pax": 154
+            "tours": 20,
+            "pax": 163
           },
           "food PR": {
             "tours": 3,
@@ -14702,12 +14846,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 2,
+              "tours": 3,
               "pax": 24
             },
             "paid": {
-              "tours": 5,
-              "pax": 23
+              "tours": 6,
+              "pax": 32
             }
           }
         },
@@ -15951,6 +16095,16 @@ const guideStats26 = [
               "tours": 2,
               "pax": 4
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 9
+            }
           }
         },
         "byMonthType": {
@@ -16110,6 +16264,10 @@ const guideStats26 = [
             "old": {
               "tours": 2,
               "pax": 4
+            },
+            "best": {
+              "tours": 1,
+              "pax": 9
             }
           }
         },
@@ -16631,6 +16789,12 @@ const guideStats26 = [
               "tours": 2,
               "pax": 4
             }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 9
+            }
           }
         }
       },
@@ -16708,12 +16872,12 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 98,
+          "tours": 99,
           "pax": 1429
         },
         "paid": {
-          "tours": 91,
-          "pax": 655
+          "tours": 92,
+          "pax": 664
         },
         "byType": {
           "war": {
@@ -16725,8 +16889,8 @@ const guideStats26 = [
             "pax": 58
           },
           "best": {
-            "tours": 19,
-            "pax": 154
+            "tours": 20,
+            "pax": 163
           },
           "food PR": {
             "tours": 3,
@@ -16844,12 +17008,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 2,
+              "tours": 3,
               "pax": 24
             },
             "paid": {
-              "tours": 5,
-              "pax": 23
+              "tours": 6,
+              "pax": 32
             }
           }
         },
@@ -18093,6 +18257,16 @@ const guideStats26 = [
               "tours": 2,
               "pax": 4
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 9
+            }
           }
         },
         "byMonthType": {
@@ -18252,6 +18426,10 @@ const guideStats26 = [
             "old": {
               "tours": 2,
               "pax": 4
+            },
+            "best": {
+              "tours": 1,
+              "pax": 9
             }
           }
         },
@@ -18777,22 +18955,28 @@ const guideStats26 = [
               "tours": 2,
               "pax": 4
             }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 9
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 14880.0,
-      "vendorCost": 5630.0,
-      "grossMargin": 1267.96,
-      "tourCost": 1094.92,
-      "commissionCost": 3560.42,
+      "revenue": 14960.0,
+      "vendorCost": 5690.0,
+      "grossMargin": 1241.96,
+      "tourCost": 1096.92,
+      "commissionCost": 3584.42,
       "processingFee": 0.0,
-      "vatAmount": 3206.7,
-      "amountBeforeTax": 4474.66,
+      "vatAmount": 3226.7,
+      "amountBeforeTax": 4468.66,
       "byChannel": {
         "web": {
-          "tours": 106,
+          "tours": 107,
           "pax": 1509,
           "revenue": 1145.0,
           "vendorCost": 500.0,
@@ -18804,16 +18988,16 @@ const guideStats26 = [
           "amountBeforeTax": 525.0
         },
         "OTA": {
-          "tours": 76,
-          "pax": 325,
-          "revenue": 12599.0,
-          "vendorCost": 4710.0,
-          "grossMargin": 594.71,
-          "tourCost": 1052.42,
-          "commissionCost": 3560.42,
+          "tours": 77,
+          "pax": 329,
+          "revenue": 12679.0,
+          "vendorCost": 4770.0,
+          "grossMargin": 568.71,
+          "tourCost": 1054.42,
+          "commissionCost": 3584.42,
           "processingFee": 0.0,
-          "vatAmount": 2681.45,
-          "amountBeforeTax": 3276.16
+          "vatAmount": 2701.45,
+          "amountBeforeTax": 3270.16
         },
         "free": {
           "tours": 1,
@@ -18842,7 +19026,7 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 105,
+          "tours": 106,
           "pax": 1474,
           "revenue": 1145.0,
           "vendorCost": 500.0,
@@ -18854,16 +19038,16 @@ const guideStats26 = [
           "amountBeforeTax": 525.0
         },
         "GYG": {
-          "tours": 22,
-          "pax": 76,
-          "revenue": 3077.0,
-          "vendorCost": 1330.0,
-          "grossMargin": -236.87,
-          "tourCost": 291.52,
-          "commissionCost": 923.1,
+          "tours": 23,
+          "pax": 80,
+          "revenue": 3157.0,
+          "vendorCost": 1390.0,
+          "grossMargin": -262.87,
+          "tourCost": 293.52,
+          "commissionCost": 947.1,
           "processingFee": 0.0,
-          "vatAmount": 769.25,
-          "amountBeforeTax": 532.38
+          "vatAmount": 789.25,
+          "amountBeforeTax": 526.38
         },
         "Viator": {
           "tours": 44,
@@ -19012,16 +19196,16 @@ const guideStats26 = [
           "amountBeforeTax": 351.24
         },
         "Tue": {
-          "tours": 30,
-          "pax": 284,
-          "revenue": 2017.0,
-          "vendorCost": 880.0,
-          "grossMargin": 105.47,
-          "tourCost": 80.5,
-          "commissionCost": 523.48,
+          "tours": 32,
+          "pax": 288,
+          "revenue": 2097.0,
+          "vendorCost": 940.0,
+          "grossMargin": 79.47,
+          "tourCost": 82.5,
+          "commissionCost": 547.48,
           "processingFee": 0.0,
-          "vatAmount": 427.55,
-          "amountBeforeTax": 533.02
+          "vatAmount": 447.55,
+          "amountBeforeTax": 527.02
         },
         "Sun": {
           "tours": 19,
@@ -19098,16 +19282,16 @@ const guideStats26 = [
           "amountBeforeTax": 2030.46
         },
         "10": {
-          "tours": 76,
-          "pax": 630,
-          "revenue": 7256.0,
-          "vendorCost": 2610.0,
-          "grossMargin": 139.35,
-          "tourCost": 1052.42,
-          "commissionCost": 1876.08,
+          "tours": 77,
+          "pax": 634,
+          "revenue": 7336.0,
+          "vendorCost": 2670.0,
+          "grossMargin": 113.35,
+          "tourCost": 1054.42,
+          "commissionCost": 1900.08,
           "processingFee": 0.0,
-          "vatAmount": 1578.15,
-          "amountBeforeTax": 1717.5
+          "vatAmount": 1598.15,
+          "amountBeforeTax": 1711.5
         },
         "12": {
           "tours": 1,
@@ -19122,7 +19306,7 @@ const guideStats26 = [
           "amountBeforeTax": -70.0
         },
         "17": {
-          "tours": 25,
+          "tours": 26,
           "pax": 303,
           "revenue": 125.0,
           "vendorCost": 60.0,
@@ -19208,16 +19392,16 @@ const guideStats26 = [
           "amountBeforeTax": 14.94
         },
         "shoulder": {
-          "tours": 46,
-          "pax": 419,
-          "revenue": 4151.0,
-          "vendorCost": 1610.0,
-          "grossMargin": 399.13,
-          "tourCost": 254.28,
-          "commissionCost": 871.44,
+          "tours": 48,
+          "pax": 423,
+          "revenue": 4231.0,
+          "vendorCost": 1670.0,
+          "grossMargin": 373.13,
+          "tourCost": 256.28,
+          "commissionCost": 895.44,
           "processingFee": 0.0,
-          "vatAmount": 896.15,
-          "amountBeforeTax": 1295.28
+          "vatAmount": 916.15,
+          "amountBeforeTax": 1289.28
         },
         "high": {
           "tours": 114,
@@ -19246,16 +19430,16 @@ const guideStats26 = [
           "amountBeforeTax": 1699.88
         },
         "1-4": {
-          "tours": 68,
-          "pax": 195,
-          "revenue": 8318.0,
-          "vendorCost": 3710.0,
-          "grossMargin": -210.05,
-          "tourCost": 964.92,
-          "commissionCost": 2002.08,
+          "tours": 69,
+          "pax": 199,
+          "revenue": 8398.0,
+          "vendorCost": 3770.0,
+          "grossMargin": -236.05,
+          "tourCost": 966.92,
+          "commissionCost": 2026.08,
           "processingFee": 0.0,
-          "vatAmount": 1851.05,
-          "amountBeforeTax": 1641.0
+          "vatAmount": 1871.05,
+          "amountBeforeTax": 1635.0
         },
         "21-30": {
           "tours": 17,
@@ -19702,6 +19886,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 152.85,
           "amountBeforeTax": 361.4
+        },
+        "42": {
+          "tours": 2,
+          "pax": 4,
+          "revenue": 80.0,
+          "vendorCost": 60.0,
+          "grossMargin": -26.0,
+          "tourCost": 2.0,
+          "commissionCost": 24.0,
+          "processingFee": 0.0,
+          "vatAmount": 20.0,
+          "amountBeforeTax": -6.0
         }
       },
       "byMonth": {
@@ -19814,21 +20010,21 @@ const guideStats26 = [
           "amountBeforeTax": 897.98
         },
         "10": {
-          "tours": 7,
-          "pax": 50,
-          "revenue": 823.0,
-          "vendorCost": 310.0,
-          "grossMargin": 208.55,
-          "tourCost": 0.0,
-          "commissionCost": 31.6,
+          "tours": 9,
+          "pax": 54,
+          "revenue": 903.0,
+          "vendorCost": 370.0,
+          "grossMargin": 182.55,
+          "tourCost": 2.0,
+          "commissionCost": 55.6,
           "processingFee": 0.0,
-          "vatAmount": 152.85,
-          "amountBeforeTax": 361.4
+          "vatAmount": 172.85,
+          "amountBeforeTax": 355.4
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 99,
+          "tours": 100,
           "pax": 1432,
           "revenue": 200.0,
           "vendorCost": 60.0,
@@ -19840,21 +20036,21 @@ const guideStats26 = [
           "amountBeforeTax": 140.0
         },
         "CPP": {
-          "tours": 90,
-          "pax": 427,
-          "revenue": 14680.0,
-          "vendorCost": 5570.0,
-          "grossMargin": 1177.96,
-          "tourCost": 1094.92,
-          "commissionCost": 3560.42,
+          "tours": 91,
+          "pax": 431,
+          "revenue": 14760.0,
+          "vendorCost": 5630.0,
+          "grossMargin": 1151.96,
+          "tourCost": 1096.92,
+          "commissionCost": 3584.42,
           "processingFee": 0.0,
-          "vatAmount": 3156.7,
-          "amountBeforeTax": 4334.66
+          "vatAmount": 3176.7,
+          "amountBeforeTax": 4328.66
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 99,
+          "tours": 100,
           "pax": 1432,
           "revenue": 200.0,
           "vendorCost": 60.0,
@@ -19866,16 +20062,16 @@ const guideStats26 = [
           "amountBeforeTax": 140.0
         },
         "bank trf": {
-          "tours": 78,
-          "pax": 333,
-          "revenue": 12959.0,
-          "vendorCost": 4830.0,
-          "grossMargin": 669.71,
-          "tourCost": 1052.42,
-          "commissionCost": 3560.42,
+          "tours": 79,
+          "pax": 337,
+          "revenue": 13039.0,
+          "vendorCost": 4890.0,
+          "grossMargin": 643.71,
+          "tourCost": 1054.42,
+          "commissionCost": 3584.42,
           "processingFee": 0.0,
-          "vatAmount": 2726.45,
-          "amountBeforeTax": 3396.16
+          "vatAmount": 2746.45,
+          "amountBeforeTax": 3390.16
         },
         "card": {
           "tours": 12,
@@ -19892,19 +20088,19 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "6-10": {
-          "tours": 49,
-          "pax": 318,
-          "revenue": 3904.0,
-          "vendorCost": 1530.0,
-          "grossMargin": 317.04,
-          "tourCost": 213.5,
-          "commissionCost": 1014.06,
+          "tours": 50,
+          "pax": 322,
+          "revenue": 3984.0,
+          "vendorCost": 1590.0,
+          "grossMargin": 291.04,
+          "tourCost": 215.5,
+          "commissionCost": 1038.06,
           "processingFee": 0.0,
-          "vatAmount": 829.4,
-          "amountBeforeTax": 1146.44
+          "vatAmount": 849.4,
+          "amountBeforeTax": 1140.44
         },
         "1-5": {
-          "tours": 49,
+          "tours": 50,
           "pax": 137,
           "revenue": 5911.0,
           "vendorCost": 2520.0,
@@ -19942,16 +20138,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 178,
-          "pax": 1770,
-          "revenue": 12970.0,
-          "vendorCost": 4960.0,
-          "grossMargin": 609.21,
-          "tourCost": 1094.92,
-          "commissionCost": 3525.42,
+          "tours": 180,
+          "pax": 1774,
+          "revenue": 13050.0,
+          "vendorCost": 5020.0,
+          "grossMargin": 583.21,
+          "tourCost": 1096.92,
+          "commissionCost": 3549.42,
           "processingFee": 0.0,
-          "vatAmount": 2780.45,
-          "amountBeforeTax": 3389.66
+          "vatAmount": 2800.45,
+          "amountBeforeTax": 3383.66
         },
         "per group": {
           "tours": 10,
@@ -19992,16 +20188,16 @@ const guideStats26 = [
           "amountBeforeTax": 775.08
         },
         "best": {
-          "tours": 19,
-          "pax": 117,
-          "revenue": 2340.0,
-          "vendorCost": 1140.0,
-          "grossMargin": -33.1,
-          "tourCost": 50.5,
-          "commissionCost": 681.6,
+          "tours": 20,
+          "pax": 121,
+          "revenue": 2420.0,
+          "vendorCost": 1200.0,
+          "grossMargin": -59.1,
+          "tourCost": 52.5,
+          "commissionCost": 705.6,
           "processingFee": 0.0,
-          "vatAmount": 501.0,
-          "amountBeforeTax": 467.9
+          "vatAmount": 521.0,
+          "amountBeforeTax": 461.9
         },
         "food PR": {
           "tours": 3,
@@ -20048,12 +20244,12 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 110,
-          "pax": 1615
+          "tours": 111,
+          "pax": 1618
         },
         "paid": {
-          "tours": 142,
-          "pax": 1077
+          "tours": 143,
+          "pax": 1079
         },
         "byType": {
           "war": {
@@ -20073,8 +20269,8 @@ const guideStats26 = [
             "pax": 43
           },
           "best": {
-            "tours": 26,
-            "pax": 190
+            "tours": 27,
+            "pax": 192
           },
           "war PR": {
             "tours": 3,
@@ -20188,12 +20384,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 65
+              "tours": 5,
+              "pax": 68
             },
             "paid": {
-              "tours": 9,
-              "pax": 49
+              "tours": 10,
+              "pax": 51
             }
           }
         },
@@ -21977,6 +22173,26 @@ const guideStats26 = [
               "tours": 1,
               "pax": 9
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -22160,8 +22376,8 @@ const guideStats26 = [
               "pax": 18
             },
             "best": {
-              "tours": 3,
-              "pax": 13
+              "tours": 4,
+              "pax": 15
             },
             "old": {
               "tours": 1,
@@ -22998,6 +23214,12 @@ const guideStats26 = [
             "war": {
               "tours": 1,
               "pax": 9
+            }
+          },
+          "10-14": {
+            "best": {
+              "tours": 1,
+              "pax": 2
             }
           }
         }
@@ -23034,12 +23256,12 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 110,
-          "pax": 1615
+          "tours": 111,
+          "pax": 1618
         },
         "paid": {
-          "tours": 142,
-          "pax": 1077
+          "tours": 143,
+          "pax": 1079
         },
         "byType": {
           "war": {
@@ -23059,8 +23281,8 @@ const guideStats26 = [
             "pax": 43
           },
           "best": {
-            "tours": 26,
-            "pax": 190
+            "tours": 27,
+            "pax": 192
           },
           "war PR": {
             "tours": 3,
@@ -23174,12 +23396,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 65
+              "tours": 5,
+              "pax": 68
             },
             "paid": {
-              "tours": 9,
-              "pax": 49
+              "tours": 10,
+              "pax": 51
             }
           }
         },
@@ -24963,6 +25185,26 @@ const guideStats26 = [
               "tours": 1,
               "pax": 9
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -25146,8 +25388,8 @@ const guideStats26 = [
               "pax": 18
             },
             "best": {
-              "tours": 3,
-              "pax": 13
+              "tours": 4,
+              "pax": 15
             },
             "old": {
               "tours": 1,
@@ -25985,23 +26227,29 @@ const guideStats26 = [
               "tours": 1,
               "pax": 9
             }
+          },
+          "10-14": {
+            "best": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 29149.0,
-      "vendorCost": 8920.0,
-      "grossMargin": 3626.64,
-      "tourCost": 4043.57,
-      "commissionCost": 5955.29,
+      "revenue": 29189.0,
+      "vendorCost": 8980.0,
+      "grossMargin": 3585.64,
+      "tourCost": 4044.57,
+      "commissionCost": 5967.29,
       "processingFee": 0.0,
-      "vatAmount": 6603.5,
-      "amountBeforeTax": 10230.14,
+      "vatAmount": 6611.5,
+      "amountBeforeTax": 10197.14,
       "byChannel": {
         "web": {
-          "tours": 124,
-          "pax": 1760,
+          "tours": 125,
+          "pax": 1763,
           "revenue": 5806.0,
           "vendorCost": 960.0,
           "grossMargin": 2420.57,
@@ -26012,16 +26260,16 @@ const guideStats26 = [
           "amountBeforeTax": 3872.07
         },
         "OTA": {
-          "tours": 112,
-          "pax": 475,
-          "revenue": 20845.0,
-          "vendorCost": 7050.0,
-          "grossMargin": 502.89,
-          "tourCost": 2809.32,
-          "commissionCost": 5955.29,
+          "tours": 113,
+          "pax": 477,
+          "revenue": 20885.0,
+          "vendorCost": 7110.0,
+          "grossMargin": 461.89,
+          "tourCost": 2810.32,
+          "commissionCost": 5967.29,
           "processingFee": 0.0,
-          "vatAmount": 4527.5,
-          "amountBeforeTax": 5030.39
+          "vatAmount": 4535.5,
+          "amountBeforeTax": 4997.39
         },
         "free": {
           "tours": 1,
@@ -26050,8 +26298,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 127,
-          "pax": 1822,
+          "tours": 128,
+          "pax": 1825,
           "revenue": 6631.0,
           "vendorCost": 1210.0,
           "grossMargin": 2789.32,
@@ -26086,16 +26334,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Viator": {
-          "tours": 61,
-          "pax": 246,
-          "revenue": 11847.0,
-          "vendorCost": 3830.0,
-          "grossMargin": 168.09,
-          "tourCost": 2030.97,
-          "commissionCost": 3448.54,
+          "tours": 62,
+          "pax": 248,
+          "revenue": 11887.0,
+          "vendorCost": 3890.0,
+          "grossMargin": 127.09,
+          "tourCost": 2031.97,
+          "commissionCost": 3460.54,
           "processingFee": 0.0,
-          "vatAmount": 2369.4,
-          "amountBeforeTax": 2537.49
+          "vatAmount": 2377.4,
+          "amountBeforeTax": 2504.49
         },
         "Royal Tours Croatia": {
           "tours": 3,
@@ -26220,8 +26468,8 @@ const guideStats26 = [
           "amountBeforeTax": 2467.63
         },
         "Mon": {
-          "tours": 27,
-          "pax": 240,
+          "tours": 28,
+          "pax": 243,
           "revenue": 1672.0,
           "vendorCost": 780.0,
           "grossMargin": -11.81,
@@ -26256,16 +26504,16 @@ const guideStats26 = [
           "amountBeforeTax": 2004.05
         },
         "Wed": {
-          "tours": 31,
-          "pax": 234,
-          "revenue": 3398.0,
-          "vendorCost": 1060.0,
-          "grossMargin": 640.26,
-          "tourCost": 380.8,
-          "commissionCost": 531.54,
+          "tours": 32,
+          "pax": 236,
+          "revenue": 3438.0,
+          "vendorCost": 1120.0,
+          "grossMargin": 599.26,
+          "tourCost": 381.8,
+          "commissionCost": 543.54,
           "processingFee": 0.0,
-          "vatAmount": 785.4,
-          "amountBeforeTax": 1425.66
+          "vatAmount": 793.4,
+          "amountBeforeTax": 1392.66
         },
         "Sat": {
           "tours": 37,
@@ -26306,16 +26554,16 @@ const guideStats26 = [
           "amountBeforeTax": 3735.89
         },
         "10": {
-          "tours": 110,
-          "pax": 1021,
-          "revenue": 10744.0,
-          "vendorCost": 3750.0,
-          "grossMargin": 141.9,
-          "tourCost": 1998.61,
-          "commissionCost": 2432.84,
+          "tours": 111,
+          "pax": 1023,
+          "revenue": 10784.0,
+          "vendorCost": 3810.0,
+          "grossMargin": 100.9,
+          "tourCost": 1999.61,
+          "commissionCost": 2444.84,
           "processingFee": 0.0,
-          "vatAmount": 2420.65,
-          "amountBeforeTax": 2562.55
+          "vatAmount": 2428.65,
+          "amountBeforeTax": 2529.55
         },
         "14": {
           "tours": 2,
@@ -26354,8 +26602,8 @@ const guideStats26 = [
           "amountBeforeTax": 203.3
         },
         "17": {
-          "tours": 28,
-          "pax": 392,
+          "tours": 29,
+          "pax": 395,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -26428,16 +26676,16 @@ const guideStats26 = [
           "amountBeforeTax": 2035.53
         },
         "shoulder": {
-          "tours": 83,
-          "pax": 884,
-          "revenue": 10179.0,
-          "vendorCost": 2820.0,
-          "grossMargin": 1941.63,
-          "tourCost": 1332.36,
-          "commissionCost": 1777.56,
+          "tours": 85,
+          "pax": 889,
+          "revenue": 10219.0,
+          "vendorCost": 2880.0,
+          "grossMargin": 1900.63,
+          "tourCost": 1333.36,
+          "commissionCost": 1789.56,
           "processingFee": 0.0,
-          "vatAmount": 2307.45,
-          "amountBeforeTax": 4249.08
+          "vatAmount": 2315.45,
+          "amountBeforeTax": 4216.08
         },
         "high": {
           "tours": 128,
@@ -26478,16 +26726,16 @@ const guideStats26 = [
           "amountBeforeTax": 4987.34
         },
         "1-4": {
-          "tours": 96,
-          "pax": 255,
-          "revenue": 11582.0,
-          "vendorCost": 5340.0,
-          "grossMargin": -759.5,
-          "tourCost": 1905.46,
-          "commissionCost": 2527.39,
+          "tours": 98,
+          "pax": 260,
+          "revenue": 11622.0,
+          "vendorCost": 5400.0,
+          "grossMargin": -800.5,
+          "tourCost": 1906.46,
+          "commissionCost": 2539.39,
           "processingFee": 0.0,
-          "vatAmount": 2568.65,
-          "amountBeforeTax": 1809.15
+          "vatAmount": 2576.65,
+          "amountBeforeTax": 1776.15
         },
         "11-20": {
           "tours": 59,
@@ -27006,6 +27254,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 378.15,
           "amountBeforeTax": 552.86
+        },
+        "42": {
+          "tours": 2,
+          "pax": 5,
+          "revenue": 40.0,
+          "vendorCost": 60.0,
+          "grossMargin": -41.0,
+          "tourCost": 1.0,
+          "commissionCost": 12.0,
+          "processingFee": 0.0,
+          "vatAmount": 8.0,
+          "amountBeforeTax": -33.0
         }
       },
       "byMonth": {
@@ -27118,22 +27378,22 @@ const guideStats26 = [
           "amountBeforeTax": 1380.01
         },
         "10": {
-          "tours": 13,
-          "pax": 106,
-          "revenue": 2195.0,
-          "vendorCost": 570.0,
-          "grossMargin": 341.71,
-          "tourCost": 222.7,
-          "commissionCost": 587.64,
+          "tours": 15,
+          "pax": 111,
+          "revenue": 2235.0,
+          "vendorCost": 630.0,
+          "grossMargin": 300.71,
+          "tourCost": 223.7,
+          "commissionCost": 599.64,
           "processingFee": 0.0,
-          "vatAmount": 472.95,
-          "amountBeforeTax": 814.66
+          "vatAmount": 480.95,
+          "amountBeforeTax": 781.66
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 110,
-          "pax": 1615,
+          "tours": 111,
+          "pax": 1618,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -27144,22 +27404,22 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "CPP": {
-          "tours": 142,
-          "pax": 708,
-          "revenue": 29149.0,
-          "vendorCost": 8920.0,
-          "grossMargin": 3626.64,
-          "tourCost": 4043.57,
-          "commissionCost": 5955.29,
+          "tours": 143,
+          "pax": 710,
+          "revenue": 29189.0,
+          "vendorCost": 8980.0,
+          "grossMargin": 3585.64,
+          "tourCost": 4044.57,
+          "commissionCost": 5967.29,
           "processingFee": 0.0,
-          "vatAmount": 6603.5,
-          "amountBeforeTax": 10230.14
+          "vatAmount": 6611.5,
+          "amountBeforeTax": 10197.14
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 110,
-          "pax": 1615,
+          "tours": 111,
+          "pax": 1618,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -27170,16 +27430,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "bank trf": {
-          "tours": 113,
-          "pax": 477,
-          "revenue": 20970.0,
-          "vendorCost": 7110.0,
-          "grossMargin": 536.64,
-          "tourCost": 2809.32,
-          "commissionCost": 5955.29,
+          "tours": 114,
+          "pax": 479,
+          "revenue": 21010.0,
+          "vendorCost": 7170.0,
+          "grossMargin": 495.64,
+          "tourCost": 2810.32,
+          "commissionCost": 5967.29,
           "processingFee": 0.0,
-          "vatAmount": 4558.75,
-          "amountBeforeTax": 5095.39
+          "vatAmount": 4566.75,
+          "amountBeforeTax": 5062.39
         },
         "card": {
           "tours": 29,
@@ -27208,16 +27468,16 @@ const guideStats26 = [
           "amountBeforeTax": 5282.49
         },
         "1-5": {
-          "tours": 77,
-          "pax": 215,
-          "revenue": 9690.0,
-          "vendorCost": 3790.0,
-          "grossMargin": -277.35,
-          "tourCost": 1985.85,
-          "commissionCost": 2020.4,
+          "tours": 79,
+          "pax": 220,
+          "revenue": 9730.0,
+          "vendorCost": 3850.0,
+          "grossMargin": -318.35,
+          "tourCost": 1986.85,
+          "commissionCost": 2032.4,
           "processingFee": 0.0,
-          "vatAmount": 2171.1,
-          "amountBeforeTax": 1893.75
+          "vatAmount": 2179.1,
+          "amountBeforeTax": 1860.75
         },
         "6-10": {
           "tours": 55,
@@ -27234,16 +27494,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 234,
-          "pax": 2140,
-          "revenue": 25824.0,
-          "vendorCost": 7800.0,
-          "grossMargin": 2339.14,
-          "tourCost": 4043.57,
-          "commissionCost": 5850.29,
+          "tours": 236,
+          "pax": 2145,
+          "revenue": 25864.0,
+          "vendorCost": 7860.0,
+          "grossMargin": 2298.14,
+          "tourCost": 4044.57,
+          "commissionCost": 5862.29,
           "processingFee": 0.0,
-          "vatAmount": 5791.0,
-          "amountBeforeTax": 8130.14
+          "vatAmount": 5799.0,
+          "amountBeforeTax": 8097.14
         },
         "per group": {
           "tours": 18,
@@ -27308,16 +27568,16 @@ const guideStats26 = [
           "amountBeforeTax": 2991.58
         },
         "best": {
-          "tours": 26,
-          "pax": 121,
-          "revenue": 2420.0,
-          "vendorCost": 1560.0,
-          "grossMargin": -390.94,
-          "tourCost": 57.74,
-          "commissionCost": 659.2,
+          "tours": 27,
+          "pax": 123,
+          "revenue": 2460.0,
+          "vendorCost": 1620.0,
+          "grossMargin": -431.94,
+          "tourCost": 58.74,
+          "commissionCost": 671.2,
           "processingFee": 0.0,
-          "vatAmount": 534.0,
-          "amountBeforeTax": 143.06
+          "vatAmount": 542.0,
+          "amountBeforeTax": 110.06
         },
         "war PR": {
           "tours": 3,
@@ -27352,8 +27612,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 3,
-          "pax": 69
+          "tours": 4,
+          "pax": 85
         },
         "paid": {
           "tours": 20,
@@ -27440,8 +27700,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 0,
-              "pax": 0
+              "tours": 1,
+              "pax": 16
             },
             "paid": {
               "tours": 2,
@@ -27658,6 +27918,16 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 5
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -29681,8 +29951,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 155,
-          "pax": 3168
+          "tours": 156,
+          "pax": 3184
         },
         "paid": {
           "tours": 61,
@@ -29817,8 +30087,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 133
+              "tours": 8,
+              "pax": 149
             },
             "paid": {
               "tours": 3,
@@ -30035,6 +30305,16 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 5
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           },
           "1-4": {
@@ -31821,8 +32101,8 @@ const guideStats26 = [
       "amountBeforeTax": 3206.22,
       "byChannel": {
         "web": {
-          "tours": 160,
-          "pax": 3221,
+          "tours": 161,
+          "pax": 3237,
           "revenue": 1150.0,
           "vendorCost": 320.0,
           "grossMargin": 542.5,
@@ -31871,8 +32151,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 160,
-          "pax": 3221,
+          "tours": 161,
+          "pax": 3237,
           "revenue": 1150.0,
           "vendorCost": 320.0,
           "grossMargin": 542.5,
@@ -32005,8 +32285,8 @@ const guideStats26 = [
           "amountBeforeTax": 338.66
         },
         "Wed": {
-          "tours": 33,
-          "pax": 599,
+          "tours": 34,
+          "pax": 615,
           "revenue": 930.0,
           "vendorCost": 500.0,
           "grossMargin": 52.86,
@@ -32115,8 +32395,8 @@ const guideStats26 = [
           "amountBeforeTax": 378.24
         },
         "17": {
-          "tours": 36,
-          "pax": 813,
+          "tours": 37,
+          "pax": 829,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -32177,8 +32457,8 @@ const guideStats26 = [
           "amountBeforeTax": 50.0
         },
         "shoulder": {
-          "tours": 62,
-          "pax": 923,
+          "tours": 63,
+          "pax": 939,
           "revenue": 3235.0,
           "vendorCost": 1250.0,
           "grossMargin": 722.57,
@@ -32203,8 +32483,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 54,
-          "pax": 856,
+          "tours": 55,
+          "pax": 872,
           "revenue": 949.0,
           "vendorCost": 200.0,
           "grossMargin": 341.58,
@@ -32743,6 +33023,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 37.5,
           "amountBeforeTax": 90.0
+        },
+        "42": {
+          "tours": 1,
+          "pax": 16,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -32855,8 +33147,8 @@ const guideStats26 = [
           "amountBeforeTax": 697.32
         },
         "10": {
-          "tours": 10,
-          "pax": 152,
+          "tours": 11,
+          "pax": 168,
           "revenue": 729.0,
           "vendorCost": 190.0,
           "grossMargin": 258.08,
@@ -32869,8 +33161,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 168,
-          "pax": 3215,
+          "tours": 169,
+          "pax": 3231,
           "revenue": 1410.0,
           "vendorCost": 790.0,
           "grossMargin": 267.5,
@@ -32895,8 +33187,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 161,
-          "pax": 3182,
+          "tours": 162,
+          "pax": 3198,
           "revenue": 420.0,
           "vendorCost": 360.0,
           "grossMargin": -45.0,
@@ -32933,8 +33225,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 143,
-          "pax": 3148,
+          "tours": 144,
+          "pax": 3164,
           "revenue": 3090.0,
           "vendorCost": 860.0,
           "grossMargin": 1026.39,
@@ -32971,8 +33263,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 207,
-          "pax": 3385,
+          "tours": 208,
+          "pax": 3401,
           "revenue": 6372.0,
           "vendorCost": 3180.0,
           "grossMargin": 680.62,
@@ -33822,17 +34114,17 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 84,
-          "pax": 1850
+          "tours": 85,
+          "pax": 1877
         },
         "paid": {
-          "tours": 30,
-          "pax": 144
+          "tours": 31,
+          "pax": 146
         },
         "byType": {
           "best": {
-            "tours": 17,
-            "pax": 68
+            "tours": 18,
+            "pax": 70
           },
           "big": {
             "tours": 2,
@@ -33950,12 +34242,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 3,
-              "pax": 59
+              "tours": 4,
+              "pax": 86
             },
             "paid": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -34939,6 +35231,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -35026,8 +35338,8 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -35211,6 +35523,12 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-14": {
+            "best": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       },
@@ -35231,17 +35549,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 86,
-          "pax": 1887
+          "tours": 87,
+          "pax": 1914
         },
         "paid": {
-          "tours": 61,
-          "pax": 343
+          "tours": 62,
+          "pax": 345
         },
         "byType": {
           "best": {
-            "tours": 26,
-            "pax": 130
+            "tours": 27,
+            "pax": 132
           },
           "old": {
             "tours": 5,
@@ -35367,12 +35685,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 3,
-              "pax": 59
+              "tours": 4,
+              "pax": 86
             },
             "paid": {
-              "tours": 2,
-              "pax": 11
+              "tours": 3,
+              "pax": 13
             }
           }
         },
@@ -36666,6 +36984,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -36787,8 +37125,8 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 2,
-              "pax": 11
+              "tours": 3,
+              "pax": 13
             }
           },
           "3": {
@@ -37160,23 +37498,29 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-14": {
+            "best": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 9499.0,
-      "vendorCost": 3730.0,
-      "grossMargin": 191.58,
-      "tourCost": 1419.62,
-      "commissionCost": 1954.6,
+      "revenue": 9539.0,
+      "vendorCost": 3790.0,
+      "grossMargin": 150.58,
+      "tourCost": 1420.62,
+      "commissionCost": 1964.6,
       "processingFee": 0.0,
-      "vatAmount": 2203.2,
-      "amountBeforeTax": 2394.78,
+      "vatAmount": 2213.2,
+      "amountBeforeTax": 2363.78,
       "byChannel": {
         "web": {
-          "tours": 90,
-          "pax": 1929,
+          "tours": 91,
+          "pax": 1956,
           "revenue": 700.0,
           "vendorCost": 260.0,
           "grossMargin": 265.0,
@@ -37187,16 +37531,16 @@ const guideStats26 = [
           "amountBeforeTax": 440.0
         },
         "OTA": {
-          "tours": 48,
-          "pax": 203,
-          "revenue": 7419.0,
-          "vendorCost": 2930.0,
-          "grossMargin": -362.62,
-          "tourCost": 1213.82,
-          "commissionCost": 1954.6,
+          "tours": 49,
+          "pax": 205,
+          "revenue": 7459.0,
+          "vendorCost": 2990.0,
+          "grossMargin": -403.62,
+          "tourCost": 1214.82,
+          "commissionCost": 1964.6,
           "processingFee": 0.0,
-          "vatAmount": 1683.2,
-          "amountBeforeTax": 1320.58
+          "vatAmount": 1693.2,
+          "amountBeforeTax": 1289.58
         },
         "free": {
           "tours": 4,
@@ -37225,8 +37569,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 91,
-          "pax": 1949,
+          "tours": 92,
+          "pax": 1976,
           "revenue": 850.0,
           "vendorCost": 320.0,
           "grossMargin": 317.5,
@@ -37237,16 +37581,16 @@ const guideStats26 = [
           "amountBeforeTax": 530.0
         },
         "Civitatis": {
-          "tours": 20,
-          "pax": 92,
-          "revenue": 2305.0,
-          "vendorCost": 1220.0,
-          "grossMargin": 6.55,
-          "tourCost": 52.7,
-          "commissionCost": 449.5,
+          "tours": 21,
+          "pax": 94,
+          "revenue": 2345.0,
+          "vendorCost": 1280.0,
+          "grossMargin": -34.45,
+          "tourCost": 53.7,
+          "commissionCost": 459.5,
           "processingFee": 0.0,
-          "vatAmount": 576.25,
-          "amountBeforeTax": 582.8
+          "vatAmount": 586.25,
+          "amountBeforeTax": 551.8
         },
         "GYG": {
           "tours": 10,
@@ -37395,8 +37739,8 @@ const guideStats26 = [
           "amountBeforeTax": 351.3
         },
         "Mon": {
-          "tours": 22,
-          "pax": 318,
+          "tours": 23,
+          "pax": 345,
           "revenue": 2218.0,
           "vendorCost": 620.0,
           "grossMargin": 102.48,
@@ -37407,16 +37751,16 @@ const guideStats26 = [
           "amountBeforeTax": 603.48
         },
         "Wed": {
-          "tours": 23,
-          "pax": 270,
-          "revenue": 1448.0,
-          "vendorCost": 660.0,
-          "grossMargin": -17.0,
-          "tourCost": 163.5,
-          "commissionCost": 295.3,
+          "tours": 24,
+          "pax": 272,
+          "revenue": 1488.0,
+          "vendorCost": 720.0,
+          "grossMargin": -58.0,
+          "tourCost": 164.5,
+          "commissionCost": 305.3,
           "processingFee": 0.0,
-          "vatAmount": 346.2,
-          "amountBeforeTax": 329.2
+          "vatAmount": 356.2,
+          "amountBeforeTax": 298.2
         }
       },
       "byTime": {
@@ -37433,20 +37777,20 @@ const guideStats26 = [
           "amountBeforeTax": 712.8
         },
         "10": {
-          "tours": 70,
-          "pax": 746,
-          "revenue": 5880.0,
-          "vendorCost": 2370.0,
-          "grossMargin": -540.77,
-          "tourCost": 1164.22,
-          "commissionCost": 1572.3,
+          "tours": 71,
+          "pax": 748,
+          "revenue": 5920.0,
+          "vendorCost": 2430.0,
+          "grossMargin": -581.77,
+          "tourCost": 1165.22,
+          "commissionCost": 1582.3,
           "processingFee": 0.0,
-          "vatAmount": 1314.25,
-          "amountBeforeTax": 773.48
+          "vatAmount": 1324.25,
+          "amountBeforeTax": 742.48
         },
         "17": {
-          "tours": 18,
-          "pax": 471,
+          "tours": 19,
+          "pax": 498,
           "revenue": 450.0,
           "vendorCost": 140.0,
           "grossMargin": 122.5,
@@ -37531,16 +37875,16 @@ const guideStats26 = [
           "amountBeforeTax": 41.8
         },
         "shoulder": {
-          "tours": 45,
-          "pax": 439,
-          "revenue": 4700.0,
-          "vendorCost": 1660.0,
-          "grossMargin": 39.0,
-          "tourCost": 906.4,
-          "commissionCost": 1033.3,
+          "tours": 47,
+          "pax": 468,
+          "revenue": 4740.0,
+          "vendorCost": 1720.0,
+          "grossMargin": -2.0,
+          "tourCost": 907.4,
+          "commissionCost": 1043.3,
           "processingFee": 0.0,
-          "vatAmount": 1061.3,
-          "amountBeforeTax": 1100.3
+          "vatAmount": 1071.3,
+          "amountBeforeTax": 1069.3
         },
         "high": {
           "tours": 79,
@@ -37557,8 +37901,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 31,
-          "pax": 799,
+          "tours": 32,
+          "pax": 826,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -37569,16 +37913,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "1-4": {
-          "tours": 44,
-          "pax": 114,
-          "revenue": 4747.0,
-          "vendorCost": 2470.0,
-          "grossMargin": -535.9,
-          "tourCost": 790.3,
-          "commissionCost": 927.2,
+          "tours": 45,
+          "pax": 116,
+          "revenue": 4787.0,
+          "vendorCost": 2530.0,
+          "grossMargin": -576.9,
+          "tourCost": 791.3,
+          "commissionCost": 937.2,
           "processingFee": 0.0,
-          "vatAmount": 1095.4,
-          "amountBeforeTax": 559.5
+          "vatAmount": 1105.4,
+          "amountBeforeTax": 528.5
         },
         "11-20": {
           "tours": 31,
@@ -38085,6 +38429,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 10.0,
           "amountBeforeTax": -31.0
+        },
+        "42": {
+          "tours": 2,
+          "pax": 29,
+          "revenue": 40.0,
+          "vendorCost": 60.0,
+          "grossMargin": -41.0,
+          "tourCost": 1.0,
+          "commissionCost": 10.0,
+          "processingFee": 0.0,
+          "vatAmount": 10.0,
+          "amountBeforeTax": -31.0
         }
       },
       "byMonth": {
@@ -38197,22 +38553,22 @@ const guideStats26 = [
           "amountBeforeTax": 559.68
         },
         "10": {
-          "tours": 5,
-          "pax": 66,
-          "revenue": 140.0,
-          "vendorCost": 120.0,
-          "grossMargin": -58.5,
-          "tourCost": 3.5,
-          "commissionCost": 40.0,
+          "tours": 7,
+          "pax": 95,
+          "revenue": 180.0,
+          "vendorCost": 180.0,
+          "grossMargin": -99.5,
+          "tourCost": 4.5,
+          "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 35.0,
-          "amountBeforeTax": -23.5
+          "vatAmount": 45.0,
+          "amountBeforeTax": -54.5
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 89,
-          "pax": 1894,
+          "tours": 90,
+          "pax": 1921,
           "revenue": 210.0,
           "vendorCost": 180.0,
           "grossMargin": -22.5,
@@ -38223,22 +38579,22 @@ const guideStats26 = [
           "amountBeforeTax": 30.0
         },
         "CPP": {
-          "tours": 58,
-          "pax": 286,
-          "revenue": 9289.0,
-          "vendorCost": 3550.0,
-          "grossMargin": 214.08,
-          "tourCost": 1419.62,
-          "commissionCost": 1954.6,
+          "tours": 59,
+          "pax": 288,
+          "revenue": 9329.0,
+          "vendorCost": 3610.0,
+          "grossMargin": 173.08,
+          "tourCost": 1420.62,
+          "commissionCost": 1964.6,
           "processingFee": 0.0,
-          "vatAmount": 2150.7,
-          "amountBeforeTax": 2364.78
+          "vatAmount": 2160.7,
+          "amountBeforeTax": 2333.78
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 88,
-          "pax": 1891,
+          "tours": 89,
+          "pax": 1918,
           "revenue": 120.0,
           "vendorCost": 120.0,
           "grossMargin": -30.0,
@@ -38249,16 +38605,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "bank trf": {
-          "tours": 48,
-          "pax": 203,
-          "revenue": 7419.0,
-          "vendorCost": 2930.0,
-          "grossMargin": -362.62,
-          "tourCost": 1213.82,
-          "commissionCost": 1954.6,
+          "tours": 49,
+          "pax": 205,
+          "revenue": 7459.0,
+          "vendorCost": 2990.0,
+          "grossMargin": -403.62,
+          "tourCost": 1214.82,
+          "commissionCost": 1964.6,
           "processingFee": 0.0,
-          "vatAmount": 1683.2,
-          "amountBeforeTax": 1320.58
+          "vatAmount": 1693.2,
+          "amountBeforeTax": 1289.58
         },
         "card": {
           "tours": 11,
@@ -38275,8 +38631,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 85,
-          "pax": 1935,
+          "tours": 86,
+          "pax": 1962,
           "revenue": 1500.0,
           "vendorCost": 450.0,
           "grossMargin": 438.0,
@@ -38287,16 +38643,16 @@ const guideStats26 = [
           "amountBeforeTax": 806.0
         },
         "1-5": {
-          "tours": 40,
-          "pax": 103,
-          "revenue": 4226.0,
-          "vendorCost": 2170.0,
-          "grossMargin": -577.55,
-          "tourCost": 788.3,
-          "commissionCost": 876.1,
+          "tours": 41,
+          "pax": 105,
+          "revenue": 4266.0,
+          "vendorCost": 2230.0,
+          "grossMargin": -618.55,
+          "tourCost": 789.3,
+          "commissionCost": 886.1,
           "processingFee": 0.0,
-          "vatAmount": 969.15,
-          "amountBeforeTax": 391.6
+          "vatAmount": 979.15,
+          "amountBeforeTax": 360.6
         },
         "6-10": {
           "tours": 22,
@@ -38313,16 +38669,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 138,
-          "pax": 2080,
-          "revenue": 7724.0,
-          "vendorCost": 3150.0,
-          "grossMargin": -380.92,
-          "tourCost": 1419.62,
-          "commissionCost": 1769.6,
+          "tours": 140,
+          "pax": 2109,
+          "revenue": 7764.0,
+          "vendorCost": 3210.0,
+          "grossMargin": -421.92,
+          "tourCost": 1420.62,
+          "commissionCost": 1779.6,
           "processingFee": 0.0,
-          "vatAmount": 1765.7,
-          "amountBeforeTax": 1384.78
+          "vatAmount": 1775.7,
+          "amountBeforeTax": 1353.78
         },
         "per group": {
           "tours": 9,
@@ -38339,16 +38695,16 @@ const guideStats26 = [
       },
       "byTourType": {
         "best": {
-          "tours": 26,
-          "pax": 110,
-          "revenue": 2200.0,
-          "vendorCost": 1560.0,
-          "grossMargin": -508.2,
-          "tourCost": 32.0,
-          "commissionCost": 597.2,
+          "tours": 27,
+          "pax": 112,
+          "revenue": 2240.0,
+          "vendorCost": 1620.0,
+          "grossMargin": -549.2,
+          "tourCost": 33.0,
+          "commissionCost": 607.2,
           "processingFee": 0.0,
-          "vatAmount": 519.0,
-          "amountBeforeTax": 10.8
+          "vatAmount": 529.0,
+          "amountBeforeTax": -20.2
         },
         "old": {
           "tours": 5,
@@ -38423,8 +38779,8 @@ const guideStats26 = [
           "pax": 0
         },
         "paid": {
-          "tours": 43,
-          "pax": 267
+          "tours": 44,
+          "pax": 269
         },
         "byType": {
           "best": {
@@ -38444,8 +38800,8 @@ const guideStats26 = [
             "pax": 59
           },
           "old": {
-            "tours": 5,
-            "pax": 40
+            "tours": 6,
+            "pax": 42
           }
         },
         "byMonth": {
@@ -38522,8 +38878,8 @@ const guideStats26 = [
               "pax": 0
             },
             "paid": {
-              "tours": 3,
-              "pax": 9
+              "tours": 4,
+              "pax": 11
             }
           }
         },
@@ -38937,6 +39293,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 5
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -39028,6 +39394,10 @@ const guideStats26 = [
             "food PR": {
               "tours": 1,
               "pax": 5
+            },
+            "old": {
+              "tours": 1,
+              "pax": 2
             }
           }
         },
@@ -39285,13 +39655,19 @@ const guideStats26 = [
               "tours": 1,
               "pax": 5
             }
+          },
+          "10-14": {
+            "old": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       },
       "esp": {
         "free": {
-          "tours": 138,
-          "pax": 2260
+          "tours": 141,
+          "pax": 2289
         },
         "paid": {
           "tours": 42,
@@ -39418,8 +39794,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 83
+              "tours": 7,
+              "pax": 112
             },
             "paid": {
               "tours": 3,
@@ -40762,6 +41138,26 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 16
             },
             "paid": {
               "tours": 0,
@@ -41129,12 +41525,12 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 138,
-          "pax": 2260
+          "tours": 141,
+          "pax": 2289
         },
         "paid": {
-          "tours": 85,
-          "pax": 457
+          "tours": 86,
+          "pax": 459
         },
         "byType": {
           "best": {
@@ -41154,8 +41550,8 @@ const guideStats26 = [
             "pax": 63
           },
           "old": {
-            "tours": 5,
-            "pax": 40
+            "tours": 6,
+            "pax": 42
           },
           "war": {
             "tours": 21,
@@ -41265,12 +41661,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 83
+              "tours": 7,
+              "pax": 112
             },
             "paid": {
-              "tours": 6,
-              "pax": 25
+              "tours": 7,
+              "pax": 27
             }
           }
         },
@@ -41683,6 +42079,16 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 5
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
             }
           },
           "1-11": {
@@ -42874,6 +43280,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -42993,6 +43419,10 @@ const guideStats26 = [
             "food PR": {
               "tours": 1,
               "pax": 5
+            },
+            "old": {
+              "tours": 1,
+              "pax": 2
             },
             "war": {
               "tours": 1,
@@ -43297,6 +43727,12 @@ const guideStats26 = [
               "pax": 5
             }
           },
+          "10-14": {
+            "old": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
           "1-29": {
             "best": {
               "tours": 1,
@@ -43529,18 +43965,18 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 11995.0,
-      "vendorCost": 5190.0,
-      "grossMargin": -158.93,
+      "revenue": 12120.0,
+      "vendorCost": 5250.0,
+      "grossMargin": -125.18,
       "tourCost": 1736.24,
       "commissionCost": 2453.69,
       "processingFee": 0.0,
-      "vatAmount": 2774.0,
-      "amountBeforeTax": 2615.07,
+      "vatAmount": 2805.25,
+      "amountBeforeTax": 2680.07,
       "byChannel": {
         "web": {
-          "tours": 141,
-          "pax": 2288,
+          "tours": 144,
+          "pax": 2317,
           "revenue": 578.0,
           "vendorCost": 180.0,
           "grossMargin": 203.7,
@@ -43563,16 +43999,16 @@ const guideStats26 = [
           "amountBeforeTax": 1533.97
         },
         "b2b": {
-          "tours": 6,
-          "pax": 15,
-          "revenue": 1215.0,
-          "vendorCost": 370.0,
-          "grossMargin": 219.15,
+          "tours": 7,
+          "pax": 17,
+          "revenue": 1340.0,
+          "vendorCost": 430.0,
+          "grossMargin": 252.9,
           "tourCost": 322.1,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 303.75,
-          "amountBeforeTax": 522.9
+          "vatAmount": 335.0,
+          "amountBeforeTax": 587.9
         },
         "free": {
           "tours": 6,
@@ -43589,8 +44025,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 141,
-          "pax": 2288,
+          "tours": 144,
+          "pax": 2317,
           "revenue": 578.0,
           "vendorCost": 180.0,
           "grossMargin": 203.7,
@@ -43731,6 +44167,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 44.5,
           "amountBeforeTax": 69.2
+        },
+        "Touch Croatia": {
+          "tours": 1,
+          "pax": 2,
+          "revenue": 125.0,
+          "vendorCost": 60.0,
+          "grossMargin": 33.75,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 31.25,
+          "amountBeforeTax": 65.0
         }
       },
       "byDow": {
@@ -43747,8 +44195,8 @@ const guideStats26 = [
           "amountBeforeTax": 567.86
         },
         "Tue": {
-          "tours": 29,
-          "pax": 255,
+          "tours": 31,
+          "pax": 271,
           "revenue": 1662.0,
           "vendorCost": 910.0,
           "grossMargin": -111.2,
@@ -43759,20 +44207,20 @@ const guideStats26 = [
           "amountBeforeTax": 282.9
         },
         "Wed": {
-          "tours": 30,
-          "pax": 273,
-          "revenue": 1263.0,
-          "vendorCost": 610.0,
-          "grossMargin": -160.8,
+          "tours": 31,
+          "pax": 275,
+          "revenue": 1388.0,
+          "vendorCost": 670.0,
+          "grossMargin": -127.05,
           "tourCost": 282.65,
           "commissionCost": 223.3,
           "processingFee": 0.0,
-          "vatAmount": 307.85,
-          "amountBeforeTax": 147.05
+          "vatAmount": 339.1,
+          "amountBeforeTax": 212.05
         },
         "Mon": {
-          "tours": 37,
-          "pax": 413,
+          "tours": 38,
+          "pax": 426,
           "revenue": 2411.0,
           "vendorCost": 990.0,
           "grossMargin": 319.15,
@@ -43833,8 +44281,8 @@ const guideStats26 = [
           "amountBeforeTax": 1064.4
         },
         "10": {
-          "tours": 92,
-          "pax": 881,
+          "tours": 94,
+          "pax": 900,
           "revenue": 5981.0,
           "vendorCost": 2830.0,
           "grossMargin": -839.69,
@@ -43845,8 +44293,8 @@ const guideStats26 = [
           "amountBeforeTax": 495.06
         },
         "17": {
-          "tours": 45,
-          "pax": 770,
+          "tours": 46,
+          "pax": 780,
           "revenue": 428.0,
           "vendorCost": 180.0,
           "grossMargin": 32.2,
@@ -43857,16 +44305,16 @@ const guideStats26 = [
           "amountBeforeTax": 132.95
         },
         "16": {
-          "tours": 20,
-          "pax": 49,
-          "revenue": 1767.0,
-          "vendorCost": 1220.0,
-          "grossMargin": 28.81,
+          "tours": 21,
+          "pax": 51,
+          "revenue": 1892.0,
+          "vendorCost": 1280.0,
+          "grossMargin": 62.56,
           "tourCost": 0.0,
           "commissionCost": 80.34,
           "processingFee": 0.0,
-          "vatAmount": 437.85,
-          "amountBeforeTax": 466.66
+          "vatAmount": 469.1,
+          "amountBeforeTax": 531.66
         },
         "14": {
           "tours": 2,
@@ -43919,16 +44367,16 @@ const guideStats26 = [
           "amountBeforeTax": -10.5
         },
         "shoulder": {
-          "tours": 65,
-          "pax": 656,
-          "revenue": 4176.0,
-          "vendorCost": 1940.0,
-          "grossMargin": 39.95,
+          "tours": 69,
+          "pax": 687,
+          "revenue": 4301.0,
+          "vendorCost": 2000.0,
+          "grossMargin": 73.7,
           "tourCost": 415.8,
           "commissionCost": 806.95,
           "processingFee": 0.0,
-          "vatAmount": 973.3,
-          "amountBeforeTax": 1013.25
+          "vatAmount": 1004.55,
+          "amountBeforeTax": 1078.25
         },
         "high": {
           "tours": 131,
@@ -43945,8 +44393,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "5-10": {
-          "tours": 44,
-          "pax": 324,
+          "tours": 46,
+          "pax": 340,
           "revenue": 3903.0,
           "vendorCost": 880.0,
           "grossMargin": 152.9,
@@ -43957,20 +44405,20 @@ const guideStats26 = [
           "amountBeforeTax": 1033.1
         },
         "1-4": {
-          "tours": 74,
-          "pax": 187,
-          "revenue": 6712.0,
-          "vendorCost": 3940.0,
-          "grossMargin": -697.83,
+          "tours": 75,
+          "pax": 189,
+          "revenue": 6837.0,
+          "vendorCost": 4000.0,
+          "grossMargin": -664.08,
           "tourCost": 791.74,
           "commissionCost": 1103.29,
           "processingFee": 0.0,
-          "vatAmount": 1574.8,
-          "amountBeforeTax": 876.97
+          "vatAmount": 1606.05,
+          "amountBeforeTax": 941.97
         },
         "11-20": {
-          "tours": 65,
-          "pax": 999,
+          "tours": 66,
+          "pax": 1012,
           "revenue": 1080.0,
           "vendorCost": 300.0,
           "grossMargin": 300.0,
@@ -44461,6 +44909,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 193.95,
           "amountBeforeTax": 134.8
+        },
+        "42": {
+          "tours": 4,
+          "pax": 31,
+          "revenue": 125.0,
+          "vendorCost": 60.0,
+          "grossMargin": 33.75,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 31.25,
+          "amountBeforeTax": 65.0
         }
       },
       "byMonth": {
@@ -44573,22 +45033,22 @@ const guideStats26 = [
           "amountBeforeTax": 847.05
         },
         "10": {
-          "tours": 10,
-          "pax": 100,
-          "revenue": 839.0,
-          "vendorCost": 370.0,
-          "grossMargin": -59.15,
+          "tours": 14,
+          "pax": 131,
+          "revenue": 964.0,
+          "vendorCost": 430.0,
+          "grossMargin": -25.4,
           "tourCost": 209.4,
           "commissionCost": 124.8,
           "processingFee": 0.0,
-          "vatAmount": 193.95,
-          "amountBeforeTax": 134.8
+          "vatAmount": 225.2,
+          "amountBeforeTax": 199.8
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 144,
-          "pax": 2279,
+          "tours": 147,
+          "pax": 2308,
           "revenue": 570.0,
           "vendorCost": 360.0,
           "grossMargin": 67.5,
@@ -44599,22 +45059,22 @@ const guideStats26 = [
           "amountBeforeTax": 210.0
         },
         "CPP": {
-          "tours": 79,
-          "pax": 317,
-          "revenue": 11425.0,
-          "vendorCost": 4830.0,
-          "grossMargin": -226.43,
+          "tours": 80,
+          "pax": 319,
+          "revenue": 11550.0,
+          "vendorCost": 4890.0,
+          "grossMargin": -192.68,
           "tourCost": 1736.24,
           "commissionCost": 2453.69,
           "processingFee": 0.0,
-          "vatAmount": 2631.5,
-          "amountBeforeTax": 2405.07
+          "vatAmount": 2662.75,
+          "amountBeforeTax": 2470.07
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 139,
-          "pax": 2263,
+          "tours": 142,
+          "pax": 2292,
           "revenue": 90.0,
           "vendorCost": 60.0,
           "grossMargin": 7.5,
@@ -44625,16 +45085,16 @@ const guideStats26 = [
           "amountBeforeTax": 30.0
         },
         "bank trf": {
-          "tours": 71,
-          "pax": 279,
-          "revenue": 9957.0,
-          "vendorCost": 4350.0,
-          "grossMargin": -595.53,
+          "tours": 72,
+          "pax": 281,
+          "revenue": 10082.0,
+          "vendorCost": 4410.0,
+          "grossMargin": -561.78,
           "tourCost": 1484.34,
           "commissionCost": 2453.69,
           "processingFee": 0.0,
-          "vatAmount": 2264.5,
-          "amountBeforeTax": 1668.97
+          "vatAmount": 2295.75,
+          "amountBeforeTax": 1733.97
         },
         "card": {
           "tours": 12,
@@ -44663,20 +45123,20 @@ const guideStats26 = [
           "amountBeforeTax": 659.8
         },
         "1-5": {
-          "tours": 69,
-          "pax": 185,
-          "revenue": 6978.0,
-          "vendorCost": 3510.0,
-          "grossMargin": -576.28,
+          "tours": 70,
+          "pax": 187,
+          "revenue": 7103.0,
+          "vendorCost": 3570.0,
+          "grossMargin": -542.53,
           "tourCost": 1122.44,
           "commissionCost": 1296.29,
           "processingFee": 0.0,
-          "vatAmount": 1625.55,
-          "amountBeforeTax": 1049.27
+          "vatAmount": 1656.8,
+          "amountBeforeTax": 1114.27
         },
         "11+": {
-          "tours": 119,
-          "pax": 2187,
+          "tours": 122,
+          "pax": 2216,
           "revenue": 2034.0,
           "vendorCost": 690.0,
           "grossMargin": 436.5,
@@ -44689,8 +45149,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 215,
-          "pax": 2528,
+          "tours": 218,
+          "pax": 2557,
           "revenue": 10495.0,
           "vendorCost": 4680.0,
           "grossMargin": -510.43,
@@ -44701,16 +45161,16 @@ const guideStats26 = [
           "amountBeforeTax": 1917.32
         },
         "per group": {
-          "tours": 8,
-          "pax": 68,
-          "revenue": 1500.0,
-          "vendorCost": 510.0,
-          "grossMargin": 351.5,
+          "tours": 9,
+          "pax": 70,
+          "revenue": 1625.0,
+          "vendorCost": 570.0,
+          "grossMargin": 385.25,
           "tourCost": 0.0,
           "commissionCost": 292.25,
           "processingFee": 0.0,
-          "vatAmount": 346.25,
-          "amountBeforeTax": 697.75
+          "vatAmount": 377.5,
+          "amountBeforeTax": 762.75
         }
       },
       "byTourType": {
@@ -44775,16 +45235,16 @@ const guideStats26 = [
           "amountBeforeTax": 496.66
         },
         "old": {
-          "tours": 5,
-          "pax": 40,
-          "revenue": 800.0,
-          "vendorCost": 300.0,
-          "grossMargin": 205.5,
+          "tours": 6,
+          "pax": 42,
+          "revenue": 925.0,
+          "vendorCost": 360.0,
+          "grossMargin": 239.25,
           "tourCost": 0.0,
           "commissionCost": 108.25,
           "processingFee": 0.0,
-          "vatAmount": 186.25,
-          "amountBeforeTax": 391.75
+          "vatAmount": 217.5,
+          "amountBeforeTax": 456.75
         }
       }
     }
@@ -52297,8 +52757,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 93,
-          "pax": 1858
+          "tours": 94,
+          "pax": 1860
         },
         "paid": {
           "tours": 75,
@@ -52399,8 +52859,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 28
+              "tours": 2,
+              "pax": 30
             },
             "paid": {
               "tours": 1,
@@ -53628,6 +54088,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 3
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 2
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -54168,8 +54638,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 93,
-          "pax": 1858
+          "tours": 94,
+          "pax": 1860
         },
         "paid": {
           "tours": 76,
@@ -54270,8 +54740,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 28
+              "tours": 2,
+              "pax": 30
             },
             "paid": {
               "tours": 1,
@@ -55508,6 +55978,16 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 3
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 2
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -56050,8 +56530,8 @@ const guideStats26 = [
       "amountBeforeTax": 1857.2,
       "byChannel": {
         "web": {
-          "tours": 93,
-          "pax": 1858,
+          "tours": 94,
+          "pax": 1860,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -56076,8 +56556,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 93,
-          "pax": 1858,
+          "tours": 94,
+          "pax": 1860,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -56126,8 +56606,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Wed": {
-          "tours": 25,
-          "pax": 269,
+          "tours": 26,
+          "pax": 271,
           "revenue": 860.0,
           "vendorCost": 720.0,
           "grossMargin": -313.0,
@@ -56224,8 +56704,8 @@ const guideStats26 = [
           "amountBeforeTax": 549.7
         },
         "17": {
-          "tours": 47,
-          "pax": 912,
+          "tours": 48,
+          "pax": 914,
           "revenue": 1150.0,
           "vendorCost": 350.0,
           "grossMargin": 225.0,
@@ -56298,8 +56778,8 @@ const guideStats26 = [
           "amountBeforeTax": 138.8
         },
         "shoulder": {
-          "tours": 43,
-          "pax": 406,
+          "tours": 44,
+          "pax": 408,
           "revenue": 2830.0,
           "vendorCost": 1440.0,
           "grossMargin": -56.1,
@@ -56324,8 +56804,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "1-4": {
-          "tours": 48,
-          "pax": 128,
+          "tours": 49,
+          "pax": 130,
           "revenue": 3740.0,
           "vendorCost": 2680.0,
           "grossMargin": -861.8,
@@ -56744,6 +57224,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 50.0,
           "amountBeforeTax": 80.0
+        },
+        "42": {
+          "tours": 1,
+          "pax": 2,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -56832,8 +57324,8 @@ const guideStats26 = [
           "amountBeforeTax": 47.0
         },
         "10": {
-          "tours": 2,
-          "pax": 31,
+          "tours": 3,
+          "pax": 33,
           "revenue": 200.0,
           "vendorCost": 70.0,
           "grossMargin": 30.0,
@@ -56846,8 +57338,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 93,
-          "pax": 1858,
+          "tours": 94,
+          "pax": 1860,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -56872,8 +57364,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 93,
-          "pax": 1858,
+          "tours": 94,
+          "pax": 1860,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -56898,8 +57390,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 47,
-          "pax": 131,
+          "tours": 48,
+          "pax": 133,
           "revenue": 3580.0,
           "vendorCost": 2550.0,
           "grossMargin": -809.8,
@@ -56936,8 +57428,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 154,
-          "pax": 2140,
+          "tours": 155,
+          "pax": 2142,
           "revenue": 5640.0,
           "vendorCost": 3660.0,
           "grossMargin": -1012.3,
@@ -57006,8 +57498,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 60,
-          "pax": 956
+          "tours": 62,
+          "pax": 989
         },
         "paid": {
           "tours": 38,
@@ -57086,8 +57578,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 5,
-              "pax": 70
+              "tours": 7,
+              "pax": 103
             },
             "paid": {
               "tours": 6,
@@ -57834,6 +58326,26 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 10
+            }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -58140,8 +58652,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 60,
-          "pax": 956
+          "tours": 62,
+          "pax": 989
         },
         "paid": {
           "tours": 38,
@@ -58220,8 +58732,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 5,
-              "pax": 70
+              "tours": 7,
+              "pax": 103
             },
             "paid": {
               "tours": 6,
@@ -58969,6 +59481,26 @@ const guideStats26 = [
               "tours": 1,
               "pax": 10
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -59254,8 +59786,8 @@ const guideStats26 = [
       "amountBeforeTax": 1354.88,
       "byChannel": {
         "web": {
-          "tours": 65,
-          "pax": 999,
+          "tours": 67,
+          "pax": 1032,
           "revenue": 800.0,
           "vendorCost": 310.0,
           "grossMargin": 290.0,
@@ -59292,8 +59824,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 65,
-          "pax": 999,
+          "tours": 67,
+          "pax": 1032,
           "revenue": 800.0,
           "vendorCost": 310.0,
           "grossMargin": 290.0,
@@ -59390,8 +59922,8 @@ const guideStats26 = [
           "amountBeforeTax": 364.62
         },
         "Wed": {
-          "tours": 14,
-          "pax": 187,
+          "tours": 15,
+          "pax": 208,
           "revenue": 320.0,
           "vendorCost": 240.0,
           "grossMargin": -82.0,
@@ -59402,8 +59934,8 @@ const guideStats26 = [
           "amountBeforeTax": -16.0
         },
         "Mon": {
-          "tours": 10,
-          "pax": 109,
+          "tours": 11,
+          "pax": 121,
           "revenue": 430.0,
           "vendorCost": 240.0,
           "grossMargin": 5.5,
@@ -59464,8 +59996,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 35,
-          "pax": 261,
+          "tours": 37,
+          "pax": 294,
           "revenue": 4165.0,
           "vendorCost": 1980.0,
           "grossMargin": 107.63,
@@ -59526,8 +60058,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 20,
-          "pax": 225,
+          "tours": 22,
+          "pax": 258,
           "revenue": 1370.0,
           "vendorCost": 600.0,
           "grossMargin": 85.64,
@@ -59552,8 +60084,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 14,
-          "pax": 338,
+          "tours": 15,
+          "pax": 359,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -59564,8 +60096,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11-20": {
-          "tours": 31,
-          "pax": 439,
+          "tours": 32,
+          "pax": 451,
           "revenue": 660.0,
           "vendorCost": 180.0,
           "grossMargin": 183.0,
@@ -59876,6 +60408,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 116.0,
           "amountBeforeTax": 176.0
+        },
+        "42": {
+          "tours": 2,
+          "pax": 33,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -59940,8 +60484,8 @@ const guideStats26 = [
           "amountBeforeTax": 858.0
         },
         "10": {
-          "tours": 11,
-          "pax": 104,
+          "tours": 13,
+          "pax": 137,
           "revenue": 670.0,
           "vendorCost": 360.0,
           "grossMargin": 8.5,
@@ -59954,8 +60498,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 60,
-          "pax": 956,
+          "tours": 62,
+          "pax": 989,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -59980,8 +60524,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 60,
-          "pax": 956,
+          "tours": 62,
+          "pax": 989,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -60018,8 +60562,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 64,
-          "pax": 990,
+          "tours": 66,
+          "pax": 1023,
           "revenue": 2810.0,
           "vendorCost": 1080.0,
           "grossMargin": 432.75,
@@ -60056,8 +60600,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 90,
-          "pax": 1139,
+          "tours": 92,
+          "pax": 1172,
           "revenue": 3690.0,
           "vendorCost": 1800.0,
           "grossMargin": -68.62,
@@ -65268,25 +65812,25 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 37,
-          "pax": 802
+          "tours": 38,
+          "pax": 814
         },
         "paid": {
-          "tours": 32,
-          "pax": 198
+          "tours": 34,
+          "pax": 203
         },
         "byType": {
           "best": {
-            "tours": 11,
-            "pax": 69
+            "tours": 12,
+            "pax": 72
           },
           "big": {
             "tours": 5,
             "pax": 47
           },
           "war": {
-            "tours": 13,
-            "pax": 72
+            "tours": 14,
+            "pax": 74
           },
           "old": {
             "tours": 2,
@@ -65334,12 +65878,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 73
+              "tours": 5,
+              "pax": 85
             },
             "paid": {
-              "tours": 2,
-              "pax": 6
+              "tours": 4,
+              "pax": 11
             }
           }
         },
@@ -65843,6 +66387,36 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 3
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -65902,12 +66476,12 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 1,
-              "pax": 4
+              "tours": 2,
+              "pax": 7
             },
             "war": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -66099,6 +66673,18 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-12": {
+            "war": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 3
+            }
           }
         }
       },
@@ -66119,17 +66705,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 37,
-          "pax": 802
+          "tours": 38,
+          "pax": 814
         },
         "paid": {
-          "tours": 36,
-          "pax": 230
+          "tours": 38,
+          "pax": 235
         },
         "byType": {
           "best": {
-            "tours": 12,
-            "pax": 81
+            "tours": 13,
+            "pax": 84
           },
           "food": {
             "tours": 2,
@@ -66144,8 +66730,8 @@ const guideStats26 = [
             "pax": 10
           },
           "war": {
-            "tours": 13,
-            "pax": 72
+            "tours": 14,
+            "pax": 74
           }
         },
         "byMonth": {
@@ -66185,12 +66771,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 73
+              "tours": 5,
+              "pax": 85
             },
             "paid": {
-              "tours": 2,
-              "pax": 6
+              "tours": 4,
+              "pax": 11
             }
           }
         },
@@ -66734,6 +67320,36 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 3
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -66793,12 +67409,12 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 1,
-              "pax": 4
+              "tours": 2,
+              "pax": 7
             },
             "war": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -67014,203 +67630,215 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-12": {
+            "war": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 3
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 4995.0,
-      "vendorCost": 2240.0,
-      "grossMargin": 541.1,
+      "revenue": 5133.0,
+      "vendorCost": 0.0,
+      "grossMargin": 2869.6,
       "tourCost": 128.9,
-      "commissionCost": 842.5,
+      "commissionCost": 857.5,
       "processingFee": 0.0,
-      "vatAmount": 1242.5,
-      "amountBeforeTax": 1783.6,
+      "vatAmount": 1277.0,
+      "amountBeforeTax": 4146.6,
       "byChannel": {
         "web": {
-          "tours": 40,
-          "pax": 821,
+          "tours": 41,
+          "pax": 833,
           "revenue": 470.0,
-          "vendorCost": 190.0,
-          "grossMargin": 162.5,
+          "vendorCost": 0.0,
+          "grossMargin": 352.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 117.5,
-          "amountBeforeTax": 280.0
+          "amountBeforeTax": 470.0
         },
         "OTA": {
-          "tours": 28,
-          "pax": 140,
-          "revenue": 4105.0,
-          "vendorCost": 1750.0,
-          "grossMargin": 363.6,
+          "tours": 30,
+          "pax": 145,
+          "revenue": 4243.0,
+          "vendorCost": 0.0,
+          "grossMargin": 2202.1,
           "tourCost": 128.9,
-          "commissionCost": 842.5,
+          "commissionCost": 857.5,
           "processingFee": 0.0,
-          "vatAmount": 1020.0,
-          "amountBeforeTax": 1383.6
+          "vatAmount": 1054.5,
+          "amountBeforeTax": 3256.6
         },
         "free": {
           "tours": 5,
           "pax": 14,
           "revenue": 420.0,
-          "vendorCost": 300.0,
-          "grossMargin": 15.0,
+          "vendorCost": 0.0,
+          "grossMargin": 315.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 105.0,
-          "amountBeforeTax": 120.0
+          "amountBeforeTax": 420.0
         }
       },
       "bySource": {
         "FST": {
-          "tours": 40,
-          "pax": 821,
+          "tours": 41,
+          "pax": 833,
           "revenue": 470.0,
-          "vendorCost": 190.0,
-          "grossMargin": 162.5,
+          "vendorCost": 0.0,
+          "grossMargin": 352.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 117.5,
-          "amountBeforeTax": 280.0
+          "amountBeforeTax": 470.0
         },
         "GYG": {
           "tours": 6,
           "pax": 24,
           "revenue": 735.0,
-          "vendorCost": 360.0,
-          "grossMargin": -109.15,
+          "vendorCost": 0.0,
+          "grossMargin": 250.85,
           "tourCost": 79.9,
           "commissionCost": 220.5,
           "processingFee": 0.0,
           "vatAmount": 183.75,
-          "amountBeforeTax": 74.6
+          "amountBeforeTax": 434.6
         },
         "Civitatis": {
-          "tours": 21,
-          "pax": 114,
-          "revenue": 3245.0,
-          "vendorCost": 1330.0,
-          "grossMargin": 467.75,
+          "tours": 23,
+          "pax": 119,
+          "revenue": 3383.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1886.25,
           "tourCost": 49.0,
-          "commissionCost": 587.0,
+          "commissionCost": 602.0,
           "processingFee": 0.0,
-          "vatAmount": 811.25,
-          "amountBeforeTax": 1279.0
+          "vatAmount": 845.75,
+          "amountBeforeTax": 2732.0
         },
         "Doris Cvetko P": {
           "tours": 3,
           "pax": 8,
           "revenue": 240.0,
-          "vendorCost": 180.0,
-          "grossMargin": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 180.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 60.0,
-          "amountBeforeTax": 60.0
+          "amountBeforeTax": 240.0
         },
         "Nadir Ivanović": {
           "tours": 1,
           "pax": 4,
           "revenue": 120.0,
-          "vendorCost": 60.0,
-          "grossMargin": 30.0,
+          "vendorCost": 0.0,
+          "grossMargin": 90.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 30.0,
-          "amountBeforeTax": 60.0
+          "amountBeforeTax": 120.0
         },
         "Katija Crnčević": {
           "tours": 1,
           "pax": 2,
           "revenue": 60.0,
-          "vendorCost": 60.0,
-          "grossMargin": -15.0,
+          "vendorCost": 0.0,
+          "grossMargin": 45.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 15.0,
-          "amountBeforeTax": 0.0
+          "amountBeforeTax": 60.0
         },
         "Viator": {
           "tours": 1,
           "pax": 2,
           "revenue": 125.0,
-          "vendorCost": 60.0,
-          "grossMargin": 5.0,
+          "vendorCost": 0.0,
+          "grossMargin": 65.0,
           "tourCost": 0.0,
           "commissionCost": 35.0,
           "processingFee": 0.0,
           "vatAmount": 25.0,
-          "amountBeforeTax": 30.0
+          "amountBeforeTax": 90.0
         }
       },
       "byDow": {
         "Wed": {
-          "tours": 17,
-          "pax": 271,
+          "tours": 18,
+          "pax": 283,
           "revenue": 861.0,
-          "vendorCost": 440.0,
-          "grossMargin": 106.0,
+          "vendorCost": 0.0,
+          "grossMargin": 546.0,
           "tourCost": 6.0,
           "commissionCost": 100.0,
           "processingFee": 0.0,
           "vatAmount": 209.0,
-          "amountBeforeTax": 315.0
+          "amountBeforeTax": 755.0
         },
         "Thu": {
           "tours": 21,
           "pax": 299,
           "revenue": 1273.0,
-          "vendorCost": 570.0,
-          "grossMargin": 172.75,
+          "vendorCost": 0.0,
+          "grossMargin": 742.75,
           "tourCost": 6.5,
           "commissionCost": 205.5,
           "processingFee": 0.0,
           "vatAmount": 318.25,
-          "amountBeforeTax": 491.0
+          "amountBeforeTax": 1061.0
         },
         "Fri": {
           "tours": 13,
           "pax": 131,
           "revenue": 857.0,
-          "vendorCost": 540.0,
-          "grossMargin": -20.45,
+          "vendorCost": 0.0,
+          "grossMargin": 519.55,
           "tourCost": 9.5,
           "commissionCost": 113.7,
           "processingFee": 0.0,
           "vatAmount": 214.25,
-          "amountBeforeTax": 193.8
+          "amountBeforeTax": 733.8
         },
         "Mon": {
-          "tours": 4,
-          "pax": 49,
-          "revenue": 772.0,
-          "vendorCost": 190.0,
-          "grossMargin": 148.8,
+          "tours": 5,
+          "pax": 51,
+          "revenue": 850.0,
+          "vendorCost": 0.0,
+          "grossMargin": 397.3,
           "tourCost": 70.4,
           "commissionCost": 169.8,
           "processingFee": 0.0,
-          "vatAmount": 193.0,
-          "amountBeforeTax": 341.8
+          "vatAmount": 212.5,
+          "amountBeforeTax": 609.8
         },
         "Tue": {
-          "tours": 18,
-          "pax": 225,
-          "revenue": 1232.0,
-          "vendorCost": 500.0,
-          "grossMargin": 134.0,
+          "tours": 19,
+          "pax": 228,
+          "revenue": 1292.0,
+          "vendorCost": 0.0,
+          "grossMargin": 664.0,
           "tourCost": 36.5,
-          "commissionCost": 253.5,
+          "commissionCost": 268.5,
           "processingFee": 0.0,
-          "vatAmount": 308.0,
-          "amountBeforeTax": 442.0
+          "vatAmount": 323.0,
+          "amountBeforeTax": 987.0
         }
       },
       "byTime": {
@@ -67218,73 +67846,73 @@ const guideStats26 = [
           "tours": 10,
           "pax": 131,
           "revenue": 600.0,
-          "vendorCost": 200.0,
-          "grossMargin": 100.0,
+          "vendorCost": 0.0,
+          "grossMargin": 300.0,
           "tourCost": 0.0,
           "commissionCost": 150.0,
           "processingFee": 0.0,
           "vatAmount": 150.0,
-          "amountBeforeTax": 250.0
+          "amountBeforeTax": 450.0
         },
         "10": {
-          "tours": 35,
-          "pax": 479,
-          "revenue": 1719.0,
-          "vendorCost": 900.0,
-          "grossMargin": -201.7,
+          "tours": 37,
+          "pax": 494,
+          "revenue": 1779.0,
+          "vendorCost": 0.0,
+          "grossMargin": 728.3,
           "tourCost": 128.9,
-          "commissionCost": 468.3,
+          "commissionCost": 483.3,
           "processingFee": 0.0,
-          "vatAmount": 423.5,
-          "amountBeforeTax": 221.8
+          "vatAmount": 438.5,
+          "amountBeforeTax": 1166.8
         },
         "8": {
           "tours": 1,
           "pax": 22,
           "revenue": 350.0,
-          "vendorCost": 70.0,
-          "grossMargin": 105.0,
+          "vendorCost": 0.0,
+          "grossMargin": 175.0,
           "tourCost": 0.0,
           "commissionCost": 87.5,
           "processingFee": 0.0,
           "vatAmount": 87.5,
-          "amountBeforeTax": 192.5
+          "amountBeforeTax": 262.5
         },
         "16": {
-          "tours": 13,
-          "pax": 57,
-          "revenue": 1687.0,
-          "vendorCost": 810.0,
-          "grossMargin": 380.25,
+          "tours": 14,
+          "pax": 59,
+          "revenue": 1765.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1248.75,
           "tourCost": 0.0,
           "commissionCost": 75.0,
           "processingFee": 0.0,
-          "vatAmount": 421.75,
-          "amountBeforeTax": 802.0
+          "vatAmount": 441.25,
+          "amountBeforeTax": 1690.0
         },
         "14": {
           "tours": 2,
           "pax": 18,
           "revenue": 450.0,
-          "vendorCost": 140.0,
-          "grossMargin": 147.5,
+          "vendorCost": 0.0,
+          "grossMargin": 287.5,
           "tourCost": 0.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
           "vatAmount": 112.5,
-          "amountBeforeTax": 260.0
+          "amountBeforeTax": 400.0
         },
         "17": {
           "tours": 9,
           "pax": 211,
           "revenue": 150.0,
-          "vendorCost": 60.0,
-          "grossMargin": 52.5,
+          "vendorCost": 0.0,
+          "grossMargin": 112.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 37.5,
-          "amountBeforeTax": 90.0
+          "amountBeforeTax": 150.0
         },
         "18": {
           "tours": 2,
@@ -67302,13 +67930,13 @@ const guideStats26 = [
           "tours": 1,
           "pax": 1,
           "revenue": 39.0,
-          "vendorCost": 60.0,
-          "grossMargin": -42.45,
+          "vendorCost": 0.0,
+          "grossMargin": 17.55,
           "tourCost": 0.0,
           "commissionCost": 11.7,
           "processingFee": 0.0,
           "vatAmount": 9.75,
-          "amountBeforeTax": -32.7
+          "amountBeforeTax": 27.3
         }
       },
       "bySeason": {
@@ -67316,25 +67944,25 @@ const guideStats26 = [
           "tours": 67,
           "pax": 897,
           "revenue": 4876.0,
-          "vendorCost": 2120.0,
-          "grossMargin": 605.55,
+          "vendorCost": 0.0,
+          "grossMargin": 2725.55,
           "tourCost": 126.9,
           "commissionCost": 810.8,
           "processingFee": 0.0,
           "vatAmount": 1212.75,
-          "amountBeforeTax": 1818.3
+          "amountBeforeTax": 3938.3
         },
         "shoulder": {
-          "tours": 6,
-          "pax": 78,
-          "revenue": 119.0,
-          "vendorCost": 120.0,
-          "grossMargin": -64.45,
+          "tours": 9,
+          "pax": 95,
+          "revenue": 257.0,
+          "vendorCost": 0.0,
+          "grossMargin": 144.05,
           "tourCost": 2.0,
-          "commissionCost": 31.7,
+          "commissionCost": 46.7,
           "processingFee": 0.0,
-          "vatAmount": 29.75,
-          "amountBeforeTax": -34.7
+          "vatAmount": 64.25,
+          "amountBeforeTax": 208.3
         }
       },
       "byPaxBand": {
@@ -67342,49 +67970,49 @@ const guideStats26 = [
           "tours": 11,
           "pax": 74,
           "revenue": 994.0,
-          "vendorCost": 360.0,
-          "grossMargin": 169.5,
+          "vendorCost": 0.0,
+          "grossMargin": 529.5,
           "tourCost": 14.0,
           "commissionCost": 202.0,
           "processingFee": 0.0,
           "vatAmount": 248.5,
-          "amountBeforeTax": 418.0
+          "amountBeforeTax": 778.0
         },
         "1-4": {
-          "tours": 27,
-          "pax": 80,
-          "revenue": 3101.0,
-          "vendorCost": 1670.0,
-          "grossMargin": 69.1,
+          "tours": 29,
+          "pax": 85,
+          "revenue": 3239.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1827.6,
           "tourCost": 114.9,
-          "commissionCost": 478.0,
+          "commissionCost": 493.0,
           "processingFee": 0.0,
-          "vatAmount": 769.0,
-          "amountBeforeTax": 838.1
+          "vatAmount": 803.5,
+          "amountBeforeTax": 2631.1
         },
         "21-30": {
           "tours": 20,
           "pax": 507,
           "revenue": 350.0,
-          "vendorCost": 70.0,
-          "grossMargin": 105.0,
+          "vendorCost": 0.0,
+          "grossMargin": 175.0,
           "tourCost": 0.0,
           "commissionCost": 87.5,
           "processingFee": 0.0,
           "vatAmount": 87.5,
-          "amountBeforeTax": 192.5
+          "amountBeforeTax": 262.5
         },
         "11-20": {
-          "tours": 11,
-          "pax": 180,
+          "tours": 12,
+          "pax": 192,
           "revenue": 550.0,
-          "vendorCost": 140.0,
-          "grossMargin": 197.5,
+          "vendorCost": 0.0,
+          "grossMargin": 337.5,
           "tourCost": 0.0,
           "commissionCost": 75.0,
           "processingFee": 0.0,
           "vatAmount": 137.5,
-          "amountBeforeTax": 335.0
+          "amountBeforeTax": 475.0
         },
         "30+": {
           "tours": 4,
@@ -67404,181 +68032,193 @@ const guideStats26 = [
           "tours": 3,
           "pax": 18,
           "revenue": 200.0,
-          "vendorCost": 120.0,
-          "grossMargin": -35.0,
+          "vendorCost": 0.0,
+          "grossMargin": 85.0,
           "tourCost": 5.0,
           "commissionCost": 60.0,
           "processingFee": 0.0,
           "vatAmount": 50.0,
-          "amountBeforeTax": 15.0
+          "amountBeforeTax": 135.0
         },
         "28": {
           "tours": 6,
           "pax": 75,
           "revenue": 490.0,
-          "vendorCost": 190.0,
-          "grossMargin": 68.0,
+          "vendorCost": 0.0,
+          "grossMargin": 258.0,
           "tourCost": 2.0,
           "commissionCost": 107.5,
           "processingFee": 0.0,
           "vatAmount": 122.5,
-          "amountBeforeTax": 190.5
+          "amountBeforeTax": 380.5
         },
         "29": {
           "tours": 4,
           "pax": 26,
           "revenue": 400.0,
-          "vendorCost": 140.0,
-          "grossMargin": 60.0,
+          "vendorCost": 0.0,
+          "grossMargin": 200.0,
           "tourCost": 0.0,
           "commissionCost": 100.0,
           "processingFee": 0.0,
           "vatAmount": 100.0,
-          "amountBeforeTax": 160.0
+          "amountBeforeTax": 300.0
         },
         "30": {
           "tours": 5,
           "pax": 57,
           "revenue": 260.0,
-          "vendorCost": 120.0,
-          "grossMargin": 8.5,
+          "vendorCost": 0.0,
+          "grossMargin": 128.5,
           "tourCost": 1.5,
           "commissionCost": 65.0,
           "processingFee": 0.0,
           "vatAmount": 65.0,
-          "amountBeforeTax": 73.5
+          "amountBeforeTax": 193.5
         },
         "31": {
           "tours": 6,
           "pax": 90,
           "revenue": 287.0,
-          "vendorCost": 180.0,
-          "grossMargin": 13.25,
+          "vendorCost": 0.0,
+          "grossMargin": 193.25,
           "tourCost": 2.0,
           "commissionCost": 20.0,
           "processingFee": 0.0,
           "vatAmount": 71.75,
-          "amountBeforeTax": 85.0
+          "amountBeforeTax": 265.0
         },
         "32": {
           "tours": 4,
           "pax": 72,
           "revenue": 356.0,
-          "vendorCost": 130.0,
-          "grossMargin": 82.0,
+          "vendorCost": 0.0,
+          "grossMargin": 212.0,
           "tourCost": 5.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
           "vatAmount": 89.0,
-          "amountBeforeTax": 171.0
+          "amountBeforeTax": 301.0
         },
         "33": {
           "tours": 6,
           "pax": 94,
           "revenue": 404.0,
-          "vendorCost": 180.0,
-          "grossMargin": 90.5,
+          "vendorCost": 0.0,
+          "grossMargin": 270.5,
           "tourCost": 2.5,
           "commissionCost": 30.0,
           "processingFee": 0.0,
           "vatAmount": 101.0,
-          "amountBeforeTax": 191.5
+          "amountBeforeTax": 371.5
         },
         "34": {
           "tours": 8,
           "pax": 120,
           "revenue": 554.0,
-          "vendorCost": 260.0,
-          "grossMargin": 72.5,
+          "vendorCost": 0.0,
+          "grossMargin": 332.5,
           "tourCost": 3.0,
           "commissionCost": 80.0,
           "processingFee": 0.0,
           "vatAmount": 138.5,
-          "amountBeforeTax": 211.0
+          "amountBeforeTax": 471.0
         },
         "35": {
           "tours": 4,
           "pax": 59,
           "revenue": 200.0,
-          "vendorCost": 120.0,
-          "grossMargin": 4.0,
+          "vendorCost": 0.0,
+          "grossMargin": 124.0,
           "tourCost": 2.0,
           "commissionCost": 24.0,
           "processingFee": 0.0,
           "vatAmount": 50.0,
-          "amountBeforeTax": 54.0
+          "amountBeforeTax": 174.0
         },
         "36": {
           "tours": 5,
           "pax": 83,
           "revenue": 100.0,
-          "vendorCost": 120.0,
-          "grossMargin": -56.0,
+          "vendorCost": 0.0,
+          "grossMargin": 64.0,
           "tourCost": 1.0,
           "commissionCost": 10.0,
           "processingFee": 0.0,
           "vatAmount": 25.0,
-          "amountBeforeTax": -31.0
+          "amountBeforeTax": 89.0
         },
         "37": {
           "tours": 3,
           "pax": 49,
           "revenue": 316.0,
-          "vendorCost": 60.0,
-          "grossMargin": 11.8,
+          "vendorCost": 0.0,
+          "grossMargin": 71.8,
           "tourCost": 70.4,
           "commissionCost": 94.8,
           "processingFee": 0.0,
           "vatAmount": 79.0,
-          "amountBeforeTax": 90.8
+          "amountBeforeTax": 150.8
         },
         "38": {
           "tours": 6,
           "pax": 93,
           "revenue": 470.0,
-          "vendorCost": 190.0,
-          "grossMargin": 65.5,
+          "vendorCost": 0.0,
+          "grossMargin": 255.5,
           "tourCost": 2.0,
           "commissionCost": 95.0,
           "processingFee": 0.0,
           "vatAmount": 117.5,
-          "amountBeforeTax": 183.0
+          "amountBeforeTax": 373.0
         },
         "39": {
           "tours": 4,
           "pax": 53,
           "revenue": 400.0,
-          "vendorCost": 130.0,
-          "grossMargin": 170.0,
+          "vendorCost": 0.0,
+          "grossMargin": 300.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 100.0,
-          "amountBeforeTax": 270.0
+          "amountBeforeTax": 400.0
         },
         "40": {
           "tours": 5,
           "pax": 41,
           "revenue": 439.0,
-          "vendorCost": 180.0,
-          "grossMargin": 50.5,
+          "vendorCost": 0.0,
+          "grossMargin": 230.5,
           "tourCost": 30.5,
           "commissionCost": 74.5,
           "processingFee": 0.0,
           "vatAmount": 103.5,
-          "amountBeforeTax": 154.0
+          "amountBeforeTax": 334.0
         },
         "41": {
           "tours": 4,
           "pax": 45,
           "revenue": 119.0,
-          "vendorCost": 120.0,
-          "grossMargin": -64.45,
+          "vendorCost": 0.0,
+          "grossMargin": 55.55,
           "tourCost": 2.0,
           "commissionCost": 31.7,
           "processingFee": 0.0,
           "vatAmount": 29.75,
-          "amountBeforeTax": -34.7
+          "amountBeforeTax": 85.3
+        },
+        "42": {
+          "tours": 3,
+          "pax": 17,
+          "revenue": 138.0,
+          "vendorCost": 0.0,
+          "grossMargin": 88.5,
+          "tourCost": 0.0,
+          "commissionCost": 15.0,
+          "processingFee": 0.0,
+          "vatAmount": 34.5,
+          "amountBeforeTax": 123.0
         }
       },
       "byMonth": {
@@ -67586,113 +68226,113 @@ const guideStats26 = [
           "tours": 24,
           "pax": 266,
           "revenue": 1637.0,
-          "vendorCost": 750.0,
-          "grossMargin": 114.75,
+          "vendorCost": 0.0,
+          "grossMargin": 864.75,
           "tourCost": 10.5,
           "commissionCost": 352.5,
           "processingFee": 0.0,
           "vatAmount": 409.25,
-          "amountBeforeTax": 524.0
+          "amountBeforeTax": 1274.0
         },
         "8": {
           "tours": 22,
           "pax": 345,
           "revenue": 1514.0,
-          "vendorCost": 690.0,
-          "grossMargin": 249.0,
+          "vendorCost": 0.0,
+          "grossMargin": 939.0,
           "tourCost": 12.5,
           "commissionCost": 184.0,
           "processingFee": 0.0,
           "vatAmount": 378.5,
-          "amountBeforeTax": 627.5
+          "amountBeforeTax": 1317.5
         },
         "9": {
           "tours": 21,
           "pax": 286,
           "revenue": 1725.0,
-          "vendorCost": 680.0,
-          "grossMargin": 241.8,
+          "vendorCost": 0.0,
+          "grossMargin": 921.8,
           "tourCost": 103.9,
           "commissionCost": 274.3,
           "processingFee": 0.0,
           "vatAmount": 425.0,
-          "amountBeforeTax": 666.8
+          "amountBeforeTax": 1346.8
         },
         "10": {
-          "tours": 6,
-          "pax": 78,
-          "revenue": 119.0,
-          "vendorCost": 120.0,
-          "grossMargin": -64.45,
+          "tours": 9,
+          "pax": 95,
+          "revenue": 257.0,
+          "vendorCost": 0.0,
+          "grossMargin": 144.05,
           "tourCost": 2.0,
-          "commissionCost": 31.7,
+          "commissionCost": 46.7,
           "processingFee": 0.0,
-          "vatAmount": 29.75,
-          "amountBeforeTax": -34.7
+          "vatAmount": 64.25,
+          "amountBeforeTax": 208.3
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 42,
-          "pax": 816,
+          "tours": 43,
+          "pax": 828,
           "revenue": 420.0,
-          "vendorCost": 300.0,
-          "grossMargin": 15.0,
+          "vendorCost": 0.0,
+          "grossMargin": 315.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 105.0,
-          "amountBeforeTax": 120.0
+          "amountBeforeTax": 420.0
         },
         "CPP": {
-          "tours": 31,
-          "pax": 159,
-          "revenue": 4575.0,
-          "vendorCost": 1940.0,
-          "grossMargin": 526.1,
+          "tours": 33,
+          "pax": 164,
+          "revenue": 4713.0,
+          "vendorCost": 0.0,
+          "grossMargin": 2554.6,
           "tourCost": 128.9,
-          "commissionCost": 842.5,
+          "commissionCost": 857.5,
           "processingFee": 0.0,
-          "vatAmount": 1137.5,
-          "amountBeforeTax": 1663.6
+          "vatAmount": 1172.0,
+          "amountBeforeTax": 3726.6
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 38,
-          "pax": 806,
+          "tours": 39,
+          "pax": 818,
           "revenue": 120.0,
-          "vendorCost": 60.0,
-          "grossMargin": 30.0,
+          "vendorCost": 0.0,
+          "grossMargin": 90.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
           "vatAmount": 30.0,
-          "amountBeforeTax": 60.0
+          "amountBeforeTax": 120.0
         },
         "bank trf": {
-          "tours": 28,
-          "pax": 140,
-          "revenue": 4105.0,
-          "vendorCost": 1750.0,
-          "grossMargin": 363.6,
+          "tours": 29,
+          "pax": 143,
+          "revenue": 4165.0,
+          "vendorCost": 0.0,
+          "grossMargin": 2143.6,
           "tourCost": 128.9,
-          "commissionCost": 842.5,
+          "commissionCost": 857.5,
           "processingFee": 0.0,
-          "vatAmount": 1020.0,
-          "amountBeforeTax": 1383.6
+          "vatAmount": 1035.0,
+          "amountBeforeTax": 3178.6
         },
         "card": {
-          "tours": 7,
-          "pax": 29,
-          "revenue": 770.0,
-          "vendorCost": 430.0,
-          "grossMargin": 147.5,
+          "tours": 8,
+          "pax": 31,
+          "revenue": 848.0,
+          "vendorCost": 0.0,
+          "grossMargin": 636.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 192.5,
-          "amountBeforeTax": 340.0
+          "vatAmount": 212.0,
+          "amountBeforeTax": 848.0
         }
       },
       "byGuidePaxBand": {
@@ -67700,125 +68340,125 @@ const guideStats26 = [
           "tours": 13,
           "pax": 76,
           "revenue": 1097.0,
-          "vendorCost": 480.0,
-          "grossMargin": 187.75,
+          "vendorCost": 0.0,
+          "grossMargin": 667.75,
           "tourCost": 13.0,
           "commissionCost": 142.0,
           "processingFee": 0.0,
           "vatAmount": 274.25,
-          "amountBeforeTax": 462.0
+          "amountBeforeTax": 942.0
         },
         "1-5": {
-          "tours": 21,
-          "pax": 60,
-          "revenue": 2486.0,
-          "vendorCost": 1290.0,
-          "grossMargin": -14.15,
+          "tours": 23,
+          "pax": 65,
+          "revenue": 2624.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1364.35,
           "tourCost": 110.9,
-          "commissionCost": 484.0,
+          "commissionCost": 499.0,
           "processingFee": 0.0,
-          "vatAmount": 615.25,
-          "amountBeforeTax": 601.1
+          "vatAmount": 649.75,
+          "amountBeforeTax": 2014.1
         },
         "11+": {
-          "tours": 39,
-          "pax": 839,
+          "tours": 40,
+          "pax": 851,
           "revenue": 1412.0,
-          "vendorCost": 470.0,
-          "grossMargin": 367.5,
+          "vendorCost": 0.0,
+          "grossMargin": 837.5,
           "tourCost": 5.0,
           "commissionCost": 216.5,
           "processingFee": 0.0,
           "vatAmount": 353.0,
-          "amountBeforeTax": 720.5
+          "amountBeforeTax": 1190.5
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 64,
-          "pax": 904,
-          "revenue": 3020.0,
-          "vendorCost": 1640.0,
-          "grossMargin": 51.1,
+          "tours": 67,
+          "pax": 921,
+          "revenue": 3158.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1779.6,
           "tourCost": 128.9,
-          "commissionCost": 445.0,
+          "commissionCost": 460.0,
           "processingFee": 0.0,
-          "vatAmount": 755.0,
-          "amountBeforeTax": 806.1
+          "vatAmount": 789.5,
+          "amountBeforeTax": 2569.1
         },
         "per group": {
           "tours": 9,
           "pax": 71,
           "revenue": 1975.0,
-          "vendorCost": 600.0,
-          "grossMargin": 490.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1090.0,
           "tourCost": 0.0,
           "commissionCost": 397.5,
           "processingFee": 0.0,
           "vatAmount": 487.5,
-          "amountBeforeTax": 977.5
+          "amountBeforeTax": 1577.5
         }
       },
       "byTourType": {
         "best": {
-          "tours": 12,
-          "pax": 56,
-          "revenue": 1120.0,
-          "vendorCost": 720.0,
-          "grossMargin": -207.0,
+          "tours": 13,
+          "pax": 59,
+          "revenue": 1180.0,
+          "vendorCost": 0.0,
+          "grossMargin": 543.0,
           "tourCost": 28.0,
-          "commissionCost": 299.0,
+          "commissionCost": 314.0,
           "processingFee": 0.0,
-          "vatAmount": 280.0,
-          "amountBeforeTax": 73.0
+          "vatAmount": 295.0,
+          "amountBeforeTax": 838.0
         },
         "big": {
           "tours": 6,
           "pax": 61,
           "revenue": 1500.0,
-          "vendorCost": 420.0,
-          "grossMargin": 392.5,
+          "vendorCost": 0.0,
+          "grossMargin": 812.5,
           "tourCost": 0.0,
           "commissionCost": 312.5,
           "processingFee": 0.0,
           "vatAmount": 375.0,
-          "amountBeforeTax": 767.5
+          "amountBeforeTax": 1187.5
         },
         "war": {
-          "tours": 13,
-          "pax": 40,
-          "revenue": 1426.0,
-          "vendorCost": 800.0,
-          "grossMargin": 257.8,
+          "tours": 14,
+          "pax": 42,
+          "revenue": 1504.0,
+          "vendorCost": 0.0,
+          "grossMargin": 1116.3,
           "tourCost": 0.0,
           "commissionCost": 11.7,
           "processingFee": 0.0,
-          "vatAmount": 356.5,
-          "amountBeforeTax": 614.3
+          "vatAmount": 376.0,
+          "amountBeforeTax": 1492.3
         },
         "old": {
           "tours": 3,
           "pax": 10,
           "revenue": 475.0,
-          "vendorCost": 180.0,
-          "grossMargin": 97.5,
+          "vendorCost": 0.0,
+          "grossMargin": 277.5,
           "tourCost": 0.0,
           "commissionCost": 85.0,
           "processingFee": 0.0,
           "vatAmount": 112.5,
-          "amountBeforeTax": 210.0
+          "amountBeforeTax": 390.0
         },
         "food": {
           "tours": 2,
           "pax": 6,
           "revenue": 474.0,
-          "vendorCost": 120.0,
-          "grossMargin": 0.3,
+          "vendorCost": 0.0,
+          "grossMargin": 120.3,
           "tourCost": 100.9,
           "commissionCost": 134.3,
           "processingFee": 0.0,
           "vatAmount": 118.5,
-          "amountBeforeTax": 118.8
+          "amountBeforeTax": 238.8
         }
       }
     }
@@ -67829,8 +68469,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 144,
-          "pax": 2094
+          "tours": 151,
+          "pax": 2171
         },
         "paid": {
           "tours": 22,
@@ -67928,8 +68568,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 10,
-              "pax": 189
+              "tours": 17,
+              "pax": 266
             },
             "paid": {
               "tours": 1,
@@ -69172,6 +69812,56 @@ const guideStats26 = [
             "free": {
               "tours": 2,
               "pax": 41
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
             },
             "paid": {
               "tours": 0,
@@ -69418,8 +70108,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 144,
-          "pax": 2094
+          "tours": 151,
+          "pax": 2171
         },
         "paid": {
           "tours": 22,
@@ -69517,8 +70207,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 10,
-              "pax": 189
+              "tours": 17,
+              "pax": 266
             },
             "paid": {
               "tours": 1,
@@ -70766,6 +71456,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 27
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -70977,18 +71717,18 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 5969.5,
+      "revenue": 5999.5,
       "vendorCost": 2220.0,
-      "grossMargin": 267.22,
+      "grossMargin": 289.72,
       "tourCost": 1639.35,
       "commissionCost": 408.0,
       "processingFee": 0.0,
-      "vatAmount": 1434.92,
-      "amountBeforeTax": 1702.15,
+      "vatAmount": 1442.42,
+      "amountBeforeTax": 1732.15,
       "byChannel": {
         "web": {
-          "tours": 144,
-          "pax": 2094,
+          "tours": 151,
+          "pax": 2171,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -71001,14 +71741,14 @@ const guideStats26 = [
         "b2b": {
           "tours": 13,
           "pax": 54,
-          "revenue": 3511.5,
+          "revenue": 3541.5,
           "vendorCost": 1360.0,
-          "grossMargin": 514.27,
+          "grossMargin": 536.77,
           "tourCost": 759.35,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 877.88,
-          "amountBeforeTax": 1392.15
+          "vatAmount": 885.38,
+          "amountBeforeTax": 1422.15
         },
         "OTA": {
           "tours": 9,
@@ -71025,8 +71765,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 144,
-          "pax": 2094,
+          "tours": 151,
+          "pax": 2171,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -71051,14 +71791,14 @@ const guideStats26 = [
         "Roundabout": {
           "tours": 6,
           "pax": 35,
-          "revenue": 2715.0,
+          "revenue": 2745.0,
           "vendorCost": 650.0,
-          "grossMargin": 586.9,
+          "grossMargin": 609.4,
           "tourCost": 799.35,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 678.75,
-          "amountBeforeTax": 1265.65
+          "vatAmount": 686.25,
+          "amountBeforeTax": 1295.65
         },
         "Viator": {
           "tours": 1,
@@ -71123,8 +71863,8 @@ const guideStats26 = [
           "amountBeforeTax": 73.9
         },
         "Thu": {
-          "tours": 24,
-          "pax": 298,
+          "tours": 26,
+          "pax": 310,
           "revenue": 2421.0,
           "vendorCost": 300.0,
           "grossMargin": 437.6,
@@ -71147,8 +71887,8 @@ const guideStats26 = [
           "amountBeforeTax": 156.0
         },
         "Mon": {
-          "tours": 27,
-          "pax": 303,
+          "tours": 29,
+          "pax": 321,
           "revenue": 992.5,
           "vendorCost": 490.0,
           "grossMargin": -154.73,
@@ -71159,20 +71899,20 @@ const guideStats26 = [
           "amountBeforeTax": 83.5
         },
         "Tue": {
-          "tours": 32,
-          "pax": 387,
-          "revenue": 337.5,
+          "tours": 34,
+          "pax": 414,
+          "revenue": 367.5,
           "vendorCost": 220.0,
-          "grossMargin": 33.12,
+          "grossMargin": 55.62,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 84.38,
-          "amountBeforeTax": 117.5
+          "vatAmount": 91.88,
+          "amountBeforeTax": 147.5
         },
         "Fri": {
-          "tours": 19,
-          "pax": 293,
+          "tours": 20,
+          "pax": 313,
           "revenue": 187.5,
           "vendorCost": 110.0,
           "grossMargin": 30.62,
@@ -71197,8 +71937,8 @@ const guideStats26 = [
       },
       "byTime": {
         "17": {
-          "tours": 43,
-          "pax": 588,
+          "tours": 45,
+          "pax": 611,
           "revenue": 1655.0,
           "vendorCost": 300.0,
           "grossMargin": 341.9,
@@ -71209,20 +71949,20 @@ const guideStats26 = [
           "amountBeforeTax": 755.65
         },
         "10": {
-          "tours": 56,
-          "pax": 655,
-          "revenue": 1117.5,
+          "tours": 58,
+          "pax": 671,
+          "revenue": 1147.5,
           "vendorCost": 790.0,
-          "grossMargin": 39.12,
+          "grossMargin": 61.62,
           "tourCost": 0.0,
           "commissionCost": 12.0,
           "processingFee": 0.0,
-          "vatAmount": 276.38,
-          "amountBeforeTax": 315.5
+          "vatAmount": 283.88,
+          "amountBeforeTax": 345.5
         },
         "11": {
-          "tours": 43,
-          "pax": 675,
+          "tours": 46,
+          "pax": 713,
           "revenue": 1967.0,
           "vendorCost": 700.0,
           "grossMargin": -406.3,
@@ -71283,8 +72023,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 58,
-          "pax": 783,
+          "tours": 65,
+          "pax": 860,
           "revenue": 1542.5,
           "vendorCost": 620.0,
           "grossMargin": 336.88,
@@ -71297,20 +72037,20 @@ const guideStats26 = [
         "high": {
           "tours": 108,
           "pax": 1392,
-          "revenue": 4427.0,
+          "revenue": 4457.0,
           "vendorCost": 1600.0,
-          "grossMargin": -69.65,
+          "grossMargin": -47.15,
           "tourCost": 1439.35,
           "commissionCost": 408.0,
           "processingFee": 0.0,
-          "vatAmount": 1049.3,
-          "amountBeforeTax": 979.65
+          "vatAmount": 1056.8,
+          "amountBeforeTax": 1009.65
         }
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 72,
-          "pax": 1093,
+          "tours": 77,
+          "pax": 1170,
           "revenue": 180.0,
           "vendorCost": 110.0,
           "grossMargin": 25.0,
@@ -71347,14 +72087,14 @@ const guideStats26 = [
         "1-4": {
           "tours": 18,
           "pax": 45,
-          "revenue": 3082.0,
+          "revenue": 3112.0,
           "vendorCost": 1700.0,
-          "grossMargin": -304.8,
+          "grossMargin": -282.3,
           "tourCost": 640.0,
           "commissionCost": 309.0,
           "processingFee": 0.0,
-          "vatAmount": 737.8,
-          "amountBeforeTax": 433.0
+          "vatAmount": 745.3,
+          "amountBeforeTax": 463.0
         },
         "30+": {
           "tours": 2,
@@ -71685,14 +72425,14 @@ const guideStats26 = [
         "40": {
           "tours": 8,
           "pax": 108,
-          "revenue": 348.0,
+          "revenue": 378.0,
           "vendorCost": 210.0,
-          "grossMargin": -88.4,
+          "grossMargin": -65.9,
           "tourCost": 80.0,
           "commissionCost": 59.4,
           "processingFee": 0.0,
-          "vatAmount": 87.0,
-          "amountBeforeTax": -1.4
+          "vatAmount": 94.5,
+          "amountBeforeTax": 28.6
         },
         "41": {
           "tours": 7,
@@ -71705,6 +72445,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 46.88,
           "amountBeforeTax": 77.5
+        },
+        "42": {
+          "tours": 6,
+          "pax": 77,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 0,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -71771,18 +72535,18 @@ const guideStats26 = [
         "9": {
           "tours": 33,
           "pax": 522,
-          "revenue": 1266.0,
+          "revenue": 1296.0,
           "vendorCost": 590.0,
-          "grossMargin": -340.4,
+          "grossMargin": -317.9,
           "tourCost": 480.0,
           "commissionCost": 229.8,
           "processingFee": 0.0,
-          "vatAmount": 306.6,
-          "amountBeforeTax": -33.8
+          "vatAmount": 314.1,
+          "amountBeforeTax": -3.8
         },
         "10": {
-          "tours": 11,
-          "pax": 191,
+          "tours": 18,
+          "pax": 268,
           "revenue": 187.5,
           "vendorCost": 110.0,
           "grossMargin": 30.62,
@@ -71795,8 +72559,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 144,
-          "pax": 2094,
+          "tours": 151,
+          "pax": 2171,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -71809,20 +72573,20 @@ const guideStats26 = [
         "CPP": {
           "tours": 22,
           "pax": 81,
-          "revenue": 5969.5,
+          "revenue": 5999.5,
           "vendorCost": 2220.0,
-          "grossMargin": 267.22,
+          "grossMargin": 289.72,
           "tourCost": 1639.35,
           "commissionCost": 408.0,
           "processingFee": 0.0,
-          "vatAmount": 1434.92,
-          "amountBeforeTax": 1702.15
+          "vatAmount": 1442.42,
+          "amountBeforeTax": 1732.15
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 144,
-          "pax": 2094,
+          "tours": 151,
+          "pax": 2171,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -71847,20 +72611,20 @@ const guideStats26 = [
         "card": {
           "tours": 8,
           "pax": 39,
-          "revenue": 2574.0,
+          "revenue": 2604.0,
           "vendorCost": 810.0,
-          "grossMargin": 361.15,
+          "grossMargin": 383.65,
           "tourCost": 759.35,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 643.5,
-          "amountBeforeTax": 1004.65
+          "vatAmount": 651.0,
+          "amountBeforeTax": 1034.65
         }
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 125,
-          "pax": 1960,
+          "tours": 131,
+          "pax": 2037,
           "revenue": 180.0,
           "vendorCost": 110.0,
           "grossMargin": 25.0,
@@ -71883,22 +72647,22 @@ const guideStats26 = [
           "amountBeforeTax": 650.65
         },
         "1-5": {
-          "tours": 22,
+          "tours": 23,
           "pax": 65,
-          "revenue": 4439.5,
+          "revenue": 4469.5,
           "vendorCost": 2010.0,
-          "grossMargin": -70.92,
+          "grossMargin": -48.42,
           "tourCost": 1040.0,
           "commissionCost": 408.0,
           "processingFee": 0.0,
-          "vatAmount": 1052.43,
-          "amountBeforeTax": 981.5
+          "vatAmount": 1059.93,
+          "amountBeforeTax": 1011.5
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 152,
-          "pax": 2116,
+          "tours": 159,
+          "pax": 2193,
           "revenue": 1783.0,
           "vendorCost": 760.0,
           "grossMargin": -453.3,
@@ -71911,28 +72675,28 @@ const guideStats26 = [
         "per group": {
           "tours": 11,
           "pax": 40,
-          "revenue": 1877.5,
+          "revenue": 1907.5,
           "vendorCost": 1160.0,
-          "grossMargin": 248.12,
+          "grossMargin": 270.62,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 469.38,
-          "amountBeforeTax": 717.5
+          "vatAmount": 476.88,
+          "amountBeforeTax": 747.5
         }
       },
       "byTourType": {
         "big": {
           "tours": 9,
           "pax": 35,
-          "revenue": 1627.5,
+          "revenue": 1657.5,
           "vendorCost": 1000.0,
-          "grossMargin": 220.62,
+          "grossMargin": 243.12,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 406.88,
-          "amountBeforeTax": 627.5
+          "vatAmount": 414.38,
+          "amountBeforeTax": 657.5
         },
         "old": {
           "tours": 2,
@@ -71991,8 +72755,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 141,
-          "pax": 1911
+          "tours": 148,
+          "pax": 2006
         },
         "paid": {
           "tours": 23,
@@ -72101,8 +72865,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 9,
-              "pax": 149
+              "tours": 16,
+              "pax": 244
             },
             "paid": {
               "tours": 1,
@@ -73385,6 +74149,56 @@ const guideStats26 = [
             "free": {
               "tours": 2,
               "pax": 19
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 2,
+              "pax": 37
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 2,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
             },
             "paid": {
               "tours": 0,
@@ -73621,8 +74435,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 141,
-          "pax": 1911
+          "tours": 148,
+          "pax": 2006
         },
         "paid": {
           "tours": 23,
@@ -73731,8 +74545,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 9,
-              "pax": 149
+              "tours": 16,
+              "pax": 244
             },
             "paid": {
               "tours": 1,
@@ -75020,6 +75834,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 2,
+              "pax": 37
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 2,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -75243,8 +76107,8 @@ const guideStats26 = [
           "amountBeforeTax": 813.5
         },
         "web": {
-          "tours": 141,
-          "pax": 1911,
+          "tours": 148,
+          "pax": 2006,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -75281,8 +76145,8 @@ const guideStats26 = [
           "amountBeforeTax": 432.5
         },
         "FST": {
-          "tours": 142,
-          "pax": 1921,
+          "tours": 149,
+          "pax": 2016,
           "revenue": 200.0,
           "vendorCost": 110.0,
           "grossMargin": 40.0,
@@ -75379,8 +76243,8 @@ const guideStats26 = [
           "amountBeforeTax": 99.0
         },
         "Sat": {
-          "tours": 23,
-          "pax": 287,
+          "tours": 24,
+          "pax": 302,
           "revenue": 583.5,
           "vendorCost": 310.0,
           "grossMargin": -161.18,
@@ -75391,8 +76255,8 @@ const guideStats26 = [
           "amountBeforeTax": -15.3
         },
         "Sun": {
-          "tours": 23,
-          "pax": 282,
+          "tours": 25,
+          "pax": 312,
           "revenue": 575.0,
           "vendorCost": 330.0,
           "grossMargin": 101.25,
@@ -75403,7 +76267,7 @@ const guideStats26 = [
           "amountBeforeTax": 245.0
         },
         "Mon": {
-          "tours": 32,
+          "tours": 33,
           "pax": 390,
           "revenue": 198.0,
           "vendorCost": 100.0,
@@ -75415,8 +76279,8 @@ const guideStats26 = [
           "amountBeforeTax": 18.0
         },
         "Fri": {
-          "tours": 21,
-          "pax": 236,
+          "tours": 23,
+          "pax": 273,
           "revenue": 847.5,
           "vendorCost": 470.0,
           "grossMargin": -67.03,
@@ -75427,8 +76291,8 @@ const guideStats26 = [
           "amountBeforeTax": 118.1
         },
         "Wed": {
-          "tours": 21,
-          "pax": 260,
+          "tours": 22,
+          "pax": 273,
           "revenue": 285.0,
           "vendorCost": 180.0,
           "grossMargin": -16.25,
@@ -75453,8 +76317,8 @@ const guideStats26 = [
           "amountBeforeTax": 62.5
         },
         "10": {
-          "tours": 57,
-          "pax": 686,
+          "tours": 58,
+          "pax": 707,
           "revenue": 628.0,
           "vendorCost": 460.0,
           "grossMargin": -154.4,
@@ -75465,8 +76329,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.6
         },
         "17": {
-          "tours": 42,
-          "pax": 498,
+          "tours": 47,
+          "pax": 554,
           "revenue": 755.0,
           "vendorCost": 440.0,
           "grossMargin": 126.25,
@@ -75477,8 +76341,8 @@ const guideStats26 = [
           "amountBeforeTax": 315.0
         },
         "11": {
-          "tours": 45,
-          "pax": 594,
+          "tours": 46,
+          "pax": 612,
           "revenue": 1881.0,
           "vendorCost": 800.0,
           "grossMargin": -391.8,
@@ -75527,8 +76391,8 @@ const guideStats26 = [
           "amountBeforeTax": 77.5
         },
         "shoulder": {
-          "tours": 46,
-          "pax": 531,
+          "tours": 53,
+          "pax": 626,
           "revenue": 333.0,
           "vendorCost": 200.0,
           "grossMargin": -149.65,
@@ -75553,8 +76417,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 66,
-          "pax": 1028,
+          "tours": 71,
+          "pax": 1102,
           "revenue": 187.5,
           "vendorCost": 110.0,
           "grossMargin": 30.62,
@@ -75589,8 +76453,8 @@ const guideStats26 = [
           "amountBeforeTax": 237.5
         },
         "21-30": {
-          "tours": 22,
-          "pax": 549,
+          "tours": 23,
+          "pax": 570,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -75961,6 +76825,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 49.5,
           "amountBeforeTax": -51.4
+        },
+        "42": {
+          "tours": 6,
+          "pax": 95,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 0,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -76049,8 +76937,8 @@ const guideStats26 = [
           "amountBeforeTax": 32.0
         },
         "10": {
-          "tours": 10,
-          "pax": 151,
+          "tours": 17,
+          "pax": 246,
           "revenue": 198.0,
           "vendorCost": 100.0,
           "grossMargin": -100.9,
@@ -76075,8 +76963,8 @@ const guideStats26 = [
           "amountBeforeTax": 672.1
         },
         "POS": {
-          "tours": 141,
-          "pax": 1911,
+          "tours": 148,
+          "pax": 2006,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -76101,8 +76989,8 @@ const guideStats26 = [
           "amountBeforeTax": 336.1
         },
         "cash": {
-          "tours": 141,
-          "pax": 1911,
+          "tours": 148,
+          "pax": 2006,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -76127,8 +77015,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 109,
-          "pax": 1728,
+          "tours": 115,
+          "pax": 1823,
           "revenue": 187.5,
           "vendorCost": 110.0,
           "grossMargin": 30.62,
@@ -76139,7 +77027,7 @@ const guideStats26 = [
           "amountBeforeTax": 77.5
         },
         "1-5": {
-          "tours": 34,
+          "tours": 35,
           "pax": 101,
           "revenue": 3265.5,
           "vendorCost": 1860.0,
@@ -76177,8 +77065,8 @@ const guideStats26 = [
           "amountBeforeTax": 792.5
         },
         "per pax": {
-          "tours": 152,
-          "pax": 1937,
+          "tours": 159,
+          "pax": 2032,
           "revenue": 2179.0,
           "vendorCost": 1060.0,
           "grossMargin": -593.7,
@@ -76259,17 +77147,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 138,
-          "pax": 2183
+          "tours": 143,
+          "pax": 2271
         },
         "paid": {
-          "tours": 23,
-          "pax": 99
+          "tours": 24,
+          "pax": 101
         },
         "byType": {
           "big": {
-            "tours": 11,
-            "pax": 40
+            "tours": 12,
+            "pax": 42
           },
           "old": {
             "tours": 5,
@@ -76354,12 +77242,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 127
+              "tours": 12,
+              "pax": 215
             },
             "paid": {
-              "tours": 0,
-              "pax": 0
+              "tours": 1,
+              "pax": 2
             }
           }
         },
@@ -77623,6 +78511,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 39
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -77688,6 +78626,12 @@ const guideStats26 = [
             "food": {
               "tours": 2,
               "pax": 5
+            }
+          },
+          "10": {
+            "big": {
+              "tours": 1,
+              "pax": 2
             }
           }
         },
@@ -77826,6 +78770,12 @@ const guideStats26 = [
             "food": {
               "tours": 1,
               "pax": 3
+            }
+          },
+          "10-16": {
+            "big": {
+              "tours": 1,
+              "pax": 2
             }
           }
         }
@@ -77862,17 +78812,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 138,
-          "pax": 2183
+          "tours": 143,
+          "pax": 2271
         },
         "paid": {
-          "tours": 23,
-          "pax": 99
+          "tours": 24,
+          "pax": 101
         },
         "byType": {
           "big": {
-            "tours": 11,
-            "pax": 40
+            "tours": 12,
+            "pax": 42
           },
           "old": {
             "tours": 5,
@@ -77957,12 +78907,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 127
+              "tours": 12,
+              "pax": 215
             },
             "paid": {
-              "tours": 0,
-              "pax": 0
+              "tours": 1,
+              "pax": 2
             }
           }
         },
@@ -79226,6 +80176,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 39
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -79291,6 +80291,12 @@ const guideStats26 = [
             "food": {
               "tours": 2,
               "pax": 5
+            }
+          },
+          "10": {
+            "big": {
+              "tours": 1,
+              "pax": 2
             }
           }
         },
@@ -79430,43 +80436,49 @@ const guideStats26 = [
               "tours": 1,
               "pax": 3
             }
+          },
+          "10-16": {
+            "big": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 3748.0,
-      "vendorCost": 2170.0,
-      "grossMargin": 192.4,
+      "revenue": 3958.0,
+      "vendorCost": 2280.0,
+      "grossMargin": 239.9,
       "tourCost": 280.0,
       "commissionCost": 184.5,
       "processingFee": 0.0,
-      "vatAmount": 921.1,
-      "amountBeforeTax": 1113.5,
+      "vatAmount": 973.6,
+      "amountBeforeTax": 1213.5,
       "byChannel": {
         "web": {
-          "tours": 140,
-          "pax": 2210,
-          "revenue": 400.0,
+          "tours": 145,
+          "pax": 2298,
+          "revenue": 430.0,
           "vendorCost": 110.0,
-          "grossMargin": 190.0,
+          "grossMargin": 212.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 100.0,
-          "amountBeforeTax": 290.0
+          "vatAmount": 107.5,
+          "amountBeforeTax": 320.0
         },
         "b2b": {
-          "tours": 14,
-          "pax": 51,
-          "revenue": 2415.0,
-          "vendorCost": 1440.0,
-          "grossMargin": 371.25,
+          "tours": 15,
+          "pax": 53,
+          "revenue": 2595.0,
+          "vendorCost": 1550.0,
+          "grossMargin": 396.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 603.75,
-          "amountBeforeTax": 975.0
+          "vatAmount": 648.75,
+          "amountBeforeTax": 1045.0
         },
         "OTA": {
           "tours": 7,
@@ -79483,16 +80495,16 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 140,
-          "pax": 2210,
-          "revenue": 400.0,
+          "tours": 145,
+          "pax": 2298,
+          "revenue": 430.0,
           "vendorCost": 110.0,
-          "grossMargin": 190.0,
+          "grossMargin": 212.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 100.0,
-          "amountBeforeTax": 290.0
+          "vatAmount": 107.5,
+          "amountBeforeTax": 320.0
         },
         "Taste Dalmatia": {
           "tours": 2,
@@ -79507,16 +80519,16 @@ const guideStats26 = [
           "amountBeforeTax": 155.0
         },
         "Roundabout": {
-          "tours": 12,
-          "pax": 45,
-          "revenue": 2040.0,
-          "vendorCost": 1220.0,
-          "grossMargin": 310.0,
+          "tours": 13,
+          "pax": 47,
+          "revenue": 2220.0,
+          "vendorCost": 1330.0,
+          "grossMargin": 335.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 510.0,
-          "amountBeforeTax": 820.0
+          "vatAmount": 555.0,
+          "amountBeforeTax": 890.0
         },
         "Viator": {
           "tours": 3,
@@ -79545,32 +80557,32 @@ const guideStats26 = [
       },
       "byDow": {
         "Fri": {
-          "tours": 28,
-          "pax": 393,
-          "revenue": 608.0,
-          "vendorCost": 370.0,
-          "grossMargin": -49.4,
+          "tours": 29,
+          "pax": 395,
+          "revenue": 788.0,
+          "vendorCost": 480.0,
+          "grossMargin": -24.4,
           "tourCost": 80.0,
           "commissionCost": 59.4,
           "processingFee": 0.0,
-          "vatAmount": 148.0,
-          "amountBeforeTax": 98.6
+          "vatAmount": 193.0,
+          "amountBeforeTax": 168.6
         },
         "Sat": {
-          "tours": 29,
-          "pax": 424,
-          "revenue": 480.0,
+          "tours": 30,
+          "pax": 434,
+          "revenue": 510.0,
           "vendorCost": 300.0,
-          "grossMargin": 60.0,
+          "grossMargin": 82.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 120.0,
-          "amountBeforeTax": 180.0
+          "vatAmount": 127.5,
+          "amountBeforeTax": 210.0
         },
         "Mon": {
-          "tours": 10,
-          "pax": 140,
+          "tours": 12,
+          "pax": 179,
           "revenue": 180.0,
           "vendorCost": 110.0,
           "grossMargin": 25.0,
@@ -79581,8 +80593,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Wed": {
-          "tours": 20,
-          "pax": 297,
+          "tours": 21,
+          "pax": 314,
           "revenue": 957.0,
           "vendorCost": 380.0,
           "grossMargin": 104.65,
@@ -79593,8 +80605,8 @@ const guideStats26 = [
           "amountBeforeTax": 343.9
         },
         "Thu": {
-          "tours": 26,
-          "pax": 316,
+          "tours": 27,
+          "pax": 338,
           "revenue": 755.5,
           "vendorCost": 490.0,
           "grossMargin": 8.52,
@@ -79631,8 +80643,8 @@ const guideStats26 = [
       },
       "byTime": {
         "17": {
-          "tours": 34,
-          "pax": 427,
+          "tours": 35,
+          "pax": 455,
           "revenue": 547.5,
           "vendorCost": 340.0,
           "grossMargin": 70.62,
@@ -79643,20 +80655,20 @@ const guideStats26 = [
           "amountBeforeTax": 207.5
         },
         "10": {
-          "tours": 64,
-          "pax": 958,
-          "revenue": 1487.5,
+          "tours": 66,
+          "pax": 979,
+          "revenue": 1517.5,
           "vendorCost": 920.0,
-          "grossMargin": 165.62,
+          "grossMargin": 188.12,
           "tourCost": 0.0,
           "commissionCost": 36.0,
           "processingFee": 0.0,
-          "vatAmount": 365.88,
-          "amountBeforeTax": 531.5
+          "vatAmount": 373.38,
+          "amountBeforeTax": 561.5
         },
         "11": {
-          "tours": 44,
-          "pax": 716,
+          "tours": 46,
+          "pax": 755,
           "revenue": 693.0,
           "vendorCost": 300.0,
           "grossMargin": -198.85,
@@ -79679,16 +80691,16 @@ const guideStats26 = [
           "amountBeforeTax": 210.0
         },
         "9": {
-          "tours": 3,
-          "pax": 15,
-          "revenue": 510.0,
-          "vendorCost": 310.0,
-          "grossMargin": 72.5,
+          "tours": 4,
+          "pax": 17,
+          "revenue": 690.0,
+          "vendorCost": 420.0,
+          "grossMargin": 97.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 127.5,
-          "amountBeforeTax": 200.0
+          "vatAmount": 172.5,
+          "amountBeforeTax": 270.0
         },
         "18": {
           "tours": 13,
@@ -79705,34 +80717,34 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 53,
-          "pax": 789,
-          "revenue": 727.5,
-          "vendorCost": 440.0,
-          "grossMargin": 105.62,
+          "tours": 59,
+          "pax": 879,
+          "revenue": 907.5,
+          "vendorCost": 550.0,
+          "grossMargin": 130.62,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 181.88,
-          "amountBeforeTax": 287.5
+          "vatAmount": 226.88,
+          "amountBeforeTax": 357.5
         },
         "high": {
           "tours": 108,
           "pax": 1491,
-          "revenue": 3020.5,
+          "revenue": 3050.5,
           "vendorCost": 1730.0,
-          "grossMargin": 86.78,
+          "grossMargin": 109.28,
           "tourCost": 280.0,
           "commissionCost": 184.5,
           "processingFee": 0.0,
-          "vatAmount": 739.23,
-          "amountBeforeTax": 826.0
+          "vatAmount": 746.73,
+          "amountBeforeTax": 856.0
         }
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 65,
-          "pax": 1004,
+          "tours": 67,
+          "pax": 1032,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -79743,8 +80755,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "5-10": {
-          "tours": 38,
-          "pax": 293,
+          "tours": 39,
+          "pax": 303,
           "revenue": 360.0,
           "vendorCost": 230.0,
           "grossMargin": 40.0,
@@ -79755,8 +80767,8 @@ const guideStats26 = [
           "amountBeforeTax": 130.0
         },
         "21-30": {
-          "tours": 34,
-          "pax": 827,
+          "tours": 36,
+          "pax": 877,
           "revenue": 250.0,
           "vendorCost": 0.0,
           "grossMargin": 187.5,
@@ -79767,16 +80779,16 @@ const guideStats26 = [
           "amountBeforeTax": 250.0
         },
         "1-4": {
-          "tours": 21,
-          "pax": 61,
-          "revenue": 3138.0,
-          "vendorCost": 1940.0,
-          "grossMargin": -35.1,
+          "tours": 22,
+          "pax": 63,
+          "revenue": 3348.0,
+          "vendorCost": 2050.0,
+          "grossMargin": 12.4,
           "tourCost": 280.0,
           "commissionCost": 184.5,
           "processingFee": 0.0,
-          "vatAmount": 768.6,
-          "amountBeforeTax": 733.5
+          "vatAmount": 821.1,
+          "amountBeforeTax": 833.5
         },
         "30+": {
           "tours": 3,
@@ -79915,14 +80927,14 @@ const guideStats26 = [
         "24": {
           "tours": 5,
           "pax": 62,
-          "revenue": 150.0,
+          "revenue": 180.0,
           "vendorCost": 110.0,
-          "grossMargin": 2.5,
+          "grossMargin": 25.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 37.5,
-          "amountBeforeTax": 40.0
+          "vatAmount": 45.0,
+          "amountBeforeTax": 70.0
         },
         "25": {
           "tours": 5,
@@ -80127,6 +81139,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 6,
+          "pax": 90,
+          "revenue": 180.0,
+          "vendorCost": 110.0,
+          "grossMargin": 25.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 45.0,
+          "amountBeforeTax": 70.0
         }
       },
       "byMonth": {
@@ -80157,14 +81181,14 @@ const guideStats26 = [
         "6": {
           "tours": 24,
           "pax": 260,
-          "revenue": 630.0,
+          "revenue": 660.0,
           "vendorCost": 390.0,
-          "grossMargin": 82.5,
+          "grossMargin": 105.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 157.5,
-          "amountBeforeTax": 240.0
+          "vatAmount": 165.0,
+          "amountBeforeTax": 270.0
         },
         "7": {
           "tours": 21,
@@ -80203,22 +81227,22 @@ const guideStats26 = [
           "amountBeforeTax": 414.0
         },
         "10": {
-          "tours": 7,
-          "pax": 127,
-          "revenue": 0.0,
-          "vendorCost": 0.0,
-          "grossMargin": 0.0,
+          "tours": 13,
+          "pax": 217,
+          "revenue": 180.0,
+          "vendorCost": 110.0,
+          "grossMargin": 25.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 0.0,
-          "amountBeforeTax": 0.0
+          "vatAmount": 45.0,
+          "amountBeforeTax": 70.0
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 139,
-          "pax": 2186,
+          "tours": 144,
+          "pax": 2274,
           "revenue": 297.0,
           "vendorCost": 100.0,
           "grossMargin": -86.35,
@@ -80229,22 +81253,22 @@ const guideStats26 = [
           "amountBeforeTax": -12.1
         },
         "CPP": {
-          "tours": 22,
-          "pax": 94,
-          "revenue": 3451.0,
-          "vendorCost": 2070.0,
-          "grossMargin": 278.75,
+          "tours": 23,
+          "pax": 96,
+          "revenue": 3661.0,
+          "vendorCost": 2180.0,
+          "grossMargin": 326.25,
           "tourCost": 160.0,
           "commissionCost": 95.4,
           "processingFee": 0.0,
-          "vatAmount": 846.85,
-          "amountBeforeTax": 1125.6
+          "vatAmount": 899.35,
+          "amountBeforeTax": 1225.6
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 138,
-          "pax": 2183,
+          "tours": 143,
+          "pax": 2271,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -80257,32 +81281,32 @@ const guideStats26 = [
         "bank trf": {
           "tours": 11,
           "pax": 29,
-          "revenue": 1638.0,
+          "revenue": 1668.0,
           "vendorCost": 1060.0,
-          "grossMargin": -280.1,
+          "grossMargin": -257.6,
           "tourCost": 280.0,
           "commissionCost": 184.5,
           "processingFee": 0.0,
-          "vatAmount": 393.6,
-          "amountBeforeTax": 113.5
+          "vatAmount": 401.1,
+          "amountBeforeTax": 143.5
         },
         "card": {
-          "tours": 12,
-          "pax": 68,
-          "revenue": 2110.0,
-          "vendorCost": 1110.0,
-          "grossMargin": 472.5,
+          "tours": 13,
+          "pax": 70,
+          "revenue": 2290.0,
+          "vendorCost": 1220.0,
+          "grossMargin": 497.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 527.5,
-          "amountBeforeTax": 1000.0
+          "vatAmount": 572.5,
+          "amountBeforeTax": 1070.0
         }
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 118,
-          "pax": 2053,
+          "tours": 122,
+          "pax": 2131,
           "revenue": 250.0,
           "vendorCost": 0.0,
           "grossMargin": 187.5,
@@ -80293,8 +81317,8 @@ const guideStats26 = [
           "amountBeforeTax": 250.0
         },
         "6-10": {
-          "tours": 21,
-          "pax": 161,
+          "tours": 22,
+          "pax": 171,
           "revenue": 360.0,
           "vendorCost": 230.0,
           "grossMargin": 40.0,
@@ -80305,22 +81329,22 @@ const guideStats26 = [
           "amountBeforeTax": 130.0
         },
         "1-5": {
-          "tours": 22,
-          "pax": 66,
-          "revenue": 3138.0,
-          "vendorCost": 1940.0,
-          "grossMargin": -35.1,
+          "tours": 23,
+          "pax": 68,
+          "revenue": 3348.0,
+          "vendorCost": 2050.0,
+          "grossMargin": 12.4,
           "tourCost": 280.0,
           "commissionCost": 184.5,
           "processingFee": 0.0,
-          "vatAmount": 768.6,
-          "amountBeforeTax": 733.5
+          "vatAmount": 821.1,
+          "amountBeforeTax": 833.5
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 145,
-          "pax": 2202,
+          "tours": 150,
+          "pax": 2290,
           "revenue": 933.0,
           "vendorCost": 620.0,
           "grossMargin": -368.85,
@@ -80331,30 +81355,30 @@ const guideStats26 = [
           "amountBeforeTax": -151.5
         },
         "per group": {
-          "tours": 16,
-          "pax": 78,
-          "revenue": 2815.0,
-          "vendorCost": 1550.0,
-          "grossMargin": 561.25,
+          "tours": 17,
+          "pax": 80,
+          "revenue": 3025.0,
+          "vendorCost": 1660.0,
+          "grossMargin": 608.75,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 703.75,
-          "amountBeforeTax": 1265.0
+          "vatAmount": 756.25,
+          "amountBeforeTax": 1365.0
         }
       },
       "byTourType": {
         "big": {
-          "tours": 11,
-          "pax": 40,
-          "revenue": 1965.0,
-          "vendorCost": 1230.0,
-          "grossMargin": 243.75,
+          "tours": 12,
+          "pax": 42,
+          "revenue": 2175.0,
+          "vendorCost": 1340.0,
+          "grossMargin": 291.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 491.25,
-          "amountBeforeTax": 735.0
+          "vatAmount": 543.75,
+          "amountBeforeTax": 835.0
         },
         "old": {
           "tours": 5,
@@ -80416,8 +81440,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 202,
-          "pax": 3951
+          "tours": 208,
+          "pax": 4070
         },
         "paid": {
           "tours": 1,
@@ -80499,8 +81523,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 10,
-              "pax": 192
+              "tours": 16,
+              "pax": 311
             },
             "paid": {
               "tours": 0,
@@ -81803,6 +82827,56 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 16
             },
             "paid": {
               "tours": 0,
@@ -81844,8 +82918,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 202,
-          "pax": 3951
+          "tours": 208,
+          "pax": 4070
         },
         "paid": {
           "tours": 1,
@@ -81927,8 +83001,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 10,
-              "pax": 192
+              "tours": 16,
+              "pax": 311
             },
             "paid": {
               "tours": 0,
@@ -83236,6 +84310,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 44
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 24
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -83267,8 +84391,8 @@ const guideStats26 = [
       "amountBeforeTax": 220.0,
       "byChannel": {
         "web": {
-          "tours": 202,
-          "pax": 3951,
+          "tours": 208,
+          "pax": 4070,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83293,8 +84417,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 202,
-          "pax": 3951,
+          "tours": 208,
+          "pax": 4070,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83331,8 +84455,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Fri": {
-          "tours": 25,
-          "pax": 500,
+          "tours": 26,
+          "pax": 515,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83355,8 +84479,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Tue": {
-          "tours": 40,
-          "pax": 789,
+          "tours": 41,
+          "pax": 809,
           "revenue": 300.0,
           "vendorCost": 80.0,
           "grossMargin": 145.0,
@@ -83367,8 +84491,8 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "Mon": {
-          "tours": 36,
-          "pax": 658,
+          "tours": 39,
+          "pax": 718,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83391,8 +84515,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Sun": {
-          "tours": 14,
-          "pax": 270,
+          "tours": 15,
+          "pax": 294,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83405,8 +84529,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 84,
-          "pax": 1614,
+          "tours": 86,
+          "pax": 1653,
           "revenue": 300.0,
           "vendorCost": 80.0,
           "grossMargin": 145.0,
@@ -83417,8 +84541,8 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "17": {
-          "tours": 42,
-          "pax": 801,
+          "tours": 43,
+          "pax": 822,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83429,8 +84553,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11": {
-          "tours": 32,
-          "pax": 670,
+          "tours": 35,
+          "pax": 729,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83467,8 +84591,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 60,
-          "pax": 1045,
+          "tours": 66,
+          "pax": 1164,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83493,8 +84617,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 96,
-          "pax": 1603,
+          "tours": 99,
+          "pax": 1654,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83505,8 +84629,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "21-30": {
-          "tours": 96,
-          "pax": 2285,
+          "tours": 99,
+          "pax": 2353,
           "revenue": 300.0,
           "vendorCost": 80.0,
           "grossMargin": 145.0,
@@ -83865,6 +84989,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 5,
+          "pax": 103,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 16,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -83941,8 +85089,8 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "10": {
-          "tours": 10,
-          "pax": 192,
+          "tours": 16,
+          "pax": 311,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83955,8 +85103,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 202,
-          "pax": 3951,
+          "tours": 208,
+          "pax": 4070,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -83981,8 +85129,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 202,
-          "pax": 3951,
+          "tours": 208,
+          "pax": 4070,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -84007,8 +85155,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 199,
-          "pax": 3947,
+          "tours": 205,
+          "pax": 4066,
           "revenue": 300.0,
           "vendorCost": 80.0,
           "grossMargin": 145.0,
@@ -84033,8 +85181,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 202,
-          "pax": 3951,
+          "tours": 208,
+          "pax": 4070,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -89654,8 +90802,8 @@ const guideStats26 = [
           "pax": 251
         },
         "paid": {
-          "tours": 35,
-          "pax": 160
+          "tours": 38,
+          "pax": 168
         },
         "byType": {
           "old": {
@@ -89663,16 +90811,16 @@ const guideStats26 = [
             "pax": 39
           },
           "big": {
-            "tours": 16,
-            "pax": 73
+            "tours": 17,
+            "pax": 77
           },
           "best": {
-            "tours": 10,
-            "pax": 40
+            "tours": 11,
+            "pax": 42
           },
           "food": {
-            "tours": 3,
-            "pax": 8
+            "tours": 4,
+            "pax": 10
           }
         },
         "byMonth": {
@@ -89749,8 +90897,8 @@ const guideStats26 = [
               "pax": 0
             },
             "paid": {
-              "tours": 1,
-              "pax": 2
+              "tours": 4,
+              "pax": 10
             }
           }
         },
@@ -90234,6 +91382,36 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -90291,6 +91469,14 @@ const guideStats26 = [
           },
           "10": {
             "big": {
+              "tours": 2,
+              "pax": 6
+            },
+            "best": {
+              "tours": 1,
+              "pax": 2
+            },
+            "food": {
               "tours": 1,
               "pax": 2
             }
@@ -90496,13 +91682,31 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-13": {
+            "big": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "best": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       },
       "esp": {
         "free": {
-          "tours": 125,
-          "pax": 2729
+          "tours": 131,
+          "pax": 2828
         },
         "paid": {
           "tours": 6,
@@ -90588,8 +91792,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 151
+              "tours": 13,
+              "pax": 250
             },
             "paid": {
               "tours": 0,
@@ -91547,6 +92751,66 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -91637,12 +92901,12 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 144,
-          "pax": 2980
+          "tours": 150,
+          "pax": 3079
         },
         "paid": {
-          "tours": 41,
-          "pax": 178
+          "tours": 44,
+          "pax": 186
         },
         "byType": {
           "old": {
@@ -91650,16 +92914,16 @@ const guideStats26 = [
             "pax": 39
           },
           "big": {
-            "tours": 19,
-            "pax": 85
+            "tours": 20,
+            "pax": 89
           },
           "best": {
-            "tours": 13,
-            "pax": 46
+            "tours": 14,
+            "pax": 48
           },
           "food": {
-            "tours": 3,
-            "pax": 8
+            "tours": 4,
+            "pax": 10
           }
         },
         "byMonth": {
@@ -91732,12 +92996,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 151
+              "tours": 13,
+              "pax": 250
             },
             "paid": {
-              "tours": 1,
-              "pax": 2
+              "tours": 4,
+              "pax": 10
             }
           }
         },
@@ -92222,6 +93486,36 @@ const guideStats26 = [
               "pax": 2
             }
           },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 22
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
           "4-1": {
             "free": {
               "tours": 1,
@@ -93051,6 +94345,36 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -93108,6 +94432,14 @@ const guideStats26 = [
           },
           "10": {
             "big": {
+              "tours": 2,
+              "pax": 6
+            },
+            "best": {
+              "tours": 1,
+              "pax": 2
+            },
+            "food": {
               "tours": 1,
               "pax": 2
             }
@@ -93320,6 +94652,24 @@ const guideStats26 = [
               "pax": 2
             }
           },
+          "10-13": {
+            "big": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "best": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
           "5-20": {
             "big": {
               "tours": 1,
@@ -93360,112 +94710,112 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 6184.5,
-      "vendorCost": 3870.0,
-      "grossMargin": 241.57,
+      "revenue": 6692.5,
+      "vendorCost": 4060.0,
+      "grossMargin": 375.17,
       "tourCost": 320.0,
-      "commissionCost": 266.4,
+      "commissionCost": 325.8,
       "processingFee": 0.0,
-      "vatAmount": 1486.52,
-      "amountBeforeTax": 1728.1,
+      "vatAmount": 1611.52,
+      "amountBeforeTax": 1986.7,
       "byChannel": {
         "web": {
-          "tours": 151,
-          "pax": 3038,
-          "revenue": 1130.0,
+          "tours": 157,
+          "pax": 3137,
+          "revenue": 1160.0,
           "vendorCost": 580.0,
-          "grossMargin": 267.5,
+          "grossMargin": 290.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 282.5,
-          "amountBeforeTax": 550.0
+          "vatAmount": 290.0,
+          "amountBeforeTax": 580.0
         },
         "b2b": {
-          "tours": 20,
-          "pax": 70,
-          "revenue": 3502.5,
-          "vendorCost": 2110.0,
-          "grossMargin": 516.88,
+          "tours": 21,
+          "pax": 74,
+          "revenue": 3742.5,
+          "vendorCost": 2220.0,
+          "grossMargin": 586.88,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 875.62,
-          "amountBeforeTax": 1392.5
+          "vatAmount": 935.62,
+          "amountBeforeTax": 1522.5
         },
         "OTA": {
-          "tours": 14,
-          "pax": 46,
-          "revenue": 1552.0,
-          "vendorCost": 1180.0,
-          "grossMargin": -542.8,
+          "tours": 16,
+          "pax": 50,
+          "revenue": 1790.0,
+          "vendorCost": 1260.0,
+          "grossMargin": -501.7,
           "tourCost": 320.0,
-          "commissionCost": 266.4,
+          "commissionCost": 325.8,
           "processingFee": 0.0,
-          "vatAmount": 328.4,
-          "amountBeforeTax": -214.4
+          "vatAmount": 385.9,
+          "amountBeforeTax": -115.8
         }
       },
       "bySource": {
         "FST": {
-          "tours": 151,
-          "pax": 3038,
-          "revenue": 1130.0,
+          "tours": 157,
+          "pax": 3137,
+          "revenue": 1160.0,
           "vendorCost": 580.0,
-          "grossMargin": 267.5,
+          "grossMargin": 290.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 282.5,
-          "amountBeforeTax": 550.0
+          "vatAmount": 290.0,
+          "amountBeforeTax": 580.0
         },
         "Roundabout": {
-          "tours": 13,
-          "pax": 43,
-          "revenue": 2190.0,
-          "vendorCost": 1330.0,
-          "grossMargin": 312.5,
+          "tours": 14,
+          "pax": 47,
+          "revenue": 2400.0,
+          "vendorCost": 1440.0,
+          "grossMargin": 360.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 547.5,
-          "amountBeforeTax": 860.0
+          "vatAmount": 600.0,
+          "amountBeforeTax": 960.0
         },
         "Taste Dalmatia": {
           "tours": 7,
           "pax": 27,
-          "revenue": 1312.5,
+          "revenue": 1342.5,
           "vendorCost": 780.0,
-          "grossMargin": 204.38,
+          "grossMargin": 226.88,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 328.12,
-          "amountBeforeTax": 532.5
+          "vatAmount": 335.62,
+          "amountBeforeTax": 562.5
         },
         "Viator": {
-          "tours": 4,
-          "pax": 20,
-          "revenue": 400.0,
-          "vendorCost": 320.0,
-          "grossMargin": 0.0,
+          "tours": 5,
+          "pax": 22,
+          "revenue": 440.0,
+          "vendorCost": 400.0,
+          "grossMargin": -48.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 80.0,
-          "amountBeforeTax": 80.0
+          "vatAmount": 88.0,
+          "amountBeforeTax": 40.0
         },
         "GYG": {
-          "tours": 7,
-          "pax": 18,
-          "revenue": 360.0,
+          "tours": 8,
+          "pax": 20,
+          "revenue": 558.0,
           "vendorCost": 560.0,
-          "grossMargin": -398.0,
+          "grossMargin": -308.9,
           "tourCost": 0.0,
-          "commissionCost": 108.0,
+          "commissionCost": 167.4,
           "processingFee": 0.0,
-          "vatAmount": 90.0,
-          "amountBeforeTax": -308.0
+          "vatAmount": 139.5,
+          "amountBeforeTax": -169.4
         },
         "Airbnb": {
           "tours": 3,
@@ -93482,8 +94832,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Wed": {
-          "tours": 26,
-          "pax": 416,
+          "tours": 27,
+          "pax": 446,
           "revenue": 1000.0,
           "vendorCost": 580.0,
           "grossMargin": 158.0,
@@ -93494,8 +94844,8 @@ const guideStats26 = [
           "amountBeforeTax": 408.0
         },
         "Mon": {
-          "tours": 25,
-          "pax": 440,
+          "tours": 27,
+          "pax": 452,
           "revenue": 400.0,
           "vendorCost": 320.0,
           "grossMargin": -18.0,
@@ -93506,40 +94856,40 @@ const guideStats26 = [
           "amountBeforeTax": 80.0
         },
         "Fri": {
-          "tours": 32,
-          "pax": 502,
-          "revenue": 1606.0,
-          "vendorCost": 920.0,
-          "grossMargin": 19.1,
+          "tours": 34,
+          "pax": 526,
+          "revenue": 1646.0,
+          "vendorCost": 1000.0,
+          "grossMargin": -28.9,
           "tourCost": 160.0,
           "commissionCost": 139.2,
           "processingFee": 0.0,
-          "vatAmount": 367.7,
-          "amountBeforeTax": 386.8
+          "vatAmount": 375.7,
+          "amountBeforeTax": 346.8
         },
         "Sun": {
           "tours": 33,
           "pax": 624,
-          "revenue": 528.0,
+          "revenue": 558.0,
           "vendorCost": 320.0,
-          "grossMargin": -33.7,
+          "grossMargin": -11.2,
           "tourCost": 80.0,
           "commissionCost": 39.6,
           "processingFee": 0.0,
-          "vatAmount": 122.1,
-          "amountBeforeTax": 88.4
+          "vatAmount": 129.6,
+          "amountBeforeTax": 118.4
         },
         "Sat": {
-          "tours": 33,
-          "pax": 511,
-          "revenue": 1475.0,
+          "tours": 35,
+          "pax": 531,
+          "revenue": 1733.0,
           "vendorCost": 950.0,
-          "grossMargin": 148.25,
+          "grossMargin": 282.35,
           "tourCost": 0.0,
-          "commissionCost": 12.0,
+          "commissionCost": 71.4,
           "processingFee": 0.0,
-          "vatAmount": 364.75,
-          "amountBeforeTax": 513.0
+          "vatAmount": 429.25,
+          "amountBeforeTax": 711.6
         },
         "Thu": {
           "tours": 19,
@@ -93554,54 +94904,54 @@ const guideStats26 = [
           "amountBeforeTax": 233.9
         },
         "Tue": {
-          "tours": 17,
-          "pax": 338,
-          "revenue": 190.0,
-          "vendorCost": 160.0,
-          "grossMargin": -29.5,
+          "tours": 19,
+          "pax": 359,
+          "revenue": 370.0,
+          "vendorCost": 270.0,
+          "grossMargin": -4.5,
           "tourCost": 0.0,
           "commissionCost": 12.0,
           "processingFee": 0.0,
-          "vatAmount": 47.5,
-          "amountBeforeTax": 18.0
+          "vatAmount": 92.5,
+          "amountBeforeTax": 88.0
         }
       },
       "byTime": {
         "17": {
-          "tours": 26,
-          "pax": 454,
-          "revenue": 550.0,
+          "tours": 31,
+          "pax": 541,
+          "revenue": 580.0,
           "vendorCost": 300.0,
-          "grossMargin": 112.5,
+          "grossMargin": 135.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 137.5,
-          "amountBeforeTax": 250.0
+          "vatAmount": 145.0,
+          "amountBeforeTax": 280.0
         },
         "10": {
-          "tours": 70,
-          "pax": 1084,
-          "revenue": 2385.0,
-          "vendorCost": 1990.0,
-          "grossMargin": -289.25,
+          "tours": 72,
+          "pax": 1090,
+          "revenue": 2635.0,
+          "vendorCost": 2180.0,
+          "grossMargin": -289.75,
           "tourCost": 0.0,
           "commissionCost": 108.0,
           "processingFee": 0.0,
-          "vatAmount": 576.25,
-          "amountBeforeTax": 287.0
+          "vatAmount": 636.75,
+          "amountBeforeTax": 347.0
         },
         "11": {
-          "tours": 32,
-          "pax": 619,
-          "revenue": 792.0,
+          "tours": 34,
+          "pax": 633,
+          "revenue": 990.0,
           "vendorCost": 300.0,
-          "grossMargin": -144.8,
+          "grossMargin": -55.7,
           "tourCost": 320.0,
-          "commissionCost": 158.4,
+          "commissionCost": 217.8,
           "processingFee": 0.0,
-          "vatAmount": 158.4,
-          "amountBeforeTax": 13.6
+          "vatAmount": 207.9,
+          "amountBeforeTax": 152.2
         },
         "15": {
           "tours": 1,
@@ -93630,14 +94980,14 @@ const guideStats26 = [
         "16": {
           "tours": 3,
           "pax": 12,
-          "revenue": 487.5,
+          "revenue": 517.5,
           "vendorCost": 300.0,
-          "grossMargin": 65.62,
+          "grossMargin": 88.12,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 121.88,
-          "amountBeforeTax": 187.5
+          "vatAmount": 129.38,
+          "amountBeforeTax": 217.5
         },
         "18": {
           "tours": 26,
@@ -93702,34 +95052,34 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 34,
-          "pax": 448,
-          "revenue": 2002.5,
-          "vendorCost": 1090.0,
-          "grossMargin": 411.88,
+          "tours": 43,
+          "pax": 555,
+          "revenue": 2420.5,
+          "vendorCost": 1280.0,
+          "grossMargin": 477.98,
           "tourCost": 0.0,
-          "commissionCost": 0.0,
+          "commissionCost": 59.4,
           "processingFee": 0.0,
-          "vatAmount": 500.62,
-          "amountBeforeTax": 912.5
+          "vatAmount": 603.12,
+          "amountBeforeTax": 1081.1
         },
         "high": {
           "tours": 151,
           "pax": 2706,
-          "revenue": 4182.0,
+          "revenue": 4272.0,
           "vendorCost": 2780.0,
-          "grossMargin": -170.3,
+          "grossMargin": -102.8,
           "tourCost": 320.0,
           "commissionCost": 266.4,
           "processingFee": 0.0,
-          "vatAmount": 985.9,
-          "amountBeforeTax": 815.6
+          "vatAmount": 1008.4,
+          "amountBeforeTax": 905.6
         }
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 72,
-          "pax": 1812,
+          "tours": 74,
+          "pax": 1864,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -93740,8 +95090,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11-20": {
-          "tours": 62,
-          "pax": 988,
+          "tours": 65,
+          "pax": 1035,
           "revenue": 870.0,
           "vendorCost": 280.0,
           "grossMargin": 383.5,
@@ -93764,16 +95114,16 @@ const guideStats26 = [
           "amountBeforeTax": 645.0
         },
         "1-4": {
-          "tours": 29,
-          "pax": 71,
-          "revenue": 3829.5,
-          "vendorCost": 2750.0,
-          "grossMargin": -415.67,
+          "tours": 32,
+          "pax": 79,
+          "revenue": 4337.5,
+          "vendorCost": 2940.0,
+          "grossMargin": -282.07,
           "tourCost": 320.0,
-          "commissionCost": 266.4,
+          "commissionCost": 325.8,
           "processingFee": 0.0,
-          "vatAmount": 908.78,
-          "amountBeforeTax": 493.1
+          "vatAmount": 1033.78,
+          "amountBeforeTax": 751.7
         },
         "30+": {
           "tours": 5,
@@ -94080,26 +95430,26 @@ const guideStats26 = [
         "38": {
           "tours": 8,
           "pax": 121,
-          "revenue": 348.0,
+          "revenue": 378.0,
           "vendorCost": 210.0,
-          "grossMargin": -58.7,
+          "grossMargin": -36.2,
           "tourCost": 80.0,
           "commissionCost": 39.6,
           "processingFee": 0.0,
-          "vatAmount": 77.1,
-          "amountBeforeTax": 18.4
+          "vatAmount": 84.6,
+          "amountBeforeTax": 48.4
         },
         "39": {
           "tours": 8,
           "pax": 90,
-          "revenue": 850.0,
+          "revenue": 910.0,
           "vendorCost": 520.0,
-          "grossMargin": 117.5,
+          "grossMargin": 162.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 212.5,
-          "amountBeforeTax": 330.0
+          "vatAmount": 227.5,
+          "amountBeforeTax": 390.0
         },
         "40": {
           "tours": 5,
@@ -94124,6 +95474,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 45.0,
           "amountBeforeTax": 70.0
+        },
+        "42": {
+          "tours": 8,
+          "pax": 107,
+          "revenue": 418.0,
+          "vendorCost": 190.0,
+          "grossMargin": 66.1,
+          "tourCost": 0.0,
+          "commissionCost": 59.4,
+          "processingFee": 0.0,
+          "vatAmount": 102.5,
+          "amountBeforeTax": 168.6
+        },
+        "43": {
+          "tours": 1,
+          "pax": 0,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -94190,32 +95564,32 @@ const guideStats26 = [
         "9": {
           "tours": 36,
           "pax": 616,
-          "revenue": 1834.0,
+          "revenue": 1924.0,
           "vendorCost": 910.0,
-          "grossMargin": 124.4,
+          "grossMargin": 191.9,
           "tourCost": 240.0,
           "commissionCost": 130.8,
           "processingFee": 0.0,
-          "vatAmount": 428.8,
-          "amountBeforeTax": 553.2
+          "vatAmount": 451.3,
+          "amountBeforeTax": 643.2
         },
         "10": {
-          "tours": 8,
-          "pax": 153,
-          "revenue": 180.0,
-          "vendorCost": 110.0,
-          "grossMargin": 25.0,
+          "tours": 17,
+          "pax": 260,
+          "revenue": 598.0,
+          "vendorCost": 300.0,
+          "grossMargin": 91.1,
           "tourCost": 0.0,
-          "commissionCost": 0.0,
+          "commissionCost": 59.4,
           "processingFee": 0.0,
-          "vatAmount": 45.0,
-          "amountBeforeTax": 70.0
+          "vatAmount": 147.5,
+          "amountBeforeTax": 238.6
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 145,
-          "pax": 2982,
+          "tours": 151,
+          "pax": 3081,
           "revenue": 40.0,
           "vendorCost": 80.0,
           "grossMargin": -62.0,
@@ -94226,22 +95600,22 @@ const guideStats26 = [
           "amountBeforeTax": -52.0
         },
         "CPP": {
-          "tours": 40,
-          "pax": 172,
-          "revenue": 6144.5,
-          "vendorCost": 3790.0,
-          "grossMargin": 303.57,
+          "tours": 43,
+          "pax": 180,
+          "revenue": 6652.5,
+          "vendorCost": 3980.0,
+          "grossMargin": 437.17,
           "tourCost": 320.0,
-          "commissionCost": 254.4,
+          "commissionCost": 313.8,
           "processingFee": 0.0,
-          "vatAmount": 1476.52,
-          "amountBeforeTax": 1780.1
+          "vatAmount": 1601.52,
+          "amountBeforeTax": 2038.7
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 144,
-          "pax": 2980,
+          "tours": 150,
+          "pax": 3079,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -94254,32 +95628,32 @@ const guideStats26 = [
         "card": {
           "tours": 19,
           "pax": 74,
-          "revenue": 3040.0,
+          "revenue": 3100.0,
           "vendorCost": 1790.0,
-          "grossMargin": 490.0,
+          "grossMargin": 535.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 760.0,
-          "amountBeforeTax": 1250.0
+          "vatAmount": 775.0,
+          "amountBeforeTax": 1310.0
         },
         "bank trf": {
-          "tours": 22,
-          "pax": 100,
-          "revenue": 3144.5,
-          "vendorCost": 2080.0,
-          "grossMargin": -248.43,
+          "tours": 25,
+          "pax": 108,
+          "revenue": 3592.5,
+          "vendorCost": 2270.0,
+          "grossMargin": -159.83,
           "tourCost": 320.0,
-          "commissionCost": 266.4,
+          "commissionCost": 325.8,
           "processingFee": 0.0,
-          "vatAmount": 726.53,
-          "amountBeforeTax": 478.1
+          "vatAmount": 836.53,
+          "amountBeforeTax": 676.7
         }
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 142,
-          "pax": 2982,
+          "tours": 147,
+          "pax": 3081,
           "revenue": 870.0,
           "vendorCost": 280.0,
           "grossMargin": 383.5,
@@ -94302,42 +95676,42 @@ const guideStats26 = [
           "amountBeforeTax": 435.0
         },
         "1-5": {
-          "tours": 33,
-          "pax": 91,
-          "revenue": 4309.5,
-          "vendorCost": 3020.0,
-          "grossMargin": -325.67,
+          "tours": 37,
+          "pax": 99,
+          "revenue": 4817.5,
+          "vendorCost": 3210.0,
+          "grossMargin": -192.07,
           "tourCost": 320.0,
-          "commissionCost": 266.4,
+          "commissionCost": 325.8,
           "processingFee": 0.0,
-          "vatAmount": 1028.78,
-          "amountBeforeTax": 703.1
+          "vatAmount": 1153.78,
+          "amountBeforeTax": 961.7
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 160,
-          "pax": 3030,
-          "revenue": 1632.0,
-          "vendorCost": 1340.0,
-          "grossMargin": -642.8,
+          "tours": 168,
+          "pax": 3133,
+          "revenue": 1870.0,
+          "vendorCost": 1420.0,
+          "grossMargin": -601.7,
           "tourCost": 320.0,
-          "commissionCost": 266.4,
+          "commissionCost": 325.8,
           "processingFee": 0.0,
-          "vatAmount": 348.4,
-          "amountBeforeTax": -294.4
+          "vatAmount": 405.9,
+          "amountBeforeTax": -195.8
         },
         "per group": {
-          "tours": 25,
-          "pax": 124,
-          "revenue": 4552.5,
-          "vendorCost": 2530.0,
-          "grossMargin": 884.38,
+          "tours": 26,
+          "pax": 128,
+          "revenue": 4822.5,
+          "vendorCost": 2640.0,
+          "grossMargin": 976.88,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 1138.12,
-          "amountBeforeTax": 2022.5
+          "vatAmount": 1205.62,
+          "amountBeforeTax": 2182.5
         }
       },
       "byTourType": {
@@ -94354,40 +95728,40 @@ const guideStats26 = [
           "amountBeforeTax": 600.0
         },
         "big": {
-          "tours": 19,
-          "pax": 85,
-          "revenue": 3552.5,
-          "vendorCost": 2130.0,
-          "grossMargin": 534.38,
+          "tours": 20,
+          "pax": 89,
+          "revenue": 3822.5,
+          "vendorCost": 2240.0,
+          "grossMargin": 626.88,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 888.12,
-          "amountBeforeTax": 1422.5
+          "vatAmount": 955.62,
+          "amountBeforeTax": 1582.5
         },
         "best": {
-          "tours": 13,
-          "pax": 42,
-          "revenue": 840.0,
-          "vendorCost": 1040.0,
-          "grossMargin": -498.0,
+          "tours": 14,
+          "pax": 44,
+          "revenue": 880.0,
+          "vendorCost": 1120.0,
+          "grossMargin": -546.0,
           "tourCost": 0.0,
           "commissionCost": 108.0,
           "processingFee": 0.0,
-          "vatAmount": 190.0,
-          "amountBeforeTax": -308.0
+          "vatAmount": 198.0,
+          "amountBeforeTax": -348.0
         },
         "food": {
-          "tours": 3,
-          "pax": 8,
-          "revenue": 792.0,
+          "tours": 4,
+          "pax": 10,
+          "revenue": 990.0,
           "vendorCost": 300.0,
-          "grossMargin": -144.8,
+          "grossMargin": -55.7,
           "tourCost": 320.0,
-          "commissionCost": 158.4,
+          "commissionCost": 217.8,
           "processingFee": 0.0,
-          "vatAmount": 158.4,
-          "amountBeforeTax": 13.6
+          "vatAmount": 207.9,
+          "amountBeforeTax": 152.2
         }
       }
     }
@@ -94398,8 +95772,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 7,
-          "pax": 91
+          "tours": 9,
+          "pax": 121
         },
         "paid": {
           "tours": 5,
@@ -94458,6 +95832,17 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 2
+            }
+          },
+          "10": {
+            "name": "Lis",
+            "free": {
+              "tours": 2,
+              "pax": 30
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -94581,6 +95966,26 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -94644,8 +96049,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 113,
-          "pax": 2092
+          "tours": 116,
+          "pax": 2142
         },
         "paid": {
           "tours": 3,
@@ -94727,8 +96132,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 20
+              "tours": 4,
+              "pax": 70
             },
             "paid": {
               "tours": 0,
@@ -95596,6 +97001,36 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 19
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -95656,8 +97091,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 120,
-          "pax": 2183
+          "tours": 125,
+          "pax": 2263
         },
         "paid": {
           "tours": 8,
@@ -95743,8 +97178,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 20
+              "tours": 6,
+              "pax": 100
             },
             "paid": {
               "tours": 0,
@@ -95871,6 +97306,26 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 2
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           },
           "4-12": {
@@ -96677,6 +98132,36 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 15
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 19
             },
             "paid": {
               "tours": 0,
@@ -96783,8 +98268,8 @@ const guideStats26 = [
       "amountBeforeTax": 780.0,
       "byChannel": {
         "web": {
-          "tours": 124,
-          "pax": 2222,
+          "tours": 129,
+          "pax": 2302,
           "revenue": 750.0,
           "vendorCost": 240.0,
           "grossMargin": 322.5,
@@ -96809,8 +98294,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 124,
-          "pax": 2222,
+          "tours": 129,
+          "pax": 2302,
           "revenue": 750.0,
           "vendorCost": 240.0,
           "grossMargin": 322.5,
@@ -96835,8 +98320,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Sun": {
-          "tours": 27,
-          "pax": 459,
+          "tours": 28,
+          "pax": 475,
           "revenue": 150.0,
           "vendorCost": 80.0,
           "grossMargin": 32.5,
@@ -96859,8 +98344,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Sat": {
-          "tours": 15,
-          "pax": 260,
+          "tours": 16,
+          "pax": 276,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -96883,8 +98368,8 @@ const guideStats26 = [
           "amountBeforeTax": 280.0
         },
         "Mon": {
-          "tours": 17,
-          "pax": 294,
+          "tours": 18,
+          "pax": 313,
           "revenue": 180.0,
           "vendorCost": 110.0,
           "grossMargin": 25.0,
@@ -96895,8 +98380,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Tue": {
-          "tours": 17,
-          "pax": 352,
+          "tours": 18,
+          "pax": 366,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -96907,8 +98392,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Wed": {
-          "tours": 17,
-          "pax": 317,
+          "tours": 18,
+          "pax": 332,
           "revenue": 250.0,
           "vendorCost": 80.0,
           "grossMargin": 107.5,
@@ -96933,8 +98418,8 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "10": {
-          "tours": 38,
-          "pax": 666,
+          "tours": 40,
+          "pax": 697,
           "revenue": 330.0,
           "vendorCost": 200.0,
           "grossMargin": 47.5,
@@ -96945,8 +98430,8 @@ const guideStats26 = [
           "amountBeforeTax": 130.0
         },
         "11": {
-          "tours": 45,
-          "pax": 812,
+          "tours": 48,
+          "pax": 861,
           "revenue": 400.0,
           "vendorCost": 160.0,
           "grossMargin": 140.0,
@@ -97019,8 +98504,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 11,
-          "pax": 154,
+          "tours": 16,
+          "pax": 234,
           "revenue": 300.0,
           "vendorCost": 160.0,
           "grossMargin": 65.0,
@@ -97045,8 +98530,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 71,
-          "pax": 1158,
+          "tours": 76,
+          "pax": 1238,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -97381,6 +98866,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 4,
+          "pax": 61,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 19,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -97457,8 +98966,8 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "10": {
-          "tours": 1,
-          "pax": 20,
+          "tours": 6,
+          "pax": 100,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -97471,8 +98980,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 120,
-          "pax": 2183,
+          "tours": 125,
+          "pax": 2263,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -97497,8 +99006,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 120,
-          "pax": 2183,
+          "tours": 125,
+          "pax": 2263,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -97523,8 +99032,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 115,
-          "pax": 2158,
+          "tours": 120,
+          "pax": 2238,
           "revenue": 250.0,
           "vendorCost": 80.0,
           "grossMargin": 107.5,
@@ -97561,8 +99070,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 120,
-          "pax": 2183,
+          "tours": 125,
+          "pax": 2263,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -97968,8 +99477,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 72,
-          "pax": 1410
+          "tours": 78,
+          "pax": 1506
         },
         "paid": {
           "tours": 2,
@@ -98033,8 +99542,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 17
+              "tours": 7,
+              "pax": 113
             },
             "paid": {
               "tours": 0,
@@ -98612,6 +100121,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -98658,8 +100217,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 72,
-          "pax": 1410
+          "tours": 78,
+          "pax": 1506
         },
         "paid": {
           "tours": 16,
@@ -98727,8 +100286,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 1,
-              "pax": 17
+              "tours": 7,
+              "pax": 113
             },
             "paid": {
               "tours": 1,
@@ -99431,6 +100990,56 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 47
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 0
             },
             "paid": {
               "tours": 0,
@@ -99609,8 +101218,8 @@ const guideStats26 = [
           "amountBeforeTax": 482.5
         },
         "web": {
-          "tours": 73,
-          "pax": 1415,
+          "tours": 79,
+          "pax": 1511,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -99647,8 +101256,8 @@ const guideStats26 = [
           "amountBeforeTax": 232.5
         },
         "FST": {
-          "tours": 73,
-          "pax": 1415,
+          "tours": 79,
+          "pax": 1511,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -99697,8 +101306,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Fri": {
-          "tours": 11,
-          "pax": 155,
+          "tours": 12,
+          "pax": 167,
           "revenue": 467.5,
           "vendorCost": 380.0,
           "grossMargin": -45.38,
@@ -99709,7 +101318,7 @@ const guideStats26 = [
           "amountBeforeTax": 69.5
         },
         "Sun": {
-          "tours": 20,
+          "tours": 21,
           "pax": 335,
           "revenue": 367.5,
           "vendorCost": 230.0,
@@ -99733,8 +101342,8 @@ const guideStats26 = [
           "amountBeforeTax": -62.0
         },
         "Tue": {
-          "tours": 10,
-          "pax": 155,
+          "tours": 11,
+          "pax": 172,
           "revenue": 320.0,
           "vendorCost": 240.0,
           "grossMargin": -36.0,
@@ -99757,8 +101366,8 @@ const guideStats26 = [
           "amountBeforeTax": 40.0
         },
         "Thu": {
-          "tours": 14,
-          "pax": 262,
+          "tours": 16,
+          "pax": 309,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -99769,8 +101378,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Sat": {
-          "tours": 13,
-          "pax": 219,
+          "tours": 14,
+          "pax": 239,
           "revenue": 447.5,
           "vendorCost": 310.0,
           "grossMargin": 1.62,
@@ -99807,8 +101416,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 33,
-          "pax": 448,
+          "tours": 36,
+          "pax": 497,
           "revenue": 1047.5,
           "vendorCost": 990.0,
           "grossMargin": -319.38,
@@ -99819,8 +101428,8 @@ const guideStats26 = [
           "amountBeforeTax": -62.5
         },
         "11": {
-          "tours": 29,
-          "pax": 588,
+          "tours": 30,
+          "pax": 608,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -99843,8 +101452,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "17": {
-          "tours": 3,
-          "pax": 48,
+          "tours": 5,
+          "pax": 75,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -99869,8 +101478,8 @@ const guideStats26 = [
           "amountBeforeTax": 382.5
         },
         "shoulder": {
-          "tours": 2,
-          "pax": 19,
+          "tours": 8,
+          "pax": 115,
           "revenue": 40.0,
           "vendorCost": 80.0,
           "grossMargin": -48.0,
@@ -99907,8 +101516,8 @@ const guideStats26 = [
           "amountBeforeTax": 230.0
         },
         "11-20": {
-          "tours": 36,
-          "pax": 597,
+          "tours": 40,
+          "pax": 666,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -99919,8 +101528,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "21-30": {
-          "tours": 33,
-          "pax": 783,
+          "tours": 34,
+          "pax": 810,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -100135,6 +101744,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 8.0,
           "amountBeforeTax": -40.0
+        },
+        "42": {
+          "tours": 6,
+          "pax": 96,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -100187,8 +101808,8 @@ const guideStats26 = [
           "amountBeforeTax": 60.0
         },
         "10": {
-          "tours": 2,
-          "pax": 19,
+          "tours": 8,
+          "pax": 115,
           "revenue": 40.0,
           "vendorCost": 80.0,
           "grossMargin": -48.0,
@@ -100213,8 +101834,8 @@ const guideStats26 = [
           "amountBeforeTax": 342.5
         },
         "POS": {
-          "tours": 72,
-          "pax": 1410,
+          "tours": 78,
+          "pax": 1506,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -100239,8 +101860,8 @@ const guideStats26 = [
           "amountBeforeTax": -27.5
         },
         "cash": {
-          "tours": 72,
-          "pax": 1410,
+          "tours": 78,
+          "pax": 1506,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -100265,7 +101886,7 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 15,
+          "tours": 16,
           "pax": 49,
           "revenue": 1882.5,
           "vendorCost": 1440.0,
@@ -100289,8 +101910,8 @@ const guideStats26 = [
           "amountBeforeTax": -10.0
         },
         "11+": {
-          "tours": 71,
-          "pax": 1400,
+          "tours": 76,
+          "pax": 1496,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -100315,8 +101936,8 @@ const guideStats26 = [
           "amountBeforeTax": 602.5
         },
         "per pax": {
-          "tours": 80,
-          "pax": 1435,
+          "tours": 86,
+          "pax": 1531,
           "revenue": 500.0,
           "vendorCost": 640.0,
           "grossMargin": -380.0,
@@ -101986,17 +103607,21 @@ const guideStats26 = [
           "pax": 87
         },
         "paid": {
-          "tours": 11,
-          "pax": 48
+          "tours": 13,
+          "pax": 70
         },
         "byType": {
           "old": {
-            "tours": 7,
-            "pax": 38
+            "tours": 8,
+            "pax": 58
           },
           "best": {
             "tours": 4,
             "pax": 10
+          },
+          "food": {
+            "tours": 1,
+            "pax": 2
           }
         },
         "byMonth": {
@@ -102062,8 +103687,8 @@ const guideStats26 = [
               "pax": 11
             },
             "paid": {
-              "tours": 0,
-              "pax": 0
+              "tours": 2,
+              "pax": 22
             }
           }
         },
@@ -102277,6 +103902,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 20
+            }
           }
         },
         "byMonthType": {
@@ -102310,6 +103955,16 @@ const guideStats26 = [
             "best": {
               "tours": 2,
               "pax": 4
+            }
+          },
+          "10": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            },
+            "old": {
+              "tours": 1,
+              "pax": 20
             }
           }
         },
@@ -102379,13 +104034,25 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-14": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 20
+            }
           }
         }
       },
       "esp": {
         "free": {
-          "tours": 117,
-          "pax": 2689
+          "tours": 122,
+          "pax": 2744
         },
         "paid": {
           "tours": 9,
@@ -102467,8 +104134,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 101
+              "tours": 11,
+              "pax": 156
             },
             "paid": {
               "tours": 0,
@@ -103376,6 +105043,36 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 31
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -103484,21 +105181,25 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 127,
-          "pax": 2776
+          "tours": 132,
+          "pax": 2831
         },
         "paid": {
-          "tours": 20,
-          "pax": 114
+          "tours": 22,
+          "pax": 136
         },
         "byType": {
           "old": {
-            "tours": 16,
-            "pax": 104
+            "tours": 17,
+            "pax": 124
           },
           "best": {
             "tours": 4,
             "pax": 10
+          },
+          "food": {
+            "tours": 1,
+            "pax": 2
           }
         },
         "byMonth": {
@@ -103571,12 +105272,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 7,
-              "pax": 112
+              "tours": 12,
+              "pax": 167
             },
             "paid": {
-              "tours": 0,
-              "pax": 0
+              "tours": 2,
+              "pax": 22
             }
           }
         },
@@ -103789,6 +105490,26 @@ const guideStats26 = [
             "paid": {
               "tours": 0,
               "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 2,
+              "pax": 14
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 20
             }
           },
           "4-21": {
@@ -104620,6 +106341,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 2,
+              "pax": 31
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -104653,6 +106394,16 @@ const guideStats26 = [
             "best": {
               "tours": 2,
               "pax": 4
+            }
+          },
+          "10": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            },
+            "old": {
+              "tours": 1,
+              "pax": 20
             }
           },
           "4": {
@@ -104735,6 +106486,18 @@ const guideStats26 = [
               "pax": 2
             }
           },
+          "10-14": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 20
+            }
+          },
           "4-21": {
             "old": {
               "tours": 1,
@@ -104793,14 +106556,14 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 3050.0,
-      "vendorCost": 1600.0,
-      "grossMargin": 325.5,
-      "tourCost": 0.0,
+      "revenue": 3448.0,
+      "vendorCost": 1780.0,
+      "grossMargin": 419.0,
+      "tourCost": 25.0,
       "commissionCost": 362.0,
       "processingFee": 0.0,
-      "vatAmount": 762.5,
-      "amountBeforeTax": 1088.0,
+      "vatAmount": 862.0,
+      "amountBeforeTax": 1281.0,
       "byChannel": {
         "OTA": {
           "tours": 9,
@@ -104815,28 +106578,28 @@ const guideStats26 = [
           "amountBeforeTax": 508.0
         },
         "web": {
-          "tours": 135,
-          "pax": 2812,
-          "revenue": 885.0,
-          "vendorCost": 640.0,
-          "grossMargin": 23.75,
+          "tours": 141,
+          "pax": 2887,
+          "revenue": 1085.0,
+          "vendorCost": 720.0,
+          "grossMargin": 93.75,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 221.25,
-          "amountBeforeTax": 245.0
+          "vatAmount": 271.25,
+          "amountBeforeTax": 365.0
         },
         "b2b": {
-          "tours": 3,
-          "pax": 33,
-          "revenue": 575.0,
-          "vendorCost": 240.0,
-          "grossMargin": 191.25,
-          "tourCost": 0.0,
+          "tours": 4,
+          "pax": 35,
+          "revenue": 773.0,
+          "vendorCost": 340.0,
+          "grossMargin": 214.75,
+          "tourCost": 25.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 143.75,
-          "amountBeforeTax": 335.0
+          "vatAmount": 193.25,
+          "amountBeforeTax": 408.0
         }
       },
       "bySource": {
@@ -104853,28 +106616,28 @@ const guideStats26 = [
           "amountBeforeTax": 490.0
         },
         "FST": {
-          "tours": 135,
-          "pax": 2812,
-          "revenue": 885.0,
-          "vendorCost": 640.0,
-          "grossMargin": 23.75,
+          "tours": 141,
+          "pax": 2887,
+          "revenue": 1085.0,
+          "vendorCost": 720.0,
+          "grossMargin": 93.75,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 221.25,
-          "amountBeforeTax": 245.0
+          "vatAmount": 271.25,
+          "amountBeforeTax": 365.0
         },
         "Roundabout": {
-          "tours": 3,
-          "pax": 33,
-          "revenue": 575.0,
-          "vendorCost": 240.0,
-          "grossMargin": 191.25,
-          "tourCost": 0.0,
+          "tours": 4,
+          "pax": 35,
+          "revenue": 773.0,
+          "vendorCost": 340.0,
+          "grossMargin": 214.75,
+          "tourCost": 25.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 143.75,
-          "amountBeforeTax": 335.0
+          "vatAmount": 193.25,
+          "amountBeforeTax": 408.0
         },
         "Project Expedition": {
           "tours": 1,
@@ -104903,8 +106666,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Tue": {
-          "tours": 24,
-          "pax": 501,
+          "tours": 26,
+          "pax": 532,
           "revenue": 490.0,
           "vendorCost": 320.0,
           "grossMargin": -2.5,
@@ -104915,20 +106678,20 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "Thu": {
-          "tours": 25,
-          "pax": 483,
-          "revenue": 590.0,
-          "vendorCost": 320.0,
-          "grossMargin": 10.5,
+          "tours": 28,
+          "pax": 517,
+          "revenue": 790.0,
+          "vendorCost": 400.0,
+          "grossMargin": 80.5,
           "tourCost": 0.0,
           "commissionCost": 112.0,
           "processingFee": 0.0,
-          "vatAmount": 147.5,
-          "amountBeforeTax": 158.0
+          "vatAmount": 197.5,
+          "amountBeforeTax": 278.0
         },
         "Sun": {
-          "tours": 34,
-          "pax": 691,
+          "tours": 35,
+          "pax": 701,
           "revenue": 300.0,
           "vendorCost": 80.0,
           "grossMargin": 145.0,
@@ -104939,16 +106702,16 @@ const guideStats26 = [
           "amountBeforeTax": 220.0
         },
         "Wed": {
-          "tours": 24,
-          "pax": 429,
-          "revenue": 475.0,
-          "vendorCost": 240.0,
-          "grossMargin": 66.25,
-          "tourCost": 0.0,
+          "tours": 25,
+          "pax": 431,
+          "revenue": 673.0,
+          "vendorCost": 340.0,
+          "grossMargin": 89.75,
+          "tourCost": 25.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 118.75,
-          "amountBeforeTax": 185.0
+          "vatAmount": 168.25,
+          "amountBeforeTax": 258.0
         },
         "Mon": {
           "tours": 16,
@@ -104989,8 +106752,8 @@ const guideStats26 = [
       },
       "byTime": {
         "17": {
-          "tours": 34,
-          "pax": 605,
+          "tours": 36,
+          "pax": 631,
           "revenue": 600.0,
           "vendorCost": 240.0,
           "grossMargin": 60.0,
@@ -105001,8 +106764,8 @@ const guideStats26 = [
           "amountBeforeTax": 210.0
         },
         "10": {
-          "tours": 39,
-          "pax": 617,
+          "tours": 41,
+          "pax": 636,
           "revenue": 800.0,
           "vendorCost": 560.0,
           "grossMargin": 28.0,
@@ -105025,16 +106788,16 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "11": {
-          "tours": 24,
-          "pax": 488,
-          "revenue": 400.0,
-          "vendorCost": 160.0,
-          "grossMargin": 40.0,
-          "tourCost": 0.0,
+          "tours": 26,
+          "pax": 500,
+          "revenue": 598.0,
+          "vendorCost": 260.0,
+          "grossMargin": 63.5,
+          "tourCost": 25.0,
           "commissionCost": 100.0,
           "processingFee": 0.0,
-          "vatAmount": 100.0,
-          "amountBeforeTax": 140.0
+          "vatAmount": 149.5,
+          "amountBeforeTax": 213.0
         },
         "9": {
           "tours": 3,
@@ -105085,30 +106848,30 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "19": {
-          "tours": 18,
-          "pax": 549,
-          "revenue": 0.0,
-          "vendorCost": 0.0,
-          "grossMargin": 0.0,
+          "tours": 19,
+          "pax": 569,
+          "revenue": 200.0,
+          "vendorCost": 80.0,
+          "grossMargin": 70.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 0.0,
-          "amountBeforeTax": 0.0
+          "vatAmount": 50.0,
+          "amountBeforeTax": 120.0
         }
       },
       "bySeason": {
         "shoulder": {
-          "tours": 27,
-          "pax": 360,
-          "revenue": 525.0,
-          "vendorCost": 240.0,
-          "grossMargin": 53.75,
-          "tourCost": 0.0,
+          "tours": 34,
+          "pax": 437,
+          "revenue": 923.0,
+          "vendorCost": 420.0,
+          "grossMargin": 147.25,
+          "tourCost": 25.0,
           "commissionCost": 100.0,
           "processingFee": 0.0,
-          "vatAmount": 131.25,
-          "amountBeforeTax": 185.0
+          "vatAmount": 230.75,
+          "amountBeforeTax": 378.0
         },
         "high": {
           "tours": 120,
@@ -105125,32 +106888,32 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "1-4": {
-          "tours": 16,
-          "pax": 46,
-          "revenue": 1850.0,
-          "vendorCost": 1120.0,
-          "grossMargin": 5.5,
-          "tourCost": 0.0,
+          "tours": 17,
+          "pax": 48,
+          "revenue": 2048.0,
+          "vendorCost": 1220.0,
+          "grossMargin": 29.0,
+          "tourCost": 25.0,
           "commissionCost": 262.0,
           "processingFee": 0.0,
-          "vatAmount": 462.5,
-          "amountBeforeTax": 468.0
+          "vatAmount": 512.0,
+          "amountBeforeTax": 541.0
         },
         "11-20": {
-          "tours": 37,
-          "pax": 610,
-          "revenue": 400.0,
-          "vendorCost": 160.0,
-          "grossMargin": 90.0,
+          "tours": 40,
+          "pax": 661,
+          "revenue": 600.0,
+          "vendorCost": 240.0,
+          "grossMargin": 160.0,
           "tourCost": 0.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 100.0,
-          "amountBeforeTax": 190.0
+          "vatAmount": 150.0,
+          "amountBeforeTax": 310.0
         },
         "5-10": {
-          "tours": 18,
-          "pax": 129,
+          "tours": 21,
+          "pax": 153,
           "revenue": 500.0,
           "vendorCost": 240.0,
           "grossMargin": 85.0,
@@ -105485,6 +107248,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 7,
+          "pax": 77,
+          "revenue": 398.0,
+          "vendorCost": 180.0,
+          "grossMargin": 93.5,
+          "tourCost": 25.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 99.5,
+          "amountBeforeTax": 193.0
         }
       },
       "byMonth": {
@@ -105561,34 +107336,34 @@ const guideStats26 = [
           "amountBeforeTax": 175.0
         },
         "10": {
-          "tours": 7,
-          "pax": 112,
-          "revenue": 0.0,
-          "vendorCost": 0.0,
-          "grossMargin": 0.0,
-          "tourCost": 0.0,
+          "tours": 14,
+          "pax": 189,
+          "revenue": 398.0,
+          "vendorCost": 180.0,
+          "grossMargin": 93.5,
+          "tourCost": 25.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 0.0,
-          "amountBeforeTax": 0.0
+          "vatAmount": 99.5,
+          "amountBeforeTax": 193.0
         }
       },
       "byBillingMethod": {
         "CPP": {
-          "tours": 19,
-          "pax": 110,
-          "revenue": 2925.0,
-          "vendorCost": 1520.0,
-          "grossMargin": 311.75,
-          "tourCost": 0.0,
+          "tours": 21,
+          "pax": 132,
+          "revenue": 3323.0,
+          "vendorCost": 1700.0,
+          "grossMargin": 405.25,
+          "tourCost": 25.0,
           "commissionCost": 362.0,
           "processingFee": 0.0,
-          "vatAmount": 731.25,
-          "amountBeforeTax": 1043.0
+          "vatAmount": 830.75,
+          "amountBeforeTax": 1236.0
         },
         "POS": {
-          "tours": 128,
-          "pax": 2780,
+          "tours": 133,
+          "pax": 2835,
           "revenue": 125.0,
           "vendorCost": 80.0,
           "grossMargin": 13.75,
@@ -105601,20 +107376,20 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "bank trf": {
-          "tours": 9,
-          "pax": 45,
-          "revenue": 1590.0,
-          "vendorCost": 720.0,
-          "grossMargin": 110.5,
-          "tourCost": 0.0,
+          "tours": 10,
+          "pax": 47,
+          "revenue": 1788.0,
+          "vendorCost": 820.0,
+          "grossMargin": 134.0,
+          "tourCost": 25.0,
           "commissionCost": 362.0,
           "processingFee": 0.0,
-          "vatAmount": 397.5,
-          "amountBeforeTax": 508.0
+          "vatAmount": 447.0,
+          "amountBeforeTax": 581.0
         },
         "cash": {
-          "tours": 128,
-          "pax": 2780,
+          "tours": 133,
+          "pax": 2835,
           "revenue": 125.0,
           "vendorCost": 80.0,
           "grossMargin": 13.75,
@@ -105625,46 +107400,46 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "card": {
-          "tours": 10,
-          "pax": 65,
-          "revenue": 1335.0,
-          "vendorCost": 800.0,
-          "grossMargin": 201.25,
+          "tours": 11,
+          "pax": 85,
+          "revenue": 1535.0,
+          "vendorCost": 880.0,
+          "grossMargin": 271.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 333.75,
-          "amountBeforeTax": 535.0
+          "vatAmount": 383.75,
+          "amountBeforeTax": 655.0
         }
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 18,
-          "pax": 57,
-          "revenue": 2150.0,
-          "vendorCost": 1280.0,
-          "grossMargin": 70.5,
-          "tourCost": 0.0,
+          "tours": 19,
+          "pax": 59,
+          "revenue": 2348.0,
+          "vendorCost": 1380.0,
+          "grossMargin": 94.0,
+          "tourCost": 25.0,
           "commissionCost": 262.0,
           "processingFee": 0.0,
-          "vatAmount": 537.5,
-          "amountBeforeTax": 608.0
+          "vatAmount": 587.0,
+          "amountBeforeTax": 681.0
         },
         "11+": {
-          "tours": 121,
-          "pax": 2776,
-          "revenue": 700.0,
-          "vendorCost": 240.0,
-          "grossMargin": 235.0,
+          "tours": 126,
+          "pax": 2841,
+          "revenue": 900.0,
+          "vendorCost": 320.0,
+          "grossMargin": 305.0,
           "tourCost": 0.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 175.0,
-          "amountBeforeTax": 410.0
+          "vatAmount": 225.0,
+          "amountBeforeTax": 530.0
         },
         "6-10": {
-          "tours": 8,
-          "pax": 57,
+          "tours": 9,
+          "pax": 67,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -105677,42 +107452,42 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per group": {
-          "tours": 16,
-          "pax": 104,
-          "revenue": 2850.0,
-          "vendorCost": 1280.0,
-          "grossMargin": 507.5,
+          "tours": 17,
+          "pax": 124,
+          "revenue": 3050.0,
+          "vendorCost": 1360.0,
+          "grossMargin": 577.5,
           "tourCost": 0.0,
           "commissionCost": 350.0,
           "processingFee": 0.0,
-          "vatAmount": 712.5,
-          "amountBeforeTax": 1220.0
+          "vatAmount": 762.5,
+          "amountBeforeTax": 1340.0
         },
         "per pax": {
-          "tours": 131,
-          "pax": 2786,
-          "revenue": 200.0,
-          "vendorCost": 320.0,
-          "grossMargin": -182.0,
-          "tourCost": 0.0,
+          "tours": 137,
+          "pax": 2843,
+          "revenue": 398.0,
+          "vendorCost": 420.0,
+          "grossMargin": -158.5,
+          "tourCost": 25.0,
           "commissionCost": 12.0,
           "processingFee": 0.0,
-          "vatAmount": 50.0,
-          "amountBeforeTax": -132.0
+          "vatAmount": 99.5,
+          "amountBeforeTax": -59.0
         }
       },
       "byTourType": {
         "old": {
-          "tours": 16,
-          "pax": 104,
-          "revenue": 2850.0,
-          "vendorCost": 1280.0,
-          "grossMargin": 507.5,
+          "tours": 17,
+          "pax": 124,
+          "revenue": 3050.0,
+          "vendorCost": 1360.0,
+          "grossMargin": 577.5,
           "tourCost": 0.0,
           "commissionCost": 350.0,
           "processingFee": 0.0,
-          "vatAmount": 712.5,
-          "amountBeforeTax": 1220.0
+          "vatAmount": 762.5,
+          "amountBeforeTax": 1340.0
         },
         "best": {
           "tours": 4,
@@ -105725,6 +107500,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 50.0,
           "amountBeforeTax": -132.0
+        },
+        "food": {
+          "tours": 1,
+          "pax": 2,
+          "revenue": 198.0,
+          "vendorCost": 100.0,
+          "grossMargin": 23.5,
+          "tourCost": 25.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 49.5,
+          "amountBeforeTax": 73.0
         }
       }
     }
@@ -105750,8 +107537,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 208,
-          "pax": 4276
+          "tours": 214,
+          "pax": 4355
         },
         "paid": {
           "tours": 0,
@@ -105828,8 +107615,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 63
+              "tours": 10,
+              "pax": 142
             },
             "paid": {
               "tours": 0,
@@ -107252,6 +109039,56 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 25
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 5
             },
             "paid": {
               "tours": 0,
@@ -107279,8 +109116,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 208,
-          "pax": 4276
+          "tours": 214,
+          "pax": 4355
         },
         "paid": {
           "tours": 0,
@@ -107357,8 +109194,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 63
+              "tours": 10,
+              "pax": 142
             },
             "paid": {
               "tours": 0,
@@ -108786,6 +110623,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 2,
+              "pax": 25
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 21
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 5
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {},
@@ -108803,8 +110690,8 @@ const guideStats26 = [
       "amountBeforeTax": 0.0,
       "byChannel": {
         "web": {
-          "tours": 208,
-          "pax": 4276,
+          "tours": 214,
+          "pax": 4355,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108817,8 +110704,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 208,
-          "pax": 4276,
+          "tours": 214,
+          "pax": 4355,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108843,8 +110730,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Thu": {
-          "tours": 20,
-          "pax": 394,
+          "tours": 21,
+          "pax": 414,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108867,8 +110754,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Fri": {
-          "tours": 36,
-          "pax": 707,
+          "tours": 37,
+          "pax": 715,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108879,8 +110766,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Sat": {
-          "tours": 30,
-          "pax": 654,
+          "tours": 31,
+          "pax": 675,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108903,8 +110790,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Mon": {
-          "tours": 33,
-          "pax": 714,
+          "tours": 36,
+          "pax": 744,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108917,8 +110804,8 @@ const guideStats26 = [
       },
       "byTime": {
         "17": {
-          "tours": 31,
-          "pax": 552,
+          "tours": 32,
+          "pax": 564,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108929,8 +110816,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 70,
-          "pax": 1328,
+          "tours": 73,
+          "pax": 1354,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108941,8 +110828,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11": {
-          "tours": 53,
-          "pax": 1162,
+          "tours": 55,
+          "pax": 1203,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -108991,8 +110878,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 55,
-          "pax": 909,
+          "tours": 61,
+          "pax": 988,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109017,8 +110904,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 109,
-          "pax": 2693,
+          "tours": 110,
+          "pax": 2714,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109029,8 +110916,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11-20": {
-          "tours": 77,
-          "pax": 1266,
+          "tours": 80,
+          "pax": 1311,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109041,8 +110928,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "5-10": {
-          "tours": 14,
-          "pax": 110,
+          "tours": 16,
+          "pax": 123,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109413,6 +111300,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 5,
+          "pax": 74,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 5,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -109489,8 +111400,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 4,
-          "pax": 63,
+          "tours": 10,
+          "pax": 142,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109503,8 +111414,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 208,
-          "pax": 4276,
+          "tours": 214,
+          "pax": 4355,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109517,8 +111428,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 208,
-          "pax": 4276,
+          "tours": 214,
+          "pax": 4355,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109531,8 +111442,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 199,
-          "pax": 4218,
+          "tours": 203,
+          "pax": 4284,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109543,8 +111454,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "6-10": {
-          "tours": 6,
-          "pax": 46,
+          "tours": 7,
+          "pax": 54,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109555,8 +111466,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "1-5": {
-          "tours": 3,
-          "pax": 12,
+          "tours": 4,
+          "pax": 17,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109569,8 +111480,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 208,
-          "pax": 4276,
+          "tours": 214,
+          "pax": 4355,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -109590,17 +111501,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 13,
-          "pax": 125
+          "tours": 14,
+          "pax": 131
         },
         "paid": {
-          "tours": 10,
-          "pax": 52
+          "tours": 11,
+          "pax": 54
         },
         "byType": {
           "old": {
-            "tours": 5,
-            "pax": 36
+            "tours": 6,
+            "pax": 38
           },
           "best": {
             "tours": 5,
@@ -109657,6 +111568,17 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 15
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10": {
+            "name": "Lis",
+            "free": {
+              "tours": 1,
+              "pax": 6
             },
             "paid": {
               "tours": 1,
@@ -109864,6 +111786,16 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         },
         "byMonthType": {
@@ -109897,6 +111829,12 @@ const guideStats26 = [
           },
           "9": {
             "best": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10": {
+            "old": {
               "tours": 1,
               "pax": 2
             }
@@ -109962,13 +111900,19 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       },
       "esp": {
         "free": {
-          "tours": 89,
-          "pax": 1866
+          "tours": 90,
+          "pax": 1882
         },
         "paid": {
           "tours": 7,
@@ -110039,8 +111983,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 114
+              "tours": 7,
+              "pax": 130
             },
             "paid": {
               "tours": 1,
@@ -110768,6 +112712,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -110864,17 +112818,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 102,
-          "pax": 1991
+          "tours": 104,
+          "pax": 2013
         },
         "paid": {
-          "tours": 17,
-          "pax": 95
+          "tours": 18,
+          "pax": 97
         },
         "byType": {
           "old": {
-            "tours": 12,
-            "pax": 79
+            "tours": 13,
+            "pax": 81
           },
           "best": {
             "tours": 5,
@@ -110940,12 +112894,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 114
+              "tours": 8,
+              "pax": 136
             },
             "paid": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -111150,6 +113104,16 @@ const guideStats26 = [
               "pax": 0
             }
           },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
           "5-21": {
             "free": {
               "tours": 2,
@@ -111779,6 +113743,16 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 16
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -111826,8 +113800,8 @@ const guideStats26 = [
           },
           "10": {
             "old": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 4
             }
           }
         },
@@ -111892,6 +113866,12 @@ const guideStats26 = [
               "pax": 2
             }
           },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
           "6-1": {
             "old": {
               "tours": 1,
@@ -111938,26 +113918,26 @@ const guideStats26 = [
       }
     },
     "mgmt": {
-      "revenue": 2420.0,
-      "vendorCost": 1360.0,
-      "grossMargin": 57.75,
+      "revenue": 2545.0,
+      "vendorCost": 1440.0,
+      "grossMargin": 71.5,
       "tourCost": 0.0,
       "commissionCost": 397.25,
       "processingFee": 0.0,
-      "vatAmount": 605.0,
-      "amountBeforeTax": 662.75,
+      "vatAmount": 636.25,
+      "amountBeforeTax": 707.75,
       "byChannel": {
         "web": {
-          "tours": 104,
-          "pax": 1996,
-          "revenue": 100.0,
-          "vendorCost": 160.0,
-          "grossMargin": -85.0,
+          "tours": 107,
+          "pax": 2020,
+          "revenue": 225.0,
+          "vendorCost": 240.0,
+          "grossMargin": -71.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 25.0,
-          "amountBeforeTax": -60.0
+          "vatAmount": 56.25,
+          "amountBeforeTax": -15.0
         },
         "b2b": {
           "tours": 5,
@@ -111986,16 +113966,16 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 104,
-          "pax": 1996,
-          "revenue": 100.0,
-          "vendorCost": 160.0,
-          "grossMargin": -85.0,
+          "tours": 107,
+          "pax": 2020,
+          "revenue": 225.0,
+          "vendorCost": 240.0,
+          "grossMargin": -71.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 25.0,
-          "amountBeforeTax": -60.0
+          "vatAmount": 56.25,
+          "amountBeforeTax": -15.0
         },
         "Roundabout": {
           "tours": 4,
@@ -112084,16 +114064,16 @@ const guideStats26 = [
           "amountBeforeTax": 185.0
         },
         "Thu": {
-          "tours": 25,
-          "pax": 462,
-          "revenue": 160.0,
-          "vendorCost": 160.0,
-          "grossMargin": -70.0,
+          "tours": 27,
+          "pax": 470,
+          "revenue": 285.0,
+          "vendorCost": 240.0,
+          "grossMargin": -56.25,
           "tourCost": 0.0,
           "commissionCost": 30.0,
           "processingFee": 0.0,
-          "vatAmount": 40.0,
-          "amountBeforeTax": -30.0
+          "vatAmount": 71.25,
+          "amountBeforeTax": 15.0
         },
         "Sun": {
           "tours": 10,
@@ -112120,8 +114100,8 @@ const guideStats26 = [
           "amountBeforeTax": 91.0
         },
         "Wed": {
-          "tours": 18,
-          "pax": 245,
+          "tours": 19,
+          "pax": 261,
           "revenue": 725.0,
           "vendorCost": 320.0,
           "grossMargin": 42.5,
@@ -112134,20 +114114,20 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 39,
-          "pax": 503,
-          "revenue": 1045.0,
-          "vendorCost": 800.0,
-          "grossMargin": -132.25,
+          "tours": 40,
+          "pax": 505,
+          "revenue": 1170.0,
+          "vendorCost": 880.0,
+          "grossMargin": -118.5,
           "tourCost": 0.0,
           "commissionCost": 116.0,
           "processingFee": 0.0,
-          "vatAmount": 261.25,
-          "amountBeforeTax": 129.0
+          "vatAmount": 292.5,
+          "amountBeforeTax": 174.0
         },
         "17": {
-          "tours": 15,
-          "pax": 261,
+          "tours": 16,
+          "pax": 267,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -112158,8 +114138,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "11": {
-          "tours": 22,
-          "pax": 412,
+          "tours": 23,
+          "pax": 428,
           "revenue": 525.0,
           "vendorCost": 240.0,
           "grossMargin": 22.5,
@@ -112220,16 +114200,16 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 16,
-          "pax": 208,
-          "revenue": 325.0,
-          "vendorCost": 160.0,
-          "grossMargin": 33.75,
+          "tours": 19,
+          "pax": 232,
+          "revenue": 450.0,
+          "vendorCost": 240.0,
+          "grossMargin": 47.5,
           "tourCost": 0.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 81.25,
-          "amountBeforeTax": 115.0
+          "vatAmount": 112.5,
+          "amountBeforeTax": 160.0
         },
         "high": {
           "tours": 103,
@@ -112246,8 +114226,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "11-20": {
-          "tours": 38,
-          "pax": 626,
+          "tours": 39,
+          "pax": 642,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -112258,8 +114238,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "5-10": {
-          "tours": 12,
-          "pax": 92,
+          "tours": 13,
+          "pax": 98,
           "revenue": 500.0,
           "vendorCost": 240.0,
           "grossMargin": 5.0,
@@ -112270,16 +114250,16 @@ const guideStats26 = [
           "amountBeforeTax": 130.0
         },
         "1-4": {
-          "tours": 16,
-          "pax": 41,
-          "revenue": 1470.0,
-          "vendorCost": 960.0,
-          "grossMargin": -74.75,
+          "tours": 17,
+          "pax": 43,
+          "revenue": 1595.0,
+          "vendorCost": 1040.0,
+          "grossMargin": -61.0,
           "tourCost": 0.0,
           "commissionCost": 217.25,
           "processingFee": 0.0,
-          "vatAmount": 367.5,
-          "amountBeforeTax": 292.75
+          "vatAmount": 398.75,
+          "amountBeforeTax": 337.75
         },
         "30+": {
           "tours": 3,
@@ -112570,6 +114550,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 50.0,
           "amountBeforeTax": 70.0
+        },
+        "42": {
+          "tours": 3,
+          "pax": 24,
+          "revenue": 125.0,
+          "vendorCost": 80.0,
+          "grossMargin": 13.75,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 31.25,
+          "amountBeforeTax": 45.0
         }
       },
       "byMonth": {
@@ -112634,22 +114626,22 @@ const guideStats26 = [
           "amountBeforeTax": 30.0
         },
         "10": {
-          "tours": 7,
-          "pax": 116,
-          "revenue": 200.0,
-          "vendorCost": 80.0,
-          "grossMargin": 20.0,
+          "tours": 10,
+          "pax": 140,
+          "revenue": 325.0,
+          "vendorCost": 160.0,
+          "grossMargin": 33.75,
           "tourCost": 0.0,
           "commissionCost": 50.0,
           "processingFee": 0.0,
-          "vatAmount": 50.0,
-          "amountBeforeTax": 70.0
+          "vatAmount": 81.25,
+          "amountBeforeTax": 115.0
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 102,
-          "pax": 1991,
+          "tours": 104,
+          "pax": 2013,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -112660,22 +114652,22 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "CPP": {
-          "tours": 17,
-          "pax": 95,
-          "revenue": 2420.0,
-          "vendorCost": 1360.0,
-          "grossMargin": 57.75,
+          "tours": 18,
+          "pax": 97,
+          "revenue": 2545.0,
+          "vendorCost": 1440.0,
+          "grossMargin": 71.5,
           "tourCost": 0.0,
           "commissionCost": 397.25,
           "processingFee": 0.0,
-          "vatAmount": 605.0,
-          "amountBeforeTax": 662.75
+          "vatAmount": 636.25,
+          "amountBeforeTax": 707.75
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 102,
-          "pax": 1991,
+          "tours": 104,
+          "pax": 2013,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -112686,16 +114678,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "card": {
-          "tours": 7,
-          "pax": 43,
-          "revenue": 875.0,
-          "vendorCost": 560.0,
-          "grossMargin": 96.25,
+          "tours": 8,
+          "pax": 45,
+          "revenue": 1000.0,
+          "vendorCost": 640.0,
+          "grossMargin": 110.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 218.75,
-          "amountBeforeTax": 315.0
+          "vatAmount": 250.0,
+          "amountBeforeTax": 360.0
         },
         "bank trf": {
           "tours": 10,
@@ -112712,8 +114704,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 97,
-          "pax": 1995,
+          "tours": 98,
+          "pax": 2011,
           "revenue": 450.0,
           "vendorCost": 160.0,
           "grossMargin": 127.5,
@@ -112724,8 +114716,8 @@ const guideStats26 = [
           "amountBeforeTax": 240.0
         },
         "6-10": {
-          "tours": 6,
-          "pax": 47,
+          "tours": 7,
+          "pax": 53,
           "revenue": 400.0,
           "vendorCost": 160.0,
           "grossMargin": 40.0,
@@ -112736,22 +114728,22 @@ const guideStats26 = [
           "amountBeforeTax": 140.0
         },
         "1-5": {
-          "tours": 16,
-          "pax": 44,
-          "revenue": 1570.0,
-          "vendorCost": 1040.0,
-          "grossMargin": -109.75,
+          "tours": 17,
+          "pax": 46,
+          "revenue": 1695.0,
+          "vendorCost": 1120.0,
+          "grossMargin": -96.0,
           "tourCost": 0.0,
           "commissionCost": 247.25,
           "processingFee": 0.0,
-          "vatAmount": 392.5,
-          "amountBeforeTax": 282.75
+          "vatAmount": 423.75,
+          "amountBeforeTax": 327.75
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 107,
-          "pax": 2007,
+          "tours": 109,
+          "pax": 2029,
           "revenue": 320.0,
           "vendorCost": 400.0,
           "grossMargin": -226.0,
@@ -112762,30 +114754,30 @@ const guideStats26 = [
           "amountBeforeTax": -146.0
         },
         "per group": {
-          "tours": 12,
-          "pax": 79,
-          "revenue": 2100.0,
-          "vendorCost": 960.0,
-          "grossMargin": 283.75,
+          "tours": 13,
+          "pax": 81,
+          "revenue": 2225.0,
+          "vendorCost": 1040.0,
+          "grossMargin": 297.5,
           "tourCost": 0.0,
           "commissionCost": 331.25,
           "processingFee": 0.0,
-          "vatAmount": 525.0,
-          "amountBeforeTax": 808.75
+          "vatAmount": 556.25,
+          "amountBeforeTax": 853.75
         }
       },
       "byTourType": {
         "old": {
-          "tours": 12,
-          "pax": 79,
-          "revenue": 2100.0,
-          "vendorCost": 960.0,
-          "grossMargin": 283.75,
+          "tours": 13,
+          "pax": 81,
+          "revenue": 2225.0,
+          "vendorCost": 1040.0,
+          "grossMargin": 297.5,
           "tourCost": 0.0,
           "commissionCost": 331.25,
           "processingFee": 0.0,
-          "vatAmount": 525.0,
-          "amountBeforeTax": 808.75
+          "vatAmount": 556.25,
+          "amountBeforeTax": 853.75
         },
         "best": {
           "tours": 5,
@@ -112808,12 +114800,12 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 146,
-          "pax": 1347
+          "tours": 151,
+          "pax": 1381
         },
         "paid": {
-          "tours": 9,
-          "pax": 29
+          "tours": 10,
+          "pax": 31
         },
         "byType": {
           "old": {
@@ -112821,8 +114813,8 @@ const guideStats26 = [
             "pax": 6
           },
           "food": {
-            "tours": 7,
-            "pax": 21
+            "tours": 8,
+            "pax": 23
           },
           "best": {
             "tours": 1,
@@ -112899,12 +114891,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 11,
-              "pax": 94
+              "tours": 16,
+              "pax": 128
             },
             "paid": {
-              "tours": 1,
-              "pax": 7
+              "tours": 2,
+              "pax": 9
             }
           }
         },
@@ -114108,6 +116100,66 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 11
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -114135,8 +116187,8 @@ const guideStats26 = [
           },
           "10": {
             "food": {
-              "tours": 1,
-              "pax": 7
+              "tours": 2,
+              "pax": 9
             }
           }
         },
@@ -114193,6 +116245,12 @@ const guideStats26 = [
             "food": {
               "tours": 1,
               "pax": 7
+            }
+          },
+          "10-16": {
+            "food": {
+              "tours": 1,
+              "pax": 2
             }
           }
         }
@@ -114229,12 +116287,12 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 146,
-          "pax": 1347
+          "tours": 151,
+          "pax": 1381
         },
         "paid": {
-          "tours": 9,
-          "pax": 29
+          "tours": 10,
+          "pax": 31
         },
         "byType": {
           "old": {
@@ -114242,8 +116300,8 @@ const guideStats26 = [
             "pax": 6
           },
           "food": {
-            "tours": 7,
-            "pax": 21
+            "tours": 8,
+            "pax": 23
           },
           "best": {
             "tours": 1,
@@ -114320,12 +116378,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 11,
-              "pax": 94
+              "tours": 16,
+              "pax": 128
             },
             "paid": {
-              "tours": 1,
-              "pax": 7
+              "tours": 2,
+              "pax": 9
             }
           }
         },
@@ -115529,6 +117587,66 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 11
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -115556,8 +117674,8 @@ const guideStats26 = [
           },
           "10": {
             "food": {
-              "tours": 1,
-              "pax": 7
+              "tours": 2,
+              "pax": 9
             }
           }
         },
@@ -115615,23 +117733,29 @@ const guideStats26 = [
               "tours": 1,
               "pax": 7
             }
+          },
+          "10-16": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 1883.0,
-      "vendorCost": 860.0,
-      "grossMargin": -493.25,
-      "tourCost": 597.9,
-      "commissionCost": 457.5,
+      "revenue": 2081.0,
+      "vendorCost": 960.0,
+      "grossMargin": -564.2,
+      "tourCost": 657.95,
+      "commissionCost": 516.9,
       "processingFee": 0.0,
-      "vatAmount": 460.85,
-      "amountBeforeTax": -32.4,
+      "vatAmount": 510.35,
+      "amountBeforeTax": -53.85,
       "byChannel": {
         "web": {
-          "tours": 146,
-          "pax": 1347,
+          "tours": 151,
+          "pax": 1381,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -115654,22 +117778,22 @@ const guideStats26 = [
           "amountBeforeTax": 118.0
         },
         "OTA": {
-          "tours": 7,
-          "pax": 17,
-          "revenue": 1525.0,
-          "vendorCost": 680.0,
-          "grossMargin": -521.75,
-          "tourCost": 537.9,
-          "commissionCost": 457.5,
+          "tours": 8,
+          "pax": 19,
+          "revenue": 1723.0,
+          "vendorCost": 780.0,
+          "grossMargin": -592.7,
+          "tourCost": 597.95,
+          "commissionCost": 516.9,
           "processingFee": 0.0,
-          "vatAmount": 371.35,
-          "amountBeforeTax": -150.4
+          "vatAmount": 420.85,
+          "amountBeforeTax": -171.85
         }
       },
       "bySource": {
         "FST": {
-          "tours": 146,
-          "pax": 1347,
+          "tours": 151,
+          "pax": 1381,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -115692,16 +117816,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "GYG": {
-          "tours": 6,
-          "pax": 15,
-          "revenue": 1327.0,
-          "vendorCost": 580.0,
-          "grossMargin": -454.75,
-          "tourCost": 471.9,
-          "commissionCost": 398.1,
+          "tours": 7,
+          "pax": 17,
+          "revenue": 1525.0,
+          "vendorCost": 680.0,
+          "grossMargin": -525.7,
+          "tourCost": 531.95,
+          "commissionCost": 457.5,
           "processingFee": 0.0,
-          "vatAmount": 331.75,
-          "amountBeforeTax": -123.0
+          "vatAmount": 381.25,
+          "amountBeforeTax": -144.45
         },
         "Viator": {
           "tours": 1,
@@ -115730,8 +117854,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Sat": {
-          "tours": 27,
-          "pax": 235,
+          "tours": 28,
+          "pax": 246,
           "revenue": 396.0,
           "vendorCost": 200.0,
           "grossMargin": -154.25,
@@ -115742,8 +117866,8 @@ const guideStats26 = [
           "amountBeforeTax": -65.15
         },
         "Mon": {
-          "tours": 20,
-          "pax": 192,
+          "tours": 21,
+          "pax": 198,
           "revenue": 208.0,
           "vendorCost": 100.0,
           "grossMargin": -4.0,
@@ -115754,8 +117878,8 @@ const guideStats26 = [
           "amountBeforeTax": 48.0
         },
         "Tue": {
-          "tours": 30,
-          "pax": 253,
+          "tours": 31,
+          "pax": 261,
           "revenue": 238.0,
           "vendorCost": 180.0,
           "grossMargin": -133.2,
@@ -115766,8 +117890,8 @@ const guideStats26 = [
           "amountBeforeTax": -73.7
         },
         "Thu": {
-          "tours": 20,
-          "pax": 204,
+          "tours": 21,
+          "pax": 210,
           "revenue": 150.0,
           "vendorCost": 80.0,
           "grossMargin": 32.5,
@@ -115778,16 +117902,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Fri": {
-          "tours": 22,
-          "pax": 210,
-          "revenue": 495.0,
-          "vendorCost": 100.0,
-          "grossMargin": -91.25,
-          "tourCost": 214.0,
-          "commissionCost": 148.5,
+          "tours": 23,
+          "pax": 212,
+          "revenue": 693.0,
+          "vendorCost": 200.0,
+          "grossMargin": -162.2,
+          "tourCost": 274.05,
+          "commissionCost": 207.9,
           "processingFee": 0.0,
-          "vatAmount": 123.75,
-          "amountBeforeTax": 32.5
+          "vatAmount": 173.25,
+          "amountBeforeTax": 11.05
         },
         "Sun": {
           "tours": 20,
@@ -115802,8 +117926,8 @@ const guideStats26 = [
           "amountBeforeTax": -20.5
         },
         "Wed": {
-          "tours": 16,
-          "pax": 148,
+          "tours": 17,
+          "pax": 151,
           "revenue": 198.0,
           "vendorCost": 100.0,
           "grossMargin": -73.05,
@@ -115816,8 +117940,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 83,
-          "pax": 768,
+          "tours": 85,
+          "pax": 785,
           "revenue": 190.0,
           "vendorCost": 160.0,
           "grossMargin": -29.5,
@@ -115828,8 +117952,8 @@ const guideStats26 = [
           "amountBeforeTax": 18.0
         },
         "17": {
-          "tours": 25,
-          "pax": 222,
+          "tours": 28,
+          "pax": 239,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -115852,16 +117976,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11": {
-          "tours": 6,
-          "pax": 15,
-          "revenue": 1485.0,
-          "vendorCost": 600.0,
-          "grossMargin": -459.75,
-          "tourCost": 537.9,
-          "commissionCost": 445.5,
+          "tours": 7,
+          "pax": 17,
+          "revenue": 1683.0,
+          "vendorCost": 700.0,
+          "grossMargin": -530.7,
+          "tourCost": 597.95,
+          "commissionCost": 504.9,
           "processingFee": 0.0,
-          "vatAmount": 361.35,
-          "amountBeforeTax": -98.4
+          "vatAmount": 410.85,
+          "amountBeforeTax": -119.85
         },
         "9": {
           "tours": 1,
@@ -115890,16 +118014,16 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 44,
-          "pax": 358,
-          "revenue": 495.0,
-          "vendorCost": 100.0,
-          "grossMargin": -91.25,
-          "tourCost": 214.0,
-          "commissionCost": 148.5,
+          "tours": 50,
+          "pax": 394,
+          "revenue": 693.0,
+          "vendorCost": 200.0,
+          "grossMargin": -162.2,
+          "tourCost": 274.05,
+          "commissionCost": 207.9,
           "processingFee": 0.0,
-          "vatAmount": 123.75,
-          "amountBeforeTax": 32.5
+          "vatAmount": 173.25,
+          "amountBeforeTax": 11.05
         },
         "high": {
           "tours": 111,
@@ -115916,8 +118040,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "5-10": {
-          "tours": 67,
-          "pax": 508,
+          "tours": 70,
+          "pax": 528,
           "revenue": 645.0,
           "vendorCost": 180.0,
           "grossMargin": -58.75,
@@ -115928,20 +118052,20 @@ const guideStats26 = [
           "amountBeforeTax": 102.5
         },
         "1-4": {
-          "tours": 32,
-          "pax": 87,
-          "revenue": 1238.0,
-          "vendorCost": 680.0,
-          "grossMargin": -434.5,
-          "tourCost": 383.9,
-          "commissionCost": 309.0,
+          "tours": 34,
+          "pax": 92,
+          "revenue": 1436.0,
+          "vendorCost": 780.0,
+          "grossMargin": -505.45,
+          "tourCost": 443.95,
+          "commissionCost": 368.4,
           "processingFee": 0.0,
-          "vatAmount": 299.6,
-          "amountBeforeTax": -134.9
+          "vatAmount": 349.1,
+          "amountBeforeTax": -156.35
         },
         "11-20": {
-          "tours": 52,
-          "pax": 679,
+          "tours": 53,
+          "pax": 690,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -116300,6 +118424,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 6,
+          "pax": 36,
+          "revenue": 198.0,
+          "vendorCost": 100.0,
+          "grossMargin": -70.95,
+          "tourCost": 60.05,
+          "commissionCost": 59.4,
+          "processingFee": 0.0,
+          "vatAmount": 49.5,
+          "amountBeforeTax": -21.45
         }
       },
       "byMonth": {
@@ -116376,22 +118512,22 @@ const guideStats26 = [
           "amountBeforeTax": -24.65
         },
         "10": {
-          "tours": 12,
-          "pax": 99,
-          "revenue": 495.0,
-          "vendorCost": 100.0,
-          "grossMargin": -91.25,
-          "tourCost": 214.0,
-          "commissionCost": 148.5,
+          "tours": 18,
+          "pax": 135,
+          "revenue": 693.0,
+          "vendorCost": 200.0,
+          "grossMargin": -162.2,
+          "tourCost": 274.05,
+          "commissionCost": 207.9,
           "processingFee": 0.0,
-          "vatAmount": 123.75,
-          "amountBeforeTax": 32.5
+          "vatAmount": 173.25,
+          "amountBeforeTax": 11.05
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 146,
-          "pax": 1347,
+          "tours": 151,
+          "pax": 1381,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -116402,22 +118538,22 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "CPP": {
-          "tours": 9,
-          "pax": 27,
-          "revenue": 1883.0,
-          "vendorCost": 860.0,
-          "grossMargin": -493.25,
-          "tourCost": 597.9,
-          "commissionCost": 457.5,
+          "tours": 10,
+          "pax": 29,
+          "revenue": 2081.0,
+          "vendorCost": 960.0,
+          "grossMargin": -564.2,
+          "tourCost": 657.95,
+          "commissionCost": 516.9,
           "processingFee": 0.0,
-          "vatAmount": 460.85,
-          "amountBeforeTax": -32.4
+          "vatAmount": 510.35,
+          "amountBeforeTax": -53.85
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 146,
-          "pax": 1347,
+          "tours": 151,
+          "pax": 1381,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -116440,22 +118576,22 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "bank trf": {
-          "tours": 8,
-          "pax": 21,
-          "revenue": 1733.0,
-          "vendorCost": 780.0,
-          "grossMargin": -525.75,
-          "tourCost": 597.9,
-          "commissionCost": 457.5,
+          "tours": 9,
+          "pax": 23,
+          "revenue": 1931.0,
+          "vendorCost": 880.0,
+          "grossMargin": -596.7,
+          "tourCost": 657.95,
+          "commissionCost": 516.9,
           "processingFee": 0.0,
-          "vatAmount": 423.35,
-          "amountBeforeTax": -102.4
+          "vatAmount": 472.85,
+          "amountBeforeTax": -123.85
         }
       },
       "byGuidePaxBand": {
         "6-10": {
-          "tours": 44,
-          "pax": 328,
+          "tours": 47,
+          "pax": 348,
           "revenue": 645.0,
           "vendorCost": 180.0,
           "grossMargin": -58.75,
@@ -116466,20 +118602,20 @@ const guideStats26 = [
           "amountBeforeTax": 102.5
         },
         "1-5": {
-          "tours": 27,
-          "pax": 83,
-          "revenue": 1238.0,
-          "vendorCost": 680.0,
-          "grossMargin": -434.5,
-          "tourCost": 383.9,
-          "commissionCost": 309.0,
+          "tours": 29,
+          "pax": 88,
+          "revenue": 1436.0,
+          "vendorCost": 780.0,
+          "grossMargin": -505.45,
+          "tourCost": 443.95,
+          "commissionCost": 368.4,
           "processingFee": 0.0,
-          "vatAmount": 299.6,
-          "amountBeforeTax": -134.9
+          "vatAmount": 349.1,
+          "amountBeforeTax": -156.35
         },
         "11+": {
-          "tours": 84,
-          "pax": 963,
+          "tours": 85,
+          "pax": 974,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -116492,16 +118628,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 154,
-          "pax": 1368,
-          "revenue": 1733.0,
-          "vendorCost": 780.0,
-          "grossMargin": -525.75,
-          "tourCost": 597.9,
-          "commissionCost": 457.5,
+          "tours": 160,
+          "pax": 1404,
+          "revenue": 1931.0,
+          "vendorCost": 880.0,
+          "grossMargin": -596.7,
+          "tourCost": 657.95,
+          "commissionCost": 516.9,
           "processingFee": 0.0,
-          "vatAmount": 423.35,
-          "amountBeforeTax": -102.4
+          "vatAmount": 472.85,
+          "amountBeforeTax": -123.85
         },
         "per group": {
           "tours": 1,
@@ -116530,16 +118666,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "food": {
-          "tours": 7,
-          "pax": 19,
-          "revenue": 1693.0,
-          "vendorCost": 700.0,
-          "grossMargin": -463.75,
-          "tourCost": 597.9,
-          "commissionCost": 445.5,
+          "tours": 8,
+          "pax": 21,
+          "revenue": 1891.0,
+          "vendorCost": 800.0,
+          "grossMargin": -534.7,
+          "tourCost": 657.95,
+          "commissionCost": 504.9,
           "processingFee": 0.0,
-          "vatAmount": 413.35,
-          "amountBeforeTax": -50.4
+          "vatAmount": 462.85,
+          "amountBeforeTax": -71.85
         },
         "best": {
           "tours": 1,
@@ -116562,17 +118698,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 73,
-          "pax": 808
+          "tours": 77,
+          "pax": 856
         },
         "paid": {
-          "tours": 9,
-          "pax": 51
+          "tours": 10,
+          "pax": 71
         },
         "byType": {
           "old": {
-            "tours": 8,
-            "pax": 45
+            "tours": 9,
+            "pax": 65
           },
           "food": {
             "tours": 1,
@@ -116649,12 +118785,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 43
+              "tours": 8,
+              "pax": 91
             },
             "paid": {
-              "tours": 2,
-              "pax": 8
+              "tours": 3,
+              "pax": 28
             }
           }
         },
@@ -117438,6 +119574,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 20
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -117473,8 +119659,8 @@ const guideStats26 = [
           },
           "10": {
             "old": {
-              "tours": 2,
-              "pax": 8
+              "tours": 3,
+              "pax": 28
             }
           }
         },
@@ -117525,6 +119711,12 @@ const guideStats26 = [
             "old": {
               "tours": 2,
               "pax": 8
+            }
+          },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 20
             }
           }
         }
@@ -117561,17 +119753,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 73,
-          "pax": 808
+          "tours": 77,
+          "pax": 856
         },
         "paid": {
-          "tours": 9,
-          "pax": 51
+          "tours": 10,
+          "pax": 71
         },
         "byType": {
           "old": {
-            "tours": 8,
-            "pax": 45
+            "tours": 9,
+            "pax": 65
           },
           "food": {
             "tours": 1,
@@ -117648,12 +119840,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 43
+              "tours": 8,
+              "pax": 91
             },
             "paid": {
-              "tours": 2,
-              "pax": 8
+              "tours": 3,
+              "pax": 28
             }
           }
         },
@@ -118437,6 +120629,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 17
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 20
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 9
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -118472,8 +120714,8 @@ const guideStats26 = [
           },
           "10": {
             "old": {
-              "tours": 2,
-              "pax": 8
+              "tours": 3,
+              "pax": 28
             }
           }
         },
@@ -118525,31 +120767,37 @@ const guideStats26 = [
               "tours": 2,
               "pax": 8
             }
+          },
+          "10-15": {
+            "old": {
+              "tours": 1,
+              "pax": 20
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 1744.0,
-      "vendorCost": 740.0,
-      "grossMargin": 209.8,
+      "revenue": 1944.0,
+      "vendorCost": 820.0,
+      "grossMargin": 279.8,
       "tourCost": 180.0,
       "commissionCost": 178.2,
       "processingFee": 0.0,
-      "vatAmount": 436.0,
-      "amountBeforeTax": 645.8,
+      "vatAmount": 486.0,
+      "amountBeforeTax": 765.8,
       "byChannel": {
         "web": {
-          "tours": 75,
-          "pax": 812,
-          "revenue": 275.0,
-          "vendorCost": 160.0,
-          "grossMargin": 46.25,
+          "tours": 80,
+          "pax": 880,
+          "revenue": 475.0,
+          "vendorCost": 240.0,
+          "grossMargin": 116.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 68.75,
-          "amountBeforeTax": 115.0
+          "vatAmount": 118.75,
+          "amountBeforeTax": 235.0
         },
         "b2b": {
           "tours": 6,
@@ -118578,16 +120826,16 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 75,
-          "pax": 812,
-          "revenue": 275.0,
-          "vendorCost": 160.0,
-          "grossMargin": 46.25,
+          "tours": 80,
+          "pax": 880,
+          "revenue": 475.0,
+          "vendorCost": 240.0,
+          "grossMargin": 116.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 68.75,
-          "amountBeforeTax": 115.0
+          "vatAmount": 118.75,
+          "amountBeforeTax": 235.0
         },
         "Roundabout": {
           "tours": 5,
@@ -118628,8 +120876,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Fri": {
-          "tours": 13,
-          "pax": 146,
+          "tours": 14,
+          "pax": 159,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -118640,8 +120888,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Tue": {
-          "tours": 8,
-          "pax": 83,
+          "tours": 9,
+          "pax": 92,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -118652,16 +120900,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Thu": {
-          "tours": 13,
-          "pax": 120,
-          "revenue": 400.0,
-          "vendorCost": 240.0,
-          "grossMargin": 60.0,
+          "tours": 14,
+          "pax": 140,
+          "revenue": 600.0,
+          "vendorCost": 320.0,
+          "grossMargin": 130.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 100.0,
-          "amountBeforeTax": 160.0
+          "vatAmount": 150.0,
+          "amountBeforeTax": 280.0
         },
         "Sat": {
           "tours": 11,
@@ -118676,8 +120924,8 @@ const guideStats26 = [
           "amountBeforeTax": 180.8
         },
         "Mon": {
-          "tours": 15,
-          "pax": 169,
+          "tours": 16,
+          "pax": 186,
           "revenue": 500.0,
           "vendorCost": 240.0,
           "grossMargin": 135.0,
@@ -118688,8 +120936,8 @@ const guideStats26 = [
           "amountBeforeTax": 260.0
         },
         "Sun": {
-          "tours": 8,
-          "pax": 82,
+          "tours": 9,
+          "pax": 91,
           "revenue": 125.0,
           "vendorCost": 80.0,
           "grossMargin": 13.75,
@@ -118714,8 +120962,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 57,
-          "pax": 604,
+          "tours": 61,
+          "pax": 652,
           "revenue": 250.0,
           "vendorCost": 160.0,
           "grossMargin": 27.5,
@@ -118784,20 +121032,32 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 62.5,
           "amountBeforeTax": 170.0
+        },
+        "19": {
+          "tours": 1,
+          "pax": 20,
+          "revenue": 200.0,
+          "vendorCost": 80.0,
+          "grossMargin": 70.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 50.0,
+          "amountBeforeTax": 120.0
         }
       },
       "bySeason": {
         "shoulder": {
-          "tours": 22,
-          "pax": 167,
-          "revenue": 650.0,
-          "vendorCost": 400.0,
-          "grossMargin": 87.5,
+          "tours": 27,
+          "pax": 235,
+          "revenue": 850.0,
+          "vendorCost": 480.0,
+          "grossMargin": 157.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 162.5,
-          "amountBeforeTax": 250.0
+          "vatAmount": 212.5,
+          "amountBeforeTax": 370.0
         },
         "high": {
           "tours": 60,
@@ -118814,8 +121074,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "5-10": {
-          "tours": 31,
-          "pax": 239,
+          "tours": 33,
+          "pax": 257,
           "revenue": 594.0,
           "vendorCost": 100.0,
           "grossMargin": -12.7,
@@ -118838,16 +121098,16 @@ const guideStats26 = [
           "amountBeforeTax": 340.0
         },
         "11-20": {
-          "tours": 35,
-          "pax": 507,
-          "revenue": 0.0,
-          "vendorCost": 0.0,
-          "grossMargin": 0.0,
+          "tours": 38,
+          "pax": 557,
+          "revenue": 200.0,
+          "vendorCost": 80.0,
+          "grossMargin": 70.0,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 0.0,
-          "amountBeforeTax": 0.0
+          "vatAmount": 50.0,
+          "amountBeforeTax": 120.0
         },
         "21-30": {
           "tours": 3,
@@ -119162,6 +121422,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 68.75,
           "amountBeforeTax": 115.0
+        },
+        "42": {
+          "tours": 5,
+          "pax": 68,
+          "revenue": 200.0,
+          "vendorCost": 80.0,
+          "grossMargin": 70.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 50.0,
+          "amountBeforeTax": 120.0
         }
       },
       "byMonth": {
@@ -119238,22 +121510,22 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "10": {
-          "tours": 6,
-          "pax": 47,
-          "revenue": 275.0,
-          "vendorCost": 160.0,
-          "grossMargin": 46.25,
+          "tours": 11,
+          "pax": 115,
+          "revenue": 475.0,
+          "vendorCost": 240.0,
+          "grossMargin": 116.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 68.75,
-          "amountBeforeTax": 115.0
+          "vatAmount": 118.75,
+          "amountBeforeTax": 235.0
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 73,
-          "pax": 808,
+          "tours": 77,
+          "pax": 856,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -119264,22 +121536,22 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "CPP": {
-          "tours": 9,
-          "pax": 47,
-          "revenue": 1744.0,
-          "vendorCost": 740.0,
-          "grossMargin": 209.8,
+          "tours": 10,
+          "pax": 67,
+          "revenue": 1944.0,
+          "vendorCost": 820.0,
+          "grossMargin": 279.8,
           "tourCost": 180.0,
           "commissionCost": 178.2,
           "processingFee": 0.0,
-          "vatAmount": 436.0,
-          "amountBeforeTax": 645.8
+          "vatAmount": 486.0,
+          "amountBeforeTax": 765.8
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 73,
-          "pax": 808,
+          "tours": 77,
+          "pax": 856,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -119290,16 +121562,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "card": {
-          "tours": 6,
-          "pax": 37,
-          "revenue": 875.0,
-          "vendorCost": 480.0,
-          "grossMargin": 176.25,
+          "tours": 7,
+          "pax": 57,
+          "revenue": 1075.0,
+          "vendorCost": 560.0,
+          "grossMargin": 246.25,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 218.75,
-          "amountBeforeTax": 395.0
+          "vatAmount": 268.75,
+          "amountBeforeTax": 515.0
         },
         "bank trf": {
           "tours": 3,
@@ -119316,8 +121588,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "6-10": {
-          "tours": 25,
-          "pax": 201,
+          "tours": 27,
+          "pax": 219,
           "revenue": 594.0,
           "vendorCost": 100.0,
           "grossMargin": -12.7,
@@ -119340,22 +121612,22 @@ const guideStats26 = [
           "amountBeforeTax": 340.0
         },
         "11+": {
-          "tours": 40,
-          "pax": 596,
-          "revenue": 250.0,
-          "vendorCost": 80.0,
-          "grossMargin": 107.5,
+          "tours": 43,
+          "pax": 646,
+          "revenue": 450.0,
+          "vendorCost": 160.0,
+          "grossMargin": 177.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 62.5,
-          "amountBeforeTax": 170.0
+          "vatAmount": 112.5,
+          "amountBeforeTax": 290.0
         }
       },
       "byPriceType": {
         "per pax": {
-          "tours": 74,
-          "pax": 814,
+          "tours": 78,
+          "pax": 862,
           "revenue": 594.0,
           "vendorCost": 100.0,
           "grossMargin": -12.7,
@@ -119366,30 +121638,30 @@ const guideStats26 = [
           "amountBeforeTax": 135.8
         },
         "per group": {
-          "tours": 8,
-          "pax": 41,
-          "revenue": 1150.0,
-          "vendorCost": 640.0,
-          "grossMargin": 222.5,
+          "tours": 9,
+          "pax": 61,
+          "revenue": 1350.0,
+          "vendorCost": 720.0,
+          "grossMargin": 292.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 287.5,
-          "amountBeforeTax": 510.0
+          "vatAmount": 337.5,
+          "amountBeforeTax": 630.0
         }
       },
       "byTourType": {
         "old": {
-          "tours": 8,
-          "pax": 41,
-          "revenue": 1150.0,
-          "vendorCost": 640.0,
-          "grossMargin": 222.5,
+          "tours": 9,
+          "pax": 61,
+          "revenue": 1350.0,
+          "vendorCost": 720.0,
+          "grossMargin": 292.5,
           "tourCost": 0.0,
           "commissionCost": 0.0,
           "processingFee": 0.0,
-          "vatAmount": 287.5,
-          "amountBeforeTax": 510.0
+          "vatAmount": 337.5,
+          "amountBeforeTax": 630.0
         },
         "food": {
           "tours": 1,
@@ -119469,8 +121741,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 202,
-          "pax": 4088
+          "tours": 207,
+          "pax": 4176
         },
         "paid": {
           "tours": 3,
@@ -119552,8 +121824,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 9,
-              "pax": 169
+              "tours": 14,
+              "pax": 257
             },
             "paid": {
               "tours": 2,
@@ -120931,6 +123203,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 23
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 2,
+              "pax": 37
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -120985,8 +123297,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 202,
-          "pax": 4088
+          "tours": 207,
+          "pax": 4176
         },
         "paid": {
           "tours": 4,
@@ -121068,8 +123380,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 9,
-              "pax": 169
+              "tours": 14,
+              "pax": 257
             },
             "paid": {
               "tours": 2,
@@ -122447,6 +124759,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 20
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 23
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 2,
+              "pax": 37
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 8
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -122508,8 +124860,8 @@ const guideStats26 = [
       "amountBeforeTax": 455.0,
       "byChannel": {
         "web": {
-          "tours": 203,
-          "pax": 4122,
+          "tours": 208,
+          "pax": 4210,
           "revenue": 350.0,
           "vendorCost": 80.0,
           "grossMargin": 182.5,
@@ -122546,8 +124898,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 203,
-          "pax": 4122,
+          "tours": 208,
+          "pax": 4210,
           "revenue": 350.0,
           "vendorCost": 80.0,
           "grossMargin": 182.5,
@@ -122584,8 +124936,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Wed": {
-          "tours": 30,
-          "pax": 600,
+          "tours": 31,
+          "pax": 623,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122620,8 +124972,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Mon": {
-          "tours": 37,
-          "pax": 704,
+          "tours": 39,
+          "pax": 732,
           "revenue": 350.0,
           "vendorCost": 80.0,
           "grossMargin": 182.5,
@@ -122644,8 +124996,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Sat": {
-          "tours": 26,
-          "pax": 540,
+          "tours": 28,
+          "pax": 577,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122670,8 +125022,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 73,
-          "pax": 1352,
+          "tours": 74,
+          "pax": 1373,
           "revenue": 325.0,
           "vendorCost": 160.0,
           "grossMargin": 33.75,
@@ -122682,8 +125034,8 @@ const guideStats26 = [
           "amountBeforeTax": 115.0
         },
         "17": {
-          "tours": 27,
-          "pax": 496,
+          "tours": 29,
+          "pax": 535,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122694,8 +125046,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "11": {
-          "tours": 46,
-          "pax": 955,
+          "tours": 48,
+          "pax": 983,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122768,8 +125120,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 60,
-          "pax": 912,
+          "tours": 65,
+          "pax": 1000,
           "revenue": 400.0,
           "vendorCost": 160.0,
           "grossMargin": 40.0,
@@ -122794,8 +125146,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 93,
-          "pax": 2309,
+          "tours": 95,
+          "pax": 2353,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122818,8 +125170,8 @@ const guideStats26 = [
           "amountBeforeTax": 270.0
         },
         "11-20": {
-          "tours": 71,
-          "pax": 1180,
+          "tours": 73,
+          "pax": 1216,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -122830,8 +125182,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "5-10": {
-          "tours": 22,
-          "pax": 170,
+          "tours": 23,
+          "pax": 178,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -123190,6 +125542,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 4,
+          "pax": 80,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 8,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -123266,8 +125642,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 11,
-          "pax": 179,
+          "tours": 16,
+          "pax": 267,
           "revenue": 400.0,
           "vendorCost": 160.0,
           "grossMargin": 40.0,
@@ -123280,8 +125656,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 202,
-          "pax": 4088,
+          "tours": 207,
+          "pax": 4176,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -123306,8 +125682,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 202,
-          "pax": 4088,
+          "tours": 207,
+          "pax": 4176,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -123344,8 +125720,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 186,
-          "pax": 4000,
+          "tours": 190,
+          "pax": 4080,
           "revenue": 350.0,
           "vendorCost": 80.0,
           "grossMargin": 182.5,
@@ -123356,8 +125732,8 @@ const guideStats26 = [
           "amountBeforeTax": 270.0
         },
         "6-10": {
-          "tours": 15,
-          "pax": 119,
+          "tours": 16,
+          "pax": 127,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -123382,8 +125758,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 202,
-          "pax": 4088,
+          "tours": 207,
+          "pax": 4176,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -123584,17 +125960,17 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 17,
+          "tours": 19,
           "pax": 292
         },
         "paid": {
-          "tours": 28,
-          "pax": 183
+          "tours": 29,
+          "pax": 186
         },
         "byType": {
           "old": {
-            "tours": 28,
-            "pax": 183
+            "tours": 29,
+            "pax": 186
           }
         },
         "byMonth": {
@@ -123673,6 +126049,17 @@ const guideStats26 = [
             "paid": {
               "tours": 5,
               "pax": 20
+            }
+          },
+          "10": {
+            "name": "Lis",
+            "free": {
+              "tours": 2,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 3
             }
           }
         },
@@ -124046,6 +126433,36 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 3
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -124083,6 +126500,12 @@ const guideStats26 = [
             "old": {
               "tours": 5,
               "pax": 20
+            }
+          },
+          "10": {
+            "old": {
+              "tours": 1,
+              "pax": 3
             }
           }
         },
@@ -124236,6 +126659,12 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-18": {
+            "old": {
+              "tours": 1,
+              "pax": 3
+            }
           }
         }
       },
@@ -124256,17 +126685,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 17,
+          "tours": 19,
           "pax": 292
         },
         "paid": {
-          "tours": 32,
-          "pax": 193
+          "tours": 33,
+          "pax": 196
         },
         "byType": {
           "old": {
-            "tours": 32,
-            "pax": 193
+            "tours": 33,
+            "pax": 196
           }
         },
         "byMonth": {
@@ -124350,12 +126779,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 0,
+              "tours": 2,
               "pax": 0
             },
             "paid": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 5
             }
           }
         },
@@ -124769,6 +127198,36 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 3
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -124792,8 +127251,8 @@ const guideStats26 = [
           },
           "10": {
             "old": {
-              "tours": 1,
-              "pax": 2
+              "tours": 2,
+              "pax": 5
             }
           },
           "3": {
@@ -124989,34 +127448,40 @@ const guideStats26 = [
               "tours": 1,
               "pax": 2
             }
+          },
+          "10-18": {
+            "old": {
+              "tours": 1,
+              "pax": 3
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 6050.0,
-      "vendorCost": 2560.0,
-      "grossMargin": 565.0,
+      "revenue": 6250.0,
+      "vendorCost": 2640.0,
+      "grossMargin": 585.0,
       "tourCost": 0.0,
-      "commissionCost": 1412.5,
+      "commissionCost": 1462.5,
       "processingFee": 0.0,
-      "vatAmount": 1512.5,
-      "amountBeforeTax": 2077.5,
+      "vatAmount": 1562.5,
+      "amountBeforeTax": 2147.5,
       "byChannel": {
         "OTA": {
-          "tours": 29,
-          "pax": 187,
-          "revenue": 5650.0,
-          "vendorCost": 2320.0,
-          "grossMargin": 505.0,
+          "tours": 30,
+          "pax": 190,
+          "revenue": 5850.0,
+          "vendorCost": 2400.0,
+          "grossMargin": 525.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1412.5,
-          "amountBeforeTax": 1917.5
+          "vatAmount": 1462.5,
+          "amountBeforeTax": 1987.5
         },
         "web": {
-          "tours": 18,
+          "tours": 20,
           "pax": 294,
           "revenue": 150.0,
           "vendorCost": 80.0,
@@ -125042,19 +127507,19 @@ const guideStats26 = [
       },
       "bySource": {
         "Civitatis": {
-          "tours": 29,
-          "pax": 187,
-          "revenue": 5650.0,
-          "vendorCost": 2320.0,
-          "grossMargin": 505.0,
+          "tours": 30,
+          "pax": 190,
+          "revenue": 5850.0,
+          "vendorCost": 2400.0,
+          "grossMargin": 525.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1412.5,
-          "amountBeforeTax": 1917.5
+          "vatAmount": 1462.5,
+          "amountBeforeTax": 1987.5
         },
         "FST": {
-          "tours": 18,
+          "tours": 20,
           "pax": 294,
           "revenue": 150.0,
           "vendorCost": 80.0,
@@ -125092,7 +127557,7 @@ const guideStats26 = [
           "amountBeforeTax": 700.0
         },
         "Fri": {
-          "tours": 6,
+          "tours": 7,
           "pax": 60,
           "revenue": 800.0,
           "vendorCost": 320.0,
@@ -125104,7 +127569,7 @@ const guideStats26 = [
           "amountBeforeTax": 280.0
         },
         "Mon": {
-          "tours": 4,
+          "tours": 5,
           "pax": 28,
           "revenue": 525.0,
           "vendorCost": 240.0,
@@ -125128,16 +127593,16 @@ const guideStats26 = [
           "amountBeforeTax": 128.75
         },
         "Sun": {
-          "tours": 7,
-          "pax": 41,
-          "revenue": 725.0,
-          "vendorCost": 320.0,
-          "grossMargin": 73.75,
+          "tours": 8,
+          "pax": 44,
+          "revenue": 925.0,
+          "vendorCost": 400.0,
+          "grossMargin": 93.75,
           "tourCost": 0.0,
-          "commissionCost": 150.0,
+          "commissionCost": 200.0,
           "processingFee": 0.0,
-          "vatAmount": 181.25,
-          "amountBeforeTax": 255.0
+          "vatAmount": 231.25,
+          "amountBeforeTax": 325.0
         },
         "Thu": {
           "tours": 6,
@@ -125166,19 +127631,19 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 13,
-          "pax": 96,
-          "revenue": 1575.0,
-          "vendorCost": 720.0,
-          "grossMargin": 130.0,
+          "tours": 14,
+          "pax": 99,
+          "revenue": 1775.0,
+          "vendorCost": 800.0,
+          "grossMargin": 150.0,
           "tourCost": 0.0,
-          "commissionCost": 331.25,
+          "commissionCost": 381.25,
           "processingFee": 0.0,
-          "vatAmount": 393.75,
-          "amountBeforeTax": 523.75
+          "vatAmount": 443.75,
+          "amountBeforeTax": 593.75
         },
         "17": {
-          "tours": 10,
+          "tours": 12,
           "pax": 127,
           "revenue": 400.0,
           "vendorCost": 160.0,
@@ -125288,16 +127753,16 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "shoulder": {
-          "tours": 16,
-          "pax": 213,
-          "revenue": 325.0,
-          "vendorCost": 160.0,
-          "grossMargin": 2.5,
+          "tours": 19,
+          "pax": 216,
+          "revenue": 525.0,
+          "vendorCost": 240.0,
+          "grossMargin": 22.5,
           "tourCost": 0.0,
-          "commissionCost": 81.25,
+          "commissionCost": 131.25,
           "processingFee": 0.0,
-          "vatAmount": 81.25,
-          "amountBeforeTax": 83.75
+          "vatAmount": 131.25,
+          "amountBeforeTax": 153.75
         },
         "high": {
           "tours": 32,
@@ -125314,16 +127779,16 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "1-4": {
-          "tours": 17,
-          "pax": 53,
-          "revenue": 2650.0,
-          "vendorCost": 1200.0,
-          "grossMargin": 225.0,
+          "tours": 18,
+          "pax": 56,
+          "revenue": 2850.0,
+          "vendorCost": 1280.0,
+          "grossMargin": 245.0,
           "tourCost": 0.0,
-          "commissionCost": 562.5,
+          "commissionCost": 612.5,
           "processingFee": 0.0,
-          "vatAmount": 662.5,
-          "amountBeforeTax": 887.5
+          "vatAmount": 712.5,
+          "amountBeforeTax": 957.5
         },
         "21-30": {
           "tours": 4,
@@ -125626,6 +128091,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 31.25,
           "amountBeforeTax": 13.75
+        },
+        "42": {
+          "tours": 2,
+          "pax": 3,
+          "revenue": 200.0,
+          "vendorCost": 80.0,
+          "grossMargin": 20.0,
+          "tourCost": 0.0,
+          "commissionCost": 50.0,
+          "processingFee": 0.0,
+          "vatAmount": 50.0,
+          "amountBeforeTax": 70.0
+        },
+        "43": {
+          "tours": 1,
+          "pax": 0,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -125714,33 +128203,33 @@ const guideStats26 = [
           "amountBeforeTax": 395.0
         },
         "10": {
-          "tours": 1,
-          "pax": 2,
-          "revenue": 125.0,
-          "vendorCost": 80.0,
-          "grossMargin": -17.5,
+          "tours": 4,
+          "pax": 5,
+          "revenue": 325.0,
+          "vendorCost": 160.0,
+          "grossMargin": 2.5,
           "tourCost": 0.0,
-          "commissionCost": 31.25,
+          "commissionCost": 81.25,
           "processingFee": 0.0,
-          "vatAmount": 31.25,
-          "amountBeforeTax": 13.75
+          "vatAmount": 81.25,
+          "amountBeforeTax": 83.75
         }
       },
       "byBillingMethod": {
         "CPP": {
-          "tours": 32,
-          "pax": 193,
-          "revenue": 6050.0,
-          "vendorCost": 2560.0,
-          "grossMargin": 565.0,
+          "tours": 33,
+          "pax": 196,
+          "revenue": 6250.0,
+          "vendorCost": 2640.0,
+          "grossMargin": 585.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1512.5,
-          "amountBeforeTax": 2077.5
+          "vatAmount": 1562.5,
+          "amountBeforeTax": 2147.5
         },
         "POS": {
-          "tours": 17,
+          "tours": 19,
           "pax": 292,
           "revenue": 0.0,
           "vendorCost": 0.0,
@@ -125754,19 +128243,19 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "bank trf": {
-          "tours": 29,
-          "pax": 187,
-          "revenue": 5650.0,
-          "vendorCost": 2320.0,
-          "grossMargin": 505.0,
+          "tours": 30,
+          "pax": 190,
+          "revenue": 5850.0,
+          "vendorCost": 2400.0,
+          "grossMargin": 525.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1412.5,
-          "amountBeforeTax": 1917.5
+          "vatAmount": 1462.5,
+          "amountBeforeTax": 1987.5
         },
         "cash": {
-          "tours": 17,
+          "tours": 19,
           "pax": 292,
           "revenue": 0.0,
           "vendorCost": 0.0,
@@ -125792,16 +128281,16 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 19,
-          "pax": 64,
-          "revenue": 3050.0,
-          "vendorCost": 1360.0,
-          "grossMargin": 265.0,
+          "tours": 22,
+          "pax": 67,
+          "revenue": 3250.0,
+          "vendorCost": 1440.0,
+          "grossMargin": 285.0,
           "tourCost": 0.0,
-          "commissionCost": 662.5,
+          "commissionCost": 712.5,
           "processingFee": 0.0,
-          "vatAmount": 762.5,
-          "amountBeforeTax": 1027.5
+          "vatAmount": 812.5,
+          "amountBeforeTax": 1097.5
         },
         "11+": {
           "tours": 22,
@@ -125830,19 +128319,19 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per group": {
-          "tours": 32,
-          "pax": 193,
-          "revenue": 6050.0,
-          "vendorCost": 2560.0,
-          "grossMargin": 565.0,
+          "tours": 33,
+          "pax": 196,
+          "revenue": 6250.0,
+          "vendorCost": 2640.0,
+          "grossMargin": 585.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1512.5,
-          "amountBeforeTax": 2077.5
+          "vatAmount": 1562.5,
+          "amountBeforeTax": 2147.5
         },
         "per pax": {
-          "tours": 17,
+          "tours": 19,
           "pax": 292,
           "revenue": 0.0,
           "vendorCost": 0.0,
@@ -125856,16 +128345,16 @@ const guideStats26 = [
       },
       "byTourType": {
         "old": {
-          "tours": 32,
-          "pax": 193,
-          "revenue": 6050.0,
-          "vendorCost": 2560.0,
-          "grossMargin": 565.0,
+          "tours": 33,
+          "pax": 196,
+          "revenue": 6250.0,
+          "vendorCost": 2640.0,
+          "grossMargin": 585.0,
           "tourCost": 0.0,
-          "commissionCost": 1412.5,
+          "commissionCost": 1462.5,
           "processingFee": 0.0,
-          "vatAmount": 1512.5,
-          "amountBeforeTax": 2077.5
+          "vatAmount": 1562.5,
+          "amountBeforeTax": 2147.5
         }
       }
     }
@@ -126167,17 +128656,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 97,
-          "pax": 1087
+          "tours": 99,
+          "pax": 1104
         },
         "paid": {
-          "tours": 32,
-          "pax": 173
+          "tours": 35,
+          "pax": 186
         },
         "byType": {
           "food": {
-            "tours": 14,
-            "pax": 45
+            "tours": 17,
+            "pax": 58
           },
           "best": {
             "tours": 14,
@@ -126269,12 +128758,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 80
+              "tours": 8,
+              "pax": 97
             },
             "paid": {
-              "tours": 2,
-              "pax": 7
+              "tours": 5,
+              "pax": 20
             }
           }
         },
@@ -127538,6 +130027,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 7
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 7
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -127607,8 +130146,8 @@ const guideStats26 = [
           },
           "10": {
             "food": {
-              "tours": 2,
-              "pax": 7
+              "tours": 5,
+              "pax": 20
             }
           }
         },
@@ -127801,6 +130340,24 @@ const guideStats26 = [
             "food": {
               "tours": 1,
               "pax": 4
+            }
+          },
+          "10-13": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "food": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "food": {
+              "tours": 1,
+              "pax": 7
             }
           }
         }
@@ -127837,17 +130394,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 97,
-          "pax": 1087
+          "tours": 99,
+          "pax": 1104
         },
         "paid": {
-          "tours": 32,
-          "pax": 173
+          "tours": 35,
+          "pax": 186
         },
         "byType": {
           "food": {
-            "tours": 14,
-            "pax": 45
+            "tours": 17,
+            "pax": 58
           },
           "best": {
             "tours": 14,
@@ -127939,12 +130496,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 80
+              "tours": 8,
+              "pax": 97
             },
             "paid": {
-              "tours": 2,
-              "pax": 7
+              "tours": 5,
+              "pax": 20
             }
           }
         },
@@ -129208,6 +131765,56 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 7
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 7
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-19": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -129277,8 +131884,8 @@ const guideStats26 = [
           },
           "10": {
             "food": {
-              "tours": 2,
-              "pax": 7
+              "tours": 5,
+              "pax": 20
             }
           }
         },
@@ -129472,23 +132079,41 @@ const guideStats26 = [
               "tours": 1,
               "pax": 4
             }
+          },
+          "10-13": {
+            "food": {
+              "tours": 1,
+              "pax": 2
+            }
+          },
+          "10-15": {
+            "food": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-16": {
+            "food": {
+              "tours": 1,
+              "pax": 7
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 5651.0,
-      "vendorCost": 2515.0,
-      "grossMargin": -992.13,
-      "tourCost": 1709.6,
-      "commissionCost": 1136.48,
+      "revenue": 6808.0,
+      "vendorCost": 2755.0,
+      "grossMargin": -1050.99,
+      "tourCost": 2130.1,
+      "commissionCost": 1460.44,
       "processingFee": 0.0,
-      "vatAmount": 1282.05,
-      "amountBeforeTax": 289.92,
+      "vatAmount": 1513.45,
+      "amountBeforeTax": 462.46,
       "byChannel": {
         "web": {
-          "tours": 101,
-          "pax": 1157,
+          "tours": 103,
+          "pax": 1174,
           "revenue": 1006.0,
           "vendorCost": 320.0,
           "grossMargin": 300.0,
@@ -129499,16 +132124,16 @@ const guideStats26 = [
           "amountBeforeTax": 551.5
         },
         "OTA": {
-          "tours": 26,
-          "pax": 86,
-          "revenue": 4342.0,
-          "vendorCost": 2035.0,
-          "grossMargin": -1289.98,
-          "tourCost": 1505.7,
-          "commissionCost": 1136.48,
+          "tours": 29,
+          "pax": 99,
+          "revenue": 5499.0,
+          "vendorCost": 2275.0,
+          "grossMargin": -1348.84,
+          "tourCost": 1926.2,
+          "commissionCost": 1460.44,
           "processingFee": 0.0,
-          "vatAmount": 954.8,
-          "amountBeforeTax": -335.18
+          "vatAmount": 1186.2,
+          "amountBeforeTax": -162.64
         },
         "b2b": {
           "tours": 2,
@@ -129525,8 +132150,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 100,
-          "pax": 1137,
+          "tours": 102,
+          "pax": 1154,
           "revenue": 806.0,
           "vendorCost": 240.0,
           "grossMargin": 230.0,
@@ -129537,16 +132162,16 @@ const guideStats26 = [
           "amountBeforeTax": 431.5
         },
         "Viator": {
-          "tours": 11,
-          "pax": 29,
-          "revenue": 1891.0,
-          "vendorCost": 835.0,
-          "grossMargin": -600.78,
-          "tourCost": 805.1,
-          "commissionCost": 473.48,
+          "tours": 14,
+          "pax": 42,
+          "revenue": 3048.0,
+          "vendorCost": 1075.0,
+          "grossMargin": -659.64,
+          "tourCost": 1225.6,
+          "commissionCost": 797.44,
           "processingFee": 0.0,
-          "vatAmount": 378.2,
-          "amountBeforeTax": -222.58
+          "vatAmount": 609.6,
+          "amountBeforeTax": -50.04
         },
         "Royal Tours Croatia": {
           "tours": 1,
@@ -129623,8 +132248,8 @@ const guideStats26 = [
           "amountBeforeTax": 167.54
         },
         "Mon": {
-          "tours": 17,
-          "pax": 138,
+          "tours": 18,
+          "pax": 148,
           "revenue": 485.0,
           "vendorCost": 320.0,
           "grossMargin": -285.82,
@@ -129635,20 +132260,20 @@ const guideStats26 = [
           "amountBeforeTax": -171.02
         },
         "Tue": {
-          "tours": 22,
-          "pax": 231,
-          "revenue": 443.0,
-          "vendorCost": 275.0,
-          "grossMargin": -95.69,
-          "tourCost": 70.0,
-          "commissionCost": 91.84,
+          "tours": 23,
+          "pax": 233,
+          "revenue": 621.0,
+          "vendorCost": 355.0,
+          "grossMargin": -157.13,
+          "tourCost": 144.0,
+          "commissionCost": 141.68,
           "processingFee": 0.0,
-          "vatAmount": 101.85,
-          "amountBeforeTax": 6.16
+          "vatAmount": 137.45,
+          "amountBeforeTax": -19.68
         },
         "Sun": {
-          "tours": 17,
-          "pax": 220,
+          "tours": 18,
+          "pax": 227,
           "revenue": 490.0,
           "vendorCost": 240.0,
           "grossMargin": 129.5,
@@ -129659,28 +132284,28 @@ const guideStats26 = [
           "amountBeforeTax": 250.0
         },
         "Thu": {
-          "tours": 19,
-          "pax": 173,
-          "revenue": 298.0,
-          "vendorCost": 240.0,
-          "grossMargin": -93.9,
-          "tourCost": 69.4,
-          "commissionCost": 12.0,
+          "tours": 20,
+          "pax": 177,
+          "revenue": 654.0,
+          "vendorCost": 320.0,
+          "grossMargin": -110.58,
+          "tourCost": 191.2,
+          "commissionCost": 111.68,
           "processingFee": 0.0,
-          "vatAmount": 70.5,
-          "amountBeforeTax": -23.4
+          "vatAmount": 141.7,
+          "amountBeforeTax": 31.12
         },
         "Fri": {
-          "tours": 21,
-          "pax": 211,
-          "revenue": 1715.0,
-          "vendorCost": 640.0,
-          "grossMargin": -166.58,
-          "tourCost": 583.5,
-          "commissionCost": 278.28,
+          "tours": 22,
+          "pax": 218,
+          "revenue": 2338.0,
+          "vendorCost": 720.0,
+          "grossMargin": -147.32,
+          "tourCost": 808.2,
+          "commissionCost": 452.72,
           "processingFee": 0.0,
-          "vatAmount": 379.8,
-          "amountBeforeTax": 213.22
+          "vatAmount": 504.4,
+          "amountBeforeTax": 357.08
         },
         "Wed": {
           "tours": 15,
@@ -129697,20 +132322,20 @@ const guideStats26 = [
       },
       "byTime": {
         "11": {
-          "tours": 12,
-          "pax": 40,
-          "revenue": 3026.0,
-          "vendorCost": 800.0,
-          "grossMargin": -504.8,
-          "tourCost": 1360.2,
-          "commissionCost": 712.0,
+          "tours": 15,
+          "pax": 53,
+          "revenue": 4183.0,
+          "vendorCost": 1040.0,
+          "grossMargin": -563.66,
+          "tourCost": 1780.7,
+          "commissionCost": 1035.96,
           "processingFee": 0.0,
-          "vatAmount": 658.6,
-          "amountBeforeTax": 153.8
+          "vatAmount": 890.0,
+          "amountBeforeTax": 326.34
         },
         "10": {
-          "tours": 109,
-          "pax": 1110,
+          "tours": 111,
+          "pax": 1127,
           "revenue": 1757.0,
           "vendorCost": 1315.0,
           "grossMargin": -670.93,
@@ -129807,16 +132432,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "shoulder": {
-          "tours": 46,
-          "pax": 386,
-          "revenue": 2121.0,
-          "vendorCost": 755.0,
-          "grossMargin": -369.36,
-          "tourCost": 793.2,
-          "commissionCost": 474.76,
+          "tours": 51,
+          "pax": 416,
+          "revenue": 3278.0,
+          "vendorCost": 995.0,
+          "grossMargin": -428.22,
+          "tourCost": 1213.7,
+          "commissionCost": 798.72,
           "processingFee": 0.0,
-          "vatAmount": 467.4,
-          "amountBeforeTax": 98.04
+          "vatAmount": 698.8,
+          "amountBeforeTax": 270.58
         },
         "high": {
           "tours": 81,
@@ -129833,28 +132458,28 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "1-4": {
-          "tours": 41,
-          "pax": 114,
-          "revenue": 3266.0,
-          "vendorCost": 1875.0,
-          "grossMargin": -1187.57,
-          "tourCost": 1118.5,
-          "commissionCost": 702.52,
+          "tours": 43,
+          "pax": 120,
+          "revenue": 3800.0,
+          "vendorCost": 2035.0,
+          "grossMargin": -1265.69,
+          "tourCost": 1314.3,
+          "commissionCost": 852.04,
           "processingFee": 0.0,
-          "vatAmount": 757.55,
-          "amountBeforeTax": -430.02
+          "vatAmount": 864.35,
+          "amountBeforeTax": -401.34
         },
         "5-10": {
-          "tours": 43,
-          "pax": 317,
-          "revenue": 1735.0,
-          "vendorCost": 400.0,
-          "grossMargin": -52.06,
-          "tourCost": 591.1,
-          "commissionCost": 433.96,
+          "tours": 46,
+          "pax": 341,
+          "revenue": 2358.0,
+          "vendorCost": 480.0,
+          "grossMargin": -32.8,
+          "tourCost": 815.8,
+          "commissionCost": 608.4,
           "processingFee": 0.0,
-          "vatAmount": 362.0,
-          "amountBeforeTax": 309.94
+          "vatAmount": 486.6,
+          "amountBeforeTax": 453.8
         },
         "11-20": {
           "tours": 33,
@@ -130229,6 +132854,30 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 89.0,
           "amountBeforeTax": 25.2
+        },
+        "42": {
+          "tours": 4,
+          "pax": 20,
+          "revenue": 1157.0,
+          "vendorCost": 240.0,
+          "grossMargin": -58.86,
+          "tourCost": 420.5,
+          "commissionCost": 323.96,
+          "processingFee": 0.0,
+          "vatAmount": 231.4,
+          "amountBeforeTax": 172.54
+        },
+        "43": {
+          "tours": 1,
+          "pax": 10,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -130317,22 +132966,22 @@ const guideStats26 = [
           "amountBeforeTax": 205.8
         },
         "10": {
-          "tours": 8,
-          "pax": 86,
-          "revenue": 534.0,
-          "vendorCost": 160.0,
-          "grossMargin": -168.24,
-          "tourCost": 261.0,
-          "commissionCost": 156.64,
+          "tours": 13,
+          "pax": 116,
+          "revenue": 1691.0,
+          "vendorCost": 400.0,
+          "grossMargin": -227.1,
+          "tourCost": 681.5,
+          "commissionCost": 480.6,
           "processingFee": 0.0,
-          "vatAmount": 124.6,
-          "amountBeforeTax": -43.64
+          "vatAmount": 356.0,
+          "amountBeforeTax": 128.9
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 98,
-          "pax": 1107,
+          "tours": 100,
+          "pax": 1124,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -130343,22 +132992,22 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "CPP": {
-          "tours": 31,
-          "pax": 140,
-          "revenue": 5451.0,
-          "vendorCost": 2435.0,
-          "grossMargin": -1062.13,
-          "tourCost": 1709.6,
-          "commissionCost": 1136.48,
+          "tours": 34,
+          "pax": 153,
+          "revenue": 6608.0,
+          "vendorCost": 2675.0,
+          "grossMargin": -1120.99,
+          "tourCost": 2130.1,
+          "commissionCost": 1460.44,
           "processingFee": 0.0,
-          "vatAmount": 1232.05,
-          "amountBeforeTax": 169.92
+          "vatAmount": 1463.45,
+          "amountBeforeTax": 342.46
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 98,
-          "pax": 1107,
+          "tours": 100,
+          "pax": 1124,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -130369,16 +133018,16 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "bank trf": {
-          "tours": 26,
-          "pax": 86,
-          "revenue": 4342.0,
-          "vendorCost": 2035.0,
-          "grossMargin": -1289.98,
-          "tourCost": 1505.7,
-          "commissionCost": 1136.48,
+          "tours": 29,
+          "pax": 99,
+          "revenue": 5499.0,
+          "vendorCost": 2275.0,
+          "grossMargin": -1348.84,
+          "tourCost": 1926.2,
+          "commissionCost": 1460.44,
           "processingFee": 0.0,
-          "vatAmount": 954.8,
-          "amountBeforeTax": -335.18
+          "vatAmount": 1186.2,
+          "amountBeforeTax": -162.64
         },
         "card": {
           "tours": 5,
@@ -130395,28 +133044,28 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 48,
-          "pax": 150,
-          "revenue": 3286.0,
-          "vendorCost": 1875.0,
-          "grossMargin": -1163.57,
-          "tourCost": 1118.5,
-          "commissionCost": 698.52,
+          "tours": 50,
+          "pax": 156,
+          "revenue": 3820.0,
+          "vendorCost": 2035.0,
+          "grossMargin": -1241.69,
+          "tourCost": 1314.3,
+          "commissionCost": 848.04,
           "processingFee": 0.0,
-          "vatAmount": 757.55,
-          "amountBeforeTax": -406.02
+          "vatAmount": 864.35,
+          "amountBeforeTax": -377.34
         },
         "6-10": {
-          "tours": 32,
-          "pax": 249,
-          "revenue": 1515.0,
-          "vendorCost": 320.0,
-          "grossMargin": -86.06,
-          "tourCost": 591.1,
-          "commissionCost": 377.96,
+          "tours": 35,
+          "pax": 273,
+          "revenue": 2138.0,
+          "vendorCost": 400.0,
+          "grossMargin": -66.8,
+          "tourCost": 815.8,
+          "commissionCost": 552.4,
           "processingFee": 0.0,
-          "vatAmount": 312.0,
-          "amountBeforeTax": 225.94
+          "vatAmount": 436.6,
+          "amountBeforeTax": 369.8
         },
         "11+": {
           "tours": 49,
@@ -130433,16 +133082,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 125,
-          "pax": 1179,
-          "revenue": 4876.0,
-          "vendorCost": 2195.0,
-          "grossMargin": -1253.38,
-          "tourCost": 1709.6,
-          "commissionCost": 1136.48,
+          "tours": 130,
+          "pax": 1209,
+          "revenue": 6033.0,
+          "vendorCost": 2435.0,
+          "grossMargin": -1312.24,
+          "tourCost": 2130.1,
+          "commissionCost": 1460.44,
           "processingFee": 0.0,
-          "vatAmount": 1088.3,
-          "amountBeforeTax": -165.08
+          "vatAmount": 1319.7,
+          "amountBeforeTax": 7.46
         },
         "per group": {
           "tours": 4,
@@ -130459,16 +133108,16 @@ const guideStats26 = [
       },
       "byTourType": {
         "food": {
-          "tours": 14,
-          "pax": 44,
-          "revenue": 3916.0,
-          "vendorCost": 1075.0,
-          "grossMargin": -650.38,
-          "tourCost": 1709.6,
-          "commissionCost": 918.48,
+          "tours": 17,
+          "pax": 57,
+          "revenue": 5073.0,
+          "vendorCost": 1315.0,
+          "grossMargin": -709.24,
+          "tourCost": 2130.1,
+          "commissionCost": 1242.44,
           "processingFee": 0.0,
-          "vatAmount": 863.3,
-          "amountBeforeTax": 212.92
+          "vatAmount": 1094.7,
+          "amountBeforeTax": 385.46
         },
         "best": {
           "tours": 14,
@@ -130503,8 +133152,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 88,
-          "pax": 941
+          "tours": 90,
+          "pax": 971
         },
         "paid": {
           "tours": 8,
@@ -130590,8 +133239,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 3,
-              "pax": 43
+              "tours": 5,
+              "pax": 73
             },
             "paid": {
               "tours": 0,
@@ -131379,6 +134028,26 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -131462,8 +134131,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 131,
-          "pax": 1930
+          "tours": 135,
+          "pax": 1959
         },
         "paid": {
           "tours": 5,
@@ -131545,8 +134214,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 6,
-              "pax": 51
+              "tours": 10,
+              "pax": 80
             },
             "paid": {
               "tours": 0,
@@ -132634,6 +135303,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -132712,8 +135421,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 219,
-          "pax": 2871
+          "tours": 225,
+          "pax": 2930
         },
         "paid": {
           "tours": 13,
@@ -132799,8 +135508,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 9,
-              "pax": 94
+              "tours": 15,
+              "pax": 153
             },
             "paid": {
               "tours": 0,
@@ -133589,6 +136298,26 @@ const guideStats26 = [
               "pax": 0
             }
           },
+          "10-12": {
+            "free": {
+              "tours": 1,
+              "pax": 18
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
           "4-2": {
             "free": {
               "tours": 1,
@@ -134388,6 +137117,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 6
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 3
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-18": {
+            "free": {
+              "tours": 1,
+              "pax": 10
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -134517,8 +137286,8 @@ const guideStats26 = [
       "amountBeforeTax": 1077.5,
       "byChannel": {
         "web": {
-          "tours": 224,
-          "pax": 2947,
+          "tours": 230,
+          "pax": 3006,
           "revenue": 975.0,
           "vendorCost": 240.0,
           "grossMargin": 491.25,
@@ -134555,8 +137324,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 223,
-          "pax": 2927,
+          "tours": 229,
+          "pax": 2986,
           "revenue": 775.0,
           "vendorCost": 160.0,
           "grossMargin": 421.25,
@@ -134629,8 +137398,8 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "Thu": {
-          "tours": 35,
-          "pax": 481,
+          "tours": 36,
+          "pax": 487,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -134641,8 +137410,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "Fri": {
-          "tours": 38,
-          "pax": 473,
+          "tours": 39,
+          "pax": 483,
           "revenue": 890.0,
           "vendorCost": 320.0,
           "grossMargin": 298.0,
@@ -134653,8 +137422,8 @@ const guideStats26 = [
           "amountBeforeTax": 520.5
         },
         "Sat": {
-          "tours": 34,
-          "pax": 408,
+          "tours": 35,
+          "pax": 411,
           "revenue": 735.0,
           "vendorCost": 400.0,
           "grossMargin": 45.75,
@@ -134665,8 +137434,8 @@ const guideStats26 = [
           "amountBeforeTax": 229.5
         },
         "Mon": {
-          "tours": 35,
-          "pax": 464,
+          "tours": 36,
+          "pax": 482,
           "revenue": 150.0,
           "vendorCost": 80.0,
           "grossMargin": -5.0,
@@ -134677,8 +137446,8 @@ const guideStats26 = [
           "amountBeforeTax": 32.5
         },
         "Tue": {
-          "tours": 32,
-          "pax": 452,
+          "tours": 33,
+          "pax": 464,
           "revenue": 250.0,
           "vendorCost": 0.0,
           "grossMargin": 187.5,
@@ -134689,8 +137458,8 @@ const guideStats26 = [
           "amountBeforeTax": 250.0
         },
         "Sun": {
-          "tours": 27,
-          "pax": 387,
+          "tours": 28,
+          "pax": 397,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -134703,8 +137472,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 149,
-          "pax": 1998,
+          "tours": 155,
+          "pax": 2057,
           "revenue": 1000.0,
           "vendorCost": 400.0,
           "grossMargin": 282.5,
@@ -134825,8 +137594,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 54,
-          "pax": 494,
+          "tours": 60,
+          "pax": 553,
           "revenue": 185.0,
           "vendorCost": 160.0,
           "grossMargin": -39.25,
@@ -134851,8 +137620,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "5-10": {
-          "tours": 67,
-          "pax": 501,
+          "tours": 70,
+          "pax": 527,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -134863,8 +137632,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "11-20": {
-          "tours": 92,
-          "pax": 1385,
+          "tours": 94,
+          "pax": 1415,
           "revenue": 600.0,
           "vendorCost": 160.0,
           "grossMargin": 290.0,
@@ -134875,8 +137644,8 @@ const guideStats26 = [
           "amountBeforeTax": 440.0
         },
         "1-4": {
-          "tours": 33,
-          "pax": 106,
+          "tours": 34,
+          "pax": 109,
           "revenue": 800.0,
           "vendorCost": 560.0,
           "grossMargin": -102.5,
@@ -135247,6 +138016,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 0.0,
           "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 6,
+          "pax": 59,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -135323,8 +138104,8 @@ const guideStats26 = [
           "amountBeforeTax": 717.5
         },
         "10": {
-          "tours": 9,
-          "pax": 94,
+          "tours": 15,
+          "pax": 153,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -135337,8 +138118,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 221,
-          "pax": 2894,
+          "tours": 227,
+          "pax": 2953,
           "revenue": 325.0,
           "vendorCost": 160.0,
           "grossMargin": 83.75,
@@ -135363,8 +138144,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 221,
-          "pax": 2894,
+          "tours": 227,
+          "pax": 2953,
           "revenue": 325.0,
           "vendorCost": 160.0,
           "grossMargin": 83.75,
@@ -135401,8 +138182,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "6-10": {
-          "tours": 43,
-          "pax": 334,
+          "tours": 46,
+          "pax": 360,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 20.0,
@@ -135413,8 +138194,8 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "11+": {
-          "tours": 155,
-          "pax": 2544,
+          "tours": 157,
+          "pax": 2574,
           "revenue": 1150.0,
           "vendorCost": 240.0,
           "grossMargin": 622.5,
@@ -135425,8 +138206,8 @@ const guideStats26 = [
           "amountBeforeTax": 910.0
         },
         "1-5": {
-          "tours": 34,
-          "pax": 115,
+          "tours": 35,
+          "pax": 118,
           "revenue": 800.0,
           "vendorCost": 560.0,
           "grossMargin": -102.5,
@@ -135439,8 +138220,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 221,
-          "pax": 2876,
+          "tours": 227,
+          "pax": 2935,
           "revenue": 100.0,
           "vendorCost": 160.0,
           "grossMargin": -115.0,
@@ -135727,8 +138508,8 @@ const guideStats26 = [
       },
       "esp": {
         "free": {
-          "tours": 112,
-          "pax": 1476
+          "tours": 113,
+          "pax": 1503
         },
         "paid": {
           "tours": 5,
@@ -135810,8 +138591,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 32
+              "tours": 5,
+              "pax": 59
             },
             "paid": {
               "tours": 0,
@@ -136843,7 +139624,7 @@ const guideStats26 = [
           "10-7": {
             "free": {
               "tours": 1,
-              "pax": 0
+              "pax": 6
             },
             "paid": {
               "tours": 0,
@@ -136854,6 +139635,16 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 21
             },
             "paid": {
               "tours": 0,
@@ -136931,8 +139722,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 118,
-          "pax": 1531
+          "tours": 119,
+          "pax": 1558
         },
         "paid": {
           "tours": 10,
@@ -137022,8 +139813,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 4,
-              "pax": 32
+              "tours": 5,
+              "pax": 59
             },
             "paid": {
               "tours": 0,
@@ -138145,7 +140936,7 @@ const guideStats26 = [
           "10-7": {
             "free": {
               "tours": 1,
-              "pax": 0
+              "pax": 6
             },
             "paid": {
               "tours": 0,
@@ -138156,6 +140947,16 @@ const guideStats26 = [
             "free": {
               "tours": 1,
               "pax": 13
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-13": {
+            "free": {
+              "tours": 1,
+              "pax": 21
             },
             "paid": {
               "tours": 0,
@@ -138272,8 +141073,8 @@ const guideStats26 = [
       "amountBeforeTax": 873.9,
       "byChannel": {
         "web": {
-          "tours": 118,
-          "pax": 1531,
+          "tours": 119,
+          "pax": 1558,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -138298,8 +141099,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 118,
-          "pax": 1531,
+          "tours": 119,
+          "pax": 1558,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -138349,7 +141150,7 @@ const guideStats26 = [
       "byDow": {
         "Wed": {
           "tours": 19,
-          "pax": 267,
+          "pax": 273,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -138420,8 +141221,8 @@ const guideStats26 = [
           "amountBeforeTax": 118.16
         },
         "Tue": {
-          "tours": 18,
-          "pax": 215,
+          "tours": 19,
+          "pax": 236,
           "revenue": 450.0,
           "vendorCost": 160.0,
           "grossMargin": 65.0,
@@ -138434,8 +141235,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 82,
-          "pax": 1032,
+          "tours": 83,
+          "pax": 1059,
           "revenue": 380.0,
           "vendorCost": 160.0,
           "grossMargin": 21.0,
@@ -138508,8 +141309,8 @@ const guideStats26 = [
       },
       "bySeason": {
         "shoulder": {
-          "tours": 32,
-          "pax": 307,
+          "tours": 33,
+          "pax": 334,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -138534,8 +141335,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "21-30": {
-          "tours": 19,
-          "pax": 440,
+          "tours": 20,
+          "pax": 461,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -138546,8 +141347,8 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "5-10": {
-          "tours": 46,
-          "pax": 368,
+          "tours": 47,
+          "pax": 374,
           "revenue": 2004.0,
           "vendorCost": 400.0,
           "grossMargin": 175.28,
@@ -138921,7 +141722,19 @@ const guideStats26 = [
         },
         "41": {
           "tours": 4,
-          "pax": 32,
+          "pax": 38,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
+        },
+        "42": {
+          "tours": 1,
+          "pax": 21,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -139006,8 +141819,8 @@ const guideStats26 = [
           "amountBeforeTax": 46.0
         },
         "10": {
-          "tours": 4,
-          "pax": 32,
+          "tours": 5,
+          "pax": 59,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -139020,8 +141833,8 @@ const guideStats26 = [
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 118,
-          "pax": 1531,
+          "tours": 119,
+          "pax": 1558,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -139046,8 +141859,8 @@ const guideStats26 = [
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 118,
-          "pax": 1531,
+          "tours": 119,
+          "pax": 1558,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -139072,8 +141885,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 74,
-          "pax": 1240,
+          "tours": 75,
+          "pax": 1261,
           "revenue": 430.0,
           "vendorCost": 160.0,
           "grossMargin": 46.0,
@@ -139084,7 +141897,7 @@ const guideStats26 = [
           "amountBeforeTax": 153.5
         },
         "1-5": {
-          "tours": 20,
+          "tours": 19,
           "pax": 65,
           "revenue": 656.0,
           "vendorCost": 320.0,
@@ -139096,8 +141909,8 @@ const guideStats26 = [
           "amountBeforeTax": 161.32
         },
         "6-10": {
-          "tours": 34,
-          "pax": 289,
+          "tours": 35,
+          "pax": 295,
           "revenue": 1824.0,
           "vendorCost": 320.0,
           "grossMargin": 174.28,
@@ -139110,8 +141923,8 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 123,
-          "pax": 1560,
+          "tours": 124,
+          "pax": 1587,
           "revenue": 1960.0,
           "vendorCost": 400.0,
           "grossMargin": 160.4,
@@ -139180,17 +141993,17 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 89,
-          "pax": 1096
+          "tours": 91,
+          "pax": 1105
         },
         "paid": {
-          "tours": 29,
-          "pax": 120
+          "tours": 31,
+          "pax": 135
         },
         "byType": {
           "best": {
-            "tours": 20,
-            "pax": 81
+            "tours": 22,
+            "pax": 96
           },
           "food": {
             "tours": 7,
@@ -139249,12 +142062,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 2,
-              "pax": 19
+              "tours": 4,
+              "pax": 28
             },
             "paid": {
-              "tours": 3,
-              "pax": 11
+              "tours": 5,
+              "pax": 26
             }
           }
         },
@@ -140108,6 +142921,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 7
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 11
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 2
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -140157,8 +143010,8 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 2,
-              "pax": 8
+              "tours": 4,
+              "pax": 23
             },
             "food": {
               "tours": 1,
@@ -140333,6 +143186,18 @@ const guideStats26 = [
             "food": {
               "tours": 1,
               "pax": 3
+            }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-15": {
+            "best": {
+              "tours": 1,
+              "pax": 11
             }
           }
         }
@@ -140411,17 +143276,17 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 89,
-          "pax": 1096
+          "tours": 91,
+          "pax": 1105
         },
         "paid": {
-          "tours": 30,
-          "pax": 124
+          "tours": 32,
+          "pax": 139
         },
         "byType": {
           "best": {
-            "tours": 20,
-            "pax": 81
+            "tours": 22,
+            "pax": 96
           },
           "food": {
             "tours": 7,
@@ -140480,12 +143345,12 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 2,
-              "pax": 19
+              "tours": 4,
+              "pax": 28
             },
             "paid": {
-              "tours": 3,
-              "pax": 11
+              "tours": 5,
+              "pax": 26
             }
           }
         },
@@ -141339,6 +144204,46 @@ const guideStats26 = [
               "tours": 0,
               "pax": 0
             }
+          },
+          "10-13": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-14": {
+            "free": {
+              "tours": 1,
+              "pax": 7
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 0,
+              "pax": 0
+            },
+            "paid": {
+              "tours": 1,
+              "pax": 11
+            }
+          },
+          "10-16": {
+            "free": {
+              "tours": 1,
+              "pax": 2
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
           }
         },
         "byMonthType": {
@@ -141388,8 +144293,8 @@ const guideStats26 = [
           },
           "10": {
             "best": {
-              "tours": 2,
-              "pax": 8
+              "tours": 4,
+              "pax": 23
             },
             "food": {
               "tours": 1,
@@ -141569,23 +144474,35 @@ const guideStats26 = [
               "tours": 1,
               "pax": 3
             }
+          },
+          "10-13": {
+            "best": {
+              "tours": 1,
+              "pax": 4
+            }
+          },
+          "10-15": {
+            "best": {
+              "tours": 1,
+              "pax": 11
+            }
           }
         }
       }
     },
     "mgmt": {
-      "revenue": 3358.0,
-      "vendorCost": 2400.0,
-      "grossMargin": -1092.0,
+      "revenue": 3578.0,
+      "vendorCost": 2560.0,
+      "grossMargin": -1125.0,
       "tourCost": 579.9,
-      "commissionCost": 708.1,
+      "commissionCost": 750.1,
       "processingFee": 0.0,
-      "vatAmount": 762.0,
-      "amountBeforeTax": -330.0,
+      "vatAmount": 813.0,
+      "amountBeforeTax": -312.0,
       "byChannel": {
         "web": {
-          "tours": 90,
-          "pax": 1116,
+          "tours": 92,
+          "pax": 1125,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -141596,16 +144513,16 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "OTA": {
-          "tours": 28,
-          "pax": 87,
-          "revenue": 3033.0,
-          "vendorCost": 2240.0,
-          "grossMargin": -1175.75,
+          "tours": 30,
+          "pax": 98,
+          "revenue": 3253.0,
+          "vendorCost": 2400.0,
+          "grossMargin": -1208.75,
           "tourCost": 579.9,
-          "commissionCost": 708.1,
+          "commissionCost": 750.1,
           "processingFee": 0.0,
-          "vatAmount": 680.75,
-          "amountBeforeTax": -495.0
+          "vatAmount": 731.75,
+          "amountBeforeTax": -477.0
         },
         "b2b": {
           "tours": 1,
@@ -141622,8 +144539,8 @@ const guideStats26 = [
       },
       "bySource": {
         "FST": {
-          "tours": 89,
-          "pax": 1096,
+          "tours": 91,
+          "pax": 1105,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -141634,16 +144551,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "GYG": {
-          "tours": 11,
-          "pax": 40,
-          "revenue": 1283.0,
-          "vendorCost": 880.0,
-          "grossMargin": -529.65,
+          "tours": 12,
+          "pax": 47,
+          "revenue": 1423.0,
+          "vendorCost": 960.0,
+          "grossMargin": -546.65,
           "tourCost": 227.0,
-          "commissionCost": 384.9,
+          "commissionCost": 426.9,
           "processingFee": 0.0,
-          "vatAmount": 320.75,
-          "amountBeforeTax": -208.9
+          "vatAmount": 355.75,
+          "amountBeforeTax": -190.9
         },
         "Civitatis": {
           "tours": 1,
@@ -141658,15 +144575,15 @@ const guideStats26 = [
           "amountBeforeTax": 70.0
         },
         "Viator": {
-          "tours": 15,
-          "pax": 37,
-          "revenue": 1430.0,
-          "vendorCost": 1200.0,
-          "grossMargin": -658.1,
+          "tours": 16,
+          "pax": 41,
+          "revenue": 1510.0,
+          "vendorCost": 1280.0,
+          "grossMargin": -674.1,
           "tourCost": 352.9,
           "commissionCost": 249.2,
           "processingFee": 0.0,
-          "vatAmount": 286.0,
+          "vatAmount": 302.0,
           "amountBeforeTax": -372.1
         },
         "Roundabout": {
@@ -141720,20 +144637,20 @@ const guideStats26 = [
           "amountBeforeTax": -59.84
         },
         "Tue": {
-          "tours": 22,
-          "pax": 153,
-          "revenue": 1054.0,
-          "vendorCost": 720.0,
-          "grossMargin": -339.64,
+          "tours": 23,
+          "pax": 157,
+          "revenue": 1134.0,
+          "vendorCost": 800.0,
+          "grossMargin": -355.64,
           "tourCost": 197.4,
           "commissionCost": 234.64,
           "processingFee": 0.0,
-          "vatAmount": 241.6,
+          "vatAmount": 257.6,
           "amountBeforeTax": -98.04
         },
         "Wed": {
-          "tours": 18,
-          "pax": 179,
+          "tours": 19,
+          "pax": 186,
           "revenue": 278.0,
           "vendorCost": 160.0,
           "grossMargin": -89.44,
@@ -141744,20 +144661,20 @@ const guideStats26 = [
           "amountBeforeTax": -28.84
         },
         "Thu": {
-          "tours": 21,
-          "pax": 191,
-          "revenue": 645.0,
-          "vendorCost": 560.0,
-          "grossMargin": -162.25,
+          "tours": 22,
+          "pax": 198,
+          "revenue": 785.0,
+          "vendorCost": 640.0,
+          "grossMargin": -179.25,
           "tourCost": 0.0,
-          "commissionCost": 98.0,
+          "commissionCost": 140.0,
           "processingFee": 0.0,
-          "vatAmount": 149.25,
-          "amountBeforeTax": -13.0
+          "vatAmount": 184.25,
+          "amountBeforeTax": 5.0
         },
         "Fri": {
-          "tours": 12,
-          "pax": 165,
+          "tours": 13,
+          "pax": 167,
           "revenue": 685.0,
           "vendorCost": 320.0,
           "grossMargin": -94.29,
@@ -141806,16 +144723,16 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "10": {
-          "tours": 49,
-          "pax": 458,
-          "revenue": 1587.0,
-          "vendorCost": 1680.0,
-          "grossMargin": -854.85,
+          "tours": 53,
+          "pax": 478,
+          "revenue": 1807.0,
+          "vendorCost": 1840.0,
+          "grossMargin": -887.85,
           "tourCost": 96.0,
-          "commissionCost": 302.1,
+          "commissionCost": 344.1,
           "processingFee": 0.0,
-          "vatAmount": 363.75,
-          "amountBeforeTax": -491.1
+          "vatAmount": 414.75,
+          "amountBeforeTax": -473.1
         },
         "12": {
           "tours": 2,
@@ -141880,16 +144797,16 @@ const guideStats26 = [
           "amountBeforeTax": -236.9
         },
         "shoulder": {
-          "tours": 5,
-          "pax": 26,
-          "revenue": 347.0,
-          "vendorCost": 240.0,
-          "grossMargin": -179.85,
+          "tours": 9,
+          "pax": 46,
+          "revenue": 567.0,
+          "vendorCost": 400.0,
+          "grossMargin": -212.85,
           "tourCost": 96.0,
-          "commissionCost": 104.1,
+          "commissionCost": 146.1,
           "processingFee": 0.0,
-          "vatAmount": 86.75,
-          "amountBeforeTax": -93.1
+          "vatAmount": 137.75,
+          "amountBeforeTax": -75.1
         }
       },
       "byPaxBand": {
@@ -141906,15 +144823,15 @@ const guideStats26 = [
           "amountBeforeTax": 0.0
         },
         "1-4": {
-          "tours": 29,
-          "pax": 73,
-          "revenue": 2518.0,
-          "vendorCost": 1920.0,
-          "grossMargin": -1117.0,
+          "tours": 31,
+          "pax": 79,
+          "revenue": 2598.0,
+          "vendorCost": 2000.0,
+          "grossMargin": -1133.0,
           "tourCost": 579.9,
           "commissionCost": 570.1,
           "processingFee": 0.0,
-          "vatAmount": 565.0,
+          "vatAmount": 581.0,
           "amountBeforeTax": -552.0
         },
         "11-20": {
@@ -141930,16 +144847,16 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "5-10": {
-          "tours": 35,
-          "pax": 266,
-          "revenue": 640.0,
-          "vendorCost": 400.0,
-          "grossMargin": -45.0,
+          "tours": 37,
+          "pax": 280,
+          "revenue": 780.0,
+          "vendorCost": 480.0,
+          "grossMargin": -62.0,
           "tourCost": 0.0,
-          "commissionCost": 138.0,
+          "commissionCost": 180.0,
           "processingFee": 0.0,
-          "vatAmount": 147.0,
-          "amountBeforeTax": 102.0
+          "vatAmount": 182.0,
+          "amountBeforeTax": 120.0
         }
       },
       "byWeek": {
@@ -142158,6 +145075,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 86.75,
           "amountBeforeTax": -93.1
+        },
+        "42": {
+          "tours": 4,
+          "pax": 20,
+          "revenue": 220.0,
+          "vendorCost": 160.0,
+          "grossMargin": -33.0,
+          "tourCost": 0.0,
+          "commissionCost": 42.0,
+          "processingFee": 0.0,
+          "vatAmount": 51.0,
+          "amountBeforeTax": 18.0
         }
       },
       "byMonth": {
@@ -142210,22 +145139,22 @@ const guideStats26 = [
           "amountBeforeTax": 44.02
         },
         "10": {
-          "tours": 5,
-          "pax": 26,
-          "revenue": 347.0,
-          "vendorCost": 240.0,
-          "grossMargin": -179.85,
+          "tours": 9,
+          "pax": 46,
+          "revenue": 567.0,
+          "vendorCost": 400.0,
+          "grossMargin": -212.85,
           "tourCost": 96.0,
-          "commissionCost": 104.1,
+          "commissionCost": 146.1,
           "processingFee": 0.0,
-          "vatAmount": 86.75,
-          "amountBeforeTax": -93.1
+          "vatAmount": 137.75,
+          "amountBeforeTax": -75.1
         }
       },
       "byBillingMethod": {
         "POS": {
-          "tours": 90,
-          "pax": 1116,
+          "tours": 92,
+          "pax": 1125,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -142236,22 +145165,22 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "CPP": {
-          "tours": 29,
-          "pax": 89,
-          "revenue": 3158.0,
-          "vendorCost": 2320.0,
-          "grossMargin": -1162.0,
+          "tours": 31,
+          "pax": 100,
+          "revenue": 3378.0,
+          "vendorCost": 2480.0,
+          "grossMargin": -1195.0,
           "tourCost": 579.9,
-          "commissionCost": 708.1,
+          "commissionCost": 750.1,
           "processingFee": 0.0,
-          "vatAmount": 712.0,
-          "amountBeforeTax": -450.0
+          "vatAmount": 763.0,
+          "amountBeforeTax": -432.0
         }
       },
       "byPaymentMethod": {
         "cash": {
-          "tours": 90,
-          "pax": 1116,
+          "tours": 92,
+          "pax": 1125,
           "revenue": 200.0,
           "vendorCost": 80.0,
           "grossMargin": 70.0,
@@ -142262,16 +145191,16 @@ const guideStats26 = [
           "amountBeforeTax": 120.0
         },
         "bank trf": {
-          "tours": 28,
-          "pax": 87,
-          "revenue": 3033.0,
-          "vendorCost": 2240.0,
-          "grossMargin": -1175.75,
+          "tours": 30,
+          "pax": 98,
+          "revenue": 3253.0,
+          "vendorCost": 2400.0,
+          "grossMargin": -1208.75,
           "tourCost": 579.9,
-          "commissionCost": 708.1,
+          "commissionCost": 750.1,
           "processingFee": 0.0,
-          "vatAmount": 680.75,
-          "amountBeforeTax": -495.0
+          "vatAmount": 731.75,
+          "amountBeforeTax": -477.0
         },
         "card": {
           "tours": 1,
@@ -142288,32 +145217,32 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "11+": {
-          "tours": 69,
-          "pax": 970,
-          "revenue": 360.0,
-          "vendorCost": 160.0,
-          "grossMargin": 62.0,
+          "tours": 70,
+          "pax": 977,
+          "revenue": 500.0,
+          "vendorCost": 240.0,
+          "grossMargin": 45.0,
           "tourCost": 0.0,
-          "commissionCost": 48.0,
+          "commissionCost": 90.0,
           "processingFee": 0.0,
-          "vatAmount": 90.0,
-          "amountBeforeTax": 152.0
+          "vatAmount": 125.0,
+          "amountBeforeTax": 170.0
         },
         "1-5": {
-          "tours": 30,
-          "pax": 85,
-          "revenue": 2538.0,
-          "vendorCost": 1920.0,
-          "grossMargin": -1136.0,
+          "tours": 32,
+          "pax": 91,
+          "revenue": 2618.0,
+          "vendorCost": 2000.0,
+          "grossMargin": -1152.0,
           "tourCost": 579.9,
           "commissionCost": 600.1,
           "processingFee": 0.0,
-          "vatAmount": 574.0,
+          "vatAmount": 590.0,
           "amountBeforeTax": -562.0
         },
         "6-10": {
-          "tours": 20,
-          "pax": 150,
+          "tours": 21,
+          "pax": 157,
           "revenue": 460.0,
           "vendorCost": 320.0,
           "grossMargin": -18.0,
@@ -142326,16 +145255,16 @@ const guideStats26 = [
       },
       "byPriceType": {
         "per pax": {
-          "tours": 116,
-          "pax": 1179,
-          "revenue": 2833.0,
-          "vendorCost": 2160.0,
-          "grossMargin": -1195.75,
+          "tours": 120,
+          "pax": 1199,
+          "revenue": 3053.0,
+          "vendorCost": 2320.0,
+          "grossMargin": -1228.75,
           "tourCost": 579.9,
-          "commissionCost": 658.1,
+          "commissionCost": 700.1,
           "processingFee": 0.0,
-          "vatAmount": 630.75,
-          "amountBeforeTax": -565.0
+          "vatAmount": 681.75,
+          "amountBeforeTax": -547.0
         },
         "per group": {
           "tours": 2,
@@ -142352,16 +145281,16 @@ const guideStats26 = [
       },
       "byTourType": {
         "best": {
-          "tours": 20,
-          "pax": 66,
-          "revenue": 1320.0,
-          "vendorCost": 1600.0,
-          "grossMargin": -799.0,
+          "tours": 22,
+          "pax": 77,
+          "revenue": 1540.0,
+          "vendorCost": 1760.0,
+          "grossMargin": -832.0,
           "tourCost": 0.0,
-          "commissionCost": 222.0,
+          "commissionCost": 264.0,
           "processingFee": 0.0,
-          "vatAmount": 297.0,
-          "amountBeforeTax": -502.0
+          "vatAmount": 348.0,
+          "amountBeforeTax": -484.0
         },
         "old": {
           "tours": 3,
@@ -142396,8 +145325,8 @@ const guideStats26 = [
     "stats": {
       "eng": {
         "free": {
-          "tours": 29,
-          "pax": 338
+          "tours": 31,
+          "pax": 354
         },
         "paid": {
           "tours": 32,
@@ -142461,8 +145390,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 0,
-              "pax": 0
+              "tours": 2,
+              "pax": 16
             },
             "paid": {
               "tours": 3,
@@ -142979,6 +145908,26 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 3
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 4
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -143245,8 +146194,8 @@ const guideStats26 = [
       },
       "all": {
         "free": {
-          "tours": 29,
-          "pax": 338
+          "tours": 31,
+          "pax": 354
         },
         "paid": {
           "tours": 32,
@@ -143310,8 +146259,8 @@ const guideStats26 = [
           "10": {
             "name": "Lis",
             "free": {
-              "tours": 0,
-              "pax": 0
+              "tours": 2,
+              "pax": 16
             },
             "paid": {
               "tours": 3,
@@ -143828,6 +146777,26 @@ const guideStats26 = [
             "paid": {
               "tours": 1,
               "pax": 3
+            }
+          },
+          "10-15": {
+            "free": {
+              "tours": 1,
+              "pax": 4
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
+            }
+          },
+          "10-17": {
+            "free": {
+              "tours": 1,
+              "pax": 12
+            },
+            "paid": {
+              "tours": 0,
+              "pax": 0
             }
           }
         },
@@ -144086,8 +147055,8 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "web": {
-          "tours": 29,
-          "pax": 338,
+          "tours": 31,
+          "pax": 354,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -144124,8 +147093,8 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "FST": {
-          "tours": 29,
-          "pax": 338,
+          "tours": 31,
+          "pax": 354,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -144174,8 +147143,8 @@ const guideStats26 = [
       },
       "byDow": {
         "Thu": {
-          "tours": 10,
-          "pax": 69,
+          "tours": 11,
+          "pax": 73,
           "revenue": 665.0,
           "vendorCost": 560.0,
           "grossMargin": -202.25,
@@ -144210,8 +147179,8 @@ const guideStats26 = [
           "amountBeforeTax": -78.0
         },
         "Sat": {
-          "tours": 11,
-          "pax": 102,
+          "tours": 12,
+          "pax": 114,
           "revenue": 560.0,
           "vendorCost": 400.0,
           "grossMargin": -142.0,
@@ -144260,8 +147229,8 @@ const guideStats26 = [
       },
       "byTime": {
         "10": {
-          "tours": 42,
-          "pax": 243,
+          "tours": 44,
+          "pax": 259,
           "revenue": 2685.0,
           "vendorCost": 2540.0,
           "grossMargin": -1167.75,
@@ -144310,8 +147279,8 @@ const guideStats26 = [
           "amountBeforeTax": -490.5
         },
         "shoulder": {
-          "tours": 3,
-          "pax": 15,
+          "tours": 5,
+          "pax": 31,
           "revenue": 300.0,
           "vendorCost": 240.0,
           "grossMargin": -105.0,
@@ -144324,8 +147293,8 @@ const guideStats26 = [
       },
       "byPaxBand": {
         "1-4": {
-          "tours": 23,
-          "pax": 63,
+          "tours": 24,
+          "pax": 67,
           "revenue": 1225.0,
           "vendorCost": 1740.0,
           "grossMargin": -1073.75,
@@ -144348,8 +147317,8 @@ const guideStats26 = [
           "amountBeforeTax": 264.0
         },
         "11-20": {
-          "tours": 13,
-          "pax": 191,
+          "tours": 14,
+          "pax": 203,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -144588,6 +147557,18 @@ const guideStats26 = [
           "processingFee": 0.0,
           "vatAmount": 15.0,
           "amountBeforeTax": -38.0
+        },
+        "42": {
+          "tours": 2,
+          "pax": 16,
+          "revenue": 0.0,
+          "vendorCost": 0.0,
+          "grossMargin": 0.0,
+          "tourCost": 0.0,
+          "commissionCost": 0.0,
+          "processingFee": 0.0,
+          "vatAmount": 0.0,
+          "amountBeforeTax": 0.0
         }
       },
       "byMonth": {
@@ -144640,8 +147621,8 @@ const guideStats26 = [
           "amountBeforeTax": -13.5
         },
         "10": {
-          "tours": 3,
-          "pax": 15,
+          "tours": 5,
+          "pax": 31,
           "revenue": 300.0,
           "vendorCost": 240.0,
           "grossMargin": -105.0,
@@ -144666,8 +147647,8 @@ const guideStats26 = [
           "amountBeforeTax": -520.5
         },
         "POS": {
-          "tours": 29,
-          "pax": 338,
+          "tours": 31,
+          "pax": 354,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -144692,8 +147673,8 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "cash": {
-          "tours": 29,
-          "pax": 338,
+          "tours": 31,
+          "pax": 354,
           "revenue": 0.0,
           "vendorCost": 0.0,
           "grossMargin": 0.0,
@@ -144718,8 +147699,8 @@ const guideStats26 = [
       },
       "byGuidePaxBand": {
         "1-5": {
-          "tours": 26,
-          "pax": 79,
+          "tours": 27,
+          "pax": 83,
           "revenue": 1345.0,
           "vendorCost": 1820.0,
           "grossMargin": -1099.75,
@@ -144742,8 +147723,8 @@ const guideStats26 = [
           "amountBeforeTax": 154.0
         },
         "11+": {
-          "tours": 19,
-          "pax": 264,
+          "tours": 20,
+          "pax": 276,
           "revenue": 320.0,
           "vendorCost": 160.0,
           "grossMargin": 33.0,
@@ -144768,8 +147749,8 @@ const guideStats26 = [
           "amountBeforeTax": 45.0
         },
         "per pax": {
-          "tours": 60,
-          "pax": 466,
+          "tours": 62,
+          "pax": 482,
           "revenue": 2560.0,
           "vendorCost": 2460.0,
           "grossMargin": -1181.5,
@@ -145576,29 +148557,29 @@ const cityStats26 = {
   "Zagreb": {
     "eng": {
       "free": {
-        "tours": 555,
-        "pax": 8673
+        "tours": 561,
+        "pax": 8744
       },
       "paid": {
-        "tours": 619,
-        "pax": 4969
+        "tours": 625,
+        "pax": 5009
       },
       "byType": {
         "war": {
-          "tours": 237,
-          "pax": 2230
+          "tours": 240,
+          "pax": 2257
         },
         "food": {
           "tours": 102,
           "pax": 398
         },
         "best": {
-          "tours": 163,
-          "pax": 1389
+          "tours": 165,
+          "pax": 1400
         },
         "old": {
-          "tours": 66,
-          "pax": 482
+          "tours": 67,
+          "pax": 484
         },
         "food PR": {
           "tours": 29,
@@ -145716,12 +148697,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 21,
-            "pax": 354
+            "tours": 27,
+            "pax": 425
           },
           "paid": {
-            "tours": 40,
-            "pax": 318
+            "tours": 46,
+            "pax": 358
           }
         }
       },
@@ -148485,6 +151466,36 @@ const cityStats26 = {
             "tours": 4,
             "pax": 32
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 2,
+            "pax": 15
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 10
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 2,
+            "pax": 19
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 16
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 2,
+            "pax": 37
+          },
+          "paid": {
+            "tours": 3,
+            "pax": 14
+          }
         }
       },
       "byMonthType": {
@@ -148700,20 +151711,20 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 11,
-            "pax": 89
+            "tours": 13,
+            "pax": 100
           },
           "war": {
-            "tours": 11,
-            "pax": 118
+            "tours": 14,
+            "pax": 145
           },
           "food": {
             "tours": 7,
             "pax": 28
           },
           "old": {
-            "tours": 9,
-            "pax": 65
+            "tours": 10,
+            "pax": 67
           },
           "war PR": {
             "tours": 1,
@@ -151495,30 +154506,60 @@ const cityStats26 = {
             "tours": 1,
             "pax": 9
           }
+        },
+        "10-12": {
+          "war": {
+            "tours": 1,
+            "pax": 10
+          }
+        },
+        "10-13": {
+          "best": {
+            "tours": 1,
+            "pax": 9
+          },
+          "war": {
+            "tours": 1,
+            "pax": 7
+          }
+        },
+        "10-14": {
+          "old": {
+            "tours": 1,
+            "pax": 2
+          },
+          "best": {
+            "tours": 1,
+            "pax": 2
+          },
+          "war": {
+            "tours": 1,
+            "pax": 10
+          }
         }
       }
     },
     "esp": {
       "free": {
-        "tours": 633,
-        "pax": 12434
+        "tours": 639,
+        "pax": 12504
       },
       "paid": {
-        "tours": 281,
-        "pax": 1540
+        "tours": 284,
+        "pax": 1547
       },
       "byType": {
         "best": {
-          "tours": 137,
-          "pax": 721
+          "tours": 139,
+          "pax": 726
         },
         "big": {
           "tours": 27,
           "pax": 166
         },
         "war": {
-          "tours": 107,
-          "pax": 570
+          "tours": 108,
+          "pax": 572
         },
         "food": {
           "tours": 5,
@@ -151632,12 +154673,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 24,
-            "pax": 483
+            "tours": 30,
+            "pax": 553
           },
           "paid": {
-            "tours": 15,
-            "pax": 59
+            "tours": 18,
+            "pax": 66
           }
         }
       },
@@ -154341,6 +157382,36 @@ const cityStats26 = {
             "tours": 2,
             "pax": 11
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 2,
+            "pax": 40
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 2,
+            "pax": 16
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 3
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 2,
+            "pax": 14
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
         }
       },
       "byMonthType": {
@@ -154484,16 +157555,16 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 9,
-            "pax": 37
+            "tours": 11,
+            "pax": 42
           },
           "old": {
             "tours": 1,
             "pax": 3
           },
           "war": {
-            "tours": 4,
-            "pax": 16
+            "tours": 5,
+            "pax": 18
           },
           "big": {
             "tours": 1,
@@ -155959,6 +159030,24 @@ const cityStats26 = {
             "tours": 1,
             "pax": 7
           }
+        },
+        "10-12": {
+          "war": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-13": {
+          "best": {
+            "tours": 1,
+            "pax": 3
+          }
+        },
+        "10-14": {
+          "best": {
+            "tours": 1,
+            "pax": 2
+          }
         }
       }
     },
@@ -156246,29 +159335,29 @@ const cityStats26 = {
     },
     "all": {
       "free": {
-        "tours": 1188,
-        "pax": 21107
+        "tours": 1200,
+        "pax": 21248
       },
       "paid": {
-        "tours": 909,
-        "pax": 6555
+        "tours": 918,
+        "pax": 6602
       },
       "byType": {
         "war": {
-          "tours": 344,
-          "pax": 2800
+          "tours": 348,
+          "pax": 2829
         },
         "food": {
           "tours": 107,
           "pax": 408
         },
         "best": {
-          "tours": 300,
-          "pax": 2110
+          "tours": 304,
+          "pax": 2126
         },
         "old": {
-          "tours": 77,
-          "pax": 587
+          "tours": 78,
+          "pax": 589
         },
         "food PR": {
           "tours": 29,
@@ -156386,12 +159475,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 45,
-            "pax": 837
+            "tours": 57,
+            "pax": 978
           },
           "paid": {
-            "tours": 56,
-            "pax": 382
+            "tours": 65,
+            "pax": 429
           }
         }
       },
@@ -159156,6 +162245,36 @@ const cityStats26 = {
             "pax": 43
           }
         },
+        "10-12": {
+          "free": {
+            "tours": 4,
+            "pax": 55
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 12
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 4,
+            "pax": 35
+          },
+          "paid": {
+            "tours": 3,
+            "pax": 19
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 4,
+            "pax": 51
+          },
+          "paid": {
+            "tours": 4,
+            "pax": 16
+          }
+        },
         "1-8": {
           "free": {
             "tours": 1,
@@ -159426,20 +162545,20 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 20,
-            "pax": 126
+            "tours": 24,
+            "pax": 142
           },
           "war": {
-            "tours": 15,
-            "pax": 134
+            "tours": 19,
+            "pax": 163
           },
           "food": {
             "tours": 7,
             "pax": 28
           },
           "old": {
-            "tours": 11,
-            "pax": 73
+            "tours": 12,
+            "pax": 75
           },
           "war PR": {
             "tours": 1,
@@ -162506,6 +165625,36 @@ const cityStats26 = {
             "pax": 16
           }
         },
+        "10-12": {
+          "war": {
+            "tours": 2,
+            "pax": 12
+          }
+        },
+        "10-13": {
+          "best": {
+            "tours": 2,
+            "pax": 12
+          },
+          "war": {
+            "tours": 1,
+            "pax": 7
+          }
+        },
+        "10-14": {
+          "old": {
+            "tours": 1,
+            "pax": 2
+          },
+          "best": {
+            "tours": 2,
+            "pax": 4
+          },
+          "war": {
+            "tours": 1,
+            "pax": 10
+          }
+        },
         "1-16": {
           "best": {
             "tours": 1,
@@ -162542,25 +165691,25 @@ const cityStats26 = {
   "Zadar": {
     "eng": {
       "free": {
-        "tours": 306,
-        "pax": 3497
+        "tours": 314,
+        "pax": 3569
       },
       "paid": {
-        "tours": 105,
-        "pax": 553
+        "tours": 110,
+        "pax": 581
       },
       "byType": {
         "food": {
-          "tours": 25,
-          "pax": 82
+          "tours": 28,
+          "pax": 95
         },
         "old": {
           "tours": 13,
           "pax": 172
         },
         "best": {
-          "tours": 67,
-          "pax": 299
+          "tours": 69,
+          "pax": 314
         }
       },
       "byMonth": {
@@ -162644,12 +165793,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 11,
-            "pax": 142
+            "tours": 19,
+            "pax": 214
           },
           "paid": {
-            "tours": 8,
-            "pax": 35
+            "tours": 13,
+            "pax": 63
           }
         }
       },
@@ -164553,6 +167702,86 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 1,
+            "pax": 18
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 1,
+            "pax": 12
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 6
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 1,
+            "pax": 7
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 1,
+            "pax": 4
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 15
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 1,
+            "pax": 2
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 7
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 1,
+            "pax": 12
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 1,
+            "pax": 7
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 1,
+            "pax": 10
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -164626,12 +167855,12 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 5,
-            "pax": 25
+            "tours": 7,
+            "pax": 40
           },
           "food": {
-            "tours": 3,
-            "pax": 10
+            "tours": 6,
+            "pax": 23
           }
         }
       },
@@ -165215,13 +168444,39 @@ const cityStats26 = {
             "tours": 1,
             "pax": 3
           }
+        },
+        "10-13": {
+          "best": {
+            "tours": 1,
+            "pax": 4
+          },
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "best": {
+            "tours": 1,
+            "pax": 11
+          },
+          "food": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-16": {
+          "food": {
+            "tours": 1,
+            "pax": 7
+          }
         }
       }
     },
     "esp": {
       "free": {
-        "tours": 244,
-        "pax": 3418
+        "tours": 249,
+        "pax": 3474
       },
       "paid": {
         "tours": 10,
@@ -165303,8 +168558,8 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 11,
-            "pax": 95
+            "tours": 16,
+            "pax": 151
           },
           "paid": {
             "tours": 0,
@@ -167036,7 +170291,7 @@ const cityStats26 = {
         "10-7": {
           "free": {
             "tours": 1,
-            "pax": 0
+            "pax": 6
           },
           "paid": {
             "tours": 0,
@@ -167077,6 +170332,56 @@ const cityStats26 = {
           "free": {
             "tours": 1,
             "pax": 4
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 1,
+            "pax": 21
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 1,
+            "pax": 6
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 1,
+            "pax": 10
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 1,
+            "pax": 3
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 1,
+            "pax": 10
           },
           "paid": {
             "tours": 0,
@@ -167232,25 +170537,25 @@ const cityStats26 = {
     },
     "all": {
       "free": {
-        "tours": 550,
-        "pax": 6915
+        "tours": 563,
+        "pax": 7043
       },
       "paid": {
-        "tours": 116,
-        "pax": 630
+        "tours": 121,
+        "pax": 658
       },
       "byType": {
         "food": {
-          "tours": 25,
-          "pax": 82
+          "tours": 28,
+          "pax": 95
         },
         "old": {
           "tours": 24,
           "pax": 249
         },
         "best": {
-          "tours": 67,
-          "pax": 299
+          "tours": 69,
+          "pax": 314
         }
       },
       "byMonth": {
@@ -167334,12 +170639,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 22,
-            "pax": 237
+            "tours": 35,
+            "pax": 365
           },
           "paid": {
-            "tours": 8,
-            "pax": 35
+            "tours": 13,
+            "pax": 63
           }
         }
       },
@@ -169197,7 +172502,7 @@ const cityStats26 = {
         "10-7": {
           "free": {
             "tours": 2,
-            "pax": 4
+            "pax": 10
           },
           "paid": {
             "tours": 1,
@@ -169238,6 +172543,86 @@ const cityStats26 = {
           "free": {
             "tours": 2,
             "pax": 24
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-12": {
+          "free": {
+            "tours": 1,
+            "pax": 18
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 2,
+            "pax": 33
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 6
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 1,
+            "pax": 7
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 2,
+            "pax": 10
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 15
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 2,
+            "pax": 12
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 7
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 2,
+            "pax": 15
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 2,
+            "pax": 17
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 1,
+            "pax": 10
           },
           "paid": {
             "tours": 0,
@@ -169354,12 +172739,12 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 5,
-            "pax": 25
+            "tours": 7,
+            "pax": 40
           },
           "food": {
-            "tours": 3,
-            "pax": 10
+            "tours": 6,
+            "pax": 23
           }
         }
       },
@@ -169952,6 +173337,32 @@ const cityStats26 = {
             "pax": 3
           }
         },
+        "10-13": {
+          "best": {
+            "tours": 1,
+            "pax": 4
+          },
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "best": {
+            "tours": 1,
+            "pax": 11
+          },
+          "food": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-16": {
+          "food": {
+            "tours": 1,
+            "pax": 7
+          }
+        },
         "7-13": {
           "old": {
             "tours": 1,
@@ -169988,17 +173399,17 @@ const cityStats26 = {
   "Dubrovnik": {
     "eng": {
       "free": {
-        "tours": 450,
-        "pax": 6556
+        "tours": 471,
+        "pax": 6846
       },
       "paid": {
-        "tours": 129,
-        "pax": 570
+        "tours": 133,
+        "pax": 580
       },
       "byType": {
         "big": {
-          "tours": 57,
-          "pax": 267
+          "tours": 59,
+          "pax": 273
         },
         "old": {
           "tours": 20,
@@ -170009,12 +173420,12 @@ const cityStats26 = {
           "pax": 20
         },
         "best": {
-          "tours": 27,
-          "pax": 94
+          "tours": 28,
+          "pax": 96
         },
         "food": {
-          "tours": 21,
-          "pax": 61
+          "tours": 22,
+          "pax": 63
         }
       },
       "byMonth": {
@@ -170098,12 +173509,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 26,
-            "pax": 465
+            "tours": 47,
+            "pax": 755
           },
           "paid": {
-            "tours": 4,
-            "pax": 8
+            "tours": 8,
+            "pax": 18
           }
         }
       },
@@ -172107,6 +175518,86 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 3,
+            "pax": 57
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 3,
+            "pax": 41
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 2,
+            "pax": 30
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 3,
+            "pax": 34
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 3,
+            "pax": 57
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 4
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 3,
+            "pax": 41
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 2,
+            "pax": 30
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 2,
+            "pax": 0
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -172214,16 +175705,16 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 1,
-            "pax": 2
-          },
-          "big": {
             "tours": 2,
             "pax": 4
           },
+          "big": {
+            "tours": 4,
+            "pax": 10
+          },
           "food": {
-            "tours": 1,
-            "pax": 2
+            "tours": 2,
+            "pax": 4
           }
         }
       },
@@ -172899,13 +176390,35 @@ const cityStats26 = {
             "tours": 1,
             "pax": 2
           }
+        },
+        "10-13": {
+          "big": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-16": {
+          "big": {
+            "tours": 1,
+            "pax": 2
+          },
+          "best": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-17": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
         }
       }
     },
     "esp": {
       "free": {
-        "tours": 757,
-        "pax": 14377
+        "tours": 778,
+        "pax": 14741
       },
       "paid": {
         "tours": 19,
@@ -173006,8 +176519,8 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 35,
-            "pax": 661
+            "tours": 56,
+            "pax": 1025
           },
           "paid": {
             "tours": 0,
@@ -175065,6 +178578,86 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 3,
+            "pax": 56
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 3,
+            "pax": 54
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 2,
+            "pax": 45
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 2,
+            "pax": 47
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 3,
+            "pax": 49
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 2,
+            "pax": 38
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 3,
+            "pax": 40
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 3,
+            "pax": 35
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -175239,17 +178832,17 @@ const cityStats26 = {
     },
     "all": {
       "free": {
-        "tours": 1207,
-        "pax": 20933
+        "tours": 1249,
+        "pax": 21587
       },
       "paid": {
-        "tours": 148,
-        "pax": 656
+        "tours": 152,
+        "pax": 666
       },
       "byType": {
         "big": {
-          "tours": 62,
-          "pax": 289
+          "tours": 64,
+          "pax": 295
         },
         "old": {
           "tours": 27,
@@ -175260,12 +178853,12 @@ const cityStats26 = {
           "pax": 20
         },
         "best": {
-          "tours": 34,
-          "pax": 113
+          "tours": 35,
+          "pax": 115
         },
         "food": {
-          "tours": 21,
-          "pax": 61
+          "tours": 22,
+          "pax": 63
         }
       },
       "byMonth": {
@@ -175349,12 +178942,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 61,
-            "pax": 1126
+            "tours": 103,
+            "pax": 1780
           },
           "paid": {
-            "tours": 4,
-            "pax": 8
+            "tours": 8,
+            "pax": 18
           }
         }
       },
@@ -177359,6 +180952,86 @@ const cityStats26 = {
             "pax": 0
           }
         },
+        "10-12": {
+          "free": {
+            "tours": 6,
+            "pax": 113
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 6,
+            "pax": 95
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 4,
+            "pax": 75
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 5,
+            "pax": 81
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 6,
+            "pax": 106
+          },
+          "paid": {
+            "tours": 2,
+            "pax": 4
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 5,
+            "pax": 79
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 5,
+            "pax": 70
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 5,
+            "pax": 35
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
         "3-6": {
           "free": {
             "tours": 1,
@@ -177549,16 +181222,16 @@ const cityStats26 = {
         },
         "10": {
           "best": {
-            "tours": 1,
-            "pax": 2
-          },
-          "big": {
             "tours": 2,
             "pax": 4
           },
+          "big": {
+            "tours": 4,
+            "pax": 10
+          },
           "food": {
-            "tours": 1,
-            "pax": 2
+            "tours": 2,
+            "pax": 4
           }
         }
       },
@@ -178243,6 +181916,28 @@ const cityStats26 = {
             "pax": 2
           }
         },
+        "10-13": {
+          "big": {
+            "tours": 1,
+            "pax": 4
+          }
+        },
+        "10-16": {
+          "big": {
+            "tours": 1,
+            "pax": 2
+          },
+          "best": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-17": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
         "5-20": {
           "big": {
             "tours": 1,
@@ -178323,21 +182018,21 @@ const cityStats26 = {
   "Split": {
     "eng": {
       "free": {
-        "tours": 245,
-        "pax": 2387
+        "tours": 255,
+        "pax": 2475
       },
       "paid": {
-        "tours": 52,
-        "pax": 249
+        "tours": 57,
+        "pax": 295
       },
       "byType": {
         "old": {
-          "tours": 34,
-          "pax": 194
+          "tours": 37,
+          "pax": 236
         },
         "food": {
-          "tours": 8,
-          "pax": 27
+          "tours": 10,
+          "pax": 31
         },
         "best": {
           "tours": 10,
@@ -178414,12 +182109,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 16,
-            "pax": 148
+            "tours": 26,
+            "pax": 236
           },
           "paid": {
-            "tours": 6,
-            "pax": 25
+            "tours": 11,
+            "pax": 71
           }
         }
       },
@@ -180133,6 +183828,76 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 2,
+            "pax": 23
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 2,
+            "pax": 17
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 1,
+            "pax": 3
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 2,
+            "pax": 12
+          },
+          "paid": {
+            "tours": 3,
+            "pax": 42
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 1,
+            "pax": 13
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 1,
+            "pax": 11
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 1,
+            "pax": 9
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -180192,12 +183957,12 @@ const cityStats26 = {
         },
         "10": {
           "old": {
-            "tours": 5,
-            "pax": 18
+            "tours": 8,
+            "pax": 60
           },
           "food": {
-            "tours": 1,
-            "pax": 7
+            "tours": 3,
+            "pax": 11
           }
         }
       },
@@ -180461,22 +184226,40 @@ const cityStats26 = {
             "tours": 2,
             "pax": 8
           }
+        },
+        "10-14": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "old": {
+            "tours": 3,
+            "pax": 42
+          }
+        },
+        "10-16": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
         }
       }
     },
     "esp": {
       "free": {
-        "tours": 633,
-        "pax": 13225
+        "tours": 652,
+        "pax": 13463
       },
       "paid": {
-        "tours": 47,
-        "pax": 336
+        "tours": 48,
+        "pax": 339
       },
       "byType": {
         "old": {
-          "tours": 47,
-          "pax": 336
+          "tours": 48,
+          "pax": 339
         }
       },
       "byMonth": {
@@ -180560,12 +184343,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 25,
-            "pax": 447
+            "tours": 44,
+            "pax": 685
           },
           "paid": {
-            "tours": 3,
-            "pax": 12
+            "tours": 4,
+            "pax": 15
           }
         }
       },
@@ -182499,6 +186282,86 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-12": {
+          "free": {
+            "tours": 3,
+            "pax": 45
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 2,
+            "pax": 31
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 2,
+            "pax": 39
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 3,
+            "pax": 34
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 2,
+            "pax": 8
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 3,
+            "pax": 58
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 1,
+            "pax": 10
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 3
+          }
+        },
+        "10-19": {
+          "free": {
+            "tours": 3,
+            "pax": 13
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -182546,8 +186409,8 @@ const cityStats26 = {
         },
         "10": {
           "old": {
-            "tours": 3,
-            "pax": 12
+            "tours": 4,
+            "pax": 15
           }
         }
       },
@@ -182773,6 +186636,12 @@ const cityStats26 = {
             "tours": 1,
             "pax": 2
           }
+        },
+        "10-18": {
+          "old": {
+            "tours": 1,
+            "pax": 3
+          }
         }
       }
     },
@@ -182793,21 +186662,21 @@ const cityStats26 = {
     },
     "all": {
       "free": {
-        "tours": 878,
-        "pax": 15612
+        "tours": 907,
+        "pax": 15938
       },
       "paid": {
-        "tours": 99,
-        "pax": 585
+        "tours": 105,
+        "pax": 634
       },
       "byType": {
         "old": {
-          "tours": 81,
-          "pax": 530
+          "tours": 85,
+          "pax": 575
         },
         "food": {
-          "tours": 8,
-          "pax": 27
+          "tours": 10,
+          "pax": 31
         },
         "best": {
           "tours": 10,
@@ -182895,12 +186764,12 @@ const cityStats26 = {
         "10": {
           "name": "Lis",
           "free": {
-            "tours": 41,
-            "pax": 595
+            "tours": 70,
+            "pax": 921
           },
           "paid": {
-            "tours": 9,
-            "pax": 37
+            "tours": 15,
+            "pax": 86
           }
         }
       },
@@ -184615,6 +188484,76 @@ const cityStats26 = {
             "pax": 0
           }
         },
+        "10-12": {
+          "free": {
+            "tours": 5,
+            "pax": 68
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-13": {
+          "free": {
+            "tours": 4,
+            "pax": 48
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-14": {
+          "free": {
+            "tours": 3,
+            "pax": 42
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "free": {
+            "tours": 5,
+            "pax": 46
+          },
+          "paid": {
+            "tours": 3,
+            "pax": 42
+          }
+        },
+        "10-16": {
+          "free": {
+            "tours": 3,
+            "pax": 21
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-17": {
+          "free": {
+            "tours": 4,
+            "pax": 69
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
+        },
+        "10-18": {
+          "free": {
+            "tours": 2,
+            "pax": 19
+          },
+          "paid": {
+            "tours": 1,
+            "pax": 3
+          }
+        },
         "3-28": {
           "free": {
             "tours": 0,
@@ -184834,6 +188773,16 @@ const cityStats26 = {
             "tours": 0,
             "pax": 0
           }
+        },
+        "10-19": {
+          "free": {
+            "tours": 3,
+            "pax": 13
+          },
+          "paid": {
+            "tours": 0,
+            "pax": 0
+          }
         }
       },
       "byMonthType": {
@@ -184893,12 +188842,12 @@ const cityStats26 = {
         },
         "10": {
           "old": {
-            "tours": 8,
-            "pax": 30
+            "tours": 12,
+            "pax": 75
           },
           "food": {
-            "tours": 1,
-            "pax": 7
+            "tours": 3,
+            "pax": 11
           }
         },
         "3": {
@@ -185187,6 +189136,24 @@ const cityStats26 = {
             "pax": 8
           }
         },
+        "10-14": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
+        "10-15": {
+          "old": {
+            "tours": 3,
+            "pax": 42
+          }
+        },
+        "10-16": {
+          "food": {
+            "tours": 1,
+            "pax": 2
+          }
+        },
         "3-28": {
           "old": {
             "tours": 1,
@@ -185354,6 +189321,12 @@ const cityStats26 = {
             "tours": 1,
             "pax": 2
           }
+        },
+        "10-18": {
+          "old": {
+            "tours": 1,
+            "pax": 3
+          }
         }
       }
     }
@@ -185374,7 +189347,7 @@ const paidChannelStats26 = {
           "7": 41,
           "8": 37,
           "9": 201,
-          "10": 84
+          "10": 86
         },
         "byDay": {
           "1-5": 1,
@@ -185479,7 +189452,8 @@ const paidChannelStats26 = {
           "10-6": 3,
           "10-8": 33,
           "10-10": 22,
-          "10-11": 8
+          "10-11": 8,
+          "10-12": 2
         }
       },
       "esp": {
@@ -185531,7 +189505,7 @@ const paidChannelStats26 = {
           "7": 79,
           "8": 56,
           "9": 229,
-          "10": 92
+          "10": 94
         },
         "byDay": {
           "1-5": 1,
@@ -185637,6 +189611,7 @@ const paidChannelStats26 = {
           "10-8": 33,
           "10-10": 22,
           "10-11": 8,
+          "10-12": 2,
           "5-23": 1,
           "5-31": 8,
           "7-4": 1,
@@ -185726,7 +189701,7 @@ const paidChannelStats26 = {
           "6": 16,
           "8": 11,
           "9": 47,
-          "10": 2
+          "10": 44
         },
         "byDay": {
           "5-6": 4,
@@ -185740,7 +189715,8 @@ const paidChannelStats26 = {
           "9-21": 2,
           "9-22": 2,
           "9-26": 39,
-          "10-8": 2
+          "10-8": 2,
+          "10-15": 42
         }
       },
       "esp": {
@@ -185764,7 +189740,7 @@ const paidChannelStats26 = {
           "6": 16,
           "8": 11,
           "9": 53,
-          "10": 2,
+          "10": 44,
           "7": 34
         },
         "byDay": {
@@ -185780,6 +189756,7 @@ const paidChannelStats26 = {
           "9-22": 2,
           "9-26": 39,
           "10-8": 2,
+          "10-15": 42,
           "7-27": 34,
           "9-23": 4,
           "9-24": 2
@@ -185845,7 +189822,7 @@ const paidChannelStats26 = {
           "7": 196,
           "8": 183,
           "9": 400,
-          "10": 113
+          "10": 120
         },
         "byDay": {
           "2-13": 3,
@@ -186039,7 +190016,10 @@ const paidChannelStats26 = {
           "10-7": 10,
           "10-9": 15,
           "10-10": 17,
-          "10-11": 13
+          "10-11": 13,
+          "10-12": 1,
+          "10-13": 4,
+          "10-14": 2
         }
       },
       "esp": {
@@ -186099,7 +190079,7 @@ const paidChannelStats26 = {
           "7": 205,
           "8": 204,
           "9": 420,
-          "10": 115
+          "10": 122
         },
         "byDay": {
           "2-13": 3,
@@ -186294,6 +190274,9 @@ const paidChannelStats26 = {
           "10-9": 15,
           "10-10": 17,
           "10-11": 13,
+          "10-12": 1,
+          "10-13": 4,
+          "10-14": 2,
           "3-1": 2,
           "3-31": 2,
           "8-14": 2,
@@ -186308,48 +190291,7 @@ const paidChannelStats26 = {
           "7": 15,
           "8": 16,
           "9": 2,
-          "10": 2
-        },
-        "byDay": {
-          "6-1": 2,
-          "6-20": 4,
-          "6-26": 11,
-          "7-7": 2,
-          "7-8": 3,
-          "7-10": 3,
-          "7-12": 3,
-          "7-16": 2,
-          "7-24": 2,
-          "8-3": 2,
-          "8-5": 2,
-          "8-7": 4,
-          "8-14": 2,
-          "8-20": 2,
-          "8-27": 2,
-          "8-31": 2,
-          "9-11": 2,
-          "10-2": 2
-        }
-      },
-      "esp": {
-        "byMonth": {
-          "9": 4
-        },
-        "byDay": {
-          "9-25": 4
-        }
-      },
-      "oth": {
-        "byMonth": {},
-        "byDay": {}
-      },
-      "all": {
-        "byMonth": {
-          "6": 17,
-          "7": 15,
-          "8": 16,
-          "9": 6,
-          "10": 2
+          "10": 4
         },
         "byDay": {
           "6-1": 2,
@@ -186370,6 +190312,49 @@ const paidChannelStats26 = {
           "8-31": 2,
           "9-11": 2,
           "10-2": 2,
+          "10-16": 2
+        }
+      },
+      "esp": {
+        "byMonth": {
+          "9": 4
+        },
+        "byDay": {
+          "9-25": 4
+        }
+      },
+      "oth": {
+        "byMonth": {},
+        "byDay": {}
+      },
+      "all": {
+        "byMonth": {
+          "6": 17,
+          "7": 15,
+          "8": 16,
+          "9": 6,
+          "10": 4
+        },
+        "byDay": {
+          "6-1": 2,
+          "6-20": 4,
+          "6-26": 11,
+          "7-7": 2,
+          "7-8": 3,
+          "7-10": 3,
+          "7-12": 3,
+          "7-16": 2,
+          "7-24": 2,
+          "8-3": 2,
+          "8-5": 2,
+          "8-7": 4,
+          "8-14": 2,
+          "8-20": 2,
+          "8-27": 2,
+          "8-31": 2,
+          "9-11": 2,
+          "10-2": 2,
+          "10-16": 2,
           "9-25": 4
         }
       }
@@ -186413,7 +190398,7 @@ const paidChannelStats26 = {
           "7": 24,
           "8": 21,
           "9": 27,
-          "10": 4
+          "10": 25
         },
         "byDay": {
           "4-14": 2,
@@ -186455,7 +190440,10 @@ const paidChannelStats26 = {
           "9-27": 2,
           "9-28": 2,
           "10-1": 2,
-          "10-2": 2
+          "10-2": 2,
+          "10-13": 6,
+          "10-15": 8,
+          "10-16": 7
         }
       },
       "esp": {
@@ -186474,7 +190462,7 @@ const paidChannelStats26 = {
           "7": 24,
           "8": 21,
           "9": 27,
-          "10": 4
+          "10": 25
         },
         "byDay": {
           "4-14": 2,
@@ -186516,7 +190504,10 @@ const paidChannelStats26 = {
           "9-27": 2,
           "9-28": 2,
           "10-1": 2,
-          "10-2": 2
+          "10-2": 2,
+          "10-13": 6,
+          "10-15": 8,
+          "10-16": 7
         }
       }
     }
@@ -186534,7 +190525,7 @@ const paidChannelStats26 = {
           "7": 178,
           "8": 214,
           "9": 195,
-          "10": 46
+          "10": 63
         },
         "byDay": {
           "1-2": 5,
@@ -186727,7 +190718,10 @@ const paidChannelStats26 = {
           "10-7": 2,
           "10-8": 2,
           "10-9": 4,
-          "10-10": 15
+          "10-10": 15,
+          "10-12": 6,
+          "10-13": 6,
+          "10-14": 5
         }
       },
       "esp": {
@@ -186820,7 +190814,7 @@ const paidChannelStats26 = {
           "7": 215,
           "8": 286,
           "9": 222,
-          "10": 50
+          "10": 67
         },
         "byDay": {
           "1-2": 5,
@@ -187014,6 +191008,9 @@ const paidChannelStats26 = {
           "10-8": 2,
           "10-9": 8,
           "10-10": 15,
+          "10-12": 6,
+          "10-13": 6,
+          "10-14": 5,
           "2-20": 4,
           "3-21": 2,
           "4-29": 2,
@@ -187033,7 +191030,7 @@ const paidChannelStats26 = {
           "7": 13,
           "8": 27,
           "9": 15,
-          "10": 2
+          "10": 4
         },
         "byDay": {
           "6-15": 2,
@@ -187056,7 +191053,8 @@ const paidChannelStats26 = {
           "9-18": 2,
           "9-28": 2,
           "9-30": 5,
-          "10-10": 2
+          "10-10": 2,
+          "10-17": 2
         }
       },
       "esp": {
@@ -187082,7 +191080,7 @@ const paidChannelStats26 = {
           "7": 17,
           "8": 27,
           "9": 19,
-          "10": 2
+          "10": 4
         },
         "byDay": {
           "6-15": 2,
@@ -187106,6 +191104,7 @@ const paidChannelStats26 = {
           "9-28": 2,
           "9-30": 5,
           "10-10": 2,
+          "10-17": 2,
           "6-18": 2,
           "7-31": 2,
           "9-20": 4
@@ -187119,7 +191118,7 @@ const paidChannelStats26 = {
           "7": 17,
           "8": 4,
           "9": 4,
-          "10": 5
+          "10": 7
         },
         "byDay": {
           "6-20": 2,
@@ -187132,7 +191131,8 @@ const paidChannelStats26 = {
           "8-18": 2,
           "9-15": 2,
           "9-23": 2,
-          "10-2": 5
+          "10-2": 5,
+          "10-16": 2
         }
       },
       "esp": {
@@ -187149,7 +191149,7 @@ const paidChannelStats26 = {
           "7": 17,
           "8": 4,
           "9": 4,
-          "10": 5
+          "10": 7
         },
         "byDay": {
           "6-20": 2,
@@ -187162,7 +191162,8 @@ const paidChannelStats26 = {
           "8-18": 2,
           "9-15": 2,
           "9-23": 2,
-          "10-2": 5
+          "10-2": 5,
+          "10-16": 2
         }
       }
     },
@@ -187174,7 +191175,7 @@ const paidChannelStats26 = {
           "7": 33,
           "8": 41,
           "9": 78,
-          "10": 26
+          "10": 33
         },
         "byDay": {
           "5-9": 3,
@@ -187228,7 +191229,8 @@ const paidChannelStats26 = {
           "10-2": 4,
           "10-7": 4,
           "10-8": 4,
-          "10-9": 6
+          "10-9": 6,
+          "10-15": 7
         }
       },
       "esp": {
@@ -187246,7 +191248,7 @@ const paidChannelStats26 = {
           "7": 33,
           "8": 41,
           "9": 78,
-          "10": 26
+          "10": 33
         },
         "byDay": {
           "5-9": 3,
@@ -187300,7 +191302,8 @@ const paidChannelStats26 = {
           "10-2": 4,
           "10-7": 4,
           "10-8": 4,
-          "10-9": 6
+          "10-9": 6,
+          "10-15": 7
         }
       }
     }
@@ -187317,7 +191320,7 @@ const paidChannelStats26 = {
           "7": 66,
           "8": 60,
           "9": 72,
-          "10": 22
+          "10": 27
         },
         "byDay": {
           "2-9": 2,
@@ -187423,7 +191426,8 @@ const paidChannelStats26 = {
           "10-7": 3,
           "10-9": 1,
           "10-10": 3,
-          "10-11": 6
+          "10-11": 6,
+          "10-13": 5
         }
       },
       "esp": {
@@ -187455,7 +191459,7 @@ const paidChannelStats26 = {
           "7": 70,
           "8": 60,
           "9": 77,
-          "10": 28
+          "10": 33
         },
         "byDay": {
           "2-9": 2,
@@ -187561,7 +191565,8 @@ const paidChannelStats26 = {
           "10-7": 3,
           "10-9": 1,
           "10-10": 3,
-          "10-11": 6
+          "10-11": 6,
+          "10-13": 5
         }
       }
     },
@@ -187882,7 +191887,7 @@ const paidChannelStats26 = {
           "7": 133,
           "8": 194,
           "9": 136,
-          "10": 33
+          "10": 40
         },
         "byDay": {
           "1-2": 6,
@@ -188035,7 +192040,10 @@ const paidChannelStats26 = {
           "10-7": 4,
           "10-8": 9,
           "10-9": 5,
-          "10-11": 9
+          "10-11": 9,
+          "10-12": 2,
+          "10-13": 3,
+          "10-14": 2
         }
       },
       "oth": {
@@ -188059,7 +192067,7 @@ const paidChannelStats26 = {
           "1": 10,
           "2": 22,
           "3": 40,
-          "10": 33
+          "10": 40
         },
         "byDay": {
           "4-26": 2,
@@ -188215,6 +192223,9 @@ const paidChannelStats26 = {
           "10-8": 9,
           "10-9": 5,
           "10-11": 9,
+          "10-12": 2,
+          "10-13": 3,
+          "10-14": 2,
           "3-28": 3
         }
       }
@@ -188267,7 +192278,7 @@ const paidChannelStats26 = {
           "7": 84,
           "8": 28,
           "9": 29,
-          "10": 12
+          "10": 15
         },
         "byDay": {
           "3-28": 2,
@@ -188303,7 +192314,8 @@ const paidChannelStats26 = {
           "9-30": 2,
           "10-1": 2,
           "10-2": 8,
-          "10-10": 2
+          "10-10": 2,
+          "10-18": 3
         }
       },
       "oth": {
@@ -188314,7 +192326,7 @@ const paidChannelStats26 = {
         "byMonth": {
           "6": 87,
           "7": 88,
-          "10": 14,
+          "10": 17,
           "3": 2,
           "4": 8,
           "5": 20,
@@ -188357,7 +192369,8 @@ const paidChannelStats26 = {
           "9-30": 2,
           "10-1": 2,
           "10-2": 8,
-          "10-10": 2
+          "10-10": 2,
+          "10-18": 3
         }
       }
     },
@@ -188427,7 +192440,7 @@ const paidChannelStats26 = {
           "7": 130,
           "8": 128,
           "9": 235,
-          "10": 28
+          "10": 35
         },
         "byDay": {
           "1-4": 4,
@@ -188608,7 +192621,10 @@ const paidChannelStats26 = {
           "10-7": 10,
           "10-8": 1,
           "10-9": 2,
-          "10-10": 1
+          "10-10": 1,
+          "10-12": 1,
+          "10-13": 1,
+          "10-14": 5
         }
       },
       "esp": {
@@ -188718,7 +192734,7 @@ const paidChannelStats26 = {
           "7": 195,
           "8": 227,
           "9": 314,
-          "10": 31
+          "10": 38
         },
         "byDay": {
           "1-4": 4,
@@ -188900,6 +192916,9 @@ const paidChannelStats26 = {
           "10-8": 1,
           "10-9": 3,
           "10-10": 1,
+          "10-12": 1,
+          "10-13": 1,
+          "10-14": 5,
           "3-29": 4,
           "4-2": 2,
           "5-8": 2,
@@ -188987,85 +193006,7 @@ const paidChannelStats26 = {
           "7": 9,
           "8": 17,
           "9": 47,
-          "10": 21
-        },
-        "byDay": {
-          "3-28": 1,
-          "3-29": 1,
-          "4-8": 2,
-          "4-9": 4,
-          "4-16": 2,
-          "4-23": 4,
-          "4-28": 4,
-          "5-1": 2,
-          "5-8": 3,
-          "5-13": 2,
-          "5-20": 3,
-          "5-26": 5,
-          "5-27": 2,
-          "5-29": 2,
-          "5-30": 4,
-          "6-1": 4,
-          "6-6": 4,
-          "6-7": 2,
-          "6-9": 2,
-          "6-11": 2,
-          "6-15": 4,
-          "6-19": 2,
-          "6-26": 2,
-          "7-2": 4,
-          "7-25": 1,
-          "7-27": 4,
-          "8-12": 4,
-          "8-20": 8,
-          "8-25": 3,
-          "8-28": 2,
-          "9-2": 2,
-          "9-7": 4,
-          "9-9": 2,
-          "9-11": 5,
-          "9-12": 2,
-          "9-16": 2,
-          "9-17": 11,
-          "9-20": 2,
-          "9-22": 3,
-          "9-24": 2,
-          "9-26": 2,
-          "9-28": 4,
-          "9-29": 4,
-          "9-30": 2,
-          "10-5": 10,
-          "10-8": 4,
-          "10-9": 2,
-          "10-11": 5
-        }
-      },
-      "esp": {
-        "byMonth": {
-          "7": 2,
-          "8": 4
-        },
-        "byDay": {
-          "7-8": 2,
-          "8-15": 1,
-          "8-16": 2,
-          "8-19": 1
-        }
-      },
-      "oth": {
-        "byMonth": {},
-        "byDay": {}
-      },
-      "all": {
-        "byMonth": {
-          "3": 2,
-          "4": 16,
-          "5": 23,
-          "6": 22,
-          "7": 11,
-          "8": 21,
-          "9": 47,
-          "10": 21
+          "10": 23
         },
         "byDay": {
           "3-28": 1,
@@ -189116,6 +193057,86 @@ const paidChannelStats26 = {
           "10-8": 4,
           "10-9": 2,
           "10-11": 5,
+          "10-14": 2
+        }
+      },
+      "esp": {
+        "byMonth": {
+          "7": 2,
+          "8": 4
+        },
+        "byDay": {
+          "7-8": 2,
+          "8-15": 1,
+          "8-16": 2,
+          "8-19": 1
+        }
+      },
+      "oth": {
+        "byMonth": {},
+        "byDay": {}
+      },
+      "all": {
+        "byMonth": {
+          "3": 2,
+          "4": 16,
+          "5": 23,
+          "6": 22,
+          "7": 11,
+          "8": 21,
+          "9": 47,
+          "10": 23
+        },
+        "byDay": {
+          "3-28": 1,
+          "3-29": 1,
+          "4-8": 2,
+          "4-9": 4,
+          "4-16": 2,
+          "4-23": 4,
+          "4-28": 4,
+          "5-1": 2,
+          "5-8": 3,
+          "5-13": 2,
+          "5-20": 3,
+          "5-26": 5,
+          "5-27": 2,
+          "5-29": 2,
+          "5-30": 4,
+          "6-1": 4,
+          "6-6": 4,
+          "6-7": 2,
+          "6-9": 2,
+          "6-11": 2,
+          "6-15": 4,
+          "6-19": 2,
+          "6-26": 2,
+          "7-2": 4,
+          "7-25": 1,
+          "7-27": 4,
+          "8-12": 4,
+          "8-20": 8,
+          "8-25": 3,
+          "8-28": 2,
+          "9-2": 2,
+          "9-7": 4,
+          "9-9": 2,
+          "9-11": 5,
+          "9-12": 2,
+          "9-16": 2,
+          "9-17": 11,
+          "9-20": 2,
+          "9-22": 3,
+          "9-24": 2,
+          "9-26": 2,
+          "9-28": 4,
+          "9-29": 4,
+          "9-30": 2,
+          "10-5": 10,
+          "10-8": 4,
+          "10-9": 2,
+          "10-11": 5,
+          "10-14": 2,
           "7-8": 2,
           "8-15": 1,
           "8-16": 2,
@@ -189133,7 +193154,7 @@ const paidChannelStats26 = {
           "7": 70,
           "8": 19,
           "9": 59,
-          "10": 4
+          "10": 10
         },
         "byDay": {
           "3-19": 20,
@@ -189194,7 +193215,9 @@ const paidChannelStats26 = {
           "9-28": 27,
           "9-29": 2,
           "10-6": 2,
-          "10-7": 2
+          "10-7": 2,
+          "10-13": 4,
+          "10-16": 2
         }
       },
       "esp": {
@@ -189223,7 +193246,7 @@ const paidChannelStats26 = {
           "7": 70,
           "8": 19,
           "9": 89,
-          "10": 4
+          "10": 10
         },
         "byDay": {
           "3-19": 20,
@@ -189285,6 +193308,8 @@ const paidChannelStats26 = {
           "9-29": 2,
           "10-6": 2,
           "10-7": 2,
+          "10-13": 4,
+          "10-16": 2,
           "9-1": 24,
           "9-24": 1,
           "9-25": 1
@@ -189298,7 +193323,7 @@ const paidChannelStats26 = {
           "6": 29,
           "8": 50,
           "9": 14,
-          "10": 6
+          "10": 8
         },
         "byDay": {
           "5-14": 4,
@@ -189319,7 +193344,8 @@ const paidChannelStats26 = {
           "9-23": 2,
           "9-25": 2,
           "10-2": 4,
-          "10-8": 2
+          "10-8": 2,
+          "10-14": 2
         }
       },
       "esp": {
@@ -189342,7 +193368,7 @@ const paidChannelStats26 = {
           "6": 33,
           "8": 74,
           "9": 14,
-          "10": 6
+          "10": 8
         },
         "byDay": {
           "5-14": 4,
@@ -189364,6 +193390,7 @@ const paidChannelStats26 = {
           "9-25": 2,
           "10-2": 4,
           "10-8": 2,
+          "10-14": 2,
           "6-1": 4,
           "8-30": 24
         }
@@ -189576,7 +193603,7 @@ const paidChannelTypeStats26 = {
             "7": 95,
             "8": 76,
             "9": 157,
-            "10": 47
+            "10": 51
           },
           "byDay": {
             "3-11": 2,
@@ -189700,7 +193727,9 @@ const paidChannelTypeStats26 = {
             "10-6": 3,
             "10-9": 8,
             "10-10": 15,
-            "10-11": 6
+            "10-11": 6,
+            "10-13": 2,
+            "10-14": 2
           }
         },
         "esp": {
@@ -189747,7 +193776,7 @@ const paidChannelTypeStats26 = {
             "7": 103,
             "8": 86,
             "9": 166,
-            "10": 49
+            "10": 53
           },
           "byDay": {
             "3-11": 2,
@@ -189872,6 +193901,8 @@ const paidChannelTypeStats26 = {
             "10-9": 8,
             "10-10": 15,
             "10-11": 6,
+            "10-13": 2,
+            "10-14": 2,
             "3-1": 2,
             "3-31": 2,
             "4-25": 2,
@@ -189888,7 +193919,7 @@ const paidChannelTypeStats26 = {
             "6": 17,
             "7": 15,
             "8": 10,
-            "10": 2
+            "10": 4
           },
           "byDay": {
             "6-1": 2,
@@ -189904,7 +193935,8 @@ const paidChannelTypeStats26 = {
             "8-5": 2,
             "8-7": 4,
             "8-31": 2,
-            "10-2": 2
+            "10-2": 2,
+            "10-16": 2
           }
         },
         "esp": {
@@ -189924,7 +193956,7 @@ const paidChannelTypeStats26 = {
             "6": 17,
             "7": 15,
             "8": 10,
-            "10": 2,
+            "10": 4,
             "9": 4
           },
           "byDay": {
@@ -189942,6 +193974,7 @@ const paidChannelTypeStats26 = {
             "8-7": 4,
             "8-31": 2,
             "10-2": 2,
+            "10-16": 2,
             "9-25": 4
           }
         }
@@ -189971,7 +194004,7 @@ const paidChannelTypeStats26 = {
             "7": 20,
             "8": 17,
             "9": 23,
-            "10": 2
+            "10": 10
           },
           "byDay": {
             "6-4": 2,
@@ -190001,7 +194034,9 @@ const paidChannelTypeStats26 = {
             "9-26": 3,
             "9-27": 2,
             "9-28": 2,
-            "10-1": 2
+            "10-1": 2,
+            "10-13": 4,
+            "10-15": 4
           }
         },
         "esp": {
@@ -190018,7 +194053,7 @@ const paidChannelTypeStats26 = {
             "7": 20,
             "8": 17,
             "9": 23,
-            "10": 2
+            "10": 10
           },
           "byDay": {
             "6-4": 2,
@@ -190048,7 +194083,9 @@ const paidChannelTypeStats26 = {
             "9-26": 3,
             "9-27": 2,
             "9-28": 2,
-            "10-1": 2
+            "10-1": 2,
+            "10-13": 4,
+            "10-15": 4
           }
         }
       }
@@ -190064,7 +194101,7 @@ const paidChannelTypeStats26 = {
             "7": 106,
             "8": 123,
             "9": 80,
-            "10": 15
+            "10": 19
           },
           "byDay": {
             "1-31": 2,
@@ -190170,7 +194207,8 @@ const paidChannelTypeStats26 = {
             "10-2": 2,
             "10-3": 2,
             "10-7": 2,
-            "10-9": 4
+            "10-9": 4,
+            "10-13": 4
           }
         },
         "esp": {
@@ -190244,7 +194282,7 @@ const paidChannelTypeStats26 = {
             "7": 129,
             "8": 191,
             "9": 100,
-            "10": 18,
+            "10": 22,
             "2": 6,
             "3": 2
           },
@@ -190353,6 +194391,7 @@ const paidChannelTypeStats26 = {
             "10-3": 2,
             "10-7": 2,
             "10-9": 7,
+            "10-13": 4,
             "2-10": 2,
             "2-20": 4,
             "3-21": 2,
@@ -190492,7 +194531,7 @@ const paidChannelTypeStats26 = {
             "7": 33,
             "8": 41,
             "9": 68,
-            "10": 19
+            "10": 26
           },
           "byDay": {
             "5-9": 3,
@@ -190541,7 +194580,8 @@ const paidChannelTypeStats26 = {
             "10-1": 8,
             "10-2": 4,
             "10-8": 4,
-            "10-9": 3
+            "10-9": 3,
+            "10-15": 7
           }
         },
         "esp": {
@@ -190559,7 +194599,7 @@ const paidChannelTypeStats26 = {
             "7": 33,
             "8": 41,
             "9": 68,
-            "10": 19
+            "10": 26
           },
           "byDay": {
             "5-9": 3,
@@ -190608,7 +194648,8 @@ const paidChannelTypeStats26 = {
             "10-1": 8,
             "10-2": 4,
             "10-8": 4,
-            "10-9": 3
+            "10-9": 3,
+            "10-15": 7
           }
         }
       }
@@ -190623,7 +194664,7 @@ const paidChannelTypeStats26 = {
             "7": 22,
             "8": 29,
             "9": 53,
-            "10": 15
+            "10": 18
           },
           "byDay": {
             "4-18": 1,
@@ -190673,7 +194714,8 @@ const paidChannelTypeStats26 = {
             "10-7": 1,
             "10-9": 1,
             "10-10": 3,
-            "10-11": 4
+            "10-11": 4,
+            "10-13": 3
           }
         },
         "esp": {
@@ -190703,7 +194745,7 @@ const paidChannelTypeStats26 = {
             "7": 26,
             "8": 29,
             "9": 58,
-            "10": 21
+            "10": 24
           },
           "byDay": {
             "4-18": 1,
@@ -190753,7 +194795,8 @@ const paidChannelTypeStats26 = {
             "10-7": 1,
             "10-9": 1,
             "10-10": 3,
-            "10-11": 4
+            "10-11": 4,
+            "10-13": 3
           }
         }
       },
@@ -191015,7 +195058,7 @@ const paidChannelTypeStats26 = {
             "7": 67,
             "8": 107,
             "9": 77,
-            "10": 18
+            "10": 23
           },
           "byDay": {
             "1-2": 6,
@@ -191135,7 +195178,9 @@ const paidChannelTypeStats26 = {
             "10-7": 2,
             "10-8": 6,
             "10-9": 2,
-            "10-11": 2
+            "10-11": 2,
+            "10-13": 3,
+            "10-14": 2
           }
         },
         "oth": {
@@ -191153,7 +195198,7 @@ const paidChannelTypeStats26 = {
             "2": 22,
             "3": 29,
             "4": 55,
-            "10": 18
+            "10": 23
           },
           "byDay": {
             "5-15": 8,
@@ -191275,7 +195320,9 @@ const paidChannelTypeStats26 = {
             "10-7": 2,
             "10-8": 6,
             "10-9": 2,
-            "10-11": 2
+            "10-11": 2,
+            "10-13": 3,
+            "10-14": 2
           }
         }
       },
@@ -191523,7 +195570,7 @@ const paidChannelTypeStats26 = {
             "7": 23,
             "8": 17,
             "9": 26,
-            "10": 12
+            "10": 14
           },
           "byDay": {
             "1-5": 1,
@@ -191595,7 +195642,8 @@ const paidChannelTypeStats26 = {
             "10-5": 2,
             "10-6": 3,
             "10-8": 1,
-            "10-10": 5
+            "10-10": 5,
+            "10-12": 2
           }
         },
         "esp": {
@@ -191631,7 +195679,7 @@ const paidChannelTypeStats26 = {
             "7": 27,
             "8": 26,
             "9": 26,
-            "10": 12
+            "10": 14
           },
           "byDay": {
             "1-5": 1,
@@ -191704,6 +195752,7 @@ const paidChannelTypeStats26 = {
             "10-6": 3,
             "10-8": 1,
             "10-10": 5,
+            "10-12": 2,
             "5-31": 8,
             "7-4": 1,
             "7-16": 2,
@@ -191781,7 +195830,7 @@ const paidChannelTypeStats26 = {
             "7": 84,
             "8": 77,
             "9": 166,
-            "10": 50
+            "10": 53
           },
           "byDay": {
             "2-13": 3,
@@ -191946,7 +195995,9 @@ const paidChannelTypeStats26 = {
             "10-7": 10,
             "10-9": 5,
             "10-10": 2,
-            "10-11": 7
+            "10-11": 7,
+            "10-12": 1,
+            "10-13": 2
           }
         },
         "esp": {
@@ -191984,7 +196035,7 @@ const paidChannelTypeStats26 = {
             "7": 85,
             "8": 86,
             "9": 175,
-            "10": 50
+            "10": 53
           },
           "byDay": {
             "2-13": 3,
@@ -192150,6 +196201,8 @@ const paidChannelTypeStats26 = {
             "10-9": 5,
             "10-10": 2,
             "10-11": 7,
+            "10-12": 1,
+            "10-13": 2,
             "8-14": 2,
             "8-24": 1
           }
@@ -192223,7 +196276,7 @@ const paidChannelTypeStats26 = {
             "7": 52,
             "8": 79,
             "9": 74,
-            "10": 25
+            "10": 38
           },
           "byDay": {
             "1-2": 5,
@@ -192361,7 +196414,10 @@ const paidChannelTypeStats26 = {
             "10-3": 6,
             "10-4": 4,
             "10-8": 2,
-            "10-10": 9
+            "10-10": 9,
+            "10-12": 6,
+            "10-13": 2,
+            "10-14": 5
           }
         },
         "esp": {
@@ -192402,7 +196458,7 @@ const paidChannelTypeStats26 = {
             "7": 55,
             "8": 81,
             "9": 77,
-            "10": 26
+            "10": 39
           },
           "byDay": {
             "1-2": 5,
@@ -192541,6 +196597,9 @@ const paidChannelTypeStats26 = {
             "10-4": 4,
             "10-8": 2,
             "10-10": 9,
+            "10-12": 6,
+            "10-13": 2,
+            "10-14": 5,
             "5-26": 2,
             "6-3": 2,
             "6-16": 2,
@@ -192617,7 +196676,7 @@ const paidChannelTypeStats26 = {
             "7": 41,
             "8": 27,
             "9": 12,
-            "10": 5
+            "10": 7
           },
           "byDay": {
             "2-9": 2,
@@ -192687,7 +196746,8 @@ const paidChannelTypeStats26 = {
             "9-26": 2,
             "10-3": 2,
             "10-6": 1,
-            "10-11": 2
+            "10-11": 2,
+            "10-13": 2
           }
         },
         "esp": {
@@ -192708,7 +196768,7 @@ const paidChannelTypeStats26 = {
             "7": 41,
             "8": 27,
             "9": 12,
-            "10": 5
+            "10": 7
           },
           "byDay": {
             "2-9": 2,
@@ -192778,7 +196838,8 @@ const paidChannelTypeStats26 = {
             "9-26": 2,
             "10-3": 2,
             "10-6": 1,
-            "10-11": 2
+            "10-11": 2,
+            "10-13": 2
           }
         }
       },
@@ -192952,7 +197013,7 @@ const paidChannelTypeStats26 = {
             "7": 27,
             "8": 66,
             "9": 29,
-            "10": 12
+            "10": 14
           },
           "byDay": {
             "5-1": 1,
@@ -193009,7 +197070,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-7": 2,
             "10-8": 3,
-            "10-11": 7
+            "10-11": 7,
+            "10-12": 2
           }
         },
         "oth": {
@@ -193024,7 +197086,7 @@ const paidChannelTypeStats26 = {
             "5": 17,
             "6": 19,
             "7": 27,
-            "10": 12
+            "10": 14
           },
           "byDay": {
             "4-26": 1,
@@ -193083,7 +197145,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-7": 2,
             "10-8": 3,
-            "10-11": 7
+            "10-11": 7,
+            "10-12": 2
           }
         }
       },
@@ -193155,7 +197218,7 @@ const paidChannelTypeStats26 = {
             "7": 122,
             "8": 127,
             "9": 195,
-            "10": 26
+            "10": 33
           },
           "byDay": {
             "1-4": 4,
@@ -193335,7 +197398,10 @@ const paidChannelTypeStats26 = {
             "10-7": 8,
             "10-8": 1,
             "10-9": 2,
-            "10-10": 1
+            "10-10": 1,
+            "10-12": 1,
+            "10-13": 1,
+            "10-14": 5
           }
         },
         "esp": {
@@ -193445,7 +197511,7 @@ const paidChannelTypeStats26 = {
             "7": 187,
             "8": 224,
             "9": 274,
-            "10": 29
+            "10": 36
           },
           "byDay": {
             "1-4": 4,
@@ -193626,6 +197692,9 @@ const paidChannelTypeStats26 = {
             "10-8": 1,
             "10-9": 3,
             "10-10": 1,
+            "10-12": 1,
+            "10-13": 1,
+            "10-14": 5,
             "3-29": 4,
             "4-2": 2,
             "5-8": 2,
@@ -194165,7 +198234,7 @@ const paidChannelTypeStats26 = {
             "7": 4,
             "8": 4,
             "9": 4,
-            "10": 2
+            "10": 15
           },
           "byDay": {
             "4-14": 2,
@@ -194183,7 +198252,10 @@ const paidChannelTypeStats26 = {
             "8-27": 2,
             "9-12": 2,
             "9-21": 2,
-            "10-2": 2
+            "10-2": 2,
+            "10-13": 2,
+            "10-15": 4,
+            "10-16": 7
           }
         },
         "esp": {
@@ -194202,7 +198274,7 @@ const paidChannelTypeStats26 = {
             "7": 4,
             "8": 4,
             "9": 4,
-            "10": 2
+            "10": 15
           },
           "byDay": {
             "4-14": 2,
@@ -194220,7 +198292,10 @@ const paidChannelTypeStats26 = {
             "8-27": 2,
             "9-12": 2,
             "9-21": 2,
-            "10-2": 2
+            "10-2": 2,
+            "10-13": 2,
+            "10-15": 4,
+            "10-16": 7
           }
         }
       }
@@ -194340,7 +198415,7 @@ const paidChannelTypeStats26 = {
             "6": 2,
             "8": 4,
             "9": 11,
-            "10": 2
+            "10": 4
           },
           "byDay": {
             "6-27": 2,
@@ -194350,7 +198425,8 @@ const paidChannelTypeStats26 = {
             "9-18": 2,
             "9-28": 2,
             "9-30": 3,
-            "10-10": 2
+            "10-10": 2,
+            "10-17": 2
           }
         },
         "esp": {
@@ -194366,7 +198442,7 @@ const paidChannelTypeStats26 = {
             "6": 2,
             "8": 4,
             "9": 11,
-            "10": 2
+            "10": 4
           },
           "byDay": {
             "6-27": 2,
@@ -194376,7 +198452,8 @@ const paidChannelTypeStats26 = {
             "9-18": 2,
             "9-28": 2,
             "9-30": 3,
-            "10-10": 2
+            "10-10": 2,
+            "10-17": 2
           }
         }
       },
@@ -194386,7 +198463,7 @@ const paidChannelTypeStats26 = {
             "6": 4,
             "7": 6,
             "9": 4,
-            "10": 5
+            "10": 7
           },
           "byDay": {
             "6-20": 2,
@@ -194394,7 +198471,8 @@ const paidChannelTypeStats26 = {
             "7-4": 6,
             "9-15": 2,
             "9-23": 2,
-            "10-2": 5
+            "10-2": 5,
+            "10-16": 2
           }
         },
         "esp": {
@@ -194410,7 +198488,7 @@ const paidChannelTypeStats26 = {
             "6": 4,
             "7": 6,
             "9": 4,
-            "10": 5
+            "10": 7
           },
           "byDay": {
             "6-20": 2,
@@ -194418,7 +198496,8 @@ const paidChannelTypeStats26 = {
             "7-4": 6,
             "9-15": 2,
             "9-23": 2,
-            "10-2": 5
+            "10-2": 5,
+            "10-16": 2
           }
         }
       },
@@ -194986,10 +199065,12 @@ const paidChannelTypeStats26 = {
       "Split": {
         "eng": {
           "byMonth": {
-            "9": 4
+            "9": 4,
+            "10": 2
           },
           "byDay": {
-            "9-14": 4
+            "9-14": 4,
+            "10-14": 2
           }
         },
         "esp": {
@@ -195002,10 +199083,12 @@ const paidChannelTypeStats26 = {
         },
         "all": {
           "byMonth": {
-            "9": 4
+            "9": 4,
+            "10": 2
           },
           "byDay": {
-            "9-14": 4
+            "9-14": 4,
+            "10-14": 2
           }
         }
       },
@@ -195194,7 +199277,7 @@ const paidChannelTypeStats26 = {
             "6": 16,
             "8": 4,
             "9": 41,
-            "10": 2
+            "10": 44
           },
           "byDay": {
             "5-6": 4,
@@ -195203,7 +199286,8 @@ const paidChannelTypeStats26 = {
             "8-28": 4,
             "9-15": 2,
             "9-26": 39,
-            "10-8": 2
+            "10-8": 2,
+            "10-15": 42
           }
         },
         "esp": {
@@ -195227,7 +199311,7 @@ const paidChannelTypeStats26 = {
             "6": 16,
             "8": 4,
             "9": 47,
-            "10": 2,
+            "10": 44,
             "7": 34
           },
           "byDay": {
@@ -195238,6 +199322,7 @@ const paidChannelTypeStats26 = {
             "9-15": 2,
             "9-26": 39,
             "10-8": 2,
+            "10-15": 42,
             "7-27": 34,
             "9-23": 4,
             "9-24": 2
@@ -195734,7 +199819,7 @@ const paidChannelTypeStats26 = {
             "7": 84,
             "8": 28,
             "9": 29,
-            "10": 12
+            "10": 15
           },
           "byDay": {
             "3-28": 2,
@@ -195770,7 +199855,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-1": 2,
             "10-2": 8,
-            "10-10": 2
+            "10-10": 2,
+            "10-18": 3
           }
         },
         "oth": {
@@ -195781,7 +199867,7 @@ const paidChannelTypeStats26 = {
           "byMonth": {
             "6": 87,
             "7": 88,
-            "10": 14,
+            "10": 17,
             "3": 2,
             "4": 8,
             "5": 20,
@@ -195824,7 +199910,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-1": 2,
             "10-2": 8,
-            "10-10": 2
+            "10-10": 2,
+            "10-18": 3
           }
         }
       },
@@ -195981,7 +200068,7 @@ const paidChannelTypeStats26 = {
             "7": 4,
             "8": 8,
             "9": 19,
-            "10": 16
+            "10": 18
           },
           "byDay": {
             "4-28": 2,
@@ -195997,7 +200084,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-5": 10,
             "10-8": 4,
-            "10-9": 2
+            "10-9": 2,
+            "10-14": 2
           }
         },
         "esp": {
@@ -196016,7 +200104,7 @@ const paidChannelTypeStats26 = {
             "7": 4,
             "8": 8,
             "9": 19,
-            "10": 16
+            "10": 18
           },
           "byDay": {
             "4-28": 2,
@@ -196032,7 +200120,8 @@ const paidChannelTypeStats26 = {
             "9-30": 2,
             "10-5": 10,
             "10-8": 4,
-            "10-9": 2
+            "10-9": 2,
+            "10-14": 2
           }
         }
       },
@@ -196930,7 +201019,7 @@ const paidChannelTypeStats26 = {
             "7": 56,
             "8": 19,
             "9": 44,
-            "10": 4
+            "10": 10
           },
           "byDay": {
             "3-19": 20,
@@ -196977,7 +201066,9 @@ const paidChannelTypeStats26 = {
             "9-28": 27,
             "9-29": 2,
             "10-6": 2,
-            "10-7": 2
+            "10-7": 2,
+            "10-13": 4,
+            "10-16": 2
           }
         },
         "esp": {
@@ -197005,7 +201096,7 @@ const paidChannelTypeStats26 = {
             "7": 56,
             "8": 19,
             "9": 50,
-            "10": 4
+            "10": 10
           },
           "byDay": {
             "3-19": 20,
@@ -197053,6 +201144,8 @@ const paidChannelTypeStats26 = {
             "9-29": 2,
             "10-6": 2,
             "10-7": 2,
+            "10-13": 4,
+            "10-16": 2,
             "9-24": 1,
             "9-25": 1
           }
