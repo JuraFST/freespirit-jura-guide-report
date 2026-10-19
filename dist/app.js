@@ -1171,13 +1171,13 @@
     }).join("");
     return channelColumnHtml(channels, has25) + `<tbody>${body}</tbody>`;
   }
-  function renderBlock({ title, chartId, tableId, channels, channelStats25, channelStats26, state, filters, idPrefix }) {
+  function renderBlock({ title, heading, chartId, tableId, channels, channelStats25, channelStats26, state, filters, idPrefix }) {
     const cutoffMonth = getCutoffMonth();
     const cutoffDay = getCutoffDay();
     const containerEl = document.getElementById(idPrefix + "-block");
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
-      <h2>${title}</h2>
+      ${heading ? `<h2>${heading}</h2>` : ""}
       <div class="chart-grid">
         <div class="card">
           <div class="card-title">${title} PAX by Channel${channelStats25 ? " \u2014 2025 vs 2026" : " \u2014 2026"}</div>
@@ -1200,9 +1200,10 @@
   }
   var bkFilters = { tab: "free", city: "all", lang: "all", month: "all" };
   var freeState = { chart: null };
-  var paidState = { chart: null };
-  function missingBlockHtml(title, missingWhat) {
-    return `<h2>${title}</h2><div class="card">Bookings data for ${title} is not available (${missingWhat} is missing from the loaded data files).</div>`;
+  var paidGroupState = { chart: null };
+  var paidPrivateState = { chart: null };
+  function missingBlockHtml(title, missingWhat, heading = title) {
+    return `${heading ? `<h2>${heading}</h2>` : ""}<div class="card">Bookings data for ${title} is not available (${missingWhat} is missing from the loaded data files).</div>`;
   }
   var PageBookings = {
     _initialized: false,
@@ -1218,7 +1219,11 @@
         ${langChipsHtml("bk", bkFilters.lang)}
         ${monthSelectHtml("bk", bkFilters.month)}
       </div>
-      <div id="bk-free-block"></div><div id="bk-paid-block" hidden></div>`;
+      <div id="bk-free-block"></div>
+      <div id="bk-paid-block" hidden>
+        <div id="bk-paid-group-block"></div>
+        <div id="bk-paid-private-block"></div>
+      </div>`;
       bindChipGroup("bk-city-chips", (v) => {
         bkFilters.city = v;
         this.renderAll();
@@ -1267,26 +1272,45 @@
           idPrefix: "bk-free"
         });
       } else {
-        document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free", "freeChannelStats26");
+        document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free", "freeChannelStats26", "");
       }
     },
     renderPaid() {
-      const paid26 = typeof paidChannelStats26 !== "undefined" ? paidChannelStats26 : void 0;
-      const paid25 = typeof paidChannelStats25 !== "undefined" ? paidChannelStats25 : null;
-      if (paid26) {
+      const group26 = typeof paidChannelGroupStats26 !== "undefined" ? paidChannelGroupStats26 : void 0;
+      const group25 = typeof paidChannelGroupStats25 !== "undefined" ? paidChannelGroupStats25 : null;
+      if (group26) {
         renderBlock({
-          title: "Paid",
-          chartId: "bk-paid-chart",
-          tableId: "bk-paid-table",
+          title: "Paid Group Tours",
+          heading: "Paid Group Tours",
+          chartId: "bk-paid-group-chart",
+          tableId: "bk-paid-group-table",
           channels: PAID_CHANNELS,
-          channelStats25: paid25,
-          channelStats26: paid26,
-          state: paidState,
+          channelStats25: group25,
+          channelStats26: group26,
+          state: paidGroupState,
           filters: bkFilters,
-          idPrefix: "bk-paid"
+          idPrefix: "bk-paid-group"
         });
       } else {
-        document.getElementById("bk-paid-block").innerHTML = missingBlockHtml("Paid", "paidChannelStats26");
+        document.getElementById("bk-paid-group-block").innerHTML = missingBlockHtml("Paid Group Tours", "paidChannelGroupStats26");
+      }
+      const private26 = typeof paidChannelPrivateStats26 !== "undefined" ? paidChannelPrivateStats26 : void 0;
+      const private25 = typeof paidChannelPrivateStats25 !== "undefined" ? paidChannelPrivateStats25 : null;
+      if (private26) {
+        renderBlock({
+          title: "Paid Private Tours",
+          heading: "Paid Private Tours",
+          chartId: "bk-paid-private-chart",
+          tableId: "bk-paid-private-table",
+          channels: PAID_CHANNELS,
+          channelStats25: private25,
+          channelStats26: private26,
+          state: paidPrivateState,
+          filters: bkFilters,
+          idPrefix: "bk-paid-private"
+        });
+      } else {
+        document.getElementById("bk-paid-private-block").innerHTML = missingBlockHtml("Paid Private Tours", "paidChannelPrivateStats26");
       }
     }
   };

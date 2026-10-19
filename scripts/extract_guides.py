@@ -167,6 +167,28 @@ def to_plain(stats):
 # ── Paid channel stats helpers ────────────────────────────────────────────────
 
 PAID_CHANNELS = ['web', 'Viator', 'GYG', 'Airbnb', 'Musement', 'Civitatis', 'free']
+# Same split as categorize.js: Paid Group Tours are best/war/food, and everything else (old, big,
+# war PR, food PR, custom) is Paid Private Tours.
+GROUP_TOUR_TYPES = ('best', 'war', 'food')
+
+def build_channel_stats(raw_channel):
+    channel_stats = {}
+    for bucket in PAID_CHANNELS + ['other']:
+        city_map = {}
+        for city in CITY_MAP.values():
+            all_s = empty_channel_stats()
+            lang_out = {}
+            for lang in ('eng', 'esp', 'oth'):
+                ls = raw_channel[bucket][city][lang]
+                for m, p in ls['byMonth'].items():
+                    all_s['byMonth'][m] += p
+                for d, p in ls['byDay'].items():
+                    all_s['byDay'][d] += p
+                lang_out[lang] = to_plain_channel(ls)
+            lang_out['all'] = to_plain_channel(all_s)
+            city_map[city] = lang_out
+        channel_stats[bucket] = city_map
+    return channel_stats
 
 def paid_channel_bucket(channel, source, guide_names=frozenset()):
     if channel == 'web':
@@ -414,6 +436,9 @@ def main():
     raw_city = defaultdict(lambda: {lang: empty_stats() for lang in ('eng', 'esp', 'oth')})
     # raw_channel[bucket][city][lang] = channel stats — paid rows only
     raw_channel = defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'oth')}))
+    # The same paid rows, split by tour kind for the Bookings Group and Private blocks.
+    raw_channel_kind = {kind: defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'oth')}))
+                        for kind in ('group', 'private')}
 
     guide_names = {_val(r[C_VENDOR]) for r in data_rows} - {None, '', 'vanjski vodič'}
 
@@ -551,6 +576,8 @@ def main():
 
             bucket = paid_channel_bucket(channel, source, guide_names)
             add_channel_row(raw_channel[bucket][city][lang], month, row_pax, day)
+            kind = 'group' if tour in GROUP_TOUR_TYPES else 'private'
+            add_channel_row(raw_channel_kind[kind][bucket][city][lang], month, row_pax, day)
 
     # Build output list following canonical order
     result = []
@@ -603,23 +630,12 @@ def main():
     # Paid channel totals — city/lang/month/day breakdown for the Bookings tab.
     # Built only when Sales channel/source columns are present (same guard as HAS_MGMT).
     channel_stats = {}
+    channel_stats_group = {}
+    channel_stats_private = {}
     if HAS_MGMT:
-        all_channels = PAID_CHANNELS + ['other']
-        for bucket in all_channels:
-            city_map = {}
-            for city in CITY_MAP.values():
-                all_s = empty_channel_stats()
-                lang_out = {}
-                for lang in ('eng', 'esp', 'oth'):
-                    ls = raw_channel[bucket][city][lang]
-                    for m, p in ls['byMonth'].items():
-                        all_s['byMonth'][m] += p
-                    for d, p in ls['byDay'].items():
-                        all_s['byDay'][d] += p
-                    lang_out[lang] = to_plain_channel(ls)
-                lang_out['all'] = to_plain_channel(all_s)
-                city_map[city] = lang_out
-            channel_stats[bucket] = city_map
+        channel_stats = build_channel_stats(raw_channel)
+        channel_stats_group = build_channel_stats(raw_channel_kind['group'])
+        channel_stats_private = build_channel_stats(raw_channel_kind['private'])
 
     # KPI totals
     total_free_tours = sum(g['stats']['all']['free']['tours'] for g in result)
@@ -663,6 +679,10 @@ def main():
     if HAS_MGMT:
         print()
         print(f'const paidChannelStats{suffix} = {js(channel_stats)};')
+        print()
+        print(f'const paidChannelGroupStats{suffix} = {js(channel_stats_group)};')
+        print()
+        print(f'const paidChannelPrivateStats{suffix} = {js(channel_stats_private)};')
 
 if __name__ == '__main__':
     main()
