@@ -5,7 +5,10 @@
   --text3: #767676;
   --border: #dddddd;
   --radius: 4px;
-  --sticky-base: 57px;
+  --rail-w: 80px;
+  --side-w: 180px;
+  --topbar-h: 56px;
+  --sticky-base: 0px;
 
   --zagreb: #2a78d6;
   --dubrovnik: #eb6834;
@@ -83,12 +86,15 @@ body.dark-mode {
 
 body {
   margin: 0;
+  padding-left: var(--rail-w);
   background: var(--bg);
   color: var(--text);
   font-family: 'IBM Plex Sans', -apple-system, sans-serif;
   font-variant-numeric: tabular-nums;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, padding-left 240ms ease;
 }
+/* A section heading sits right above its type filter, so the two read as one block. */
+h2:has(+ .type-filter-bar) { margin-bottom: 8px; }
 .page-note { font-size: 13px; color: var(--text3); margin: -6px 0 16px; }
 
 .comparison-takeaway {
@@ -102,20 +108,49 @@ body {
   line-height: 1.5;
 }
 
-.nav {
-  position: sticky;
+.sidebar {
+  position: fixed;
   top: 0;
+  left: 0;
+  bottom: 0;
   z-index: 10;
+  width: var(--rail-w);
   display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
+  flex-direction: column;
+  gap: 0;
+  padding: 16px 10px;
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  container-type: inline-size;
+  transition: width 240ms ease;
 }
 
-.nav img { height: 28px; }
-body.dark-mode .nav img { filter: invert(1) brightness(2); }
+.sidebar-top { display: flex; align-items: center; gap: 8px; min-height: 28px; margin-bottom: 16px; }
+.sidebar-logo { height: 28px; width: auto; flex: none; }
+.sidebar-toggle {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+.sidebar-toggle:hover { background: var(--bg2); }
+.sidebar-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+body.dark-mode .sidebar-logo { filter: invert(1) brightness(2); }
 
 .nav-tab {
   background: transparent;
@@ -124,17 +159,194 @@ body.dark-mode .nav img { filter: invert(1) brightness(2); }
   cursor: pointer;
 }
 
-.nav-tabs { display: flex; align-items: center; gap: 22px; margin-left: 12px; }
-.top-tab {
+.sidebar-nav { display: flex; flex-direction: column; gap: 4px; }
+.side-tab {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  margin-left: 8px;
+  padding: 0 13px;
+  transition: width 240ms ease;
   border: none;
-  border-bottom: 2px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
   color: var(--text3);
-  padding: 6px 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
 }
-.top-tab.active { color: var(--text); font-weight: 600; border-bottom-color: var(--text); }
+.side-tab:hover { background: var(--bg2); color: var(--text); }
+.side-tab.active { background: var(--text); color: var(--bg); }
+.side-tab svg {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
-.nav-actions { margin-left: auto; display: flex; gap: 8px; }
-.date-label { align-self: center; color: var(--text3); font-size: 12px; white-space: nowrap; }
+.sidebar-foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.sidebar-asof { display: flex; align-items: center; gap: 6px; width: 100%; }
+.date-field {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 13px;
+}
+.date-text { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.date-icon {
+  order: -1;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+/* The native picker is transparent and covers the whole field, so a click anywhere on it opens the picker. */
+.sidebar-asof #as-of-date {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Desktop rail: icons only at --rail-w. Hover or keyboard focus opens it to --side-w, and the
+   page makes room for it (body padding moves with it), so the dashboard is pushed, not covered.
+   Labels, the date and the logo wordmark reveal from the left. */
+@media (min-width: 641px) {
+  body.sidebar-open .sidebar { width: var(--side-w); }
+  body.sidebar-open { padding-left: var(--side-w); }
+  /* The logo stays in place and is uncovered from the left as the sidebar opens (clip, not opacity). */
+  .sidebar-logo { clip-path: inset(0 100% 0 0); transition: clip-path 240ms ease; }
+  body.sidebar-open .sidebar-logo { clip-path: inset(0 0 0 0); }
+  .sidebar-foot .theme-toggle-icon { width: 44px; height: 44px; margin-left: 8px; }
+
+  .sidebar .nav-label {
+    position: absolute;
+    top: 0;
+    left: 43px;
+    line-height: 44px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 160ms ease, transform 240ms ease;
+    pointer-events: none;
+  }
+  body.sidebar-open .nav-label { opacity: 1; transform: none; transition-delay: 80ms; }
+  body.sidebar-open .side-tab { width: calc(100% - 8px); }
+
+  /* Shortcut keys sit at the right of each tab, shown only when the sidebar is open. */
+  .sidebar .nav-key {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    line-height: 44px;
+    font-size: 11px;
+    color: var(--text3);
+    opacity: 0;
+    transition: opacity 160ms ease;
+    pointer-events: none;
+  }
+  .side-tab.active .nav-key { color: inherit; }
+  /* Open sidebar: the keys appear while the tab list is hovered, or a tab has keyboard focus. */
+  body.sidebar-open .sidebar-nav:hover .nav-key,
+  body.sidebar-open .sidebar:has(.side-tab:focus-visible) .nav-key { opacity: 1; }
+  /* Closed rail: a tooltip with the tab name, since the icons carry no text. */
+  body:not(.sidebar-open) .side-tab:hover::after,
+  body:not(.sidebar-open) .side-tab:focus-visible::after,
+  body:not(.sidebar-open) .date-field:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    background: var(--text);
+    color: var(--bg);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 20;
+  }
+  /* The date row keeps its hairline and vertical padding in both states, so nothing moves up or down.
+     The calendar icon stays on the tab inset. Only the box widens with the rail, and the text fades in. */
+  /* The row spans the rail's content width, so its hairline grows and shrinks with the rail itself. */
+  .sidebar-asof {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 8px 12px;
+    border-top: 1px solid var(--border);
+    gap: 0;
+  }
+  /* Same tile as the page tabs: no border, the hover fill matches the tabs. */
+  .sidebar-asof .date-field {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius);
+    justify-content: flex-start;
+    padding-left: 13px;
+    gap: 0;
+    transition: width 240ms ease;
+  }
+  .sidebar-asof .date-field:hover { background: var(--bg2); }
+  .sidebar-asof .date-text {
+    flex: 0 0 0;
+    opacity: 0;
+    transition: opacity 160ms ease;
+  }
+  body.sidebar-open .sidebar-asof .date-field { flex: 1; width: auto; min-width: 0; padding: 0 8px 0 13px; gap: 8px; }
+  body.sidebar-open .sidebar-asof .date-text { flex: 1; opacity: 1; transition-delay: 80ms; }
+  /* Dark mode button: icon anchored at the same inset as the page tabs, so only the width and
+     the label move when the sidebar opens or closes. */
+  .sidebar-foot .theme-toggle-icon {
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 14px;
+    transition: width 240ms ease;
+  }
+  body.sidebar-open .sidebar-foot .theme-toggle-icon { width: calc(100% - 8px); }
+  .sidebar-foot .nav-label { left: 42px; top: 0; line-height: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body, .sidebar, .side-tab, .sidebar-logo { transition: none; }
+}
 #as-of-date {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -173,14 +385,62 @@ body.dark-mode #as-of-date { color-scheme: dark; }
 body.dark-mode .theme-toggle-icon .icon-moon { display: none; }
 body.dark-mode .theme-toggle-icon .icon-sun { display: block; }
 
+.sidebar-toggle:focus-visible,
+.side-tab:focus-visible,
+.theme-toggle-icon:focus-visible,
+.date-field:has(input:focus-visible) { outline: 2px solid var(--text); outline-offset: 2px; }
+
 .page { display: none; padding: 24px; max-width: 1440px; margin: 0 auto; }
 .page.active { display: block; }
 
 .bottom-nav { display: none; }
 
 @media (max-width: 640px) {
-  .nav { padding-inline: 8px; }
-  .nav-tabs { display: none; }
+  :root { --sticky-base: var(--topbar-h); }
+  body { padding-left: 0; padding-top: var(--topbar-h); }
+  /* On phones the sidebar becomes a slim top bar: logo, As of, theme. */
+  .sidebar {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: auto;
+    height: var(--topbar-h);
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-top { flex: 1; min-width: 0; margin-bottom: 0; }
+  .sidebar-nav, .sidebar-toggle { display: none; }
+  .sidebar-foot { margin-top: 0; flex-direction: row; align-items: center; gap: 8px; padding-top: 0; border-top: 0; }
+  .sidebar .nav-label { display: none; }
+  /* The date shrinks to a calendar icon. The input sits on top of it, transparent, so a tap opens the picker. */
+  .sidebar-asof { width: auto; margin-left: 0; padding: 0; border-top: 0; }
+  .date-field {
+    flex: none;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+  }
+  .date-icon {
+    display: block;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+  .date-text { display: none; }
   .theme-toggle-icon { flex-shrink: 0; }
 
   .bottom-nav {
@@ -288,9 +548,9 @@ body.dark-mode .theme-toggle-icon .icon-sun { display: block; }
   background: transparent;
   color: var(--text);
   border-radius: var(--radius);
-  width: 32px;
+  padding: 0 12px;
   height: 32px;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
 }
 .view-toggle-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
@@ -563,3 +823,30 @@ thead tr:first-child .channel-col-other { background: color-mix(in srgb, var(--t
   }
   .comparison-table-scroll thead tr:first-child th:first-child { background: var(--bg2); }
 }
+
+/* Phone: the top bar and bottom nav slide away after 100px of scroll and return after a short
+   scroll up (see main.js). The filters then stick to the top edge, so they get the freed space. */
+@media (max-width: 640px) {
+  .sidebar, .bottom-nav { transition: transform 200ms ease; }
+  :root.chrome-hidden { --sticky-base: 0px; }
+  :root.chrome-hidden .sidebar { transform: translateY(-100%); }
+  :root.chrome-hidden .bottom-nav { transform: translateY(100%); }
+  .filter-bar.sticky { transition: top 200ms ease; }
+  .filter-bar { gap: 8px; margin-bottom: 8px; }
+}
+
+/* Free / Paid tabs on the Tours pages, Evidencija style */
+.view-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.view-tab { border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: var(--radius); padding: 10px 24px; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
+.view-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+.kpi-year-card .kpi-year { font-size: 11px; color: var(--text3); margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border); }
+.paid-kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.type-filter-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.type-month-table { width: 100%; margin-top: 16px; }
+.type-month-table .total-row td { font-weight: 600; border-top: 2px solid var(--text); }
+@media (max-width: 640px) { .paid-kpi-grid { grid-template-columns: 1fr; } }
+.kpi-cmp-delta { display: flex; align-items: baseline; gap: 10px; margin-top: 4px; font-size: 16px; }
+.kpi-cmp-delta .kpi-value { margin-top: 0; }
+.kpi-cmp-years { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 18px; }
+.kpi-cmp-years span { display: block; font-size: 11px; color: var(--text3); }
+.cmp-type-table .total-row td { font-weight: 600; border-top: 2px solid var(--text); }
