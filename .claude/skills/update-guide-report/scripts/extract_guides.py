@@ -167,9 +167,9 @@ def to_plain(stats):
 # ── Paid channel stats helpers ────────────────────────────────────────────────
 
 PAID_CHANNELS = ['web', 'Viator', 'GYG', 'Airbnb', 'Musement', 'Civitatis', 'free']
-# Same split as categorize.js: Paid Group Tours are best/war/food, and everything else (old, big,
-# war PR, food PR, custom) is Paid Private Tours.
-GROUP_TOUR_TYPES = ('best', 'war', 'food')
+# One channel breakdown per paid tour type. Tour types outside this list (e.g. "food kuoni")
+# fall into 'custom', the same catch-all as categorize.js.
+PAID_TOUR_TYPES = ('best', 'war', 'food', 'old', 'big', 'war PR', 'food PR', 'custom')
 
 def build_channel_stats(raw_channel):
     channel_stats = {}
@@ -436,9 +436,9 @@ def main():
     raw_city = defaultdict(lambda: {lang: empty_stats() for lang in ('eng', 'esp', 'oth')})
     # raw_channel[bucket][city][lang] = channel stats — paid rows only
     raw_channel = defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'oth')}))
-    # The same paid rows, split by tour kind for the Bookings Group and Private blocks.
-    raw_channel_kind = {kind: defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'oth')}))
-                        for kind in ('group', 'private')}
+    # The same paid rows, split by tour type for the Bookings type filters.
+    raw_channel_type = {t: defaultdict(lambda: defaultdict(lambda: {lang: empty_channel_stats() for lang in ('eng', 'esp', 'oth')}))
+                        for t in PAID_TOUR_TYPES}
 
     guide_names = {_val(r[C_VENDOR]) for r in data_rows} - {None, '', 'vanjski vodič'}
 
@@ -576,8 +576,8 @@ def main():
 
             bucket = paid_channel_bucket(channel, source, guide_names)
             add_channel_row(raw_channel[bucket][city][lang], month, row_pax, day)
-            kind = 'group' if tour in GROUP_TOUR_TYPES else 'private'
-            add_channel_row(raw_channel_kind[kind][bucket][city][lang], month, row_pax, day)
+            type_key = tour if tour in PAID_TOUR_TYPES else 'custom'
+            add_channel_row(raw_channel_type[type_key][bucket][city][lang], month, row_pax, day)
 
     # Build output list following canonical order
     result = []
@@ -630,12 +630,10 @@ def main():
     # Paid channel totals — city/lang/month/day breakdown for the Bookings tab.
     # Built only when Sales channel/source columns are present (same guard as HAS_MGMT).
     channel_stats = {}
-    channel_stats_group = {}
-    channel_stats_private = {}
+    channel_stats_type = {}
     if HAS_MGMT:
         channel_stats = build_channel_stats(raw_channel)
-        channel_stats_group = build_channel_stats(raw_channel_kind['group'])
-        channel_stats_private = build_channel_stats(raw_channel_kind['private'])
+        channel_stats_type = {t: build_channel_stats(raw_channel_type[t]) for t in PAID_TOUR_TYPES}
 
     # KPI totals
     total_free_tours = sum(g['stats']['all']['free']['tours'] for g in result)
@@ -680,9 +678,7 @@ def main():
         print()
         print(f'const paidChannelStats{suffix} = {js(channel_stats)};')
         print()
-        print(f'const paidChannelGroupStats{suffix} = {js(channel_stats_group)};')
-        print()
-        print(f'const paidChannelPrivateStats{suffix} = {js(channel_stats_private)};')
+        print(f'const paidChannelTypeStats{suffix} = {js(channel_stats_type)};')
 
 if __name__ == '__main__':
     main()
