@@ -1198,7 +1198,7 @@
     state.chart = channelBar(chartId, channels, totals26, totals25);
     document.getElementById(tableId).innerHTML = monthlyTableHtml(channelStats25, channelStats26, channels, cities, filters.lang, cutoffMonth, cutoffDay);
   }
-  var bkFilters = { city: "all", lang: "all", month: "all" };
+  var bkFilters = { tab: "free", city: "all", lang: "all", month: "all" };
   var freeState = { chart: null };
   var paidState = { chart: null };
   function missingBlockHtml(title, missingWhat) {
@@ -1209,12 +1209,16 @@
     init() {
       const root = document.getElementById("page-bookings");
       root.innerHTML = `
+      <div class="view-tabs" id="bk-tabs">
+        <button type="button" class="view-tab active" data-tab="free">Free Tours</button>
+        <button type="button" class="view-tab" data-tab="paid">Paid Tours</button>
+      </div>
       <div class="filter-bar sticky">
         ${cityChipsHtml("bk", bkFilters.city)}
         ${langChipsHtml("bk", bkFilters.lang)}
         ${monthSelectHtml("bk", bkFilters.month)}
       </div>
-      <div id="bk-free-block"></div><div id="bk-paid-block"></div>`;
+      <div id="bk-free-block"></div><div id="bk-paid-block" hidden></div>`;
       bindChipGroup("bk-city-chips", (v) => {
         bkFilters.city = v;
         this.renderAll();
@@ -1227,11 +1231,27 @@
         bkFilters.month = v;
         this.renderAll();
       });
+      document.getElementById("bk-tabs").addEventListener("click", (e) => {
+        const btn = e.target.closest(".view-tab");
+        if (!btn) return;
+        bkFilters.tab = btn.dataset.tab;
+        if (bkFilters.tab === "free" && bkFilters.lang === "oth") bkFilters.lang = "all";
+        this.renderAll();
+      });
       this.renderAll();
     },
     renderAll() {
+      const paid = bkFilters.tab === "paid";
+      document.querySelectorAll("#bk-tabs .view-tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === bkFilters.tab));
+      document.getElementById("bk-free-block").hidden = paid;
+      document.getElementById("bk-paid-block").hidden = !paid;
+      document.querySelector('#bk-lang-chips [data-value="oth"]').hidden = !paid;
       syncChipGroup("bk-city-chips", bkFilters.city);
       syncChipGroup("bk-lang-chips", bkFilters.lang);
+      if (paid) this.renderPaid();
+      else this.renderFree();
+    },
+    renderFree() {
       const free26 = typeof freeChannelStats26 !== "undefined" ? freeChannelStats26 : void 0;
       const free25 = typeof freeChannelStats25 !== "undefined" ? freeChannelStats25 : null;
       if (free26) {
@@ -1249,6 +1269,8 @@
       } else {
         document.getElementById("bk-free-block").innerHTML = missingBlockHtml("Free", "freeChannelStats26");
       }
+    },
+    renderPaid() {
       const paid26 = typeof paidChannelStats26 !== "undefined" ? paidChannelStats26 : void 0;
       const paid25 = typeof paidChannelStats25 !== "undefined" ? paidChannelStats25 : null;
       if (paid26) {
