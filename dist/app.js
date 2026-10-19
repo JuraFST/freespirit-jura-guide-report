@@ -1879,7 +1879,6 @@
         renderAsOfText(e.target.value);
       });
       dateInput.closest(".date-field").addEventListener("click", () => {
-        if (!window.matchMedia("(max-width: 640px)").matches) return;
         try {
           dateInput.showPicker();
         } catch (err) {
