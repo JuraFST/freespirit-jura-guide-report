@@ -27,6 +27,9 @@
   function getCutoffDay() {
     return parseInt(GLOBAL_DATE.split("-")[2]);
   }
+  function getRefreshDate() {
+    return REPORT_LAST_UPDATE;
+  }
   function fmtN(v) {
     return Math.round(v).toLocaleString("en-GB");
   }
@@ -846,6 +849,12 @@
     containerEl.querySelectorAll(".comparison-cutoff").forEach((el) => {
       el.textContent = cutoff;
     });
+    const refresh = getRefreshDate();
+    const [, refreshMonth, refreshDay] = refresh.split("-").map(Number);
+    const refreshText = getGlobalDate() > refresh ? ` (data refreshed ${MONTH_NAMES[refreshMonth]} ${refreshDay})` : "";
+    containerEl.querySelectorAll(".comparison-refresh").forEach((el) => {
+      el.textContent = refreshText;
+    });
   }
   function updateOpeningTakeaway() {
     const month = getCutoffMonth();
@@ -861,7 +870,7 @@
     const cutoffDay = getCutoffDay();
     if (!containerEl.dataset.built) {
       containerEl.innerHTML = `
-      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span><span class="comparison-refresh"></span>.</p>
       <div class="kpi-grid paid-kpi-grid" id="cmp-free-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-free-city-chart", "Free PAX by City \u2014 2025 vs 2026")}
@@ -917,7 +926,7 @@
       <div class="filter-bar sticky type-filter-bar">
         ${chipGroupHtml("cmp-group-type-chips", [["all", "All tours"], ...GROUP_TYPES.map((t) => [t, t])], groupState.type)}
       </div>
-      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span><span class="comparison-refresh"></span>.</p>
       <div class="kpi-grid" id="cmp-group-kpis"></div>
       <div class="chart-grid paid-group-chart-grid">
         ${chartCardHtml("cmp-group-pax-city", "Paid Group PAX by City \u2014 2025 vs 2026")}
@@ -983,7 +992,7 @@
       <div class="filter-bar sticky type-filter-bar">
         ${chipGroupHtml("cmp-private-type-chips", [["all", "All tours"], ...PRIVATE_TYPES.map((t) => [t, t]), ["food kuoni", "custom"]], privateState.type)}
       </div>
-      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span>.</p>
+      <p class="page-note">Summary and charts compare 2025 and 2026 through <span class="comparison-cutoff"></span><span class="comparison-refresh"></span>.</p>
       <div class="kpi-grid paid-private-kpi-grid" id="cmp-private-kpis"></div>
       <div class="chart-grid">
         ${chartCardHtml("cmp-private-city-chart", "Paid Private Tours by City \u2014 2025 vs 2026")}
