@@ -558,7 +558,7 @@
     const totalTours = perCity.reduce((s, c) => s + c.tours, 0);
     const totalPax = perCity.reduce((s, c) => s + c.pax, 0);
     const avgPax = totalTours > 0 ? (totalPax / totalTours).toFixed(1) : "0.0";
-    document.getElementById(`${chartIdPrefix}-free-kpis`).innerHTML = kpiYearCardHtml("Total Tours", year, fmtN(totalTours)) + kpiYearCardHtml("Avg PAX / Per Tour", year, avgPax) + kpiYearCardHtml("PAX Count YTD", year, fmtN(totalPax));
+    document.getElementById(`${chartIdPrefix}-free-kpis`).innerHTML = kpiYearCardHtml("PAX Count YTD", year, fmtN(totalPax)) + kpiYearCardHtml("Avg PAX / Per Tour", year, avgPax) + kpiYearCardHtml("Total Tours", year, fmtN(totalTours));
     chartInstances.push(barChart(
       document.getElementById(`${chartIdPrefix}-free-city-chart`),
       perCity.map((c) => c.city),
@@ -897,7 +897,7 @@
     const paxSum26 = pc26.reduce((s, c) => s + c.pax, 0);
     const avg25 = toursSum25 > 0 ? paxSum25 / toursSum25 : 0;
     const avg26 = toursSum26 > 0 ? paxSum26 / toursSum26 : 0;
-    document.getElementById("cmp-free-kpis").innerHTML = kpiCmpCardHtml("Total Tours", toursSum25, toursSum26) + kpiCmpCardHtml("Avg PAX / Per Tour", avg25, avg26, (v) => v.toFixed(1)) + kpiCmpCardHtml("PAX Count YTD", paxSum25, paxSum26);
+    document.getElementById("cmp-free-kpis").innerHTML = kpiCmpCardHtml("PAX Count YTD", paxSum25, paxSum26) + kpiCmpCardHtml("Avg PAX / Per Tour", avg25, avg26, (v) => v.toFixed(1)) + kpiCmpCardHtml("Total Tours", toursSum25, toursSum26);
     document.getElementById("cmp-free-monthly-table").innerHTML = freeMonthlyComparisonHtml(
       monthlyFreeComparison(cityStats25, cityStats26, CITIES, cutoffMonth, cutoffDay, cmpState.lang)
     );
